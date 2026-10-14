@@ -1,0 +1,42 @@
+{
+  "exporter_version": 3,
+  "source_file": "vintage_racecar_previz.blend",
+  "objects": 637,
+  "meshes": 380,
+  "original_triangles": 48768,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Backdrop0",
+    "Backdrop1",
+    "Backdrop2",
+    "Backdrop3",
+    "Backdrop4",
+    "Backdrop5",
+    "Backdrop6",
+    "Backdrop7",
+    "Backdrop8",
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 129.49668721608984,
+    "phi": 86.17742553481294
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 368452,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.235m 0.894m 0.000m",
+    "camera-orbit": "35deg 65deg 9.597m",
+    "min-camera-orbit": "auto 5deg 0.457m"
+  },
+  "preview_note": "The initial view focuses on the race car.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 3
+}

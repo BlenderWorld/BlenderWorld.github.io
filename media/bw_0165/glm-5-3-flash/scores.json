@@ -1,0 +1,171 @@
+{
+  "task_id": "bw_0165",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 62.0673,
+  "rubric": 65.38461538461539,
+  "dimension": 58.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "The Group B hero image clearly shows the requested overall subject: a centered active conical volcano on terrain, with a summit crater glow, three main downhill lava flows, slope vents, and a large overhead plume. The dusk setting and warm-versus-cool concept are also recognizable.",
+      "issues": [
+        "The volcano reads as a very simplified, smooth/faceted cone rather than a geologically detailed stratovolcano with basalt-and-ash surface variation.",
+        "Lava flows read as narrow glowing cords rather than broad molten flows with cooled margins.",
+        "The lava lake lacks the requested orange-to-dark-red variation and cracked black crust.",
+        "The plume has an artificial tapered funnel silhouette with a visibly cut-off upper edge."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "Across the Group A wide views, the cone is seated convincingly on the terrain plane, the crater sits at the summit, and the primary lava paths visibly originate at the crater and follow downhill slopes. The central plume and the smaller vent wisps appear rooted to volcanic openings.",
+      "issues": [
+        "The lava appears raised above the slope as tube-like geometry instead of spreading and adhering naturally to the terrain.",
+        "Several lava strips terminate abruptly before reaching a natural pooled or cooled end state.",
+        "The summit plume's hard, broad upper termination weakens its physical behavior as smoke or ash."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "The volcanic silhouette is immediately recognizable, with a charcoal-dark cone and high-contrast warm lava against a cool dusk sky. Group A detail_summit_front clearly shows an open crater rim and bright central lake.",
+      "issues": [
+        "The cone material is mostly a nearly uniform dark surface with broad radial faceting rather than visibly layered basalt, ash, and subtle displaced rock.",
+        "The lava is predominantly pale peach/white-orange, without a convincing orange-red to dark-red thermal gradient.",
+        "No cracked black crust is visibly present on the lava lake or along the lava-flow edges.",
+        "The small fumaroles resemble soft gray tapered blobs more than distinct semi-transparent steam vents."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "The Group B hero is cleanly rendered and has a coherent basic dusk palette, but it remains visually closer to a simple illustrative 3D asset than a believable volcanic landscape. The lit crater and plume provide an understandable active-volcano read.",
+      "issues": [
+        "The overall image is extremely dark, suppressing terrain and rock detail.",
+        "The lava looks like emissive neon tubing rather than viscous molten rock.",
+        "The smoke plume has a rigid funnel form and an unnaturally clipped top.",
+        "The smooth, low-detail terrain and cone lack convincing erosional, ash, and rock-scale variation."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The designated Group B hero image uses a clear centered composition: the crater and lava lake occupy the visual center, lava flows descend from that source over the front flanks, fumaroles are distributed across the slopes, and the main plume rises directly above the peak. The broad uncluttered sky and side areas leave usable room for report labels.",
+      "issues": [
+        "The main plume dominates the upper frame but does not disperse naturally, making the vertical hierarchy feel more diagrammatic than atmospheric.",
+        "The three front lava flows are visually quite similar and evenly emphasized, reducing the sense of varied natural drainage paths."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The Group A wide views present a sensible broad-base, steep-sided volcano, and the crater lake appears substantially smaller than the crater opening, broadly supporting the intended relative hierarchy. The summit, flows, vents, and plume are all scaled so they remain legible.",
+      "issues": [
+        "The lava-flow widths are visually too thin relative to the mountain, reading as lines rather than approximately 10–15 m-wide flows.",
+        "The volcano is somewhat geometrically regular and miniature-looking because its base and terrain transition are overly smooth.",
+        "The small fumaroles are disproportionately vague and tiny compared with the dominant lava strips and central plume."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "The Group B hero establishes a cool green-gray dusk sky and an orange warm contribution around the crater and left-facing flank, achieving a basic warm-cool contrast. The crater is visibly emissive and illuminates its immediate rim.",
+      "issues": [
+        "The lava emission is over-bright and nearly uniform, losing molten-rock color depth and crust detail.",
+        "The dark rock surface has little visible basalt/ash roughness, displacement, or material breakup.",
+        "Most of the scene remains underexposed, so the warm lava illumination does not convincingly reveal nearby rock forms.",
+        "Steam and smoke are pink-gray rather than convincingly white/gray vapor under dusk illumination."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "The required major scene elements are visibly included: one stratovolcano cone, an open summit crater with bright lava lake, at least three visible lava-flow paths, roughly six slope vent wisps in Group A wide_front/detail_summit_front, a central plume, surrounding terrain, and a dusk sky. The delivered Group B hero is also at the requested 1920×1080 presentation size.",
+      "issues": [
+        "The requested cracked black lava crust is not visibly modeled.",
+        "Cooled crust along the lava-flow edges is not evident; the strips are uniformly bright.",
+        "The required semi-transparent white fumarolic steam is only ambiguously represented by dark gray soft blobs.",
+        "The requested basalt-plus-volcanic-ash surface detailing and subtle displacement are largely absent."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal landform is a correctly proportioned stratovolcano with the complete specified slope-surface system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The summit contains the correctly scaled crater-and-lava-lake assembly with the complete specified molten surface treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The repeated lava-flow system has the required count, scale, terrain relationship, and molten-versus-cooled surface construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The complete fumarole system has the required vent count, slope distribution, and attached semi-transparent steam.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A distinct large-scale volcanic smoke plume rises above the summit and remains distinguishable from slope steam.",
+      "evidence": "The designated hero image clearly shows a large pink-gray smoke/ash plume emerging from the summit crater and rising far above the cone. It is substantially larger and higher than the several small gray wisps positioned separately on the volcano’s slopes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The scene combines genuine lava-cast warm illumination with cool environmental dusk fill.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The final author camera and composition clearly communicate the dusk geothermal subject, central hierarchy, scale, layering, label space, and requested viewpoint.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable and editable and retains the required Cycles configuration for a clean hero render.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The final image delivery provides one designated hero render at the required actual resolution.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a recognizable, compositionally clear active-volcano illustration with the main requested objects present and well centered in the author hero image. Its largest shortcomings are geological/material realism: smooth faceted cone surfaces, thin neon-like lava strips, missing crust variation, indistinct fumaroles, and a rigid clipped smoke plume.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "4e56da1e7dfd6b51cc1a0caa7e07112fd91ca492f277908aeb4a5f3ace11800c"
+}

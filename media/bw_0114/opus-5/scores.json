@@ -1,0 +1,190 @@
+{
+  "task_id": "bw_0114",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 83.75,
+  "rubric": 100.0,
+  "dimension": 67.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "The rendered scene clearly depicts a retro-industrial letter-assembly machine: Group B frame momentum_0001 shows the conveyor/tray, exposed gear panel, two arm stations and workshop setting before the title is present, while momentum_0200 shows the completed MOMENTUM title. The broad intended setup is recognizable.",
+      "issues": [
+        "The core instructional drive chain is not clearly legible as a correctly meshed same-module gear train with two camshafts and reciprocating push rods.",
+        "The final title-card view places the large foreground letters in front of much of the conveyor and mechanism, reducing layer-by-layer readability.",
+        "The Group C video samples are effectively unchanged from frame_0001 through frame_0016 and do not visibly demonstrate the staged assembly motion, despite the differing Group B still renders."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "The bench has four supported legs, feet, and tubular cross-bracing; arm bases are firmly mounted to the tabletop; the gear panel, rails, riveted strips, conveyor channel, and final letters all appear attached or resting on visible structures. No definite floating objects or obvious intersections are visible in Group A wide_front or Group B momentum_0200.",
+      "issues": [
+        "The thin diagonal belt/cable runs and exposed linkage elements do not make their mechanical connections to the arm and rod systems fully convincing.",
+        "The detailed operation of the gear/cam/rod connections cannot be verified from the shown views."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "The extruded block lettering reads cleanly as MOMENTUM, the arms have recognizable articulated industrial silhouettes and claw ends, and the gear panel contains recognizable wheels, teeth, rollers, and hardware. Tarnished brass/gold and cool gray metal form an appropriate retro-industrial palette.",
+      "issues": [
+        "Strong warm bloom turns several brass and silver parts nearly white, especially in Group A cam_submitted and detail_arms, obscuring surface form.",
+        "The early conveyor payloads in Group B momentum_0001 read mainly as pale rectangular slabs rather than recognizable letter blanks.",
+        "The visible tabletop reads gray metallic rather than the requested dark matte wooden bench."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "Group B momentum_0200 is a polished workshop render with coherent depth of field, modeled rivets and supports, detailed environment lighting, and generally believable metal construction. The industrial background provides convincing scale and context.",
+      "issues": [
+        "Specular clipping and bloom wash out much of the title, arm tubing, and gear detail.",
+        "Very strong motion blur in momentum_0081, momentum_0120, and momentum_0160 makes the moving payload and arm geometry difficult to identify.",
+        "The mechanism reads more as a stylized display machine than a fully readable working linkage."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "The broad arrangement is sensible: conveyor/tray occupies the left-rear tabletop, arms are mounted at left and right, the gear system is centered behind them, and the final letters form a single front row on a riveted brass rail. This is visible particularly in Group B momentum_0001 and momentum_0200.",
+      "issues": [
+        "The final front-facing composition allows the title letters to obscure the conveyor, lower linkages, and portions of both arms.",
+        "The two arms and central gear panel overlap visually, so the requested separable teaching layers are not consistently clear.",
+        "The submitted video samples do not establish a low push-in followed by a slow orbit; they remain at essentially the same view."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The title letters, arm pedestals, gear panel, conveyor, and long workbench have generally coherent relative scale. The final title spans the bench naturally in Group B momentum_0200, while the arms have adequate reach over the work area.",
+      "issues": [
+        "The title letters are visually dominant enough to make the main functional mechanism seem undersized and partially hidden.",
+        "Exact requested dimensions and gear-size relationships cannot be confirmed from the renders."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "The author-final image momentum_0200 uses a warm workshop key, cool/dark background ambience, and visible metallic highlights effectively. Brass shows tarnish/oxidation variation, gray structural steel is distinct, and the setting has plausible soft shadows and depth.",
+      "issues": [
+        "Overexposed gold highlights remove much of the intended worn-brass detail on the letters and arm segments.",
+        "The tabletop does not visibly deliver the specified dark matte wood material.",
+        "Clear-coat steel highlights are present but several bright parts become indistinguishable from the bloom."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "The submission visibly includes eight final letters spelling MOMENTUM, two mounted robotic arms, a conveyor-like tray, a multi-wheel gear panel, riveted rails, an industrial workbench, and workshop environment. Group B's numbered stills show early, intermediate, and finished assembly states.",
+      "issues": [
+        "Two clearly identifiable camshafts and their reciprocating push rods are not visibly established.",
+        "The initial feed pieces are featureless slabs rather than clearly modeled scattered letter blanks.",
+        "The dark wooden bench requirement is not visibly met.",
+        "Although the Group B still sequence suggests progression, the Group C video-frame sequence shows no discernible frame-to-frame progression or readable pick-flip-place sequence."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The complete machine choreography must assemble and lock MOMENTUM through a synchronized, unobstructed, pedagogically readable sequence.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The complete gear train must satisfy the stated dimensions, common-module compatibility, connected engagement, and mechanically compatible operation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Two identifiable camshafts must each produce recurring push-rod reciprocation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The conveyor must have the stated transport length and visibly feed letter blanks into the handling workflow.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "Two three-joint robotic arms must both perform letter pick-and-place.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "All eight title letters must share the specified bold sans-serif form and dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The supporting bench must satisfy its dimensions, base role, construction detailing, and complete dark matte wood finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The machine must achieve the requested retro-industrial kinetic-typography identity through a coherent old mechanism and its complete brass-and-steel surface system.",
+      "evidence": "The authored sequence visibly presents a unified old workshop apparatus: paired articulated arms, exposed spoked gears/belts, riveted rails, and the completed MOMENTUM title all share a brass-and-steel industrial treatment. In momentum_0001 and momentum_0200, brass rails, arms, gears, and letters show conspicuous mottled brown/green tarnish and wear, while the cool dark-grey legs, cross-bracing, conveyor structure, and gear backplate remain visually distinct with bright metallic highlights.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The native lighting setup and authored result must jointly provide the requested warm key, cool rim, ambient fill, and interior HDRI.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The authored shot must use the requested ordered movement, focal length, and readable shallow-focus treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivered Blender project must be openable, editable, complete, and preserve the requested native Cycles rendering configuration and motion-blur result.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The actual PNG sequence and composited MP4 must form a complete, openable output package with the required resolution and timing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A visually polished and recognizable brass-and-steel kinetic-typography machine with a successful final MOMENTUM title and credible workshop setting. The main shortcomings are functional readability: the cams, push rods, true gear meshing, and individual letter handling are not clear enough for a teaching breakdown, foreground letters obscure the mechanism, and the supplied video-frame sample appears static despite the varied author PNG frames.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "ef2839132ba138e14f9469b51e3f73f7c86379531ab6e068183caa1eda965c36"
+}

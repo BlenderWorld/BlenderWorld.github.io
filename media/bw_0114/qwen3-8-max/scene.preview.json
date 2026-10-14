@@ -1,0 +1,35 @@
+{
+  "exporter_version": 3,
+  "source_file": "momentum_machine.blend",
+  "objects": 91,
+  "meshes": 91,
+  "original_triangles": 10000,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 9.462322488744679,
+    "phi": 90.00000341509418
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 93168,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "DarkWoodMatte.002",
+    "BrassWorn.003",
+    "BeltLeather.001"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.005m 1.040m 0.000m",
+    "camera-orbit": "20deg 65deg 8.421m",
+    "min-camera-orbit": "auto 5deg 0.401m"
+  },
+  "preview_note": "The initial view focuses on the mechanical typography; overhead enclosure panels are hidden.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 21
+}

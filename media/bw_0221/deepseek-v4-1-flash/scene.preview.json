@@ -1,0 +1,33 @@
+{
+  "exporter_version": 3,
+  "source_file": "snowboard_carve_previz.blend",
+  "objects": 426,
+  "meshes": 426,
+  "original_triangles": 436650,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 70.11483707329961,
+    "phi": 88.63607706985002
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1168792,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Snow"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-1.790m 1.766m 3.385m",
+    "camera-orbit": "35deg 65deg 14.510m",
+    "min-camera-orbit": "auto 5deg 0.691m"
+  },
+  "preview_note": "The initial view focuses on the rider and snowboard.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 1
+}

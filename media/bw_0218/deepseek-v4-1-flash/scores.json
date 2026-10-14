@@ -1,0 +1,251 @@
+{
+  "task_id": "bw_0218",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 73.3545918367347,
+  "rubric": 97.95918367346938,
+  "dimension": 48.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 4,
+      "reasons": "The submitted scene clearly depicts a white rally car advancing on a pale dirt road under a blue sky with a large trailing dust effect, as visible across Group B f_0000-f_0049 and the Group C approach sequence. However, it reconstructs the reference only broadly: the scene is a sparse low-poly hillside rather than the reference's dense roadside vegetation and distinctive right-side embankment.",
+      "issues": [
+        "The reference's spectators, large spiky agave/yucca, raised hedge-like bank, and distant hazy landforms are absent.",
+        "The submitted vegetation is dominated by bare angular trees and spherical bushes instead of the dense leafy shrubs and irregular trees in the reference.",
+        "The road and surrounding ground lack the reference's detailed gravel surface and natural soil/grass variation.",
+        "The car passes extremely close to camera by the final Group C frames, whereas the supplied reference frames retain a more controlled approaching-car composition."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "The car, shrubs, rocks, and trees generally appear grounded and the car follows the road through Group A wide_elevated and wide_rear. Its wheels are visibly attached beneath a coherent body, and the dust consistently trails the car.",
+      "issues": [
+        "Numerous grass clumps visibly protrude through the road surface in Group A cam_submitted, detail_dust, and wide views.",
+        "The dense faceted dust volumes intersect/engulf roadside geometry rather than dispersing naturally from the tire contact area.",
+        "An unexplained white oval plane is visibly embedded or pasted onto the grass in Group A detail_pass and wide_elevated."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The vehicle is independently recognizable as a rally car: Group B f_0039 and Group C frame_0013 show a white angular body, dark windshield, black tires, vent-like front openings, and orange bumper accents. The bright sky, green ground, pale road, and dust also use broadly appropriate scene colors.",
+      "issues": [
+        "The livery is primarily blue with orange trim, unlike the reference's stronger black-and-orange hood/front graphic treatment.",
+        "The car's windshield, grille, lights, and bumper are simplified into large blocky shapes rather than the compact detailed rally-car front in the reference.",
+        "The foliage styling is strongly faceted and leafless, which does not visually match the reference vegetation."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The final animation frames have coherent daylight and readable action, but the overall result reads as a basic low-poly game previz rather than a believable rural rally shot. Group C frame_0015 and Group B f_0049 also demonstrate effective speed through motion blur and rapid scale change.",
+      "issues": [
+        "Faceted spherical bushes, bare polygonal trees, repeated grass tufts, and stepped rocks make the environment conspicuously synthetic.",
+        "The dust is gray, opaque-to-semitransparent, and visibly composed of overlapping polygonal volumes rather than pale airborne dirt.",
+        "The road surface appears smooth and painted instead of gravelly.",
+        "Heavy close-pass motion blur obscures the car into large indistinct shapes."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "The core spatial relationship is present: Group C frames 0001-0016 show a low roadside view with foreground grass, a road receding toward the car, and dust behind it. The car advances toward camera in the intended direction, and Group A wide_approach confirms the dust follows along the road.",
+      "issues": [
+        "The road is much more open and laterally sweeping than the enclosed, head-on gravel corridor of the reference.",
+        "The composition lacks the prominent elevated spectator bank on the right.",
+        "There is no cluster of people or agave at the right roadside to provide the reference's key spatial landmarks.",
+        "The car begins and remains left of frame more than in the reference composition, then becomes oversized during the pass."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The car is sensibly scaled against the road, trees, and hills in Group A wide_elevated and Group B f_0039, and its progression from distant to foreground in Group C is legible.",
+      "issues": [
+        "Several foreground grass clumps are disproportionately tall and visually compete with the vehicle.",
+        "The road is overly broad and smooth relative to the compact car and narrow gravel road in the reference.",
+        "The close-pass frames make the car fill the image abruptly, reducing the more measured approach scale seen in the reference frames."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "The submitted final frames use a clear saturated blue sky, bright sunlit terrain, and consistent directional shadows, which broadly support the outdoor daytime setting. The white paint, dark windows, road, and dirt shoulder are distinguishable in Group B f_0039 and Group A detail_dust.",
+      "issues": [
+        "Materials are largely flat, uniform, and plasticky compared with the reference's natural gravel, soil, vegetation, and painted vehicle surfaces.",
+        "The dust is too gray and polygonal rather than pale beige and diffuse.",
+        "Ground and road textures do not convey the fine rocky/gravel character visible in the reference."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The fundamental requested assets are present: a white rally car, dirt road, trailing dust, blue sky, grass, rocks, trees, and bushes appear throughout the submitted views. The Group C sequence also visibly shows an approach and close pass rather than a static scene.",
+      "issues": [
+        "Important reference elements are missing entirely: roadside spectators, the large spiky agave/yucca plant, and the distinctive raised right-hand green embankment.",
+        "Dense natural shrubbery and leafy trees framing the road are replaced by sparse bare trees and generic low-poly bushes.",
+        "There is no convincing distant background/horizon detail behind the dust.",
+        "The unexplained white oval ground object in Group A views is an extraneous artifact rather than a target scene element."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The primary subject is a recognizable white rally sedan with the reference car's broad competition structure.",
+      "evidence": "The close animated approach frames show a low white four-wheeled sedan with a dark enclosed windshield/cabin, dark tires, rectangular headlights, a central dark grille opening, and a broad orange-edged bumper.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The car travels on a rural unpaved dirt-and-gravel road.",
+      "evidence": "The car remains on the pale gray, uneven unmarked road bordered by brown soil shoulders, scattered small stones, and grass throughout the approach sequence.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Substantial green shrubs, bushes, and vegetation establish the rural roadside setting.",
+      "evidence": "Numerous green faceted shrub clusters, grass tufts, and rolling vegetated hills visibly surround both sides of the route.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The raised right roadside bank includes a small approximate spectator group.",
+      "evidence": "The elevated and roadside views show bushes, trees, and empty green slopes beside the road, but no readable human figures or spectator cluster on the right bank.",
+      "importance": "detail",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The scene has a clear blue sky and bright outdoor daylight comparable to the reference.",
+      "evidence": "All scene views have a clear saturated blue sky and bright directional daylight with strong, readable shadows from trees, grass, rocks, and the car.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The white car carries the reference's broadly recognizable high-contrast rally-livery treatment.",
+      "evidence": "Near and side views clearly show the white body with blue side/hood graphics, orange lower-front trim and corner blocks, dark glazing, and black wheels.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Road and roadside surfaces read as distinct natural gravel, soil, stones, grass, and foliage.",
+      "evidence": "The scene visibly separates the pale textured road, brown soil edges, gray angular stones, layered brown rocks, blade-like grass clumps, and dark-green shrub foliage.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The viewpoint is extremely low and uses close grass, soil, and stones as a prominent foreground layer.",
+      "evidence": "The submitted camera sits near ground level: oversized grass blades, scattered rocks, and soil fill the lower foreground while the car approaches at their level.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The scene follows the reference's broad road and roadside arrangement.",
+      "evidence": "The camera sequence places the distant car at the left end of a road crossing the middle of frame, with vegetated borders and a higher bush-covered slope on the right.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The car advances from a small distant subject to a frame-dominating near subject.",
+      "evidence": "In the ordered animation frames, the car starts as a small object near the distant left in frame_0001, grows steadily through frame_0013, and becomes a heavily cropped near-frame subject by frames_0015-0016.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The car performs a forceful, grounded high-speed approach and extremely close right-side pass.",
+      "evidence": "The final sequence shows rapid visual closure along the road, then a motion-blurred close sweep across the camera's right side; the vehicle is mostly out of frame in frame_0016 while its tires remain aligned with the road surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The tires produce a large, persistent, expanding dust wake.",
+      "evidence": "A large light-gray dust mass develops immediately behind the car, enlarges across the left side during the close approach, and remains filling much of the road area after the vehicle has passed toward frame right.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The shot preserves the reference's low wide framing from an essentially fixed camera.",
+      "evidence": "The animation frames retain the same low, fixed roadside composition with stable trees and hill framing, foreground grass and rocks, and the car moving through the shot rather than the camera reframing.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 1,
+      "criterion": "The action follows the reference clip's temporal progression and approximate pacing.",
+      "evidence": "The sampled video frames present the full ordered action: distant car, progressive approach with a growing dust plume, abrupt near-camera motion-blurred pass, and lingering dust as the car exits right.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The Blender project contains a practical adjustable rig for the car.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "The car motion and timing remain editable in the Blender project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R17",
+      "score": 1,
+      "criterion": "The camera setup remains editable for revising placement, framing, and any camera motion.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The delivered video meets the required encoding, frame size, frame rate, and approximate duration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R19",
+      "score": 1,
+      "criterion": "An opening Blender project with editable scene content for the recreation is delivered alongside the video.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission successfully shows a recognizable white rally car speeding toward a low camera with a trailing dust cloud, and the exported sequence demonstrates the intended approach motion. It is nonetheless a loose, stylized reconstruction: the low-poly terrain, bare trees, gray faceted dust, missing spectators/agave/embankment, and altered road composition substantially reduce fidelity to the rural reference shot.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "9314c44de483d6c1c29c54f03eab75e6eaa859ab99b6b76d1c55cc14300d06e7"
+}

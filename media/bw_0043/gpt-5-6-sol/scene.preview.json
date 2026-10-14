@@ -1,0 +1,39 @@
+{
+  "exporter_version": 3,
+  "source_file": "rain_lily_macro_scene.blend",
+  "objects": 178,
+  "meshes": 131,
+  "original_triangles": 164040,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 2.8155573876606965,
+    "phi": 37.8479115275461
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 531912,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Petal_Translucent_White_Veined",
+    "MAT_Throat_YellowGreen_to_Ivory",
+    "MAT_Anther_Saturated_Yellow",
+    "MAT_Leaf_Glossy_Green",
+    "MAT_Ground_Dark_Mulch",
+    "MAT_DryLeaf_Ochre",
+    "MAT_DryLeaf_DarkBrown",
+    "MAT_DryLeaf_Tan",
+    "MAT_WoodChip_Dark",
+    "MAT_WoodChip_Light"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "2.8155573876606965deg 40deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

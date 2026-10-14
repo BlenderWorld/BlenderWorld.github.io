@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "a.blend",
+  "objects": 371,
+  "meshes": 371,
+  "original_triangles": 21792,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "ShopFloor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 35.59825766712602,
+    "phi": 73.10213972294267
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2209340,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_BrassWorn"
+  ],
+  "preview_omitted_objects": [
+    "ShopCeiling.001"
+  ],
+  "preview_camera": {
+    "camera-target": "0.000m 1.043m 0.000m",
+    "camera-orbit": "20deg 65deg 8.988m",
+    "min-camera-orbit": "auto 5deg 0.428m"
+  },
+  "preview_note": "The initial view focuses on the mechanical typography; overhead enclosure panels are hidden.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 30
+}

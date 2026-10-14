@@ -1,0 +1,254 @@
+{
+  "task_id": "bw_0221",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 50.83333333333333,
+  "rubric": 60.416666666666664,
+  "dimension": 41.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 4,
+      "reasons": "The submitted scene visibly contains the core snowboarding setup: a dark-clothed helmeted rider, teal snowboard with blue bindings, groomed white slope, rocky/snowy embankment, and a trailing white spray. However, the Group C animation frames and Group B final frames depict a toy-like rear-facing rider sliding across a highly stylized low-poly slope rather than the close, realistic, dynamically framed carving sequence in the reference.",
+      "issues": [
+        "Camera framing and viewpoint differ substantially: the reference tightly follows the rider from changing front/side/rear angles, while Group C stays largely behind the rider.",
+        "The reference's detailed rocky embankment is replaced with a continuous row of oversized faceted snow mounds and sparse geometric boulders.",
+        "The reference progresses to a sharply raised board with diffuse powder, whereas the submitted sequence mostly shows a nearly horizontal board and a blob-like trailing effect.",
+        "Terrain grooves are overly uniform blue-gray parallel lines rather than varied packed-snow tracks, seams, and scraped patches."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 2,
+      "reasons": "The rider's feet are visibly placed at the blue bindings, but the structural continuity of the figure is poor. In Group B frame_0027 and Group C frames 0007-0016, the right forearm/hand pieces visibly separate and float away from the arm; similar gaps appear at other limb joints. The snowboard also repeatedly casts a separated shadow with a clear gap beneath it rather than credibly edge-contacting the snow.",
+      "issues": [
+        "Both arms are assembled from disconnected oval pieces, with especially large floating gaps at the right wrist/hand.",
+        "Several knee, hip, and boot joints read as detached rather than as a connected rider rig.",
+        "The board is visibly unsupported above the snow in multiple Group C frames, including frames 0006-0011.",
+        "The powder trail is partly floating as isolated blobs and does not appear to be emitted continuously from a board edge or tail."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "The intended major silhouettes remain recognizable: black helmet/head, dark jacket and pants, bright blue bindings, and a long dark teal snowboard are clear in Group B frame_0001 and Group C frame_0001. The color palette broadly follows the reference's black outerwear, blue bindings, and dark green board.",
+      "issues": [
+        "The rider reads as a segmented mannequin made of smooth capsules and spheres rather than a person in padded snow gear.",
+        "The reference's recognizable goggles with reflective purple/amber lens and strap are reduced to an indistinct dark-blue face-covering form.",
+        "There is little visual distinction between jacket, gloves, boots, and the highly glossy black limb pieces.",
+        "The faceted embankment rocks and snow pieces do not resemble the irregular natural rock-and-snow surfaces in the reference."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The submitted images are cleanly rendered and maintain a coherent cold outdoor palette, but the Group B and Group C frames look like a simplified low-poly previs rather than the believable snowboarding footage requested. Plastic-like rider materials, disconnected anatomy, uniformly lined snow, and puffball spray substantially reduce realism.",
+      "issues": [
+        "The rider is visibly constructed from primitive forms with unconvincing anatomy and disconnected joints.",
+        "Snow surfaces are smooth/faceted and lack the granular packed-snow detail of the reference.",
+        "The powder is a sequence of opaque rounded blobs instead of a diffuse, turbulent snow plume.",
+        "Motion-blur/softness in several action views makes small rider and spray details less legible."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 4,
+      "reasons": "The basic spatial arrangement is present: the rider is on the sloped snowfield with a rocky, snow-covered ridge behind. This is clear in Group B frame_0001 and the wide Group A views. However, the submitted camera places the rider predominantly rear-on and centered, while the reference uses a close tracking perspective with the rider and board diagonally crossing the frame through distinct turn states.",
+      "issues": [
+        "The rider orientation and camera relationship do not reproduce the close front/side-to-rear reference progression.",
+        "The board remains broadly horizontal across the image rather than rotating strongly into the raised final pose.",
+        "The embankment is arranged as a long, regular border of mounds rather than the irregular rocky slope immediately behind the rider.",
+        "Group A wide_front and wide_back reveal a much more open, staged slope than the compact, rider-focused reference composition."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The board is approximately human snowboard length relative to the rider, and the two blue bindings are spaced plausibly across it. The snowfield also reads as a broad slope in the Group A wide views.",
+      "issues": [
+        "The rider's bulbous torso, limbs, hands, and boots are disproportionately large and toy-like compared with a human snowboarder.",
+        "The blue bindings are oversized, simple upright blocks rather than binding/boot assemblies.",
+        "Several background rocks and white mound segments look oversized and repetitive relative to the rider and slope."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "The snow receives soft illumination, the helmet has a readable glossy highlight, and the rider/board cast shadows. Group C frame_0001 therefore has basic material and lighting separation. Nevertheless, the reference has crisp low-angle sunlight with a long, prominent rider shadow and detailed fabric, snow, rock, and board material variation that are not matched.",
+      "issues": [
+        "Lighting is comparatively diffuse and low-contrast, without the strong directional sunlight and long shadow seen in the reference.",
+        "Helmet and limb materials are too uniformly glossy/plastic.",
+        "The snow is mostly flat white with blue line markings instead of textured compacted snow.",
+        "Rock surfaces are dark low-poly facets with detached-looking white caps rather than integrated snow-covered stone."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "All large requested components are visibly represented: one helmeted black-clad rider, a snowboard, blue binding-like elements, a snowy slope with tracks, a rocky/snowy backdrop, and a white trailing spray. The Group C sequence also shows changing rider lean and a spray/trail growing behind the board.",
+      "issues": [
+        "Detailed goggles, realistic boot/binding structure, jacket/hood construction, and snow accumulated on the board are missing or too indistinct.",
+        "The powder spray exists but does not convincingly reproduce the reference's diffuse snow cloud around the lifted board.",
+        "The visible motion does not fully include the reference's strong final board lift and edge-driven turn geometry.",
+        "The modeled terrain and embankment lack the reference's varied natural snow and exposed-rock detail."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "A continuous outdoor snow slope functions as the riding surface.",
+      "evidence": "Wide views show the rider positioned over a single expansive white ground plane that recedes uphill and is visibly angled, with grooves continuing across the riding area.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "One articulated human snowboarder is recognizable as the principal moving subject.",
+      "evidence": "The animation frames consistently show one humanoid rider with a head, torso, two arms, two legs, and a crouched balance pose as the sole action subject.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The rider stands on a recognizable elongated snowboard.",
+      "evidence": "A long, rounded-end teal snowboard is clearly visible beneath the rider in the exported frames, with the rider's boots positioned over it.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The wider framing phases include a rough, partially snow-covered rocky bank beyond the riding surface.",
+      "evidence": "The wider and action views place an elevated irregular ridge behind the riding surface, with numerous exposed angular dark rock forms and separate white snow-cap patches.",
+      "importance": "detail",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The rider reproduces the reference's black helmet and jacket with very dark navy or near-black snow pants.",
+      "evidence": "The rider has a black rounded helmet and black torso/jacket form, while the leg and pant pieces consistently render as very dark navy.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The snowboard is dark green-black and has two bindings with vivid blue accents.",
+      "evidence": "Close animation frames clearly show a dark teal-green board with two separate saturated bright-blue upright binding pieces.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The snow surface shows granular variation, shallow ridges, and crossing track marks.",
+      "evidence": "The riding surface has many thin blue-gray linear grooves and a few curved marks, but it reads primarily as a smooth white plane rather than a clearly granular snow surface with visibly modeled shallow ridges.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The major surfaces reproduce the reference's broad snow, winter-fabric, solid-board, and powder material response.",
+      "evidence": "The rider is visibly built from glossy/matte separated oval primitives, the snow is faceted low-poly geometry, and the plume is a chain of solid white blobs rather than convincing winter fabric and airborne powder material responses.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "Feet, bindings, board, and slope maintain physically plausible attachment and contact.",
+      "evidence": "Although the feet remain over the blue bindings, multiple sequence frames show a pronounced illuminated gap and shadow under the nearly level board, most clearly during frames 0006 through 0011.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The delivered project provides an editable rig that drives the snowboarder.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 0,
+      "criterion": "Continuous edge transitions drive linked curved turns with timing comparable to the reference.",
+      "evidence": "The sampled sequence shows broad leaning and an upright reset, but the board remains visually close to a flat lateral orientation and the camera holds the rider centered, so linked curved path redirection and clear continuous edge-roll transitions are not unambiguously visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 0,
+      "criterion": "Body articulation communicates believable weight transfer during the turns.",
+      "evidence": "The torso leans in parts of the sequence, but the arms and mitten ends are visibly separated by gaps and float away from their limb segments; the resulting pose changes do not clearly communicate coherent, connected weight transfer.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "Loaded carving produces a visible displaced powder plume from the snowboard's tail.",
+      "evidence": "A white puffy spray begins behind the left/trailing end of the board during the later leaning phase and grows into a longer trailing mass in the ordered animation frames.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 0,
+      "criterion": "The animation follows the reference's ordered posture, edge-transition, and powder progression.",
+      "evidence": "The sequence includes an early upright pose, later leaning, and a growing white trail, but the late board state is visibly floating/near-flat rather than clearly edge-engaged, so the required finished carve progression is not convincingly established.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The camera reproduces the reference's readable rider scale, viewing angle, slope coverage, and lateral tracking.",
+      "evidence": "In the authored animation frames the rider remains large and readable while the snowy slope and embankment remain in view; the background shifts laterally while the rider is maintained near center frame.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 0,
+      "criterion": "Bright directional daylight creates strong snow highlights and distinct cast shadows.",
+      "evidence": "The scene is brightly lit and the helmet has a highlight, but rider and board shadows are soft, short, and weak beneath the board rather than the distinct long directional cast shadows visible in the reference.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 1,
+      "criterion": "The output video satisfies the requested container, codec, dimensions, frame rate, and approximate duration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "A usable editable Blender project containing the reconstructed scene and animation setup is delivered.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R19",
+      "score": 0,
+      "criterion": "The rider has the reference-visible rounded helmet and eye-covering ski goggles.",
+      "evidence": "The head has a rounded black dome, but the dark blue lower head form reads as a full face covering/visor-like blob with no distinct goggle lens shape or visible strap.",
+      "importance": "detail",
+      "evidence_type": "render"
+    }
+  ],
+  "notes": "The core subject is clearly recognizable as a snowboarder on a snowy slope with a board, bindings, rocks, and spray. The result is nevertheless a loose stylized previs rather than a faithful reconstruction: the camera/action progression, raised-board finish, realistic snow behavior, terrain detail, directional lighting, and connected rider anatomy all differ markedly from the reference.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "33698c3027722fb843edb7c55bcf1be8692acfd46972b4fd5f859abbf021fd1e"
+}

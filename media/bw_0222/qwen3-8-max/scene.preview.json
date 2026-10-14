@@ -1,0 +1,33 @@
+{
+  "exporter_version": 3,
+  "source_file": "train_previz.blend",
+  "objects": 151,
+  "meshes": 151,
+  "original_triangles": 37066,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 42.65255999388511,
+    "phi": 53.61849621817586
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 250140,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "BrickGray",
+    "Grass"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "42.65255999388511deg 53.61849621817586deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "wind_turbine_storyboard.blend",
+  "objects": 7372,
+  "meshes": 81,
+  "original_triangles": 41772,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 170.49999471863129,
+    "phi": 108.41473866046866
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 501340,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Tower Paint",
+    "Open Grass",
+    "Autumn Leaf"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-3.266m 61.024m -7.134m",
+    "camera-orbit": "35deg 75deg 255.042m",
+    "min-camera-orbit": "auto 5deg 12.145m"
+  },
+  "preview_note": "The initial view focuses on the wind turbine.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 9
+}

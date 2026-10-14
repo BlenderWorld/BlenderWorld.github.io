@@ -1,0 +1,178 @@
+{
+  "task_id": "bw_0102",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 70.28017241379311,
+  "rubric": 79.3103448275862,
+  "dimension": 61.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B final and Group A detail_organelles clearly show a cutaway animal-cell composition with a central nucleus, pink nucleolus, pore-like nuclear-envelope rings, surrounding green membrane sheets, scattered yellow particles, and multiple orange organelles. The overall concept is recognizable as a eukaryotic-cell illustration.",
+      "issues": [
+        "The Golgi candidate at left reads more like parallel blue rods/tubes than flattened stacked Golgi cisternae.",
+        "Only some orange capsules visibly show crista-like internal folds, so several mitochondria remain generic capsules.",
+        "The broad radial cut faces and their dark vertical seam make the cell read partly as a sliced geometric shell rather than a clean biological cutaway."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "The organelles are consistently contained within the cell volume, and their apparent suspension is generally defensible for a cellular cytoplasm rather than a room-scale scene. The outer membrane and nucleus both have visible shell thickness in Group A detail views.",
+      "issues": [
+        "The green rough-ER-like sheets appear as large isolated ribbons rather than convincingly continuous membrane connected to the nuclear envelope.",
+        "The sharp planar wedge boundaries meet along an obvious central seam, reducing the coherence of the cell/cytoplasm volume.",
+        "Several small organelles look freely placed in empty space without clear embedding or relation to surrounding cytoplasmic structure."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The color coding is useful: purple identifies the nucleus, pink identifies the nucleolus, green distinguishes membrane sheets, orange separates mitochondria, and yellow dots communicate abundant ribosomes. In Group A detail_organelles, nuclear pores and at least two crista-bearing mitochondria are visibly modeled rather than being plain blobs.",
+      "issues": [
+        "The blue left-side cluster is not strongly recognizable as a Golgi apparatus.",
+        "Most mitochondria have a smooth capsule silhouette with insufficient visible inner-membrane structure.",
+        "The green structures are unusually thick, broad ribbons and do not clearly read as rough ER cisternae at a glance.",
+        "The membrane's cyan shell plus tan stripe suggests layered construction but does not visibly communicate a phospholipid-bilayer structure."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The author final image in Group B has a coherent dark-background scientific-render presentation, with soft highlights and a central nucleus that remains the visual focus. The stylized forms are clean enough for a simplified educational render.",
+      "issues": [
+        "The final is noticeably soft and hazy, especially across the membrane and peripheral organelles.",
+        "The semi-transparent outer shell creates low interior contrast rather than a clearly readable cutaway.",
+        "Group A wide_left and wide_back are heavily milky and reflective, obscuring the organelles from those angles.",
+        "Materials appear broadly glossy/plastic, with limited evidence of the requested slightly turbid subsurface cytoplasm."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "The spatial arrangement is broadly appropriate: the nucleus is central, the green ribosome-covered membrane sheets surround it, the orange mitochondria are dispersed through the cytoplasmic region, and the blue putative Golgi cluster sits to one side. Group A wide_right and detail_organelles make these relations clear.",
+      "issues": [
+        "The ER-like structures are arranged as a near-symmetrical pair of large vertical bands, which is more decorative than a natural irregular ER network.",
+        "The Golgi cluster is small and partly hidden behind the left ER/nucleus region.",
+        "The removed wedge and opaque cut planes interfere with reading some front-to-back relationships."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The central nucleus occupies a plausible major fraction of the cell, while the mitochondria, ribosomes, and pore details are substantially smaller. The outer cell shell adequately encloses the visible organelles in the main Group B final composition.",
+      "issues": [
+        "The rough-ER-like ribbons are extremely thick and tall relative to the nucleus.",
+        "The blue Golgi-like unit is undersized and visually secondary compared with the oversized ER ribbons.",
+        "The large empty cytoplasmic regions make the organelle population feel sparse for the shown cell volume."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The scene uses soft highlight-driven lighting with a visible cool rim around the cell boundary, and the principal components have distinct purple, green, orange, yellow, and blue material/color assignments. Group A detail_organelles provides the clearest evidence of glossy nuclear-envelope layers, pore rings, and differentiated organelles.",
+      "issues": [
+        "The translucent membrane is too fogging and reflective in several wide views, weakening the instructional visibility of the interior.",
+        "The cell membrane does not convincingly show a recognizable phospholipid bilayer beyond colored edge stripes.",
+        "Cytoplasm reads as a dark, semi-transparent backing or cut-plane material more than a subtly turbid subsurface-scattering medium.",
+        "The soft lighting produces limited useful shadow separation among interior structures."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "The submitted views visibly include the requested nucleus, nucleolus, multiple pore-like nuclear-envelope details, several orange mitochondria, green ribosome-associated membrane structures, and many scattered small yellow ribosome-like particles.",
+      "issues": [
+        "The required Golgi apparatus is not independently clear; the blue cluster resembles bundled rods/tubes instead of a recognizable stacked cisternal Golgi body.",
+        "Several of the multiple mitochondria lack visible cristae and are therefore only weakly identified as mitochondria.",
+        "The requested material distinctions are present at a broad color level but not fully realized, particularly for the phospholipid bilayer and turbid cytoplasm."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final composition is a clearly identifiable and readable educational cutaway of a eukaryotic animal cell.",
+      "evidence": "The author-final image shows a rounded, membrane-bounded cell with a large wedge removed, exposing a central nucleus and multiple distinct internal structures. The lack of a rigid wall, chloroplasts, or large central vacuole supports an animal-cell reading.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The nucleus is complete and visibly includes its nucleolus and nuclear-pore-bearing envelope.",
+      "evidence": "The purple central nucleus has a clearly visible enclosing shell, a pink irregular body inside it, and multiple repeated lavender ring/opening details distributed across the nuclear-envelope surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "Several separate organelles are visibly recognizable as mitochondria.",
+      "evidence": "Several orange-brown capsules are present, but most are featureless cylinders and the blind review found their biological identity ambiguous. Only a small number show internal zigzag folds, so the overall plural set does not unambiguously read as mitochondria rather than generic capsules.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The rough ER and its attached and free ribosome populations are correctly distinguishable.",
+      "evidence": "Green curved, layered membrane sheets surround the nucleus and are visibly covered with many yellow particles; additional yellow particles are dispersed broadly across the cytoplasm away from those green sheets.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "A coherent Golgi apparatus is visibly recognizable from its stacked membrane morphology.",
+      "evidence": "The only plausible blue structure at the left of the nucleus is a compact bundle of parallel rod/tube-like forms with beads, not a clearly readable stack of curved or flattened Golgi cisternae. The blind description likewise identifies it only as an ambiguous rod/tube cluster.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The named intracellular structures occupy biologically coherent compartments.",
+      "evidence": "Across the cutaway views, the orange capsule bodies, green membrane assemblies, blue cluster, and dispersed yellow particles are all located within the pale-blue outer envelope and outside the purple nuclear envelope.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete material system distinguishes the major structures and implements the specified membrane and cytoplasm responses.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The saved scene and final image demonstrate three distinct soft-light contributors for three-point lighting plus an additional effective rim-light contributor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The author camera uses visibly shallow depth of field focused specifically on the nucleus.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The retained editable Blender project and exact-size final image form a consistent Cycles-rendered delivery suitable for later annotation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a recognizable, color-coded eukaryotic-cell cutaway with a well-established central nucleus/nucleolus and many requested organelle categories. Its primary weaknesses are the ambiguous Golgi construction, overly ribbon-like ER, generic smooth mitochondria, and a hazy reflective membrane/cytoplasm treatment that reduces clarity in the finished image.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "d11875c9928b1d8ef61b6612c9ae7a1d2fc958fb2271c88c81b5931be35af426"
+}

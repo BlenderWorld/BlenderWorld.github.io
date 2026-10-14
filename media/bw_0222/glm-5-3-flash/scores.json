@@ -1,0 +1,264 @@
+{
+  "task_id": "bw_0222",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 63.25255102040816,
+  "rubric": 87.75510204081633,
+  "dimension": 38.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 4,
+      "reasons": "The submitted scene clearly establishes a miniature railway with a four-car blue, white, orange, and red consist, brass-colored rails, grass, trees, figures, benches, and trackside props. Group C also shows the consist advancing steadily around a curved loop. However, the actual scene is a broad circular arrangement of many concentric tracks rather than the reference's tighter, branching rail layout framed around a detailed gray masonry building and paved bicycle-shelter area.",
+      "issues": [
+        "The reference's gray brick building, green-framed windows, glowing doorway, curved bicycle canopy, and bicycles are not recreated recognizably.",
+        "The reference's loaded low open freight wagon is absent.",
+        "The submitted architecture is a generic tan house with a fragmented angular roof and separate flat shelters rather than the reference station/building area.",
+        "The repeated concentric loops dominate the composition and substantially change the target scene."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 4,
+      "reasons": "Most large elements visibly rest on the terrain and the shelters have supporting posts, while the railway itself is consistently laid on raised dark ballast. However, the Group A detail_consist view and Group C frames show the train bodies extremely low over the ballast, with no clearly readable wheelsets or couplers, and several connections look like narrow dark wedges rather than functional articulated joins.",
+      "issues": [
+        "The green-and-tan cube pile beside the signal/gantry visibly occupies or intersects an active rail line.",
+        "Flat cream path slabs pass directly beneath or through multiple rails without convincing grade-crossing construction.",
+        "Car roofs and ends create visible gaps or near-collisions as the consist negotiates the curve.",
+        "The central building roof is made of separated folded panels with open gaps rather than a coherent enclosed roof."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "The primary color sequence is broadly right: a blue lead locomotive-like vehicle, pale gray/white wagon, orange-brown wagon, and red rear car with gray roofs are visible in detail_consist and the animation frames. Brass rails and dark sleepers also echo the reference. Nevertheless, the specific train silhouettes are simplified to box forms and do not carry the recognizable locomotive, freight-wagon, underframe, railing, and caboose detailing visible in the reference.",
+      "issues": [
+        "The blue locomotive lacks clearly modeled lights, buffers, cab glazing, pale wheels, and distinctive black underframe details.",
+        "The pale wagon lacks the reference's ribbed siding, sliding-door treatment, end platforms, and railing.",
+        "The red rear car has a roof hatch but does not convincingly reproduce the reference caboose cupola and end details.",
+        "Many station props read as featureless disks, cuboids, or cylinders rather than identifiable miniature scene objects."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The render is clean and consistent, but it reads as a very simplified, pastel low-poly tabletop visualization rather than the richly detailed physical miniature seen in the reference. In Group C, highly uniform repeated rails, flat path pieces, geometric trees, blank color disks, and boxy rolling stock prevent the scene from achieving convincing model-railway realism.",
+      "issues": [
+        "Lighting is overly bright and low-contrast compared with the reference's more grounded miniature mood.",
+        "Tracks lack the coarse, irregular ballast and material variation of the target.",
+        "Vegetation, people, buildings, and props are too generic and geometrically minimal.",
+        "The unidentifiable pink/white disks and trackside cube pile reduce visual coherence."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 3,
+      "reasons": "The consist follows a curved inner route with the blue locomotive leading the pale, orange-brown, and red vehicles, which is directionally consistent with the reference. But wide_overhead and wide_front show an entirely different global layout: numerous uniform concentric loops surround a small central park, while the reference places the train near a specific curved turnout area alongside a substantial building, paved forecourt, bicycles, and a loaded wagon.",
+      "issues": [
+        "The submitted layout has far more evenly spaced circular loops than the reference.",
+        "The reference turnout, sidings, and right-side branching relationships are not reproduced.",
+        "The main building is centered within the loops instead of occupying the upper-right side of the scene next to the train.",
+        "The building-side paved pedestrian zone and bicycle shelter do not sit in the correct relation to the visible train curve."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 4,
+      "reasons": "Rails, sleepers, train cars, simple trees, benches, and figures are generally scaled consistently enough to communicate a tabletop miniature. Still, the train appears unusually low and elongated for the tight track radius, and the immense number of full-width track loops makes the central landscape, structures, and pedestrian area read undersized and sparse compared with the reference.",
+      "issues": [
+        "Wheel/rail clearance is too small and wheels are mostly hidden.",
+        "The train cars appear overly long and rigid on the curve.",
+        "The dense track ring system overwhelms the central scene.",
+        "Several benches, slabs, and minimal figures do not have the detailed, credible scale relationships of the reference miniature."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "The dark rail beds and shiny gold rails provide useful material separation, and the grass has some soft mottling rather than being a single flat color. Yet the materials remain largely uniform matte colors, with no convincing gravel ballast, brickwork, painted metal wear, glazed windows, bicycle metal, or detailed foliage comparable to the reference.",
+      "issues": [
+        "The scene is washed in bright pastel light with weak contrast on small objects.",
+        "Track ballast is smooth and repetitive rather than coarse and varied.",
+        "Building walls and roofs lack the masonry, window, and doorway material identity of the target.",
+        "Train surfaces lack the metallic, painted, and undercarriage detail needed for a convincing model consist."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The submission includes the essential moving train, extensive rail infrastructure, simplified greenery, some pedestrian figures, benches, barrels/markers, a red sign, and a tall trackside post. The Group C sequence provides visible evidence that the submitted consist actually moves along its loop. However, many target-specific objects and the most important station-side details are missing or replaced with generic approximations.",
+      "issues": [
+        "No recognizable detailed gray masonry building with green windows and orange doorway.",
+        "No convincing bicycle canopy with multiple bicycles.",
+        "No low freight wagon carrying the irregular green foliage load.",
+        "The count and organization of detailed pedestrian figures around the building are not matched.",
+        "Reference-specific landscaping, track mechanisms, gravel/rod details, and boundary structures are mostly absent or simplified beyond identification."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The main subject is a recognizable miniature train reproducing the reference's connected four-unit structure and order.",
+      "evidence": "The animation frames clearly show a single four-unit consist in blue, white, orange-brown, and red order from the leading blue vehicle through the red rear car.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The scene contains a circular railway with nested curved tracks and readable model-track construction.",
+      "evidence": "The overhead render visibly shows numerous nested circular rail loops, each with paired gold rails, regular dark sleepers, and broad dark-gray track beds.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The railway passes through a developed miniature park landscape.",
+      "evidence": "The central interior and gaps between loops contain broad green ground cover, several tiered conifers and round trees, plus multiple low rounded shrubs.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "A readable miniature station or comparable railway-side building anchors the scenic area.",
+      "evidence": "The central structure in wide_front is a pale block under a visibly open folded gray roof and does not read clearly as an enclosed railway-side station building, despite the adjacent gray paved area and shelter.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "Multiple visible human figures populate the station and park setting.",
+      "evidence": "Several small colored human-like figures are visible around the paving, benches, signal area, and inner lawn, including blue, yellow, red, and gray figures.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "All major scene elements share a convincing and coherent miniature-model scale.",
+      "evidence": "The train gauge, small pedestrians, trees, benches, and central built elements maintain consistent miniature-layout proportions across the overview renders.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Every vehicle remains seated on and aligned to the same curved rail route.",
+      "evidence": "Across the sampled sequence, all four cars remain centered on the same inner curved track bed and turn progressively along the curve without a visible derailment.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The train and circular railway frame a central landscaped station area in the reference-like arrangement.",
+      "evidence": "The delivered animation frames prioritize the train and repeated track loops; they show trees, benches, figures, and trackside props, but no clearly readable central station building or substantial station architecture within the shot.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The four vehicles reproduce the train's identifying reference colors.",
+      "evidence": "The consist visibly has a saturated blue locomotive, white/light-gray covered van, warm orange-brown coach, vivid red rear car, and gray roofs.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The surrounding layout preserves the reference's dominant gray-and-green environmental palette.",
+      "evidence": "Dark-gray track beds and sleepers form the dominant built surface, while extensive bright green grass, trees, and shrubs establish the contrasting landscape palette.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The principal surfaces have differentiated responses that evoke a physical model railway.",
+      "evidence": "The images visibly differentiate smooth painted vehicle bodies, bright brass-like rails, dark faceted ballast/track beds, mottled grass, and green foliage rather than using one shared surface treatment.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The lighting matches the bright, softly diffused miniature-display mood of the reference.",
+      "evidence": "The animation is brightly and evenly lit with soft shadows and clear pastel color separation on the train, rails, grass, and small scenery.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The complete consist moves continuously and orderly as a stable coupled train.",
+      "evidence": "From frame_0001 through frame_0016, the complete four-car formation advances smoothly as one unit, preserving the same order and close, stable inter-car spacing.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 1,
+      "criterion": "The train's route, travel sense, displacement, and timing reproduce the visible reference progression.",
+      "evidence": "The blue lead vehicle progresses around the right-hand curved segment from the lower-right area toward the upper-right over the sampled sequence, matching the visible travel sense of the reference progression.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The shot uses the reference-like elevated oblique overhead viewpoint.",
+      "evidence": "The animation camera consistently looks downward at an oblique elevated angle, keeping both the moving train and several nested loops readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "Camera movement reproduces the reference's smooth overhead reframing as the train advances.",
+      "evidence": "The sequence reframes smoothly without cuts: stationary items such as the gray signal/gantry, red sign, benches, and trees drift leftward while the locomotive remains broadly on the right half of the composition.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 0,
+      "criterion": "The composition keeps the train readable while preserving enough environmental context for camera review.",
+      "evidence": "Although the train remains large and unobstructed, the delivered frames largely exclude the central building; the shot shows tracks and scattered park props but insufficient visible railway architecture for full station-layout context.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The Blender scene provides a practical consist-level mechanism for revising loop motion while retaining coupled behavior.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R19",
+      "score": 1,
+      "criterion": "The delivered video satisfies the requested format and playback specifications.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R20",
+      "score": 1,
+      "criterion": "An editable Blender project containing the recreated scene and animation is delivered for client revisions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The render successfully communicates a moving model train on a railway and preserves the broad four-car color sequence. It is not a close reconstruction of the reference, however: the composition is dominated by excessive concentric track loops, the distinctive building-and-bicycle setting is missing, and both the train and scenery are rendered as much simpler low-poly forms with weak miniature material detail.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "8a09c62ab0b849a765bc27c117f6edba9bed9cb024e1db2952ad6d5ba2702c46"
+}

@@ -1,0 +1,34 @@
+{
+  "exporter_version": 3,
+  "source_file": "alpine_winter_gondola.blend",
+  "objects": 269,
+  "meshes": 11,
+  "original_triangles": 463970,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 120710,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 0,
+    "phi": 85.99999975147075
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 843752,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "LakeIce",
+    "Rock"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-314.973m 186.097m -981.650m",
+    "camera-orbit": "0deg 85deg 6813.250m",
+    "min-camera-orbit": "auto 5deg 324.440m"
+  },
+  "preview_note": "The initial view focuses on the gondola route within the full mountain terrain.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 2
+}

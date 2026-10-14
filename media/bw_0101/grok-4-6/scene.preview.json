@@ -1,0 +1,33 @@
+{
+  "exporter_version": 3,
+  "source_file": "autumn_watermill.blend",
+  "objects": 356,
+  "meshes": 356,
+  "original_triangles": 79494,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 34.7431821554329,
+    "phi": 85.70498398434219
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 7645516,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_RoofTerra"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.653m 3.217m 1.065m",
+    "camera-orbit": "35deg 65deg 21.063m",
+    "min-camera-orbit": "auto 5deg 1.003m"
+  },
+  "preview_note": "The initial view focuses on the watermill within the landscape.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 31
+}

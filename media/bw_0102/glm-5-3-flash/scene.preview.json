@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "animal_cell_cutaway.blend",
+  "objects": 250,
+  "meshes": 250,
+  "original_triangles": 266816,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 45.23196641557836,
+    "phi": 68.86986614039792
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 596112,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [
+    "Membrane_InnerLeaflet.001",
+    "Nucleus_Nucleoplasm.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "35deg 65deg auto"
+  },
+  "preview_note": "Inner membrane and nuclear filler surfaces are hidden to reveal the organelles.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

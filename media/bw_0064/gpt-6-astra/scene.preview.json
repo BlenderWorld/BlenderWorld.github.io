@@ -1,0 +1,39 @@
+{
+  "exporter_version": 2,
+  "source_file": "alpine_winter.blend",
+  "objects": 1030,
+  "meshes": 1019,
+  "original_triangles": 2432830,
+  "decimation_ratio": 0.2260741605455375,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [
+    "Gneiss exposure 01 · deep snow mantle",
+    "Gneiss exposure 02 · deep snow mantle",
+    "Gneiss exposure 03 · deep snow mantle",
+    "Gneiss exposure 04 · deep snow mantle",
+    "Gneiss exposure 05 · deep snow mantle",
+    "Gneiss exposure 06 · deep snow mantle",
+    "Gneiss exposure 07 · deep snow mantle",
+    "Gneiss exposure 08 · deep snow mantle",
+    "Gneiss exposure 09 · deep snow mantle",
+    "Gneiss exposure 10 · deep snow mantle"
+  ],
+  "skipped_dense_repeated_instances": 101777,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2245320,
+  "optimized": true,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [
+    "ICE • blue glacial sheet | reflective + translucent"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0m 1707.705m -4584.587m",
+    "camera-orbit": "0deg 85.5deg 5000m",
+    "field-of-view": "25deg",
+    "min-camera-orbit": "auto 5deg 50m"
+  },
+  "preview_note": "The valley opens from the original camera direction; repeated tree geometry is simplified.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

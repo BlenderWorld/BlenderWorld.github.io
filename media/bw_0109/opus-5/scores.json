@@ -1,0 +1,180 @@
+{
+  "task_id": "bw_0109",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 58.36206896551724,
+  "rubric": 51.724137931034484,
+  "dimension": 65.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B shot_A_front and shot_B_angle clearly show the requested core setup: a low street-end view down a narrow night street, heavy rain, wet reflective pavement, opposing building façades, illuminated storefront-like elements, overhead cables, two cars, street lamps, and a crosswalk. Group B shot_C_front_lightning also visibly supplies a bright lightning-like flash state.",
+      "issues": [
+        "The scene reads more as a stylized cyberpunk alley than an aged old-city street.",
+        "The noodle shop, bar, and grocery are not independently legible as those specific businesses; their signs are abstract glowing geometry without readable or identifying content.",
+        "The requested old brick, weathered plaster, and aged concrete façade character is largely absent.",
+        "Several requested street fixtures are absent or not clearly identifiable, including a covered bus stop, utility poles, bins, and a clearly readable traffic signal."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "Across Group A wide_left_angle, wide_right_angle, and wide_reverse, both cars appear to rest on the roadway, the sidewalks meet the façades coherently, lamps are carried on attached brackets, and the sagging cables span between the building sides. No major floating vehicle, collapsed structure, or obvious intersection is visible.",
+      "issues": [
+        "The extreme close Group A detail_cars_props view obscures some wheel-to-road contact and body construction.",
+        "A few foreground rain streaks appear as rigid, isolated rods rather than naturally integrated droplets."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The cool blue-gray night palette contrasted with warm yellow windows and pink/cyan neon is clear in Group B shot_A_front and shot_B_angle. Cars, street lamps, wet road, shutters, windows, cables, and signs retain recognizable broad silhouettes.",
+      "issues": [
+        "The vehicles are visibly simplified, angular low-poly forms with limited automotive detailing.",
+        "Store signs and right-side display panels are abstract shapes rather than readable bar or noodle-shop identities.",
+        "Building surfaces are mostly dark flat panels/glazing, not visibly mottled brick and old cement.",
+        "The overexposed white blocks on the right lose object identity."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "The authored front renders in Group B produce a coherent rainy-night image with convincing overall wetness, atmospheric depth, headlight bloom, and reflected colored illumination. The dense rain and mist support the intended oppressive storm mood.",
+      "issues": [
+        "The scene remains overtly stylized rather than convincingly real, especially in the cars, façade construction, and graphic neon elements.",
+        "Rain streaks are unusually dense and long, often reading as bright straight lines in front of the lens rather than varied falling drops.",
+        "Headlights and several white panels are blown out, while the street center becomes foggy and low-detail.",
+        "No actual lightning bolt is visible; Group B shot_C_front_lightning conveys the event only as a general sky/scene brightening."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "Group B shot_A_front establishes a clear forward-looking street composition with buildings on both sides, sidewalks and crosswalk in the foreground, a near right-side car, a farther headlit car, shop illumination on both sides, and cables/lights overhead. Group A wide_reverse confirms a continuous street corridor and adds a visible manhole.",
+      "issues": [
+        "The cars are mostly positioned along the roadway rather than clearly diagonally parked at the curb.",
+        "The intended distinct storefront arrangement is visually ambiguous because the signs do not identify the businesses.",
+        "A covered bus stop and clearly positioned garbage bins are not visible in the street layout."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "Cars, lane/crosswalk markings, curbs, façades, and suspended lights maintain generally credible relative scale in Group B shot_A_front and Group A wide_right_angle. The street has sufficient depth and the buildings read as multi-level urban façades.",
+      "issues": [
+        "The road feels tighter than the requested roughly 10 m street width, particularly when the near car occupies much of the roadway.",
+        "The nearest angular car can appear oversized due to the close perspective and simplified geometry.",
+        "The façades do not clearly communicate distinct two- to three-story old buildings."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "Group B shot_A_front shows strong, plausible wet-road specular response and long yellow, white, cyan, and pink reflections. Cold ambient night lighting is clearly contrasted against warm left-side window/store light, and the neon and headlight sources visibly affect the wet pavement. Group B shot_C_front_lightning provides a distinct brighter lighting condition.",
+      "issues": [
+        "Façade material separation is weak: the requested brick, worn cement, and aged surfaces mostly resolve as uniformly dark panels.",
+        "Headlight bloom and the bright mid-right panels clip substantial surface detail.",
+        "Road wetness is effective, but many reflections are soft pools rather than clearly elongated reflections of specific fixtures."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 5,
+      "reasons": "Visible requested elements include heavy rain, wet asphalt, puddle-like reflective areas, building walls with mixed lit and dark windows, a closed shutter, neon and warm illumination, two cars with active headlights, street lamps, sagging cables, crosswalk markings, and a manhole in Group A wide_reverse. A lightning-brightened variation is also supplied in Group B shot_C_front_lightning.",
+      "issues": [
+        "Only two vehicles are clearly visible, and their diagonal curb parking is not well established.",
+        "No covered bus stop is visible.",
+        "Garbage bins are not clearly present; the small near-left container is ambiguous.",
+        "A traffic light is only an ambiguous suspended black housing in Group A wide_reverse, without a visible signal face.",
+        "Utility poles are not clearly visible even though cables are present.",
+        "The warm noodle shop and neon bar are not clearly identifiable as those businesses, and the façades lack the requested old brick/weathered cement finish."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The street and surrounding buildings must form one credibly scaled, visibly aged architectural system with the requested dimensions, massing, windows, and facade treatments.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "All three requested businesses must be distinct and carry their complete identifying lighting, signage, and closure treatments.",
+      "evidence": "The views show a glowing pink/cyan abstract neon panel on the right, warm geometric light panels on the left, and a left-side roll-up shutter, but none reads independently and unambiguously as a noodle restaurant, bar, and grocery store respectively. The signs have no readable or otherwise identifying business content.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The complete parked-car group must have the requested count, orientation, placement, and functioning visible headlight beam.",
+      "evidence": "Exactly two angular cars are visible and the farther car has extremely bright headlights with a reflected path, but the cars read as aligned in or near the traffic lane rather than clearly diagonally parked along street edges. The near-right car also occupies the crosswalk area.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The streetscape must contain the complete requested system of utility, traffic, curbside, and road-surface installations in readable and plausible configurations.",
+      "evidence": "Streetlamp fixtures, sagging overhead cables, zebra stripes, and a circular manhole cover in the lower-left of the reverse view are visible. However, no recognizable roofed bus stop is shown, multiple recognizable trash bins are not evidenced, and the hanging black traffic box has no visible signal face.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The rain system must combine intense readable precipitation with convincing visible impacts on the ground and puddles.",
+      "evidence": "Dense, thick rain streaks fill every street view, including large foreground streaks, while numerous small bright ground droplets and splash-like impact particles are visible across the wet roadway and around the cars.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The road-water system must read as soaked glossy asphalt with grounded puddles and all three requested classes of elongated source-correlated reflection.",
+      "evidence": "The road is dark, glossy, and visibly water-covered with broad shallow puddled areas. Long white headlight reflections run down the center, cyan/pink neon reflections appear in the lower-right puddle, and repeated white streetlamp reflections extend along the wet surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The complete surface system must keep all explicitly named material classes visibly distinguishable in the final renders.",
+      "evidence": "Wet reflective roadway and emissive neon are distinguishable, but the building sides read predominantly as dark smooth or panelled façades. Mottled weathered brick and visibly aged cement/concrete surface treatments are not clearly recognizable at native view size.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The finished presentation must coherently establish the requested old-district rainy-night identity, oppressive cloud cover, and cool-versus-warm lighting mood.",
+      "evidence": "The final author shots strongly establish cool rainy-night lighting with warm left-side illumination and cyan/pink neon, but the buildings remain generic dark panelled structures rather than an unmistakably timeworn old-city district. A distinct heavy, low-hanging storm-cloud mass is also not clearly visible through the rain.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The authored cameras and corresponding images must form a reusable short-film previs setup in which every required final view uses the requested low inward-looking cinematic composition and mild shallow depth of field.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The delivered package must contain the complete requested multi-view high-resolution render set and a corresponding openable editable native project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A strong, coherent stylized rainy-night street previs with effective low-angle composition, heavy rain, wet reflections, colored neon, and usable front/angled exports. It falls notably short of the specifically requested aged old-city material character and several required street props, while storefront identities and some fixtures remain abstract or missing.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "b8837491bfe2d02b4cbf2ee5ba4dac5db59144d0d49a9409e748b5573abd4161"
+}

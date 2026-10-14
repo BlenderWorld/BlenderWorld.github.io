@@ -1,0 +1,59 @@
+{
+  "exporter_version": 2,
+  "source_file": "racer_23_previs.blend",
+  "objects": 3586,
+  "meshes": 3385,
+  "original_triangles": 7354171,
+  "decimation_ratio": 0.07478749134334788,
+  "skipped_studio_objects": [
+    "Pavilion | red equipment backdrop"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 4483376,
+  "optimized": true,
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "original_export_bytes": 41478596,
+  "showcase_refinement": 2,
+  "procedural_color_fallbacks": [
+    "Coachwork | aged blue-black enamel.002",
+    "Cockpit | black saddle leather.002",
+    "Fasteners | worn nickel and steel.002",
+    "Chassis | blackened oily steel.002",
+    "Brass | oxidized warm hubs.002",
+    "23 | weathered gold-leaf enamel.002",
+    "Engine | cast black iron.002",
+    "Tyres | dusty period natural rubber.002",
+    "Exhaust | heat-cycled pewter.002",
+    "Exhaust | woven asbestos-free bronze wrap.002",
+    "Exhaust | woven asbestos-free bronze wrap",
+    "Driver | worn black-brown flight leather.002",
+    "Occupants | warm skin.002",
+    "Aviator | brown leather flying cap.002",
+    "Aviator | ochre shearling collar.002",
+    "Passenger | cobalt mechanic cotton.002",
+    "Passenger | salt and pepper hair.002",
+    "Passenger | weathered pale work gloves.002",
+    "Pavement | pale sunlit aggregate.002",
+    "Verge | mixed spring grass",
+    "Crowd barrier | dull galvanized tubing",
+    "Museum | charcoal grey modern facade",
+    "Museum | off-white textured stucco",
+    "Service truck | period green enamel",
+    "Plane trees | textured grey-brown bark",
+    "Crowd | varied everyday shirt colors",
+    "Crowd | naturally varied skin tones",
+    "Crowd | hair colors",
+    "Crowd | denim and trousers"
+  ],
+  "preview_omitted_objects": [
+    "Wide pale asphalt parade lane.001",
+    "Grass verge behind spectators.001"
+  ],
+  "preview_camera": {
+    "camera-target": "11.079m 1.118m -0.000m",
+    "camera-orbit": "30deg 70deg 12.767m",
+    "min-camera-orbit": "auto 5deg 0.608m"
+  },
+  "preview_note": "The 3D preview opens on the car; the outer ground plane is omitted.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved."
+}

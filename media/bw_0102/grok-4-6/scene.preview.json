@@ -1,0 +1,30 @@
+{
+  "exporter_version": 3,
+  "source_file": "eukaryotic_cell_cutaway.blend",
+  "objects": 384,
+  "meshes": 91,
+  "original_triangles": 57791,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 95.6896658702725,
+    "phi": 68.25967960807058
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 255136,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Nucleoplasm"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "95.6896658702725deg 68.25967960807058deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

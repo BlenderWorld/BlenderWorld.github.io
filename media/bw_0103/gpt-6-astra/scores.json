@@ -1,0 +1,153 @@
+{
+  "task_id": "bw_0103",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 81.875,
+  "rubric": 87.5,
+  "dimension": 76.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "The rendered scene clearly presents the requested single cosmetic pump-bottle product shot: a cyan cylindrical bottle, white blank front label, silver pump, and neutral studio background are all visible in Group B Cyan_Lotion_Still and Group A cam_submitted. However, Group C frames 0001 through 0016 retain the same label and nozzle orientation, so the requested full 360-degree turntable is not demonstrated.",
+      "issues": [
+        "No perceptible rotation is visible across the supplied animation-frame sequence.",
+        "The closure is much wider and more dominant relative to the bottle than a 24/410 pump on a 40 mm body would normally appear.",
+        "Group A wide_back reveals a distinct floor/back-wall junction rather than a fully seamless background from all sides."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 9,
+      "reasons": "Across the Group A multi-view renders, the bottle sits solidly on the floor plane with a plausible contact shadow, and the neck, pump collar, stem, actuator, and curved nozzle form a continuous supported assembly. There are no visible floating parts, obvious intersections, or missing surface thickness.",
+      "issues": [
+        "The wide pump collar visually overhangs the relatively narrow neck more than expected for the stated bottle dimensions."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The object is independently recognizable as a lotion pump bottle in every view. Group A cam_submitted clearly shows the pale light-cyan body, rounded shoulders, blank white label area, and a bright-silver curved pump nozzle. The close pump views retain a recognizable dispenser silhouette rather than reducing it to a primitive form.",
+      "issues": [
+        "The body reads somewhat like opaque satin plastic in places rather than distinctly frosted semi-transparent glass.",
+        "The silver pump is sometimes clipped close to white, weakening its intended bright-metal definition."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "The Group B finished still is clean, smooth, and product-render-like, with coherent reflections, soft shadows, and rounded manufactured edges. The bottle remains legible against the gradient background and the pump is convincingly assembled, but the overall render is brighter and flatter than a polished studio product image.",
+      "issues": [
+        "Overexposure reduces contrast on the white label and several pump highlights.",
+        "The glass lacks stronger depth cues, edge thickness, and restrained translucency expected from frosted glass.",
+        "The background/floor seam visible in Group A wide_back reduces the all-angle studio realism."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The bottle is centered, upright, and isolated on a neutral studio floor; the front label is placed on the body and the pump is correctly centered over the neck. Group B Cyan_Lotion_Still uses a mildly elevated product-view perspective that shows the pump top and nozzle depth.",
+      "issues": [
+        "The final framing is closer to frontal than a strongly readable three-quarter turntable presentation.",
+        "The back-side view's visible wall/floor boundary is inconsistent with a seamless showcase setup."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The body has a sensible tall, narrow lotion-bottle proportion, with a rounded shoulder tapering into a smaller neck; the blank label also occupies a plausible central portion of the body. The overall bottle-to-floor scale is coherent.",
+      "issues": [
+        "The pump collar appears nearly as wide as the 40 mm bottle body, whereas a 24 mm-neck / 24-410 closure should be visibly narrower.",
+        "The pump assembly looks slightly bulky and tall relative to the body."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "Group B Cyan_Lotion_Still shows a usable light-gray-to-white studio gradient, soft grounding shadow, cyan body highlights, and visible brushed directional texture on the silver pump collar. The lighting separates the bottle from the background without obscuring its silhouette.",
+      "issues": [
+        "Lighting is too high-key in several Group A views, causing the label and metallic pump to lose detail.",
+        "The frosted cyan material is more opaque/matte than convincingly semi-transparent frosted glass.",
+        "The back view exposes a darker wall and hard horizon, compromising the intended seamless backdrop."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "The visible static deliverable includes all major requested product components: one frosted cyan bottle body, tapered shoulder, narrow neck, large blank label area, silver collar, pump stem, and downward-curved nozzle, all staged in a studio setup. No required major object is absent from the renders.",
+      "issues": [
+        "No clearly legible 24/410 thread detail is visible beneath the closure.",
+        "The requested animated full turntable is not evidenced by Group C, whose sampled frames appear static."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The bottle body must jointly satisfy its specified geometry, dimensions, shoulder transition, and complete frosted-glass appearance.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The neck, mounted collar, pump head, nozzle, metal response, closed state, and overall height must form one complete specified dispenser system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The bottle front must provide the specified continuous and visibly blank label footprint.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The final animation must combine the specified soft studio environment with controlled product readability and separation.",
+      "evidence": "The sampled MP4 frames show a clean high-key studio treatment with broad soft highlights on the cyan body and silver pump, soft grounding shadows, and an uncluttered gray-to-white gradient background with no visible wall-floor corner. The cyan bottle remains clearly silhouetted and distinct from the pale backdrop throughout the sampled sequence.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The actual animation camera must provide the specified perspective, slightly top-down three-quarter view, and resulting sense of depth.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The complete recognizable product must perform the required centered full-revolution turntable motion as a continuous constant-speed loop.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The actual video file must jointly satisfy the requested format, exact square resolution, duration, and effective frame rate.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The retained Blender project must be valid, editable, re-angleable, complete, and natively configured for the requested Cycles animation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a strong, recognizable static lotion-pump product render with clean modeled forms, attached construction, and appropriate colors. The main shortcomings are the oversized closure, overbright low-contrast materials, only weakly glass-like translucency, a non-seamless back-side environment, and—most importantly for the assignment—the supplied animation frames do not show the requested rotation.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "7c01e8b19167d7f2c90490759454a61b03b588605d5e7b28855415d89d0d8914"
+}

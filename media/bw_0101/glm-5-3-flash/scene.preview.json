@@ -1,0 +1,43 @@
+{
+  "exporter_version": 3,
+  "source_file": "mill_valley_previz.blend",
+  "objects": 643,
+  "meshes": 643,
+  "original_triangles": 130192,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Mist_Valley",
+    "Mist_Forest",
+    "Mist_Stream"
+  ],
+  "original_camera": {
+    "theta": -54.7275849778914,
+    "phi": 84.0883648063363
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 8889768,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Path_Dirt",
+    "Stone_Millstone",
+    "Foliage_Red",
+    "Foliage_Orange",
+    "Foliage_Crimson",
+    "Foliage_Amber",
+    "Foliage_Yellow"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-9.310m 3.211m -2.650m",
+    "camera-orbit": "35deg 65deg 55.818m",
+    "min-camera-orbit": "auto 5deg 2.658m"
+  },
+  "preview_note": "The initial view focuses on the watermill within the landscape.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 11
+}

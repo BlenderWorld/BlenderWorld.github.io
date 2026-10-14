@@ -1,0 +1,30 @@
+{
+  "exporter_version": 3,
+  "source_file": "lotion_bottle_turntable.blend",
+  "objects": 6,
+  "meshes": 6,
+  "original_triangles": 15672,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Backdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 32.00000014613035,
+    "phi": 73.49999567391843
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 38556,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "32.00000014613035deg 73.49999567391843deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

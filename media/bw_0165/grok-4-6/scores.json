@@ -1,0 +1,172 @@
+{
+  "task_id": "bw_0165",
+  "model": "Grok-4.6",
+  "judge_model": "GPT-5.6-terra",
+  "score": 55.1923,
+  "rubric": 65.38461538461539,
+  "dimension": 45.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The submitted scene is unmistakably an active cone volcano: Group A cam_submitted shows a dark stratovolcano-like cone, a summit depression with a bright lava area, several descending lava paths, and a tall eruption plume. Group B volcano_dusk also presents these components together in a coherent hero-image arrangement.",
+      "issues": [
+        "The authored final, Group B volcano_dusk, reads as a bright gray-beige daytime/cloudy scene rather than dusk and crops the upper smoke plume.",
+        "The lava lake is only a bright flat patch and does not visibly show the requested orange-to-dark-red lava or cracked black crust.",
+        "Lava runs read as raised glowing ribbons/tubes, not natural flows with cooled margins.",
+        "The small slope emissions do not clearly read as fumaroles connected to vents."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 4,
+      "reasons": "The main mountain has a grounded base on the terrain and the lower central smoke column visually originates at the summit in Group A. However, the physical assembly of multiple effects is visibly broken.",
+      "issues": [
+        "In Group A cam_submitted, the upper smoke billow is detached from the lower plume with a clear background gap.",
+        "Several small pale steam forms stand behind or overlap the slopes without visibly connecting to a ground vent or rock surface.",
+        "The lava paths sit noticeably above the slope as thick raised strips and terminate with blunt, unsupported-looking ends."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 4,
+      "reasons": "The dark cone silhouette and high-contrast glowing material make the volcano and lava immediately legible, particularly in Group A. The core color contrast of dark rock against warm magma is present.",
+      "issues": [
+        "The lava is predominantly near-white/yellow rather than the specified orange-red through dark-red range.",
+        "No cracked black cooling crust is visible on the summit lava lake or lava flows.",
+        "The dark mountain surface is mostly smooth, glossy-dark shading with limited visible basalt/ash character or fine displaced rock detail.",
+        "The fumaroles are featureless translucent ovals, and the main smoke looks cream/tan rather than a convincing volcanic smoke plume."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The volcano is cleanly rendered and its lava produces a readable glow on nearby dark slopes, but the combined image remains strongly synthetic. Group B volcano_dusk is especially washed out in the sky while the smoke and lava have simplified, artificial forms.",
+      "issues": [
+        "The detached, low-detail smoke sections undermine the illusion of an erupting volcano.",
+        "The bright ribbon-like lava and blunt endpoints do not resemble flowing molten rock.",
+        "The ground is nearly featureless and the mountain lacks convincing varied volcanic deposits.",
+        "The final authored export has a washed-out pale sky rather than a convincing dusk atmosphere."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "Group A places the cone at center with the summit, lava lake, flows, and primary plume arranged in the intended vertical hierarchy. The open sky around the cone in that evaluator view would provide some label space.",
+      "issues": [
+        "The final authored Group B volcano_dusk frames the mountain very tightly and cuts the plume off at the top, failing the requested framing of both full mountain and plume.",
+        "The small steam objects are scattered around and behind the cone but do not visibly emerge from distinct positions on the slopes.",
+        "All supplied Group A purported multi-view images show effectively the same view, so alternate-side spatial arrangement is not demonstrated."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The cone has a broadly sensible stratovolcano silhouette: its base is roughly twice its visible height in Group A, and the summit opening and narrow lava paths are substantially smaller than the cone. The lava lake and flows are visually differentiated from the overall mountain scale.",
+      "issues": [
+        "Several small pale plume blobs are disproportionately tall relative to the cone and are not sized like localized fumaroles.",
+        "The main plume is extremely broad and visually blocky near its top.",
+        "The tight authored final crop in Group B makes the mountain-to-plume scale relationship difficult to read in full."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "The bright lava visibly provides a warm orange contribution on adjacent parts of the mountain in Group A and Group B, creating a basic warm-versus-dark-rock effect. The authored export includes a cloudy environmental background.",
+      "issues": [
+        "Group B volcano_dusk has a pale bright sky rather than the requested cool dusk fill, so the intended warm-cool dusk lighting contrast is weak.",
+        "Rock does not convincingly present a basalt-plus-ash material; it is largely dark and smooth with broad wavy shading.",
+        "The lava material lacks the required varied molten colors and cooled/crusted edge treatment.",
+        "Steam and smoke are overbright, coarse, and inconsistent with the scene illumination."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 5,
+      "reasons": "Most high-level requested elements are nominally present: a cone, summit opening/lava patch, at least three bright descending lava paths, a central plume, and approximately six small pale emissions around the slopes are visible in Group A.",
+      "issues": [
+        "The five-to-six small emissions are not convincingly recognizable as fumaroles because they are featureless and often appear unsupported.",
+        "The lava lake lacks visibly cracked black crust and the specified red color gradation.",
+        "The flows lack clearly visible cooled crust along their edges.",
+        "The full main plume is not included in the authored final Group B volcano_dusk because it is cropped off-frame."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal landform is a correctly proportioned stratovolcano with the complete specified slope-surface system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The summit contains the correctly scaled crater-and-lava-lake assembly with the complete specified molten surface treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The repeated lava-flow system has the required count, scale, terrain relationship, and molten-versus-cooled surface construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The complete fumarole system has the required vent count, slope distribution, and attached semi-transparent steam.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A distinct large-scale volcanic smoke plume rises above the summit and remains distinguishable from slope steam.",
+      "evidence": "In the designated author hero image, `.eval_workspace/exports/volcano_dusk.png`, a large mottled pale smoke column visibly emerges from the summit crater and rises far above the cone. It is substantially taller and centrally positioned compared with the smaller pale vapor forms distributed around the slopes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The scene combines genuine lava-cast warm illumination with cool environmental dusk fill.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The final author camera and composition clearly communicate the dusk geothermal subject, central hierarchy, scale, layering, label space, and requested viewpoint.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable and editable and retains the required Cycles configuration for a clean hero render.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The final image delivery provides one designated hero render at the required actual resolution.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A recognizable active-volcano illustration has been produced, with a centered cone, glowing summit lava, several flows, and an eruption plume. However, the scene remains a simplified synthetic treatment: lava is rendered as bright raised strips, the smoke is physically disconnected, fumaroles are ambiguous blobs, rock and lava materials lack requested geological detail, and the authored hero export does not convincingly establish dusk or fully frame the plume.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "8211cb7b1122724a67167c5cfd36c7681581f3bbee2c4d55475eb4598205d29c"
+}

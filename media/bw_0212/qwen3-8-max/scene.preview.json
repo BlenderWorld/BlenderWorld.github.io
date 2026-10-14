@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "previz.blend",
+  "objects": 1306,
+  "meshes": 243,
+  "original_triangles": 21512,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 118.14819769700829,
+    "phi": 87.10644033384183
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 251056,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-7.500m 0.808m 0.000m",
+    "camera-orbit": "118.14819769700829deg 80deg 8.820m",
+    "min-camera-orbit": "auto 5deg 0.420m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

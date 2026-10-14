@@ -1,0 +1,35 @@
+{
+  "exporter_version": 3,
+  "source_file": "bl_m068_night_alley_raccoon.blend",
+  "objects": 50,
+  "meshes": 50,
+  "original_triangles": 47822,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 21.999997556727926,
+    "phi": 90.99999547851812
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 6239920,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Raccoon_Fur_Body",
+    "Raccoon_Fur_Dark",
+    "Raccoon_Fur_Light"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.000m 0.211m -0.116m",
+    "camera-orbit": "35deg 65deg 1.705m",
+    "min-camera-orbit": "auto 5deg 0.081m"
+  },
+  "preview_note": "The initial view focuses on the animal in the alley.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 4
+}

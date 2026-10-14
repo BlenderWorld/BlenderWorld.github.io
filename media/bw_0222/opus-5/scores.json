@@ -1,0 +1,261 @@
+{
+  "task_id": "bw_0222",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 69.43877551020408,
+  "rubric": 93.87755102040816,
+  "dimension": 45.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The submitted final-animation views, especially Group C frame_0001 through frame_0016, clearly recreate the broad subject: an overhead miniature railway with a blue locomotive, gray van, orange/red cars, brass rails, grass, trees, a building, people, and barrels. The train passes the landscaped building in a broadly comparable foreground-to-background arrangement.",
+      "issues": [
+        "The submitted layout is a highly regular circular display with five complete concentric loops and a large dark plinth, rather than the reference's tighter, more irregular network of parallel tracks, curves, sidings, and branching rail geometry.",
+        "The reference's gray masonry station facade, orange doorway, bicycle shelter, bicycles, lamp post, and detailed paved yard are not faithfully reproduced.",
+        "The distinctive open brown wagon carrying green material is absent.",
+        "The scene reads as a simplified reinterpretation rather than a close reconstruction of the supplied railway location."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 4,
+      "reasons": "Most scenery, track beds, tower, building, and figurines visibly sit on the terrain, and the train is generally located on the inner rails in Group A and Group C.",
+      "issues": [
+        "The long gray and red/orange train cars visibly bend as continuous curved bodies around the loop in Group B f_0001 through f_0080 and Group C, instead of remaining rigid railcars linked by couplers.",
+        "The severe body deformation makes the consist structurally implausible and obscures a convincing wheel/bogie relationship to the rails.",
+        "Several path and ground-cover elements appear as thin overlapping sheets rather than integrated terrain surfaces."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "The principal color identity is present: a blue locomotive, pale gray enclosed car, orange-brown car, bright red caboose-like car, brass rails, gray ballast, and green landscaping are all visible in Group C frame_0001 and Group A cam_submitted.",
+      "issues": [
+        "The locomotive is much more block-like than the reference diesel, lacking clearly modeled buffers, lamps, exposed wheels, rods, handrails, and a convincing dark underframe.",
+        "The orange and gray rail vehicles have ribbon-like curved silhouettes rather than recognizable rigid model railcars.",
+        "The reference's stone building with dark green multi-pane windows and orange entry is replaced by a dark lower block with a wood-plank upper level and oversized layered roof.",
+        "Trees, people, and shrubs are simplified into clustered spheres, cones, and faceless blocks, reducing the specific model-railway character."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The author final frames have coherent top-down miniature-scale presentation, textured ballast, repeated sleepers, grass, soft shadows, and shallow depth-of-field that support a model-layout look.",
+      "issues": [
+        "The final frames are generally dim, soft, and low-contrast compared with the brighter, vivid daylight reference.",
+        "The train deformation is immediately artificial and undermines the illusion of a working miniature railway.",
+        "The regular concentric tracks, flat green rings, circular path pads, and simplified vegetation make the environment read more as a stylized diorama than a believable railway scene.",
+        "The lattice tower is often blurred or intrusively crosses the building in the final animation frames."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 4,
+      "reasons": "The close author frames place the train on a foreground curve with the building, figures, barrels, and landscaping behind it, which captures a key reference relationship. Group C also shows the consist progressing around that inner loop.",
+      "issues": [
+        "The reference places the masonry building and bicycle shelter at upper right beside irregular pavement and sidings; the submission centers a different building within a circular landscape.",
+        "Five evenly spaced full loops dominate the submitted plan in Group A wide views, whereas the reference has several close parallel lines plus right-side turnouts and sidings.",
+        "The tall reference lamp post is replaced by a large gray lattice tower in a materially and spatially different role.",
+        "The train's tight continuous curvature changes the intended spacing and orientation of individual cars."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 4,
+      "reasons": "Within the submitted miniature, track sleepers, scenery, people, and architecture are broadly scaled as model-layout elements, and the train is visibly the focal object.",
+      "issues": [
+        "The railcars are oversized and stretched relative to the tight inner curve, forcing their bodies into implausible arcs.",
+        "The five outer rail rings occupy far more of the scene than in the reference and leave the central architecture comparatively undersized in Group A wide views.",
+        "The blocky figurines and clustered trees provide a weaker, less believable scale comparison to the much larger train and building."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "Group C and Group B show useful material differentiation: shiny brass-colored rails, granular gray ballast, matte grass, dark stone-like walls, layered wood siding, and painted train bodies. Soft illumination produces some grounding shadows.",
+      "issues": [
+        "The lighting is muted and darker than the reference's bright, colorful overhead outdoor illumination.",
+        "Train roofs and body panels are overly smooth and uniform, with limited material detail for metal, glazing, rail hardware, or undercarriage parts.",
+        "Beige paths visibly overlap as circular pads, while brown landscape patches read as thin cutout sheets rather than gravel, dirt, or flocking.",
+        "The soft focus reduces inspection of small station and tower material detail."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The submission includes the main blue/gray/red train consist, multiple rails, a building, planted landscaping, some figures, barrels, a trackside marker, and a moving camera/train sequence visible across Group C.",
+      "issues": [
+        "The separate brown open wagon with green load is missing.",
+        "The bicycle shelter and parked bicycles are missing.",
+        "The reference's numerous distinct pedestrian figures, bench/seated figures, facade signage, dark green windows, orange doorway, lamp post, and clear red signboard are missing or substantially replaced.",
+        "Branching tracks, sidings, and the detailed right-side trackside objects are not reproduced."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The main subject is a recognizable miniature train reproducing the reference's connected four-unit structure and order.",
+      "evidence": "The exported animation frames clearly show a blue locomotive leading a light-gray covered car, orange-brown coach, and red rear car with a raised cupola, in a single connected consist.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The scene contains a circular railway with nested curved tracks and readable model-track construction.",
+      "evidence": "Multiple nested circular rail loops are plainly visible, each with paired brass-colored rails, closely repeated pale sleepers, and broad dark-gray textured ballast beds.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The railway passes through a developed miniature park landscape.",
+      "evidence": "The central island contains green grass, clustered round-canopy trees, numerous conical evergreens, shrubs, and brown planted/ground-cover patches.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "A readable miniature station or comparable railway-side building anchors the scenic area.",
+      "evidence": "A substantial two-level stone-and-wood railway-side building anchors the island, with several adjoining beige path/apron pads and a larger gray paved area behind it.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "Multiple visible human figures populate the station and park setting.",
+      "evidence": "Several small colored pedestrian figures are visible at the building walls and around the beige apron, including red-, green-, blue-, gray-, and orange-clothed figures.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "All major scene elements share a convincing and coherent miniature-model scale.",
+      "evidence": "Across the overview and close views, the train, track gauge, two-story building, small pedestrians, and planted trees read consistently as parts of one tabletop miniature layout.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "Every vehicle remains seated on and aligned to the same curved rail route.",
+      "evidence": "Although the consist follows the inner track, the long gray and red/orange vehicles visibly deform into continuous curved arcs rather than reading as rigid railcars plausibly negotiating the curve.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The train and circular railway frame a central landscaped station area in the reference-like arrangement.",
+      "evidence": "The animation keeps the train on the foreground inner curve while the station building, pedestrian area, tower, paths, trees, and shrubs occupy the enclosed central area.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The four vehicles reproduce the train's identifying reference colors.",
+      "evidence": "The vehicle sequence visibly uses the identifying color set: blue locomotive, pale-gray covered van, warm orange-brown coach, bright red cupola-ended rear car, and gray roofs.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The surrounding layout preserves the reference's dominant gray-and-green environmental palette.",
+      "evidence": "Dark gray ballast beds and gray paving dominate the hardscape, while broad green ground cover, trees, and shrubs provide the dominant landscape contrast.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The principal surfaces have differentiated responses that evoke a physical model railway.",
+      "evidence": "The image differentiates glossy painted train bodies, highlighted brass-like rails, granular dark ballast texture, fabric-like grass, stone walls, wood planking, and textured foliage.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The lighting matches the bright, softly diffused miniature-display mood of the reference.",
+      "evidence": "The author animation frames use soft, diffuse illumination with restrained shadows; the train, trackwork, building, and vegetation remain readable with natural green, blue, gray, and red/orange colors.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The complete consist moves continuously and orderly as a stable coupled train.",
+      "evidence": "Across the ordered animation frames, the blue front moves from the lower-right curve toward the upper-right curve while the gray and two rear cars preserve their order and close spacing without visible separation or collision.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 1,
+      "criterion": "The train's route, travel sense, displacement, and timing reproduce the visible reference progression.",
+      "evidence": "The animation advances the locomotive clockwise along the right-hand portion of the inner loop, beginning on the lower-right curve and ending substantially farther up the right side, matching the reference's visible travel sense.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The shot uses the reference-like elevated oblique overhead viewpoint.",
+      "evidence": "The final animation consistently uses an elevated oblique overhead angle that exposes the train roofs, concentric tracks, building roof, and interior landscaping.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "Camera movement reproduces the reference's smooth overhead reframing as the train advances.",
+      "evidence": "The ordered frames show a continuous smooth overhead reframe: the locomotive stays on the right side as the stationary building, tower, and landscaping drift leftward in the frame without cuts.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 1,
+      "criterion": "The composition keeps the train readable while preserving enough environmental context for camera review.",
+      "evidence": "The consist remains large and legible for the whole exported shot, while the surrounding nested rails, station building, tower, pedestrians, trees, paths, and barrel cluster remain visible as layout context.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The Blender scene provides a practical consist-level mechanism for revising loop motion while retaining coupled behavior.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R19",
+      "score": 1,
+      "criterion": "The delivered video satisfies the requested format and playback specifications.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R20",
+      "score": 1,
+      "criterion": "An editable Blender project containing the recreated scene and animation is delivered for client revisions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The result is recognizably a miniature railway and the Group C sequence visibly moves the colored consist around a loop under an overhead moving camera. Its strongest elements are the color-coded train lineup and repeated track construction. However, the reconstruction substantially changes the plan into a circular display, omits several defining reference objects, simplifies the station scenery, and uses visibly bent railcar bodies that are a major fidelity and plausibility failure.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "ef54ad6a60eac0819edd09e384b68dcf809c924e0fde4b4cf60ea3e3c8e8b4df"
+}

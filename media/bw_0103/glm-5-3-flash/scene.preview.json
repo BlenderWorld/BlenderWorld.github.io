@@ -1,0 +1,25 @@
+{
+  "exporter_version": 2,
+  "source_file": "lotion_pump_turntable.blend",
+  "objects": 5,
+  "meshes": 4,
+  "original_triangles": 22236,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Cyclorama"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 43960,
+  "optimized": true,
+  "showcase_refinement": 2,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "143deg 75deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

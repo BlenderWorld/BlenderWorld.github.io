@@ -1,0 +1,275 @@
+{
+  "task_id": "bw_0181",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 67.74590163934425,
+  "rubric": 70.49180327868852,
+  "dimension": 65.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "The submission clearly realizes a connected Backrooms-like interior with yellow-brown paneled walls, suspended fluorescent ceiling, a cluttered furniture/storage room, and a separate room densely occupied by eerie cardboard human cutouts. Group A wide_entry.png, wide_corridor.png, and wide_standee.png make the room-to-room concept and intended horror-office setting immediately recognizable.",
+      "issues": [
+        "The furniture room relies heavily on undifferentiated cuboid stacks rather than convincingly specific stored office items.",
+        "The overall finish reads more like a stylized game environment than the requested premium product-presentation scene.",
+        "Several standees blend into the similarly brown/yellow background, weakening the requested subject-background separation."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "The room shell, door openings, floor-standing cabinets, desks, chairs, and most cardboard standees are spatially supported. The visible triangular bases on several standees in Group A detail_standees.png and wide_standee.png provide a plausible means for thin cutouts to stand.",
+      "issues": [
+        "Numerous stacked boxes and cabinet-top objects in Group A wide_corridor.png and detail_route.png appear precariously balanced or insufficiently supported.",
+        "The hanging cables terminate in loose midair loops beneath damaged ceiling sections rather than visibly connecting to equipment.",
+        "The black reflective floor patches have hard polygonal boundaries and appear as thin overlay planes rather than integrated puddles.",
+        "Some cardboard cutouts and loose board pieces visually intersect or crowd each other in the standee room."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The warm yellow wall color, gray flooring, gray office furniture, and tan-to-dark-brown standees establish a consistent, ominous Backrooms palette. The cardboard silhouettes are legible as deliberately flat human-shaped display boards, especially in Group B detail_standee.png and Group A detail_standees.png.",
+      "issues": [
+        "Many supposed boxes and stored objects are featureless cubes with little material, seam, label, or product identity.",
+        "The standees use a limited set of very similar flat silhouettes, so the crowd becomes visually repetitive.",
+        "Brown standees often have insufficient tonal contrast against the ochre walls.",
+        "Some furniture forms, particularly the large gray slab and stacked blocks, remain ambiguous rather than clearly reading as intended objects."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "The renders have coherent room-scale lighting, recognizable office furnishings, worn textured flooring, and a convincing basic abandoned-office mood. Group B hero_corridor.png provides a readable first-person corridor view, while Group B detail_crowd.png establishes an eerie crowd-room atmosphere.",
+      "issues": [
+        "Ceiling luminaires are consistently clipped to featureless white rectangles, which reduces realism and fixture detail.",
+        "The highly sharp, glossy dark patches on the floor do not convincingly interact with the carpet-like floor material.",
+        "Several piles and furniture forms appear synthetic and blocky instead of naturally accumulated.",
+        "The scene lacks the refined material variation, object wear, and contextual detail needed for the requested high-end presentation."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The spatial organization directly supports the requested traversable scene: Group A wide_entry.png shows a corridor leading into a crowded furnishing area, while cam_submitted.png and wide_standee.png show access into the standee-filled room. The main zones are distinct yet visibly connected through open doorframes.",
+      "issues": [
+        "The furniture room is densely packed enough that a comfortable first-person traversal route is not fully evident from Group A wide_corridor.png.",
+        "Some dense standee placements overlap from the principal doorway view and reduce clear individual silhouettes.",
+        "Openings are framed well but have no door leaves or stronger architectural distinctions between zones."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "Doors, ceiling height, worktables, filing cabinets, office chairs, and human-shaped cutouts are generally scaled consistently. The cardboard crowd in Group A wide_standee.png reads at approximately human height, with deliberately exaggerated narrow silhouettes adding unease rather than breaking the scale.",
+      "issues": [
+        "A few box towers and cabinet-top stacks are disproportionately large and unstable looking.",
+        "Some chairs and smaller furniture are partially buried in clutter, making their scale relationship harder to read.",
+        "The standee base braces are visually oversized on a number of figures."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "Materials are distinguishable: the walls have a wood-panel-like vertical texture, floor surfaces have roughness variation, cabinets read as dull painted metal, and standees read as matte board. The fluorescent lighting creates an appropriately institutional indoor atmosphere across Group A and the authored Group B renders.",
+      "issues": [
+        "Fluorescent panels are overexposed in nearly every view, obscuring their construction and flattening local contrast.",
+        "Floor puddles/reflections are too mirror-like and have artificial hard outlines.",
+        "Cardboard edge and surface detail is limited despite the close authored Group B detail_standee.png view.",
+        "Lighting is broadly even and warm, with limited nuanced shadowing or separation for the key standees."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "The key static requested content is present in substantial quantity: connected rooms, a furnished/cluttered office room with cabinets, desks, chairs, boxes, and papers, plus a separate room containing roughly two dozen or more cardboard humanoid standees. Group A wide_corridor.png and wide_standee.png are especially strong evidence for this coverage.",
+      "issues": [
+        "No Group C time-ordered animation frames are supplied, so the requested 10-second first-person roaming animation is not visually demonstrated.",
+        "The furniture clutter includes many generic unidentifiable boxes instead of a fuller range of clearly modeled office belongings.",
+        "Evidence of deliberate typography-safe negative space is limited; the strongest authored hero framing is the standee doorway image rather than a broad, clearly reserved product-layout composition."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The scene forms a complex Backrooms environment with developed connecting regions beyond the two required feature rooms.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Developed areas outside the feature rooms are completed with environmental dressing appropriate to the Backrooms setting.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Supplementary dressing in the remaining Backrooms areas avoids obvious visual repetition.",
+      "evidence": "Across wide_entry, wide_corridor, and wide_standee, the connector areas use different combinations of wall marks, papers, chair, ceiling damage, cables, puddle-like patches, cabinets, and vents rather than visibly duplicated prop clusters. The repeated human cutouts are purposeful to the dedicated standee-room concept.",
+      "importance": "detail",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "A distinct room is densely filled with furniture and conveys cramped, oppressive spatial pressure.",
+      "evidence": "wide_corridor and detail_furniture clearly show a separate room packed with filing cabinets, a central desk, stacked boxes, chairs, monitor, shelving, and loose papers, leaving only a constrained route through the space.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A distinct room contains multiple eerie cardboard human-form standees.",
+      "evidence": "wide_standee and detail_standees clearly show a dedicated room populated by many thin cardboard-like human silhouette cutouts, including unusually tall narrow forms and a foreground figure with a raised diagonal panel.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The realized layout provides a connected camera-traversable route through the principal spaces and the crowded furniture room.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Furniture and other dressing do not completely block any primary passage.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "Rooms, passages, furniture, props, and human standees use mutually plausible conventional proportions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The coordinated visual and lighting treatment sustains an oppressive, eerie Backrooms mood, keeps every developed area readable, and uses contrast, color, and localized irregularity to strengthen unease.",
+      "evidence": "The developed corridor, furniture room, and standee room remain readable while the yellow-brown enclosed walls, dark mottled floor, exposed ceiling voids, hanging cables, and intense irregular fluorescent panels create a consistently oppressive Backrooms atmosphere.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 0,
+      "criterion": "The final imagery has a polished premium finish rather than blockout or basic-preview quality.",
+      "evidence": "Although the environment is coherent, close and wide views show several basic-looking box props and standees, strongly blown-out fluorescent panels, and sharply polygonal glossy floor patches that read as flat sheets rather than a polished commercial finish.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 0,
+      "criterion": "Walls, floors, furniture, standees, and other dressing throughout the developed environment have finished, distinguishable material appearances that hold up in close walkthrough views.",
+      "evidence": "Walls and floor have visible texture, but many nearby furniture and dressing elements remain broad featureless gray/off-white or brown box forms. The close furniture view especially shows generic flat cabinet and box surfaces rather than consistently detailed material treatment across all dressing classes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "An actually submitted storefront hero still uses a clean, product-focused composition with usable open space for copy.",
+      "evidence": "The submitted hero_corridor still uses a centered doorway as a clear focal route, with broad comparatively uncluttered yellow wall and foreground floor areas surrounding it that can accept copy without covering the doorway or background scene.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The focal scene subject remains unobscured and its silhouette separates clearly from the background.",
+      "evidence": "In A_current and D_tight, the main standee room is framed cleanly by the doorway and the foreground dark cutout separates visibly from the warm wall and gray floor; in hero_corridor the central doorway and circulation route are not covered by foreground clutter.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 1,
+      "criterion": "The project contains an operational material, lighting, camera, and output pipeline suitable for finished stills and animation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R15",
+      "score": 0,
+      "criterion": "The delivered animation artifact serving as the requested Backrooms walkthrough is decodable and has a duration of 10 seconds.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R16",
+      "score": 0,
+      "criterion": "The delivered 10-second walkthrough uses a continuous first-person camera path that clearly presents the principal spaces.",
+      "evidence": "No submitted time-ordered walkthrough frames or exported animation evidence is provided. The still images establish rooms but do not demonstrate a continuous first-person 10-second path through them.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 0,
+      "criterion": "In the delivered walkthrough, the standees' human forms and spatial arrangement are clearly readable from the first-person view.",
+      "evidence": "Static renders clearly show the standee room, but no delivered walkthrough sequence is available to establish that their forms and arrangement are readable from the required first-person moving view.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R18",
+      "score": 0,
+      "criterion": "The delivered walkthrough travels without clipping through geometry or being unintentionally blocked by large props.",
+      "evidence": "There is no submitted walkthrough video or ordered animation-frame sequence from which uninterrupted camera clearance, clipping behavior, or blockage by large props can be judged.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R19",
+      "score": 1,
+      "criterion": "Rendered still-image files are present in the actual delivery.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R20",
+      "score": 1,
+      "criterion": "The actually submitted still set includes imagery suitable for a storefront detail page.",
+      "evidence": "The delivered still set includes useful detail-page views: detail_furniture shows the dense prop and surface arrangement, detail_standees isolates the featured cutout construction, and detail_ceiling documents the damaged fluorescent ceiling treatment.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R21",
+      "score": 1,
+      "criterion": "A complete .blend project is delivered with an editable structure suitable for continued modification.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R22",
+      "score": 1,
+      "criterion": "All modeled walls, flooring, furniture, cardboard standees, and other dressing have complete material assignments.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The static scene is recognizably a connected Backrooms office with both required cluttered-furniture and cardboard-standee zones. Its strongest qualities are the coherent room layout and large standee count. The main limitations are generic block-like clutter, unstable-looking stacking, artificial floor puddles, clipped ceiling lights, and no submitted visual evidence of the requested first-person animation.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "36f6dadf572c7b9adc5bb10b4dcd18381acbea08c3b12ce966b2f4b529c799c1"
+}

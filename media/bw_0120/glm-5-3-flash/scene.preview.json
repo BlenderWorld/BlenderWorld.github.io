@@ -1,0 +1,39 @@
+{
+  "exporter_version": 3,
+  "source_file": "temple_courtyard.blend",
+  "objects": 379,
+  "meshes": 379,
+  "original_triangles": 57836,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -6.86369381404694,
+    "phi": 90.39502712020703
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 364308,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "CourtyardStone",
+    "GoldRoof",
+    "TileGrey"
+  ],
+  "preview_omitted_objects": [
+    "Hill_1.001",
+    "Hill_2.001",
+    "Hill_3.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "25deg 65deg auto"
+  },
+  "preview_note": "Distant hills are omitted to focus on the temple courtyard.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

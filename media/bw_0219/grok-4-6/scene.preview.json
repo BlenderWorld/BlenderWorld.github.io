@@ -1,0 +1,36 @@
+{
+  "exporter_version": 3,
+  "source_file": "rhino_enclosure.blend",
+  "objects": 252,
+  "meshes": 46,
+  "original_triangles": 163290,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -2.313980675205055,
+    "phi": 87.23674622133298
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 12029764,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "FallenLogMat",
+    "GoboLeaves",
+    "RhinoHide"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "1.378m 0.829m -1.025m",
+    "camera-orbit": "-2.313980675205055deg 80deg 8.300m",
+    "min-camera-orbit": "auto 5deg 0.395m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

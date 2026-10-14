@@ -1,0 +1,246 @@
+{
+  "task_id": "bw_0219",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 51.46683673469388,
+  "rubric": 59.183673469387756,
+  "dimension": 43.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The submitted scene visibly contains the key enclosure categories: a pale rhino, reddish dirt, scattered pale stones, an orange retaining wall, trunks, foliage, grass, and a fallen log. Group C frames also place the animal in a side-on walk crossing behind a prominent foreground trunk, which echoes the reference composition.",
+      "issues": [
+        "The rhino is a highly simplified, blocky stylized animal rather than the heavy, wrinkled white rhino in the reference.",
+        "The reference's stacked weathered logs, including the prominent circular cut end at upper right, are not convincingly reproduced; the submission mostly shows one long pale cylinder and an ambiguous curved slab.",
+        "The enclosure is much more cartoon-low-poly, with overly dense bright-white foreground stones and sparse simplified vegetation compared with the naturalistic reference."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 4,
+      "reasons": "Most rocks, the ground plane, wall, and the long fallen log appear positioned on a coherent floor, and the rhino's legs generally reach the terrain. However, the multi-view renders expose several structural failures.",
+      "issues": [
+        "A large canopy lobe is visibly floating above the upper-middle/right tree mass in Group A cam_submitted, wide_front, and wide_back, without trunk or branch support.",
+        "Several foliage masses read as stacked detached blobs rather than connected tree crowns.",
+        "Numerous rocks crowd, overlap, or visually clip into the rhino's feet and lower legs in Group A and throughout Group C.",
+        "Some large background boulders appear suspended above or only tenuously connected to the retaining wall."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 4,
+      "reasons": "The intended objects remain legible: the animal has four stout legs, a rhino-like horned head, ears, eye, and tail, while the wall, dirt, stones, trees, and log are distinguishable. The orange wall and red-tan dirt broadly follow the target palette.",
+      "issues": [
+        "The rhino silhouette is too geometric and assembled: a long tapered head, cylindrical/rectangular legs, flat barrel body, simple round eye, and very tall conical horns do not resemble the reference animal's anatomy.",
+        "There are essentially no modeled skin folds, facial wrinkles, hoof definition, or anatomical shoulder/hip structure.",
+        "The rhino is nearly white rather than the warm pale gray-tan of the reference, and the foreground rocks are uniformly bright white instead of mixed natural grays and off-whites.",
+        "The saturated chunky green foliage and faceted orange boulders conflict with the reference's realistic bark, foliage, and rock forms."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The rendered frames are cleanly visible and have coherent direct sunlight and shadows, but as an image they read as a basic stylized game/previz scene rather than a convincing recreation of the photographed zoo enclosure.",
+      "issues": [
+        "The central rhino lacks believable anatomy, weight, folds, skin detail, and natural leg articulation.",
+        "Unsupported foliage, faceted hovering boulders, and obvious primitive-shaped assets undermine scene believability.",
+        "The plain gray sky/background and simplified foliage do not provide the dense, natural enclosure depth visible in the reference.",
+        "The foreground rock field is visually repetitive and too bright, drawing attention away from the animal."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "The final animation framing in Group C has a large foreground trunk at left-center, the rhino passing behind it, an orange wall behind the animal, a horizontal pale log in the midground, and stones in the foreground. Across frame_0001 through frame_0016, the rhino visibly progresses leftward behind the trunk, consistent with the reference footage's overall side-view staging.",
+      "issues": [
+        "The reference has stronger framing from both the left-center foreground trunk and a substantial right-edge trunk; the submission's final camera lacks the comparable right foreground framing.",
+        "The rhino is staged amid an unnaturally continuous bed of foreground rocks rather than on the comparatively clear dirt path between rock piles.",
+        "The reference's rear log pile and right-side cut log arrangement are absent or badly simplified, weakening the matching depth relationships.",
+        "The camera view is more open upward and exposes a flat gray background rather than the reference's fuller background vegetation."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 4,
+      "reasons": "At a broad level, the rhino is larger than the scattered stones and is plausibly positioned against the retaining wall and fallen log. Its scale relative to the main trunk is also generally workable.",
+      "issues": [
+        "The animal's legs are too straight, tall, and column-like for a white rhino, whose reference pose has short, massive legs and a very heavy low-slung body.",
+        "The head is overly elongated and narrow, while the horns are much too tall and conical relative to the reference's short horns.",
+        "Many foreground rocks are oversized relative to the feet and crowd the walking path.",
+        "The canopy and suspended boulder forms are disproportionately large and visually dominate the upper enclosure."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "The scene has sunlit warm dirt and wall surfaces, visible hard shadows, roughness variation on the wall, stones, log, and foreground trunk, and some canopy shadowing. These elements broadly evoke an outdoor daylight setting.",
+      "issues": [
+        "The rhino material is an almost uniform pale matte surface with no convincing thick skin texture, wrinkles, tonal variation, or dappled tree-shadow detail comparable to the reference.",
+        "Rock materials are too uniformly pale and noisy, rather than varied gray/tan natural stones.",
+        "Lighting is harsher and more game-like, with heavy dark canopy shadow shapes and a featureless gray background instead of the reference's natural daylight depth.",
+        "The foliage material and form are overly saturated, faceted, and disconnected."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "The principal requested scene inventory is present and visible in Group A and the final Group C animation: rhino, trees/trunks, rocky ground, scattered stones, orange wall, dirt, grass/ground plants, and a fallen pale log. The time sequence also shows the animal translating through the enclosure with changing leg poses.",
+      "issues": [
+        "The animal is missing the crucial visible skin folds, wrinkles, detailed head features, and weighty white-rhino anatomy emphasized by the target.",
+        "The multiple stacked weathered logs and recognizable cut-end log in the reference are not fully represented.",
+        "The scene does not reproduce the reference's dense realistic background foliage and right-edge foreground trunk.",
+        "No submitted close-up or final export supports a more detailed animal or environment treatment beyond the simplified scene seen in the evaluator and animation frames."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal subject is recognizably a white rhinoceros with the reference animal's characteristic anatomy and proportions.",
+      "evidence": "The animal is clearly readable as a pale rhinoceros: it has a heavy horizontal body, low horned head, two facial horns, small ears, four stout legs, and a short tail.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "Prominent characteristic skin folds remain readable during the walk.",
+      "evidence": "The rhino body is largely smooth and segmented by simple mesh joins; substantial readable folds across the neck, shoulders, flanks, and rump are not visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The rocky zoo enclosure includes the explicitly named reference elements.",
+      "evidence": "The enclosure visibly contains a prominent textured foreground trunk, dense scattered pale stones, and a substantial warm orange-brown retaining wall.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The remaining major environment follows the reference enclosure.",
+      "evidence": "Reddish sandy ground, a long pale fallen log behind the animal, and multiple large orange/tan faceted rear boulders are clearly visible.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The rhinoceros retains the reference-like prominent side-profile scale while enclosure context remains visible.",
+      "evidence": "Early animation frames show nearly the entire rhino in a broad side view occupying the center of the medium-wide enclosure shot, with the log, rocks, wall, and vegetation still readable around it.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The enclosure preserves the reference's foreground, middle-ground, and background layering.",
+      "evidence": "Dense loose stones occupy the foreground; the rhino and horizontal log sit behind them; the orange wall, large boulders, tree forms, and foliage recede behind the animal.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Dark trunks frame the shot and create the reference-like moving partial occlusion.",
+      "evidence": "A dark mottled foreground trunk crosses the rhino over the animation, progressively blocking the head and shoulder area in later sampled frames.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The skin coloration and tonal distribution resemble the reference.",
+      "evidence": "Although the animal is pale off-white, the visible skin has no naturally darker deep fold structure; shading is mostly broad lighting shadow on an otherwise uniform surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "The skin reads as thick, rough, wrinkled, and organically varied.",
+      "evidence": "Fine surface noise is present, but the close body view shows a smooth, uniform stylized skin without the wrinkles, mottling, or deep organic folds of the reference animal.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The principal enclosure surfaces retain their distinct reference material character.",
+      "evidence": "The scene differentiates coarse mottled trunk bark, angular pale stones, granular reddish soil, a rough light-gray fallen log, and a warm orange wall.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 0,
+      "criterion": "The rhinoceros performs a sustained slow walk from screen-left toward screen-right.",
+      "evidence": "Across the ordered animation frames, the rhino progresses toward screen-left and behind the left/central trunk rather than traveling from screen-left toward screen-right.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 0,
+      "criterion": "The gait convincingly communicates the rhinoceros's weight.",
+      "evidence": "The changing limb poses are rigid and block-like, with no clearly readable load transfer or planted hoof behavior; several lower legs are visually crowded or overlapped by foreground stones.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The walk's pose progression, pace, and displacement match the reference action timing.",
+      "evidence": "The sampled sequence shows a gradual, slow walk with changing leg poses and modest horizontal travel, culminating in the head passing behind the foreground trunk in a progression comparable to the reference action when direction is disregarded.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 1,
+      "criterion": "The delivered Blender project retains an operable rig and editable animation mechanism for the rhinoceros walk.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R15",
+      "score": 0,
+      "criterion": "The shot uses the reference-like stable medium-wide side camera.",
+      "evidence": "The foreground trunk and rear boulders translate substantially across the frame over the sequence while the rhino remains comparatively centered, showing material camera tracking/panning rather than stable frame boundaries.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 0,
+      "criterion": "Lighting resembles the reference daylight and dappled tree-shadow pattern.",
+      "evidence": "There is strong directional illumination and broad canopy-shaped cast shadow, but no clear fine irregular dappled leaf-shadow pattern across the rhino's skin comparable to the reference.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 1,
+      "criterion": "The rendered animation is delivered with the specified video format, dimensions, frame rate, and approximate duration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "A readable Blender project containing the editable recreated shot is delivered in addition to the MP4.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission successfully delivers a recognizable rhino enclosure and a sampled leftward walking progression behind a foreground trunk. However, the central animal and environment are far too primitive and stylized for the photographic target: the rhino lacks folds, mass, and credible anatomy, while floating foliage, overly bright dense rocks, incomplete log staging, and weak background depth substantially limit fidelity.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "baa6a3ccc0c0f6103d1a76df31b24f072448ee6df6038ea3e74462a054c21ea3"
+}

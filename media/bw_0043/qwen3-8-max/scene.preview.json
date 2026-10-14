@@ -1,0 +1,31 @@
+{
+  "exporter_version": 2,
+  "source_file": "zephyranthes_bloom.blend",
+  "objects": 25,
+  "meshes": 25,
+  "original_triangles": 26013,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 109952,
+  "optimized": true,
+  "showcase_refinement": 2,
+  "procedural_color_fallbacks": [
+    "MAT_Throat_GreenYellow",
+    "MAT_Tepal_White_SSS",
+    "MAT_Leaf_Green",
+    "MAT_Mulch_Wood",
+    "MAT_Litter_Brown"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0m .06m 0m",
+    "camera-orbit": "12deg 32deg .38m",
+    "min-camera-orbit": "auto 5deg .05m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

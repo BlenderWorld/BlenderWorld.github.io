@@ -1,0 +1,17 @@
+{
+  "exporter_version": 2,
+  "source_file": "community_activity_area.blend",
+  "objects": 112,
+  "meshes": 112,
+  "original_triangles": 6684,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 63248,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 890268,
+  "preview_refined": 2,
+  "removed_preview_nodes": 3,
+  "preview_note": "Architectural cutaway: room enclosure surfaces hidden to reveal the interior."
+}

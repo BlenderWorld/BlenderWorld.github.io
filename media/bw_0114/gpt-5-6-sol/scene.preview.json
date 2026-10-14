@@ -1,0 +1,33 @@
+{
+  "exporter_version": 3,
+  "source_file": "a.blend",
+  "objects": 323,
+  "meshes": 302,
+  "original_triangles": 189868,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Workshop_Floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 31.398552285785954,
+    "phi": 86.89532788252734
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 841724,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Brass_Worn",
+    "MAT_Wood_Dark_Matte"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "31.398552285785954deg 80deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

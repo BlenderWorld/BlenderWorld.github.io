@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "aquarium_goldfish.blend",
+  "objects": 211,
+  "meshes": 205,
+  "original_triangles": 42756,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Backdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "WaterVolume"
+  ],
+  "original_camera": {
+    "theta": 0.09635583347841964,
+    "phi": 90
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 375964,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "FishRed",
+    "FishOrange",
+    "FishCapX",
+    "FishPale"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "0.09635583347841964deg 80deg auto"
+  },
+  "preview_note": "Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

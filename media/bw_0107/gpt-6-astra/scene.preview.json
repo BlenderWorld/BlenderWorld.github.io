@@ -1,0 +1,25 @@
+{
+  "exporter_version": 2,
+  "source_file": "Urban_Morphology_Dusk.blend",
+  "objects": 791,
+  "meshes": 675,
+  "original_triangles": 864474,
+  "decimation_ratio": 0.6362250339512814,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2670892,
+  "optimized": true,
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "original_export_bytes": 18793956,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [
+    "CONCRETE | Micro-rough cast plaza"
+  ],
+  "preview_omitted_objects": [
+    "AIR | Local architectural haze / height falloff.001",
+    "PLAZA | Continuous concrete field.001"
+  ],
+  "preview_camera": null,
+  "preview_note": "Distant plaza and atmospheric haze are omitted in this 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved."
+}

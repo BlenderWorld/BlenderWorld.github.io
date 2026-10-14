@@ -1,0 +1,31 @@
+{
+  "exporter_version": 3,
+  "source_file": "csa_booth.blend",
+  "objects": 175,
+  "meshes": 85,
+  "original_triangles": 18060,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "LunarBackdrop",
+    "Floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -21.336862872281504,
+    "phi": 91.83392009977959
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 119172,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "-21.336862872281504deg 80deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

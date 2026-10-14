@@ -1,0 +1,14 @@
+{
+  "exporter_version": 2,
+  "source_file": "PG36_planetary_exploded.blend",
+  "objects": 138,
+  "meshes": 135,
+  "original_triangles": 496820,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 7580640,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 18084168
+}

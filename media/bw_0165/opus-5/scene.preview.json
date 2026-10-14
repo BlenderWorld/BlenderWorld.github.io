@@ -1,0 +1,43 @@
+{
+  "exporter_version": 3,
+  "source_file": "volcano_dusk.blend",
+  "objects": 3,
+  "meshes": 3,
+  "original_triangles": 1343112,
+  "decimation_ratio": 0.40949675082941706,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Plume_Main",
+    "Plume_Cap",
+    "Fumarole_1",
+    "Fumarole_2",
+    "Fumarole_3",
+    "Fumarole_4",
+    "Fumarole_5",
+    "Fumarole_6",
+    "Haze_Vol"
+  ],
+  "original_camera": {
+    "theta": 0,
+    "phi": 95.00064715864156
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 821984,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_Basalt_Ash"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "16.958m 200.652m 153.108m",
+    "camera-orbit": "35deg 65deg 919.294m",
+    "min-camera-orbit": "auto 5deg 43.776m"
+  },
+  "preview_note": "The initial view focuses on the volcanic cone and lava flows.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 2
+}

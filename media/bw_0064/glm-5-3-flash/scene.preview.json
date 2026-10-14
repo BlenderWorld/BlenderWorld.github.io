@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "alpine_winter_gondola.blend",
+  "objects": 760,
+  "meshes": 15,
+  "original_triangles": 506040,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 100209,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -175.21430994310344,
+    "phi": 85.07655395257076
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1001904,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Ice",
+    "MAT_Needles",
+    "MAT_Terrain"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "-175.21430994310344deg 80deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

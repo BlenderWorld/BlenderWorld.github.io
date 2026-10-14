@@ -1,0 +1,42 @@
+{
+  "exporter_version": 3,
+  "source_file": "flamingos_previz.blend",
+  "objects": 217,
+  "meshes": 217,
+  "original_triangles": 79220,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Backdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -5.710592455720531,
+    "phi": 85.44868597450366
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 439572,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "env_rock",
+    "env_trunk",
+    "env_leaf1",
+    "env_leaf2",
+    "env_leaf3",
+    "flam_body.011",
+    "flam_wing.011",
+    "flam_tail.011",
+    "flam_leg.011"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.580m 0.821m -1.311m",
+    "camera-orbit": "-5.710592455720531deg 80deg 7.060m",
+    "min-camera-orbit": "auto 5deg 0.336m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

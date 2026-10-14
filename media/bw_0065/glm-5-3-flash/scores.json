@@ -1,0 +1,196 @@
+{
+  "task_id": "bw_0065",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 47.7083,
+  "rubric": 41.666666666666664,
+  "dimension": 53.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The submission establishes the requested broad situation: a masked gray-brown raccoon scavenges beside an overturned metal bin, with a brick backdrop, overhead lamp, and reflective ground. The authored final image clearly presents the raccoon and bin as the hero interaction, while Group A wide_front confirms their placement in front of the wall.",
+      "issues": [
+        "The scene reads as an open display set rather than a convincing nighttime back alley: the brick wall is a freestanding slab with visible dark reverse/edges.",
+        "The supposed graffiti is a mounted purple surfboard-like sign with partial letters and colored ovals, not graffiti painted across the brick wall.",
+        "Required scattered plastic bags and crumpled paper are not convincingly present; most are opaque white rounded blobs.",
+        "No distinct puddles or asphalt surface are visible, only a uniformly glossy gray floor.",
+        "The raccoon is not clearly shown pawing at an item in the final framing."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "Group A wide_high and wide_front show the raccoon, bin, loose lid, bottle, and debris resting on the ground plane. The lamp has a visible upright pole and round base, and the brick backdrop has visible thickness rather than being a purely flat image.",
+      "issues": [
+        "The wall functions as an unsupported freestanding scenic panel rather than a coherent alley structure.",
+        "Several of the white debris forms have unclear real-world construction and contact purpose, making their physical identity difficult to assess."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The raccoon is independently recognizable in Group A and the authored final image through its gray-brown coat, dark eye mask, pointed pale muzzle, dark nose, ears, and striped tail visible in the wide views. The metal bin, separate lid, green bottle, copper-colored crushed can, and red-brown brick texture also have recognizable material/color identities.",
+      "issues": [
+        "The raccoon's fur is rendered as very coarse, uniformly clumped bristles, which differs substantially from the more natural, directional brown-gray fur of the reference asset.",
+        "White litter pieces are featureless matte ovoids rather than readable plastic bags or crumpled paper.",
+        "The bright purple/teal wall sign does not visually read as alley graffiti."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "The authored final is cleanly rendered with intentional shallow depth of field, strong reflections, and recognizable metal and glass-like highlights. However, as a combined image it does not achieve a believable back-alley photographic scene.",
+      "issues": [
+        "The glossy surface is closer to a smooth mirror-like studio floor than wet, textured asphalt.",
+        "There are no visually defined puddles, grime, asphalt aggregate, or other alley-surface variation.",
+        "The stylized wall sign, isolated wall slab, and unidentified white blobs undermine environmental realism.",
+        "The exaggerated clumpy fur and very sharp oversized shadow silhouettes reduce the naturalistic quality."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "The key spatial relationship is coherent: Group A wide_front places the raccoon low in front of the brick wall, facing loose debris, with the overturned can immediately beside it and the lamp above. The authored final uses a low close front-side angle consistent with the requested subject-focused composition.",
+      "issues": [
+        "The final camera lets the trash can occupy a very large portion of the right side, reducing the clarity of the raccoon's scavenging action.",
+        "The pawing interaction is obscured by framing and unidentified white debris.",
+        "The backdrop and lamp are staged as isolated props instead of producing a spatially convincing alley."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The bin, lid, bottle, and raccoon can broadly coexist at a plausible relative scale in Group A wide_front and wide_high, and the lamp is visibly elevated above the scene.",
+      "issues": [
+        "The trash bin appears disproportionately dominant relative to the raccoon in the authored final composition.",
+        "Several white debris objects are large, smooth, and visually ambiguous in scale; they do not read naturally as lightweight bags or crumpled paper.",
+        "The small raccoon, large prop bin, and isolated scenic wall make the overall setup feel miniature/staged rather than like a full-scale alley."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The render includes a warm upper lamp key with a cool dark-blue ambient environment, visible eye catchlights in the authored final, reflective ground response, a metallic bin, textured brick, and a green translucent-looking bottle. The final image is denoised and has purposeful shallow depth of field.",
+      "issues": [
+        "The floor's reflection is too uniformly smooth and clean for wet asphalt, with no separate puddle boundaries.",
+        "The warm spotlight creates hard graphic shadow shapes rather than a more naturally integrated street-lit alley look.",
+        "The bin is metallic but lacks a clearly visible dented corner as requested.",
+        "The white debris materials do not distinguish plastic from paper."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The central raccoon, overturned metal trash can, detached lid, brick wall, reflective ground, and overhead lamp are visibly present. Additional bottle and crushed-can litter is also included.",
+      "issues": [
+        "The requested plastic bags and crumpled paper are not identifiable; they are represented by multiple plain white rounded forms.",
+        "The trash can does not visibly show the requested dented corner.",
+        "A true graffiti-covered brick wall is absent; the wall instead carries a separate decorative sign.",
+        "Distinct puddles and asphalt texture are absent.",
+        "The requested one-front-paw pawing pose is not clearly visible in the final hero image."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The re-posed hero preserves the reference raccoon's complete proportion, anatomy, coat, facial-marking, and tail identity.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The complete pose and contact chain visibly communicate active scavenging.",
+      "evidence": "The raccoon is crouched with its head low in cam_submitted and wide_front, but no front paw is clearly seen reaching to or contacting an identifiable piece of trash/debris; the nearby white objects are featureless and the visible interaction reads primarily as sniffing.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The raccoon and complete alley assembly have mutually believable proportions, scale, and spacing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The trash-can prop is recognizably metallic, overturned, visibly corner-dented, and plausibly grounded.",
+      "evidence": "wide_front and cam_submitted clearly show a reflective silver cylindrical bin resting on its side. The visible end/rim region has conspicuous faceted inward deformation, reading as a localized dent rather than an undamaged cylinder.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "The loose-debris group contains readable scattered plastic bags and crumpled paper.",
+      "evidence": "The ground clutter consists of a green bottle, a small crushed red metal can, and several plain white ovoid forms. No multiple thin folded plastic bags or visibly wrinkled/crumpled paper pieces are recognizable.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "A readable graffiti-covered brick wall forms the action's backdrop.",
+      "evidence": "wide_front and wide_high clearly show a vertical red-brown brick wall with individual brick and mortar structure. A large purple graphic across its lower portion contains contrasting colored symbols and visible partial lettering including 'R/' and 'GF'.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The alley floor has the complete requested wet asphalt and one-or-two-puddle appearance.",
+      "evidence": "Although the smooth floor has strong reflections in cam_submitted and the final image, it reads as a uniform glossy gray studio-like plane rather than dark paved asphalt. No one or two clearly bounded localized puddles are visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The complete lighting system produces the requested upper warm key, long shadow, cool night contrast, and eye catchlight.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "The actual final camera delivers the complete requested nighttime scavenging-hero composition.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "Modeled assets have clean material zones suitable for later unwrapping and texturing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The actual delivered final image is openable and satisfies the requested 2K-class output size.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The delivered .blend is openable, editable, scene-complete, organized, and retains the required Cycles and denoising configuration for the corresponding final.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The recognizable raccoon, overturned bin, brick backdrop, lamp, and reflective floor make the requested scene concept legible, and the authored final has competent close-up focus and warm/cool lighting. The result falls well short of a convincing back alley because the litter is mostly unidentified blobs, the wall decoration is not graffiti, the wet ground is a smooth reflective plane without asphalt or puddles, and the raccoon's fur/interaction pose do not closely match the target.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "5156c1080ec8c2428a58be7dd7e73aedbf834a3a2920106c772085d218fc9e8f"
+}

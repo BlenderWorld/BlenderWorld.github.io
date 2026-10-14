@@ -1,0 +1,28 @@
+{
+  "exporter_version": 2,
+  "source_file": "snowboard_carve_previs.blend",
+  "objects": 652,
+  "meshes": 652,
+  "original_triangles": 1175356,
+  "decimation_ratio": 0.46794332951037815,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 3745140,
+  "optimized": true,
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "original_export_bytes": 23808288,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [
+    "SNOW | sunlit compact powder",
+    "ROCK | mottled alpine granite",
+    "Board | forest green and tracked snow"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0m .85m 0m",
+    "camera-orbit": "35deg 65deg 5.5m",
+    "min-camera-orbit": "auto 5deg .5m"
+  },
+  "preview_note": "The 3D preview opens on a static pose of the rider and snowboard.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved."
+}

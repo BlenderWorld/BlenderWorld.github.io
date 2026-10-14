@@ -1,0 +1,192 @@
+{
+  "task_id": "bw_0114",
+  "model": "Grok-4.6",
+  "judge_model": "GPT-5.6-terra",
+  "score": 54.8214,
+  "rubric": 57.142857142857146,
+  "dimension": 52.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The target concept is recognizable: Group B frame_0001 through frame_0200 shows a workshop bench with large 3D letter forms reaching a readable MOMENTUM title, while the left side includes a conveyor-like bed, exposed gears, and linkage arms. However, the mechanism is visually secondary to the oversized letters and does not read as a clearly teachable, fully connected drive chain. Group C frames 0001-0016 appear effectively unchanged, so the delivered video does not visibly demonstrate the requested synchronized motion sequence.",
+      "issues": [
+        "The title assembly is visible, but the intended pick-up, flipping, and one-by-one placement stages are not clearly legible as a mechanical sequence.",
+        "The gear/cam/arm system is crowded behind or across the letters rather than presented as separable instructional layers.",
+        "The sampled exported video appears static despite Group B PNGs showing differing poses."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "The wooden bench has substantial legs, feet, apron, and stretcher rails, and the title letters generally appear to stand on the tabletop. The conveyor and arm pedestal also visibly sit on the bench. In Group A detail_conveyor_arms and detail_gears_cams, though, rods run directly across letter faces and openings, mechanical clearance is hard to establish, and the tall rear panel and overhead bars have limited visibly convincing support.",
+      "issues": [
+        "Several linkage rods have apparent collisions or uncomfortably close passes through the title letters.",
+        "The rear panel and some overhead rails/crossbars lack clearly legible structural mounting.",
+        "The gear and linkage elements do not visibly resolve into a robustly attached working assembly."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The bold beveled sans-serif letters are immediately recognizable, and the scene successfully uses a dark wood bench, gold/brass-colored gear elements, and cool silver steel components. Group B frame_0200 has a clear retro-industrial palette. The conveyor housing remains a generic rounded grey box, while the arms and cam-related elements read more as thin abstract rods and hanging fixtures than as distinct industrial mechanisms.",
+      "issues": [
+        "The brass looks predominantly clean, bright gold rather than worn and lightly oxidized.",
+        "The robotic arms do not clearly read as two substantial three-joint pick-and-place arms with end effectors.",
+        "Extreme bright highlights make the pale lettering and chrome lose edge and surface definition."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "Wood grain, brick texture, bevels, and floor shadows give the author renders a reasonably finished workshop-set appearance, especially in Group B frame_0001 and frame_0200. Nevertheless, the highly reflective rails and letters are frequently clipped or bloomed, many mechanical pieces are simplified, and the layered rods and letters make the assembly look staged rather than like a coherent operating machine.",
+      "issues": [
+        "Strong glare and bloom wash out the title and reflective metal details.",
+        "Mechanical detail is often obscured by overlapping letters and rods.",
+        "The open room/set treatment with plain side surfaces is less convincing than a complete workshop interior."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "The broad arrangement is appropriate: conveyor and gear housing occupy the left portion of the bench, the title spans the rear/top surface, and arm bases sit near the title line. Group B frame_0200 provides the clearest final title-card arrangement. However, the final letters are tightly packed and partly occluded from many angles, while the rods repeatedly cross the main reading area, undermining the requested visual separation of drive components.",
+      "issues": [
+        "The title spacing is inconsistent and several letters crowd or overlap visually.",
+        "Linkages block the title faces and obscure the relationship between machinery and letters.",
+        "The cams, shafts, driven gears, conveyor, and arms are not spatially organized into clear instructional layers."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The bench, large letters, conveyor bed, gear cluster, and small arm pedestal have generally sensible relative sizes: the eight-letter title nearly spans the tabletop, as expected for a long word on a 4 m bench. The large brass gear is also visibly larger than the small adjacent cogs. Some scale clarity is lost because the letters dominate the machine and the arms are comparatively thin.",
+      "issues": [
+        "The lettering consumes so much of the machine volume that the drive train becomes visually underscaled and hidden.",
+        "The slender rods do not have the mass or construction expected of large three-joint industrial arms handling 0.5 m letters.",
+        "Exact intended module and conveyor dimensions cannot be visually verified."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The author renders use warm workshop-like illumination with reflective steel highlights, brass/gold accents, textured dark wood, and a detailed brick backdrop. Group B frame_0001 and frame_0200 show readable wood and brick materials, while metal reflects strongly. The material result is weakened by blown highlights and by brass that looks polished rather than aged.",
+      "issues": [
+        "Bloom and clipping make pale letter faces and chrome rails appear overexposed.",
+        "Brass lacks clearly visible oxidation, wear, or patina.",
+        "The requested cool rim contribution is not strongly separable from the overall bright warm lighting."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "Visible required elements include the workbench, eight title letters, a conveyor-like platform with rails and rollers, a large gear with smaller gears, linkage arms, and small industrial trim pieces. But the renders do not clearly establish a complete same-module meshing gear train, two identifiable camshafts driving reciprocating push rods, two fully articulated three-joint robotic arms with grippers, or a convincing title-locking system. Although Group B frame PNGs show varying letter positions, Group C's exported video frames remain visually static, leaving the requested synchronized composited clip unproven.",
+      "issues": [
+        "Two complete camshaft-and-pushrod assemblies are not visibly identifiable.",
+        "Two three-joint pick-and-place arms and their working grippers are not clearly present.",
+        "The full correctly meshed gear train is largely obscured and cannot be verified.",
+        "No visible motion progression appears in the submitted sampled MP4 frames."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The complete machine choreography must assemble and lock MOMENTUM through a synchronized, unobstructed, pedagogically readable sequence.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The complete gear train must satisfy the stated dimensions, common-module compatibility, connected engagement, and mechanically compatible operation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Two identifiable camshafts must each produce recurring push-rod reciprocation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The conveyor must have the stated transport length and visibly feed letter blanks into the handling workflow.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "Two three-joint robotic arms must both perform letter pick-and-place.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "criterion": "All eight title letters must share the specified bold sans-serif form and dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The supporting bench must satisfy its dimensions, base role, construction detailing, and complete dark matte wood finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The machine must achieve the requested retro-industrial kinetic-typography identity through a coherent old mechanism and its complete brass-and-steel surface system.",
+      "evidence": "The scene does read as mechanical typography, with gold gears/linkages and highly reflective silver rails around the MOMENTUM letters. However, the gold/brass surfaces in detail_gears_cams appear clean, uniformly polished, and brightly lit rather than visibly worn or lightly oxidized; the chrome-like steel is also strongly blown out by glare, limiting a clear cool-grey clear-coat material read.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The native lighting setup and authored result must jointly provide the requested warm key, cool rim, ambient fill, and interior HDRI.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The authored shot must use the requested ordered movement, focal length, and readable shallow-focus treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivered Blender project must be openable, editable, complete, and preserve the requested native Cycles rendering configuration and motion-blur result.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The actual PNG sequence and composited MP4 must form a complete, openable output package with the required resolution and timing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission creates a recognizable retro-industrial MOMENTUM title machine with a well-modeled bench, readable lettering, conveyor-like platform, and some gears/linkages. Its main failure is instructional mechanical clarity: key drive components are simplified, obscured, and crowded together, and the sampled final video does not visibly animate even though the submitted PNG sequence contains differing poses.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "cc4c3d9323a9dd5dd9b9885d5ae0b5b18407bf69b8aef76ca55bb10baab36cc0"
+}

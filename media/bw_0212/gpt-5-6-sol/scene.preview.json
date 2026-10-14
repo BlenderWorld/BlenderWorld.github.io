@@ -1,0 +1,39 @@
+{
+  "exporter_version": 3,
+  "source_file": "vintage_racecar_previz.blend",
+  "objects": 553,
+  "meshes": 505,
+  "original_triangles": 129416,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -46.16483390601847,
+    "phi": 83.9761487910905
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 999772,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "M_Body_Black",
+    "M_Steel_Dull",
+    "M_Exhaust",
+    "M_Heatwrap",
+    "M_Leather",
+    "M_Tire",
+    "M_Shearling",
+    "M_Concrete"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "11.570m 1.052m 0.003m",
+    "camera-orbit": "-46.16483390601847deg 80deg 12.573m",
+    "min-camera-orbit": "auto 5deg 0.599m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

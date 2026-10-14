@@ -1,0 +1,38 @@
+{
+  "exporter_version": 3,
+  "source_file": "flamingo_previz.blend",
+  "objects": 41,
+  "meshes": 41,
+  "original_triangles": 134972,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 0,
+    "phi": 89.33400228483956
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 439940,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "FLM_feather",
+    "FLM_bill",
+    "ENV_bed",
+    "ENV_rock",
+    "ENV_backdrop",
+    "ENV_bark"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.273m 0.688m -1.150m",
+    "camera-orbit": "30deg 70deg 5.423m",
+    "min-camera-orbit": "auto 5deg 0.258m"
+  },
+  "preview_note": "The initial view focuses on the two foreground flamingos.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 2
+}

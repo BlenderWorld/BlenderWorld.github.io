@@ -1,0 +1,163 @@
+{
+  "task_id": "bw_0165",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 83.125,
+  "rubric": 100.0,
+  "dimension": 66.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "The submitted hero image (.eval_workspace/exports/volcano_dusk.png) clearly depicts an active dusk stratovolcano with a central summit lava lake, three downhill lava flows, multiple slope steam plumes, and a larger summit smoke plume. Group A detail_crater.png also clearly shows the crater rim and cracked molten surface.",
+      "issues": [
+        "The cone is more like a uniformly steep, stylized volcano than a geologically varied stratovolcano.",
+        "The small fumarole sources read as odd yellow/dark pronged props rather than natural vents.",
+        "The intended lava illumination on surrounding rock is weak outside narrow reddish bands beside the flows."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "Across the Group A multiviews, the volcano is seated on the terrain, the crater/lava lake is integrated at the summit, and the lava channels remain connected continuously from the crater down the cone. No major floating mountain, flow, or plume elements are visible.",
+      "issues": [
+        "Several lava channels appear as clean raised strips laid on the cone rather than viscous flows merging organically into eroded slope channels.",
+        "The visible yellow/dark fumarole source objects look partially embedded and structurally artificial."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "The visual identity is immediately legible: dark blue-black ash/basalt slopes contrast strongly with orange-red lava, while the dusk-blue sky and gray smoke establish the requested warm-cool palette. detail_crater.png visibly includes black crust plates outlined by bright lava.",
+      "issues": [
+        "Lava surfaces have a repetitive high-contrast speckle pattern that reads more as a graphic texture than molten rock with cooled crust.",
+        "The slope material has broad, cloth-like vertical ridges in places rather than convincingly fractured volcanic ash and basalt.",
+        "Fumarole vent geometry and its yellow color do not match a natural geothermal appearance."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The overall scene is coherent and cleanly rendered, with recognizable rock, lava, steam, smoke, and dusk atmosphere. The hero export has a usable illustration-like finish without obvious pixel noise.",
+      "issues": [
+        "The volcano's surface, lava strips, and vent props look procedurally stylized rather than physically natural.",
+        "Smoke and steam are soft and somewhat blurry, with limited turbulent detail.",
+        "The terrain and distant landforms appear low-detail and diffuse, reducing the scene's geological believability."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "The summit, crater lake, and smoke plume form the visual focus in volcano_dusk.png, while the three flows descend across the visible slopes and the smaller steam plumes are distributed around the cone. The wide 16:9 export leaves appreciable open terrain and sky around the subject for report annotation.",
+      "issues": [
+        "The final camera is moderately elevated rather than strongly low-angle, since it exposes a substantial top view of the lava lake.",
+        "The hero image places the cone a little right of center, though it remains the dominant focal object."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The crater and lava lake read as substantially smaller than the cone, and the visible lava-flow widths are narrow relative to the mountain as intended. The fumaroles also remain secondary in scale.",
+      "issues": [
+        "The cone silhouette appears noticeably steeper and taller relative to its base than the requested approximately 800 m base by 400 m height ratio.",
+        "The summit opening is visually shallow in overview views, making the crater less volumetrically convincing at mountain scale."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The hero export uses a clear graded dusk sky with cool ambient fill, while emissive orange-red lava provides an effective visual focal contrast. Group A detail_crater.png shows the dark crater rim, cracked lava crust, and subtle reddish glow at the summit.",
+      "issues": [
+        "The lava emits strong self-color but produces only limited visible warm bounce light on nearby basalt.",
+        "The dark mountain material is often muddy and lacks enough roughness, ash variation, and sharp mineral detail.",
+        "The smoke's lighting is very uniform and soft, with weak depth definition."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "All principal requested components are visibly present: a dark volcanic cone, summit crater, cracked emissive lava lake, three continuous lava flows, roughly five or more small steam plumes across the slope/base area, a larger summit smoke plume, ground terrain, and a dusk sky. The hero export is also presented at the requested 1920×1080 aspect and resolution.",
+      "issues": [
+        "The small steam effects are present, but their visible source geometry does not convincingly complete the requested natural fumaroles.",
+        "The lava's warm lighting effect is not developed enough to fully satisfy the requested warm illumination of surrounding rock."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal landform is a correctly proportioned stratovolcano with the complete specified slope-surface system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The summit contains the correctly scaled crater-and-lava-lake assembly with the complete specified molten surface treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The repeated lava-flow system has the required count, scale, terrain relationship, and molten-versus-cooled surface construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The complete fumarole system has the required vent count, slope distribution, and attached semi-transparent steam.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A distinct large-scale volcanic smoke plume rises above the summit and remains distinguishable from slope steam.",
+      "evidence": "The designated hero export shows a thick dark-gray smoke column emerging from the glowing summit, rising high above the cone and bending into a broad cloud. It is substantially larger and visually separate from the thin white vapor plumes on the slopes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The scene combines genuine lava-cast warm illumination with cool environmental dusk fill.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The final author camera and composition clearly communicate the dusk geothermal subject, central hierarchy, scale, layering, label space, and requested viewpoint.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable and editable and retains the required Cycles configuration for a clean hero render.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The final image delivery provides one designated hero render at the required actual resolution.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A clearly recognizable and generally complete dusk volcano illustration with strong central lava/crater readability, three visible flows, and both steam and smoke. Its main limitations are a too-steep stylized cone, artificial-looking fumarole props and lava texture, muted lava bounce lighting, and only moderate geological/render realism.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "bd0e04bdd6dcc6e1fd8cf5ddd70b4f650a2cb0440928c2bcc4228ce94e97ae12"
+}

@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "temple_courtyard_promo.blend",
+  "objects": 993,
+  "meshes": 801,
+  "original_triangles": 154326,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Courtyard_Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 5.12131866984996,
+    "phi": 91.80295862761608
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1043172,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "M_Bluestone",
+    "M_LionStone",
+    "M_Plaster",
+    "M_DarkWood",
+    "M_GoldenGlaze",
+    "M_AgedBronze"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "5.12131866984996deg 80deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

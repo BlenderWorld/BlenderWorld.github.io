@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00.600 --> 00:03.897
+Give an AI agent Blender and a real photo or video.
+
+00:03.907 --> 00:05.736
+Can it rebuild that scene in 3D?
+
+00:06.036 --> 00:11.239
+We introduce BlenderWorld: 223 real-world 3D creation tasks,
+
+00:11.249 --> 00:14.880
+spanning 9 categories and 16 application scenarios.
+
+00:15.180 --> 00:19.566
+Inputs can be text, images, videos, or attached specification files.
+
+00:19.576 --> 00:24.799
+In Blender, the agent codes, renders, and inspects, then delivers an editable project.
+
+00:25.099 --> 00:27.847
+Real requests rarely have a single right answer.
+
+00:27.857 --> 00:32.746
+So an evaluator agent first renders eight task-specific views of each submission.
+
+00:32.756 --> 00:37.867
+Then 2,651 binary rubric items check each requirement:
+
+00:37.877 --> 00:42.477
+a vision-language judge checks the renders; an agent judge inspects the scene file.
+
+00:42.487 --> 00:44.657
+Eight visual-quality scores are fused in.
+
+00:44.957 --> 00:50.276
+Across 13 frontier models, GPT-6-Astra leads with 79.9,
+
+00:50.286 --> 00:54.978
+yet it passes every rubric item on only 42.2% of tasks.
+
+00:55.278 --> 00:57.399
+More tool calls don't mean better work.
+
+00:57.409 --> 01:01.214
+From another angle, people vanish, characters float, details distort.
+
+01:01.224 --> 01:04.367
+True 3D spatial coherence is still the bottleneck.
+
+01:04.667 --> 01:08.915
+BlenderWorld: measuring how well AI brings the real world into 3D.

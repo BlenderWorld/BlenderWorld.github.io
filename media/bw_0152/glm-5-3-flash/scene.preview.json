@@ -1,0 +1,28 @@
+{
+  "exporter_version": 3,
+  "source_file": "planetary_gearbox_exploded.blend",
+  "objects": 34,
+  "meshes": 34,
+  "original_triangles": 49768,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 49.11315821419889,
+    "phi": 61.55453227595624
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 364376,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "49.11315821419889deg 61.55453227595624deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

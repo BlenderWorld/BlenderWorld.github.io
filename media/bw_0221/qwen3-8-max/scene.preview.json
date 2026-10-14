@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "snowboard_previz.blend",
+  "objects": 7,
+  "meshes": 6,
+  "original_triangles": 12560,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -7.070344602489584,
+    "phi": 84.72563964418747
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 40188,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "BankRockSnow"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-2.500m 1.527m -2.733m",
+    "camera-orbit": "-7.070344602489584deg 80deg 3.663m",
+    "min-camera-orbit": "auto 5deg 0.174m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

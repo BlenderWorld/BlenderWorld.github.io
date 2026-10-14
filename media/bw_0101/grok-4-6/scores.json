@@ -1,0 +1,201 @@
+{
+  "task_id": "bw_0101",
+  "model": "Grok-4.6",
+  "judge_model": "GPT-5.6-terra",
+  "score": 36.25,
+  "rubric": 25.0,
+  "dimension": 47.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "Group A cam_submitted.png and wide_streamside.png clearly depict a wooden gabled mill beside a stream, a large exterior water wheel, a masonry arch bridge, rocks, a lantern, fence, and autumn-colored trees. The required winter variant is also visibly attempted in Group B watermill_winter_hero.png.",
+      "issues": [
+        "The mill reads as a simple single-story shed rather than the requested two-story traditional mill.",
+        "The scene lacks a convincing sloped mountain-valley setting and instead sits on a mostly flat, broad ground plane.",
+        "The key internal transmission system, stone mill pair, and evidence of the intended motion relationship are not visible.",
+        "The stream, foliage, atmosphere, and seasonal treatment are substantially simpler than requested."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "The main mill, wheel, stone foundation, and bridge have coherent large-scale support: the wheel axle visibly enters the mill wall in Group A detail_wheel.png, and the bridge has substantial arch and abutment construction in detail_bridge_stream.png.",
+      "issues": [
+        "In the author final watermill_autumn_hero.png and watermill_winter_hero.png, the dark rectangular form below the elevated wooden chute appears unsupported and intersects/obscures the wheel area.",
+        "The stream is an abruptly bounded, flat dark plane, with several rocks intersecting it in a visually artificial way.",
+        "The winter ice pieces appear as thin, separate rectangular slabs rather than ice naturally attached to the stream edges."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "The mill, water wheel, bridge, lantern, and fence are independently recognizable as their intended object types. Group A detail_wheel.png shows a recognizable rim, spokes, hub, axle, and repeated paddle/bucket-like sections, while the stone bridge has a strong readable arch silhouette.",
+      "issues": [
+        "The maple trees are conspicuously low-poly blob canopies with thin simple trunks rather than believable maple crowns.",
+        "Autumn foliage is nearly uniform coral-red instead of the requested red, orange, and yellow gradient.",
+        "The pale pink roof and uniformly pale weathered boards do not strongly convey aged, moss-stained traditional construction.",
+        "The exact count and full bucket form of the requested 20 water buckets cannot be confidently established from the shown wheel."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "There is some useful surface detail in the wood and masonry, especially in Group A detail_mill_facade.png, detail_wheel.png, and detail_bridge_stream.png. However, the overall scene remains visibly synthetic rather than a believable autumn valley previs with grounded environmental detail.",
+      "issues": [
+        "The faceted trees, repeated flat ground decals, and highly regular trench-like stream reduce naturalism.",
+        "The water appears nearly opaque black and mirror-flat rather than transparent, refractive, or flowing.",
+        "Several Group A wide views are very hazy and low-contrast, weakening the intended visual depth and object separation.",
+        "No convincing water splash, wheel spray, or visible current is present."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "The essential local relationships are sound in Group A cam_submitted.png: the wheel is mounted on the mill alongside the water, the arch bridge crosses the same channel behind it, and the lantern/fence occupy the nearby bank. The submitted camera is broadly a three-quarter view and establishes a readable mill-wheel-bridge grouping.",
+      "issues": [
+        "The stream reads as a narrow, straight engineered trench rather than a roughly 5 m natural creek winding through a valley.",
+        "The bridge is positioned very close behind the wheel/mill and competes with, rather than supports, the main silhouette in several views.",
+        "The surrounding environment provides little spatial progression into a mountain valley; the background is mostly an indistinct blurred horizon.",
+        "The water chute shown in Group B watermill_autumn_hero.png has an unclear connection to the wheel and mill."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The exterior wheel is broadly large enough relative to the mill facade to read as a major water wheel, and the bridge, lantern, rocks, and fence provide some usable scale cues in Group A wide_streamside.png.",
+      "issues": [
+        "Because the mill does not visibly resolve into two levels, its height and wheel-to-building relationship feel less credible than the requested dimensions imply.",
+        "The bridge appears unusually massive and visually dominant relative to the compact mill and narrow channel.",
+        "Tree crowns are oversized and highly uniform while their trunks are very thin, making their 5–9 m intended scale unconvincing.",
+        "The nearly flat terrain does not help communicate the requested 50 m sloped site."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "Wood grain and rough stone texture are visible in the Group A close views, and the autumn exterior does have a soft warm directional component. The winter author image changes the roof and ground to a pale snow-covered treatment.",
+      "issues": [
+        "The autumn lighting is washed out and does not convincingly read as a low, 15-degree golden-hour sun with defined warm shadows.",
+        "No clear volumetric Tyndall shafts are visible; the haze mostly lowers contrast instead.",
+        "Stone and wood have texture but show little convincing localized moss, damp staining, or weathering variation.",
+        "Water lacks transparent refraction and flowing/splashing behavior.",
+        "In watermill_winter_hero.png, snow is largely a smooth pale cover, while the water wheel has little convincing accumulated snow and the ice reads as separate hard-edged slabs."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The core exterior inventory is substantially present: mill, exterior wheel, bridge, stream, rocks, lantern, fence, trees, an autumn view, a wheel close-up, and a winter variant all appear across Groups A and B.",
+      "issues": [
+        "No visible crown gear, vertical shaft, paired 1.2 m millstones, or proof that the upper millstone rotates while the lower remains fixed is shown.",
+        "The mill is not visibly a two-story structure.",
+        "The water system lacks visible flowing water, spray at the wheel, transparent refraction, and a convincingly operating overshot feed.",
+        "Autumn vegetation lacks the requested varied red-orange-yellow translucent maple foliage and richer scattered ground dressing.",
+        "The winter variation does not convincingly place snow on the wheel or naturally form ice along the stream.",
+        "No submitted animation frames demonstrate the requested transmission/motion direction."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The principal exterior assembly must fully satisfy the specified mill architecture, dimensions, and side-mounted overshot wheel construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The native project must contain a continuous, dimensionally correct, mechanically coherent drivetrain from waterwheel to millstones.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The bridge crossing, streambed dressing, bank fixtures, and moss-bearing masonry must form the specified coherent riparian ensemble.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The terrain, maple population, foliage appearance, and ground dressing must jointly form the specified autumn landscape system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "All specified wooden exterior components must share the complete weathered-wood treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "criterion": "The authored water presentation must combine transparent refractive stream optics with readable wheel-area splashing and flow.",
+      "evidence": "In watermill_autumn_hero and the Group A stream views, the channel reads as a flat, dark mirror-like sheet with abrupt trench edges; no transparent/refractive view through the water is visible. No splash, spray, wake, or directional water-flow cue is visible around the wheel.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The autumn setup must combine the specified native low-angle lighting with its visible warm dusk and Tyndall result.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The actual main-output camera and authored image must satisfy the specified camera setup, composition, depth, and credible-scale goals.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The separate close-up must be a finished authored image that clearly prioritizes the waterwheel.",
+      "evidence": "watermill_autumn_wheel_closeup is a distinct, tightly framed authored image in which the waterwheel fills nearly the entire composition, clearly showing its dark weathered wood, layered rim/buckets, spokes, and central axle hub.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 0,
+      "criterion": "The third finished image must be a recognizable and fully transformed winter version of the same scene.",
+      "evidence": "watermill_winter_hero retains the mill, bridge, wheel, and snowy roof/ground in a cool pale setting, but the wheel remains largely exposed dark brown without readable accumulated snow. The stream-edge treatment consists of thin, separate white slabs that do not clearly read as coherent edge ice.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The complete finished-image package must contain all requested openable outputs at the required actual pixel dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The Blender project must be loadable, editable, organized, correspond to the outputs, and retain the required native render configuration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission successfully establishes a recognizable watermill, wheel, stream, and arch bridge scene, with usable multi-view coverage and a winter attempt. Its main shortcomings are the absent visible mill mechanism, one-story-looking building, artificial water and vegetation, weak valley depth, washed-out presentation, and several unresolved chute/ice geometry issues.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "a9797e176144ac6f01aa1f27a195af18fa9af599ae54dbf72758fa9af82e9376"
+}

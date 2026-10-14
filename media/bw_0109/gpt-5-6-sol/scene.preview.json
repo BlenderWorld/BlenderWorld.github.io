@@ -1,0 +1,45 @@
+{
+  "exporter_version": 3,
+  "source_file": "rainy_old_town_previs.blend",
+  "objects": 795,
+  "meshes": 756,
+  "original_triangles": 110531,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "HUMID_NIGHT_FOG"
+  ],
+  "original_camera": {
+    "theta": 0,
+    "phi": 92.18521696369075
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 585252,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_WetAsphalt",
+    "M_WetConcrete",
+    "M_AgedRedBrick",
+    "M_FadedGreenCement",
+    "M_SootBrick",
+    "M_OldCement",
+    "M_FadedBlueCement"
+  ],
+  "preview_omitted_objects": [
+    "STORM_CLOUD_0.001",
+    "STORM_CLOUD_1.001",
+    "STORM_CLOUD_2.001",
+    "STORM_CLOUD_3.001",
+    "STORM_CLOUD_4.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "20deg 65deg auto"
+  },
+  "preview_note": "Cloud and sky geometry are hidden to reveal the street scene.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

@@ -1,0 +1,38 @@
+{
+  "exporter_version": 3,
+  "source_file": "rain_lily_macro.blend",
+  "objects": 1163,
+  "meshes": 35,
+  "original_triangles": 87120,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -118.00000037943296,
+    "phi": 34.999992759165416
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 293184,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_Tepal_White",
+    "MAT_Throat_Green",
+    "MAT_Leaf_Green",
+    "MAT_SoilBed",
+    "MAT_WoodChip",
+    "MAT_DriedLeaf_Brown"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.000m 0.010m 0.000m",
+    "camera-orbit": "15deg 35deg 0.092m",
+    "min-camera-orbit": "auto 5deg 0.004m"
+  },
+  "preview_note": "The initial macro view focuses on the flower.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 22
+}

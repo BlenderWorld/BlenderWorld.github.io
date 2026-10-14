@@ -1,0 +1,175 @@
+{
+  "task_id": "bw_0070",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 92.5,
+  "rubric": 100.0,
+  "dimension": 85.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "The submitted vehicle is clearly the same specialized yellow tracked crane carrier concept as the reference: a yellow dual-track chassis, glazed cab, centrally presented gray hydraulic power enclosure, folded red PALFINGER boom, yellow protective frame, and clustered work lamps are all visible in Group B DT41_Hero and Group A cam_submitted. The broad front-facing arrangement in the hero render also places the HPU between the yellow equipment area and cab similarly to the reference.",
+      "issues": [
+        "The submitted vehicle is a cleaner, more generalized asset interpretation rather than a close match to the reference's dense frontal welded-frame configuration.",
+        "The protective frame is a much more open, tall rectangular cage than the reference's more segmented frame with prominent intermediate crossbars and diagonal brace.",
+        "The reference's dense exposed yellow hose/valve loops under the front platform are simplified and less characteristic in the submission."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 9,
+      "reasons": "Across the Group A turn-around views, both tracks sit convincingly on the studio floor and the cab, equipment boxes, boom pedestal, rails, bumpers, and rollover frame are visibly bolted or mounted to the chassis. The red crane has articulated pivots, cylinders, hose routing, and a supported rotating base; detail_crane shows its major mechanical pieces joining plausibly.",
+      "issues": [
+        "A few hose runs hang in very clean broad loops and read as simplified routing rather than tightly retained industrial hydraulic plumbing."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 9,
+      "reasons": "The vehicle has strongly readable industrial silhouettes rather than generic blocks: treaded black rubber tracks with wheel hardware, a framed tinted-glass cab with wiper and interior controls, a red articulated hydraulic boom, gray HPU cabinet, yellow rails, beacon, mirrors, and multi-LED work-lamp clusters. The yellow/red/gray/black palette closely follows the reference, and the PALFINGER, COPPARD, DT41, HPU, and POWER markings are visibly modeled or textured.",
+      "issues": [
+        "The yellow paint is a softer pale-gold tone and more uniformly pristine than the saturated working-machine yellow in the photo.",
+        "The crane's broad red forms and especially regular wheel array look somewhat more stylized than the reference machinery."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 8,
+      "reasons": "DT41_Hero presents a coherent, high-quality studio asset render with crisp edges, convincing glazing, cab reflections, mechanical fasteners, shadows, and readable equipment detail. The Group B power-station close-up demonstrates substantial modeled hardware including lid loops, latches, hinge, handle, warning symbol, connector, stop button, and lamp lenses.",
+      "issues": [
+        "The machine looks highly pristine and slightly toy-like because of the flawless paint, uniform bevel treatment, and very regular repeated road wheels.",
+        "There is limited visible grime, abrasion, grease, or material variation expected on a real deployed tracked hydraulic vehicle."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The major required relationships are maintained: the gray HPU occupies the central/front equipment position, the yellow enclosed cab is immediately to its right/rear, the hydraulic reservoir is on the opposing side, and the folded crane rises behind/beside those assemblies under the yellow safety structure. Group A detail_station_tracks and DT41_Hero keep both the boom and power station visually exposed, satisfying the requested emphasis.",
+      "issues": [
+        "The reference uses a compressed frontal layout with the crane mostly nested behind the frame, while the submission spreads the crane, tank, and cab more widely across a long side-oriented platform.",
+        "Some Group A angles show the broad safety-frame rails crossing the visual field more strongly than in the reference."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "reasons": "The cab, HPU, boom, rails, deck, and track units are all sensibly sized relative to one another, and all wide Group A views retain a believable compact carrier silhouette. The chassis clearly supports the equipment without an oversized or miniature major component.",
+      "issues": [
+        "The many exposed small road wheels and thick, sharply segmented tracks give the undercarriage a more compact crawler/toy proportion than the reference's broader, simpler track faces.",
+        "The tall open rollover frame is visually more dominant relative to the cab and machinery than in the target image."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 9,
+      "reasons": "The designated author final DT41_Hero has controlled three-quarter studio illumination, soft grounded shadows, and clean separation from the dark-to-gray background. Yellow painted metal, gray coated HPU metal, reflective cab glazing, silver cylinder rods/fasteners, black rubber tracks, and bright white LED lenses all read distinctly. DT41_Powerstation_Detail particularly shows sharp, clear HPU UV labeling and appropriate cabinet surface response.",
+      "issues": [
+        "The yellow coating is very uniformly glossy and clean, with less roughness, wear, and tonal variation than the photographed machine.",
+        "Some glass reflections are darker and more mirror-like than the lightly blue-gray utilitarian cab glazing in the reference."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 9,
+      "reasons": "All key requested/reference components are visibly present: two continuous tracks, yellow body, glass operator cab with seat and controls, orange beacon, mirror, red folding hydraulic crane with cylinders/hose bundle/hook, central gray HPU, yellow hydraulic compartment, rollover frame, guard rails, connection fittings, front/rear bumper hardware, and numerous square LED work lights. The HPU close-up provides especially strong evidence that the requested power-station UV graphics are clear rather than placeholder-like.",
+      "issues": [
+        "The exact reference-style lower-front hose/valve cluster and hanging loop arrangement is not reproduced at the same density.",
+        "Only one side mirror is clearly evidenced in the supplied views, whereas the reference shows mirrors projecting from both outer sides."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The asset must read as one compact yellow tracked engineering vehicle whose required systems have reference-compatible zoning and credible support relationships.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Both continuous tracks must support the chassis, contain readable repeated tread construction, and use the specified dark rubber-like surface treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The outer-side cab must combine enclosed framed construction, glass-readable glazing, and the reference-compatible relationship to the central station.",
+      "evidence": "DT41_Hero clearly shows a yellow enclosed cab on the outer right side of the vehicle, immediately behind/beside the gray HPU cabinet. Its large dark reflective windshield and side glazing are divided by black structural frames, with a yellow roof surround and visible windshield wiper.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The mounted red crane must have credible articulated folding geometry, hydraulic actuation cues, and the reference-facing folded appearance.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The centered gray power station must be substantial and visibly detailed as a serviceable equipment cabinet.",
+      "evidence": "DT41_Powerstation_Detail clearly shows a substantial central gray HPU enclosure with a separate door panel, lid seam, two lifting loops, multiple latches, hinges, a large pull handle, dark lower trim, and readable equipment labeling.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "A robust open yellow multi-member protective frame must be attached around the upper machinery and cab area.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The vehicle must reproduce the salient paired square work-light groups and their distribution across opposite vehicle zones.",
+      "evidence": "DT41_Hero visibly shows two separated paired light installations across the front-facing equipment zones: two square black LED clusters to the left of the HPU and two matching square LED clusters on the cab/body side to its right. Each cluster has a clearly modeled grid of bright circular emitters.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The principal body surfaces must use the specified coherent yellow metallic-painted finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The engine or power-unit section must use real UV-mapped texture data and render clearly without severe distortion or unintended blur.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The actual authored final render must use the requested camera and lighting systems while clearly presenting the crane and power station.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The native Blender delivery must be loadable, editable, scene-complete, genuinely three-dimensional, and originally configured for Cycles.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a strong, fully recognizable reconstruction of the tracked DT41-style crane carrier and a polished game-asset presentation. It excels in component coverage, readable HPU UV detail, articulated crane construction, and materials. The main fidelity gap is that it is a pristine, expanded stylized interpretation with a taller/open-frame layout and simplified front plumbing rather than a close replication of the reference's dense frontal industrial structure.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "881f6a81204f8f3770f2a8f83b29997782667ff128d43c28e7589a15a9bb2970"
+}

@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "watermill_autumn_valley.blend",
+  "objects": 379,
+  "meshes": 379,
+  "original_triangles": 150098,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "MistVolume"
+  ],
+  "original_camera": {
+    "theta": 123.17305272613221,
+    "phi": 85.09759481490066
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 4929040,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_Foundation",
+    "M_Roof",
+    "M_Millstone"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-4.525m 3.272m -3.856m",
+    "camera-orbit": "35deg 65deg 28.731m",
+    "min-camera-orbit": "auto 5deg 1.368m"
+  },
+  "preview_note": "The initial view focuses on the watermill within the landscape.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 6
+}

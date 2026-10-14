@@ -1,0 +1,54 @@
+{
+  "exporter_version": 3,
+  "source_file": "backrooms_showcase.blend",
+  "objects": 244,
+  "meshes": 244,
+  "original_triangles": 47186,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "BK_Floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 4.568119250764824,
+    "phi": 88.63488144769939
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 4237536,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "BK_DoorTrim",
+    "BK_Metal_Galv",
+    "BK_Metal_Paint",
+    "BK_Metal_Beige",
+    "BK_Plastic_Grey",
+    "BK_TBar",
+    "BK_CeilTile",
+    "BK_Plastic_Beige",
+    "BK_Plastic_Dark",
+    "BK_Cardboard_Dark",
+    "BK_Paper",
+    "BK_Fabric_Olive",
+    "BK_Fabric_Rust",
+    "BK_Fabric_Blue",
+    "BK_Cardboard",
+    "BK_Fabric_Grey",
+    "BK_Cardboard_Pale",
+    "BK_Fabric_Teal",
+    "BK_Metal_Rust"
+  ],
+  "preview_omitted_objects": [
+    "BK_Walls.001",
+    "BK_Ceiling.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "35deg 40deg auto"
+  },
+  "preview_note": "The enclosing walls and ceiling are hidden to reveal the interior layout and furnishings.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

@@ -1,0 +1,267 @@
+{
+  "task_id": "bw_0181",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 78.05327868852459,
+  "rubric": 83.60655737704919,
+  "dimension": 72.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "提交清楚呈现了黄色老旧后室空间、吊顶荧光灯、破损天花、连通门洞与走廊；家具/纸箱堆放区和独立的诡异纸板人形立牌房都可见。Group C 从 frame_0001 到 frame_0016 连续穿过杂物区、走廊并进入立牌房，符合第一视角漫游的核心场景意图。",
+      "issues": [
+        "家具区中大量大灰色或棕色立方体/板材的具体家具身份不够明确，整体更像堆放的道具块而非丰富可辨的家具。",
+        "场景细节总体较重复，未达到“高级感”主图所期待的独特陈设和精致度。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "房间的地面、墙面、吊顶、门框和门扇形成了连贯的可穿行建筑壳体；纸箱、椅子、储物架、立牌及其三角支架都基本落在地面上。Group C frame_0007 至 frame_0011 中走廊门洞、椅子、纸屑和立牌之间的空间关系也保持稳定。",
+      "issues": [
+        "部分立牌彼此距离很近，底座与人物轮廓在英雄图和动画后段中有视觉重叠。",
+        "散落纸张和纸板碎片呈现为较硬的薄片/块状，个别看起来像轻微悬浮或缺少自然贴地弯曲。",
+        "部分大体块家具的组合关系不清晰，像互相靠入的简单盒体。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "黄色斑驳墙纸、污黄地面、米色吊顶、冷白荧光灯及灰蓝色人形立牌构成了统一且易辨识的后室色彩语言。Group B 的 hero 图中，纸板人形明确具有平面印刷轮廓、人物脸部和独立纸板支脚，能够读作怪异的人形立牌而非普通人。",
+      "issues": [
+        "立牌人物造型和服装高度重复，头脸与身体图案显得简单且缺乏角色差异。",
+        "Group B 的 PRINT 纹理和近景人物脸部有明显颗粒、模糊及低分辨率感。",
+        "门上的白色十字形把手不太像常规门五金，削弱了环境物件的可信度。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "整体渲染没有明显破图，灯光、墙面污渍、地面色泽、纸箱纹理和纸板支架共同建立了可理解的室内空间。Group B 的主图和 Group C 动画均保持了连贯的视角与场景表现。",
+      "issues": [
+        "全局黄调较重且反差偏低，室内显得发灰、发雾，层次不足。",
+        "立牌的低清印刷脸、简化剪影和可见三角支撑使其更接近粗糙展板，而不是高品质商用场景资产。",
+        "部分家具表现为缺少功能细节的大块几何体，降低了写实和精致程度。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "空间叙事清晰：入口杂物/家具房通过门洞连接至长走廊，走廊两侧布置多个门洞、标识和少量椅子，末端及右侧房间引入纸板人群。Group C frame_0001 至 frame_0016 的连续位移证明路线真实可通行，并且镜头始终能识别重点区域。",
+      "issues": [
+        "家具堆放区虽然拥挤，但多为围边摆放或大块体遮挡，实际“家具堆满房间”的层次不如立牌房丰富。",
+        "立牌房内多数人物正面同向排布，空间组织略显整齐重复，诡异的随机性和纵深变化有限。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "门洞、椅子、纸箱、吊顶格栅和成人立牌之间的相对尺度总体可信；小型橙红衣立牌与成人立牌形成可读的身高差。走廊宽度也足以支持第一视角通过。",
+      "issues": [
+        "若干前景的高大灰色块体和立板比周围常规家具显得过于厚重、尺度用途不明。",
+        "部分立牌的宽大肩身与极薄平面身体形成风格化比例，近景时显得不够自然。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "荧光天花灯提供了稳定的室内照明，发光出口牌、阴影和天花缺失黑洞都强化了后室氛围。墙纸、污渍地面、纸箱瓦楞感、木门和纸板立牌支架使用了不同材质表达，Group B hero 图中可清晰分辨。",
+      "issues": [
+        "出口牌在 Group C frame_0007 至 frame_0010 中过曝成无文字的浅绿色矩形，缺乏可读性。",
+        "荧光灯和环境整体过于均匀偏暖，材质之间的粗糙度、反射和接触阴影差异不足。",
+        "立牌印刷纹理带有噪点和模糊，近景质量较弱。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "可见内容包含完整后室建筑壳体、家具与纸箱杂物、走廊门洞、椅子、散纸、破损吊顶、多人纸板立牌房，以及 Group B 的方图/横幅/竖图主视觉。Group C 的 16 张时序帧还明确显示了从家具区到走廊再到立牌房的完整漫游过程。",
+      "issues": [
+        "家具区的重要物件中有不少仅能辨识为方块、板材或架体，具体家具种类和细节不够完整。",
+        "墙牌与发光门头没有可读文字或图案，作为细节页环境装饰的完成度有限。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The scene forms a complex Backrooms environment with developed connecting regions beyond the two required feature rooms.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Developed areas outside the feature rooms are completed with environmental dressing appropriate to the Backrooms setting.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "Supplementary dressing in the remaining Backrooms areas avoids obvious visual repetition.",
+      "evidence": "The corridor in frame_0007 and frame_0008 uses highly repeated glowing green rectangular signs, matching gray doorframes, matching ribbed doors with the same white cross handles, and repeated small wall plaques in a regular copy-pasted sequence.",
+      "importance": "detail",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "A distinct room is densely filled with furniture and conveys cramped, oppressive spatial pressure.",
+      "evidence": "The opening room contains corrugated carton stacks, large plain blocks/slabs, and ambiguous stacked gray shelf-like pieces, but no clearly recognizable furniture collection forming an identifiable cramped furniture room. The central path to the doorway remains comparatively open.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A distinct room contains multiple eerie cardboard human-form standees.",
+      "evidence": "A separate large room is visibly populated by a crowd of adult-sized flat human cutouts, including many gray-blue figures, several red-clothed figures, and a smaller orange-red figure. Their thin printed construction and foot supports are clearly visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The realized layout provides a connected camera-traversable route through the principal spaces and the crowded furniture room.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Furniture and other dressing do not completely block any primary passage.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "Rooms, passages, furniture, props, and human standees use mutually plausible conventional proportions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The coordinated visual and lighting treatment sustains an oppressive, eerie Backrooms mood, keeps every developed area readable, and uses contrast, color, and localized irregularity to strengthen unease.",
+      "evidence": "The developed rooms remain legible under a coherent sickly yellow fluorescent treatment, while black missing-ceiling voids, stained tiles, dark ceiling interruptions, and pale green doorway lights introduce localized unsettling contrast.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 0,
+      "criterion": "The final imagery has a polished premium finish rather than blockout or basic-preview quality.",
+      "evidence": "The hero images show very simple low-detail cutout silhouettes and block-like props; the standee faces and print surfaces are visibly grainy/blurred, making the presentation read closer to a basic preview than a polished premium render.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 0,
+      "criterion": "Walls, floors, furniture, standees, and other dressing throughout the developed environment have finished, distinguishable material appearances that hold up in close walkthrough views.",
+      "evidence": "Although walls, floor, cartons, and some slabs use different colors/textures, close standee views and PRINT_child show heavily speckled, blurred facial printing, while the large room props remain mostly coarse generic slabs. Fine surface detail does not hold up consistently in close views.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "An actually submitted storefront hero still uses a clean, product-focused composition with usable open space for copy.",
+      "evidence": "The delivered portrait hero deliberately places the standee group low and left, leaving a large uninterrupted yellow wall and ceiling field on the upper and right portions for marketing copy.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The focal scene subject remains unobscured and its silhouette separates clearly from the background.",
+      "evidence": "In the delivered hero stills, the dark standee silhouettes contrast clearly against the yellow wall; the distinctive orange-red child cutout is isolated in open floor/wall space and is not covered by debris or furniture.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 1,
+      "criterion": "The project contains an operational material, lighting, camera, and output pipeline suitable for finished stills and animation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The delivered animation artifact serving as the requested Backrooms walkthrough is decodable and has a duration of 10 seconds.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "The delivered 10-second walkthrough uses a continuous first-person camera path that clearly presents the principal spaces.",
+      "evidence": "The ordered walkthrough frames visibly move from the cluttered opening area (frame_0001), through the doorway and long Backrooms corridor (frame_0007 through frame_0010), and into the crowded standee room (frame_0011 onward) from a first-person camera.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 1,
+      "criterion": "In the delivered walkthrough, the standees' human forms and spatial arrangement are clearly readable from the first-person view.",
+      "evidence": "Once the camera enters the standee room, frames frame_0011 through frame_0016 clearly show the rows, varied heights/colors, recognizable head-torso-arm-leg silhouettes, and the isolated smaller orange-red cutout.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The delivered walkthrough travels without clipping through geometry or being unintentionally blocked by large props.",
+      "evidence": "Across the sampled sequence, the camera passes through door openings, travels down the corridor, and enters the standee room without any visible wall/prop intersection or a large object blocking the route.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R19",
+      "score": 1,
+      "criterion": "Rendered still-image files are present in the actual delivery.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R20",
+      "score": 1,
+      "criterion": "The actually submitted still set includes imagery suitable for a storefront detail page.",
+      "evidence": "The submitted authored still set includes square, wide-banner, and portrait views of the featured standee room, providing both its atmosphere/material treatment and its spatial arrangement for a storefront detail page.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R21",
+      "score": 1,
+      "criterion": "A complete .blend project is delivered with an editable structure suitable for continued modification.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R22",
+      "score": 1,
+      "criterion": "All modeled walls, flooring, furniture, cardboard standees, and other dressing have complete material assignments.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "静态场景的核心对象明确可辨：后室空间、杂物家具区、走廊和纸板人形立牌群均实际出现在提交图中；动画帧也显示了有效的第一视角穿行。主要短板是家具资产过于块状含混、立牌印刷质量偏低、整体黄雾低反差，尚未达到高端店铺主图的精致与真实感。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "1dc8a64c5b40ae1c54b4700450cf257720ef2d58c943999d18a75da1200596b8"
+}

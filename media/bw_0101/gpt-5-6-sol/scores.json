@@ -1,0 +1,196 @@
+{
+  "task_id": "bw_0101",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 56.25,
+  "rubric": 50.0,
+  "dimension": 62.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B 的 autumn_watermill_main_4k 清楚呈现了双层木构磨坊、侧置大水车、跨溪石拱桥、石灯笼、木栅栏和秋景树木；Group B 的 winter_watermill_variant_4k 也确实给出了同一构图下的冬季积雪版本。整体题材和主要外部布置是正确且易辨认的。",
+      "issues": [
+        "磨坊被处理成简化的风格化小景，而非具有可信山谷地形与自然河岸的预演场景。",
+        "所有视图均未展示水车木轴进入室内后的冠状齿轮、立轴和上下石磨盘，因此关键传动关系及方向无法核实。",
+        "水车没有清晰可见的上射供水槽或水流路径，无法证明其为正确的上射式工作布置。",
+        "地面和溪流是平直、硬边的几何平面，缺乏目标所要求的自然缓坡、河床和溪岸。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "Group A 的 detail_mill_facade、detail_waterwheel 和 wide_front_low 显示墙体木梁、屋顶、轮棚立柱、桥拱券和桥台均有连续支撑；水车有中心轮毂并紧邻磨坊侧墙，桥梁也确实跨在水道上，没有明显的主体悬空。",
+      "issues": [
+        "水道两侧只是薄而笔直的绿色边条，缺少有厚度和承托关系的自然河岸。",
+        "detail_waterwheel 中轮缘周围及水下的白色碎片有多处脱离水面和水斗，更像悬浮碎片而非受水流约束的水花。",
+        "飞散叶片大量以平面片悬在空中，个别离主体非常近，削弱了场景的物理可信度。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "磨坊的双坡屋顶、木框架、门窗和水车的轮毂、辐条、轮缘与水斗在 Group A detail_waterwheel 和 Group B autumn_waterwheel_closeup_4k 中均能明确读成对应物体。暖棕木材、橙红秋叶以及冬景中的冷灰白雪色也符合季节主题。",
+      "issues": [
+        "木材总体偏干净、均一的渲染木纹，未呈现明确的风化、污渍和苔痕。",
+        "屋顶上的绿色块状物读起来像贴上的扁平绿垫，而非自然苔藓。",
+        "秋叶大多是规则的方片、菱形和纸片状粒子，树木本身几乎是光秃枝干，未形成红橙黄渐变的枫树冠层。",
+        "河石、草和水花均明显低多边形化，水面也不像透明折射的溪水。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "Group B 的秋季主图具有统一的暖色调、清晰的主体层次和可读的水面反射，冬季图也保持了合理的冷色氛围；因此它是完成度不错的风格化预演图，而非破损渲染。",
+      "issues": [
+        "平直黑色水渠、硬切绿色岸边和大面积平坦棕色地面使画面明显像摆放式微缩模型。",
+        "散布在全画面的纸片叶子、几何白色水花和低多边形石块破坏自然感。",
+        "远景树林被强烈虚化，虽然制造景深，但也掩盖了环境细节和山谷空间。",
+        "没有清楚可见的真实薄雾体积光束、自然流水或透明水体效果，未达到题目强调的可信黄昏山谷气氛。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "Group B autumn_watermill_main_4k 和 Group A wide_bridge_side 一致显示桥在前景跨越溪流、石灯笼位于桥端、木栅栏贴近桥头和磨坊，水车位于磨坊侧面并靠近水道。主图为清楚的四分之三视角，主体前后关系成立。",
+      "issues": [
+        "桥梁在主构图中占据较大前景面积，遮挡了磨坊下层和水车底部的一部分。",
+        "溪流呈笔直的矩形沟槽，没有建立出自然曲折的溪谷空间。",
+        "平坦场地与高度虚化背景没有把50m范围缓坡和山谷纵深充分表达出来。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "从 Group A wide_front_low、detail_waterwheel 及 Group B 冬季图可见，水车相对两层磨坊的高度足够显著，桥栏、桥拱、灯笼和门窗之间也具有大致可信的相对尺度。桥的跨度视觉上能够覆盖水道。",
+      "issues": [
+        "溪道的视觉宽度和深度偏小、偏人工，与大尺寸石拱桥相比略像窄水槽。",
+        "树木冠层缺失且树干纤细，难以有力支撑5–9m枫树和山谷环境的尺度感。",
+        "水车的轮宽、精确水斗数量及磨坊内部石磨尺寸未能从提交视图中核实。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "Group B autumn_watermill_main_4k 中低角度暖光、屋檐和桥栏投影、室内暖窗光共同形成了明确的秋日傍晚照明；winter_watermill_variant_4k 则成功转为冷灰环境光，并在屋顶、桥面、水车和灯笼顶部布置了积雪与冰柱。",
+      "issues": [
+        "水面主要表现为暗色反光平面，不具备所要求的清晰透明度、折射和流动感。",
+        "石拱、河石和灯笼材质较干净，几乎没有可辨识的苔藓湿痕。",
+        "木材没有足够的风化层次，苔痕和脏迹也很有限。",
+        "秋叶没有可见的透光叶片质感，薄雾和丁达尔光束亦不明显。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "提交中包含秋季主图、水车特写和冬雪变体；外部核心资产——两层磨坊、水车、桥、溪流、灯笼、栅栏、石块、草和秋叶——均至少在 Group A 或 Group B 中可见。冬季图还显示屋顶、地面、桥与水车的积雪以及水面冰块。",
+      "issues": [
+        "最关键的内部传动组件，即木轴进入屋内后的冠状齿轮、立轴和一对石磨盘，未在任何视图中呈现。",
+        "六棵具有红橙黄叶色渐变的枫树数量和树冠效果无法从各视图中确认；可见树木多数是裸枝配悬浮粒子。",
+        "自然缓坡、完整河床苔石卵石、可信水流/水花、透明折射水面和明确的苔藓材质均不完整或表现很弱。",
+        "水车是否具有均匀20个水斗及正确传动运动方向没有可见证据。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal exterior assembly must fully satisfy the specified mill architecture, dimensions, and side-mounted overshot wheel construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The native project must contain a continuous, dimensionally correct, mechanically coherent drivetrain from waterwheel to millstones.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The bridge crossing, streambed dressing, bank fixtures, and moss-bearing masonry must form the specified coherent riparian ensemble.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The terrain, maple population, foliage appearance, and ground dressing must jointly form the specified autumn landscape system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "All specified wooden exterior components must share the complete weathered-wood treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "criterion": "The authored water presentation must combine transparent refractive stream optics with readable wheel-area splashing and flow.",
+      "evidence": "In the authored autumn final image, the stream reads as a dark reflective flat channel with opaque-looking water. The white polygon shards around the wheel do not read as coherent splashing or directional flowing water, and no visible refractive distortion of submerged/background content is shown.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The autumn setup must combine the specified native low-angle lighting with its visible warm dusk and Tyndall result.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The actual main-output camera and authored image must satisfy the specified camera setup, composition, depth, and credible-scale goals.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The separate close-up must be a finished authored image that clearly prioritizes the waterwheel.",
+      "evidence": "The separate authored image autumn_waterwheel_closeup_4k is tightly framed on the wooden waterwheel; its hub, spokes, rim, paddles, axle, and wood surface dominate nearly the entire image.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 0,
+      "criterion": "The third finished image must be a recognizable and fully transformed winter version of the same scene.",
+      "evidence": "winter_watermill_variant_4k clearly retains the same mill, wheel, bridge, and stream layout with cool diffuse lighting and snow on the roof, terrain, bridge, and wheel. However, the stream edge remains a sharply bounded green strip beside dark water; the scattered blue-white polygon pieces read as floating pieces rather than clearly readable ice accumulated along the stream edge.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The complete finished-image package must contain all requested openable outputs at the required actual pixel dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The Blender project must be loadable, editable, organized, correspond to the outputs, and retain the required native render configuration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "外部磨坊、侧水车、石拱桥和季节变体均清晰可辨，构图和主体比例基本成立。主要问题是场景仍显著像简化风格化模型：自然地形、溪流、植被、风化苔藓和水体效果不足，且题目强调的室内齿轮—立轴—石磨传动系统完全未被展示或验证。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "884d781cf2e70317cc87f11c45b14727b1a3bfd68bd4532781fe78eac040d079"
+}

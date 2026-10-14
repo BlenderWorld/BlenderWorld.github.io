@@ -1,0 +1,50 @@
+{
+  "exporter_version": 3,
+  "source_file": "rainy_street_night.blend",
+  "objects": 449,
+  "meshes": 429,
+  "original_triangles": 167652,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 0,
+    "phi": 88.00000305655871
+  },
+  "removed_cyclic_shader_links": [
+    {
+      "tree": "Shader Nodetree",
+      "source": "Emission",
+      "target": "Mix",
+      "socket": "A"
+    },
+    {
+      "tree": "Shader Nodetree",
+      "source": "Emission",
+      "target": "Mix",
+      "socket": "A"
+    }
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 628008,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "M_AsphaltWet",
+    "M_Sidewalk",
+    "M_PaintZebra",
+    "M_ConcreteOld",
+    "M_BrickGrey",
+    "M_BrickRed",
+    "M_Shutter"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "0deg 80deg auto"
+  },
+  "preview_note": "Cyclic shader links are omitted for the web material preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

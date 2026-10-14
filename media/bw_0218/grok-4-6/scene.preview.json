@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "rally_previz.blend",
+  "objects": 919,
+  "meshes": 191,
+  "original_triangles": 104048,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "GroundFill.001"
+  ],
+  "reduced_subdivision_objects": [
+    "TerrainBase"
+  ],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 8.529727820025293,
+    "phi": 93.95793031766271
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 16355976,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "RoadGravelGrey",
+    "BankGrass"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "2.082m 0.340m -39.945m",
+    "camera-orbit": "8.529727820025293deg 80deg 8.759m",
+    "min-camera-orbit": "auto 5deg 0.417m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,28 @@
+{
+  "exporter_version": 3,
+  "source_file": "planetary_reducer_exploded.blend",
+  "objects": 26,
+  "meshes": 26,
+  "original_triangles": 132273,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 28.999995360655184,
+    "phi": 62.99998725990522
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 308720,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "28.999995360655184deg 62.99998725990522deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

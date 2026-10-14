@@ -1,0 +1,29 @@
+{
+  "exporter_version": 3,
+  "source_file": "medieval_chest.blend",
+  "objects": 2,
+  "meshes": 2,
+  "original_triangles": 498,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 45.00001034242996,
+    "phi": 69.05968031556131
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 3602812,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "35deg 65deg auto"
+  },
+  "preview_note": "The studio ground is omitted to focus on the chest.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

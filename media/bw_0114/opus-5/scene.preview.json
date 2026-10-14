@@ -1,0 +1,29 @@
+{
+  "exporter_version": 2,
+  "source_file": "a.blend",
+  "objects": 81,
+  "meshes": 81,
+  "original_triangles": 283096,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "FLOOR.001"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 997896,
+  "optimized": true,
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "original_export_bytes": 7187064,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [
+    "MAT_Wood_Matte",
+    "MAT_Brass_Worn",
+    "MAT_Steel_CoolGrey",
+    "MAT_Steel_Dark",
+    "MAT_Leather_Belt",
+    "MAT_Brass_Letter"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": null,
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved."
+}

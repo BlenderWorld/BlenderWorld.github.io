@@ -1,0 +1,30 @@
+{
+  "exporter_version": 3,
+  "source_file": "lotion_pump_turntable.blend",
+  "objects": 17,
+  "meshes": 16,
+  "original_triangles": 28364,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Studio_Seamless_Gradient_Backdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 36.30450174128516,
+    "phi": 71.53762384353799
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 88268,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "36.30450174128516deg 71.53762384353799deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

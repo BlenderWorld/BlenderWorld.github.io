@@ -1,0 +1,246 @@
+{
+  "task_id": "bw_0214",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 53.50765306122449,
+  "rubric": 63.265306122448976,
+  "dimension": 43.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The submitted view retains the broad reference staging grammar: a school of orange-toned fish occupies the middle, rocks and pale substrate sit below, a dark branch arcs from the left, a dense plant cluster fills the right, and the scene is blue lit (Group A wide_front; Group C frame_0001).",
+      "issues": [
+        "The fish are highly simplified, nearly identical peach fish rather than the varied orange, red-orange, gold, and white goldfish in the reference.",
+        "The reference's prominent large upper-right fish, forward-facing center fish, and cropped lower-right fish are not convincingly recreated.",
+        "The bright flat-blue background and oversized plant mass differ substantially from the darker, more natural aquarium framing."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 3,
+      "reasons": "The rocks and plant stems generally meet the floor, and the fish plausibly float in the water volume. However, Group A detail_environment and wide_front clearly show many planar fins and leaves, fish passing into the right plant cluster, and disconnected rod-like branch pieces.",
+      "issues": [
+        "Fish tails, fins, and plant leaves are visibly paper-thin planes with no credible thickness.",
+        "Several fish, tails, stems, and leaves visibly interpenetrate, especially at the dense right plant cluster.",
+        "Some driftwood/branch segments terminate abruptly or hang unsupported.",
+        "There is no coherent visible tank enclosure or water-surface boundary; the environment opens onto a flat backdrop."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 4,
+      "reasons": "The fish read independently as fish because of their oval bodies, fins, tails, and eyes, and the blue-green aquarium palette is recognizable. Group A detail_hero also shows that the bodies have a surface texture rather than being featureless primitives.",
+      "issues": [
+        "The fish are mostly the same muted peach/tan color instead of the reference's varied orange, red-orange, gold, and white coloration.",
+        "Oversized glossy black spherical eyes and simple triangular fins give the fish a toy-like silhouette rather than a goldfish appearance.",
+        "The large pale fork tails are rigid flat sheets rather than translucent, naturally shaped goldfish tails.",
+        "The right-hand plant uses narrow flat strips rather than the reference plant's fuller pointed oval leaves."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The Group C frames are cleanly rendered and have readable foreground, middle-ground, and background layers, but the combined image remains overtly low-detail and artificial rather than a believable aquarium.",
+      "issues": [
+        "Rigid identical fish, giant eyes, and planar transparent tails undermine biological believability.",
+        "The crowded plant/fish intersections and floating branch fragments make the scene visibly constructed rather than natural.",
+        "The background is a very bright, smooth blue field with simple dark wave-like forms rather than the reference's subdued underwater rocky depth.",
+        "The faceted rocks, flat leaves, and coarse fish texture do not integrate into a coherent natural material style."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "The key broad spatial relationships are present: bottom rocks and substrate, fish crossing the central water space, driftwood framing the left/upper area, and a dense green plant group on the right (Group A wide_front). The Group C sequence also shows fish changing position through the layered scene from frame_0001 to frame_0016.",
+      "issues": [
+        "Nearly all visible fish face in the same horizontal direction, unlike the varied crossing and forward-facing poses in the reference.",
+        "The submitted fish form an even, rigid school instead of the reference's strongly varied foreground/background size and position arrangement.",
+        "The dense right-side foliage obscures and intersects fish rather than serving as a clear background edge decoration.",
+        "The central foreground is dominated by a large isolated dome rock, unlike the reference's more irregular clustered rock arrangement."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 4,
+      "reasons": "Fish, plants, and rocks are all visible at aquarium-like scales, and Group C frame_0001 provides some depth through a larger nearer fish and smaller rear fish.",
+      "issues": [
+        "The fish are too uniform in body size despite the reference's clear large, medium, small, foreground, and cropped fish hierarchy.",
+        "Tails are disproportionately broad and nearly body-length, dominating several frames.",
+        "The eyes are dramatically oversized for goldfish anatomy.",
+        "Large foreground rocks and the extremely tall right-side plant mass compete with rather than support the fish scale hierarchy."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "A strong underwater blue illumination is consistently present, and the scene has darker rocks, lightly textured fish bodies, translucent tail planes, and visible bubbles (Group A detail_environment; Group C frame_0008).",
+      "issues": [
+        "The blue illumination is overly even and bright compared with the darker, deeper blue aquarium reference.",
+        "Fish materials do not convey orange/gold scale variation, soft flesh, or translucent fin structure convincingly.",
+        "Tail transparency exposes the flat construction rather than reading as thin organic membrane.",
+        "Rocks and plants have very simple, mostly matte low-poly materials with little natural surface variation."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "Most major visible reference inventory is included: roughly the requested number of fish, plants, driftwood-like branches, dark rocks, a pale floor, blue background lighting, and bubbles are all visible in Group A wide_front and Group C frame_0001.",
+      "issues": [
+        "There are six similarly modeled fish rather than the reference's five individually distinct fish.",
+        "The specific red-and-white, orange-and-white, and gold fish variations from the reference are absent.",
+        "The driftwood is represented by incomplete-looking rods rather than one convincing connected decorative wood structure.",
+        "No clear aquarium boundary or surrounding tank structure is visible."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The aquarium contains multiple recognizable orange goldfish with reference-like principal anatomy.",
+      "evidence": "Several peach-orange stylized fish are clearly visible with volumetric oval bodies, head ends, oversized dark eyes, paired small fins, and large forked tails.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The fish group shows reference-like variation in relative size, body proportions, and tail form.",
+      "evidence": "The visible fish use essentially the same elongated oval body and the same broad, pale forked tail construction; no clearly round-bodied fish or distinctly different tail forms are shown.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Visible underwater bubbles are integrated into the aquarium.",
+      "evidence": "Numerous small translucent spherical bubbles are visible throughout the upper and middle water space and remain present across the animation frames.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The tank contains the reference-defining plants, branching driftwood, dark rocks, and pale substrate.",
+      "evidence": "Plants and dark rocks are clear, but the bottom reads as a light-blue textured ground plane rather than unambiguously sandy/gravelly substrate, and the dark branch elements are only ambiguously recognizable as coherent driftwood.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The principal environmental components follow the reference arrangement.",
+      "evidence": "A thick dark branching form rises from the left and arcs through the upper center, a tall dense green plant mass occupies the right, and dark rocks sit on the pale floor beneath the fish.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "Fish occupy distinct depth planes and create readable foreground/background layering.",
+      "evidence": "The sequence shows a very large lower foreground fish, smaller rear swimmers around the central background ridge, and partially plant-occluded right-side fish; their screen overlaps shift as the shot progresses.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The fish group has the close reference view's prominent central scale, occupancy, and overlap density.",
+      "evidence": "Multiple large fish span the middle of the delivered frames, including overlapping central and lower foreground bodies plus further fish partially hidden at right, creating a dense close-view group.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The fish reproduce the reference's varied orange and gold coloration, lighter markings, wet bodies, and softer translucent fins.",
+      "evidence": "The fish are predominantly a uniform peach/tan treatment with similar surface texture. They lack the reference's clearly differentiated red-orange, gold, and white markings, while the fins and tails read as rigid, paper-thin translucent planes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "Plant, driftwood, rock, and substrate materials retain the reference's distinct color and surface character.",
+      "evidence": "Although green leaves and dark rocks are visible, the branch forms are smooth dark rods rather than textured driftwood and the light-blue floor does not clearly read as sandy or gravelly substrate.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The scene has a strong reference-like underwater blue lighting and atmospheric treatment.",
+      "evidence": "Cool cyan-blue illumination dominates every frame, with blue-shaded fish undersides, dark blue receding ridge surfaces, and lighter blue water/background space.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "Every visible fish remains practically poseable through a usable editable setup in the Blender project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 0,
+      "criterion": "Fish swimming is visibly propelled by repeated lateral tail strokes.",
+      "evidence": "Across the sampled sequence, the large flat forked tails retain nearly the same orientation relative to their fish bodies; no repeated side-to-side tail-beat cycle is clearly readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 0,
+      "criterion": "Multiple fish perform passes that change their relative positions and overlaps.",
+      "evidence": "The sampled frames mainly show a slow continuous camera shift with fish maintaining broadly similar side-by-side relationships; there is no clear multi-fish crossing that visibly changes group occlusions.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 0,
+      "criterion": "The broad ordering and pace of major fish turns, passes, and foreground crossings follow the reference.",
+      "evidence": "All clearly readable fish remain largely in similar right-facing side profiles throughout the sequence. The reference-like series of turns and pronounced later foreground crossings is not visibly established.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The composition reproduces the reference's close aquarium view and readable principal anchors.",
+      "evidence": "The delivered camera view is substantially straight-on and close to the school, with a central fish grouping framed by the large left-side branching form and dense tall plant at right.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "Camera behavior matches the reference's restrained continuous close view.",
+      "evidence": "The animation frames show one uninterrupted, gently drifting close shot: environmental elements shift smoothly across frame with no cuts, abrupt zooms, shake, or dramatic orbit.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 1,
+      "criterion": "The submitted content render has the requested format, encoding, dimensions, frame rate, and source-like duration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The delivered .blend is an editable source project containing the recreated scene and animation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission is clearly recognizable as a blue-lit aquarium with multiple fish and the required broad decorations. It captures the general left-driftwood/right-plant composition and shows positional movement across the sampled animation frames, but it falls well short of the reference's natural goldfish anatomy, varied fish staging, believable tail-driven motion, and cohesive underwater realism.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "188d631fa80ff14225ed148910cf2ef9751cae9ce9f95edd2a57b95b9fb55535"
+}

@@ -1,0 +1,43 @@
+{
+  "exporter_version": 3,
+  "source_file": "rally_previz.blend",
+  "objects": 2523,
+  "meshes": 217,
+  "original_triangles": 214540,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 13585,
+  "skipped_volume_objects": [
+    "DUST_vol",
+    "DUST_plume"
+  ],
+  "original_camera": {
+    "theta": -19.319997091580465,
+    "phi": 93.36300530345112
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1486348,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_grass",
+    "MAT_pebble",
+    "MAT_olive_canopy",
+    "MAT_car_paint.002"
+  ],
+  "preview_omitted_objects": [
+    "Terrain.001",
+    "HillsFar.001",
+    "HillsMid.001"
+  ],
+  "preview_camera": {
+    "camera-target": "2.585m 0.861m -54.355m",
+    "camera-orbit": "-20deg 55deg 10.370m",
+    "min-camera-orbit": "auto 5deg 0.494m"
+  },
+  "preview_note": "Surrounding terrain is hidden to reveal the rally car in 3D.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 8
+}

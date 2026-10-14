@@ -1,0 +1,33 @@
+{
+  "exporter_version": 3,
+  "source_file": "miniature_railway_previz.blend",
+  "objects": 280,
+  "meshes": 280,
+  "original_triangles": 26104,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground_Grass.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 3.7152890323480934,
+    "phi": 49.20195164967448
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 3426532,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "M_Grass",
+    "M_Ballast"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "3.7152890323480934deg 49.20195164967448deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,19 @@
+{
+  "exporter_version": 2,
+  "source_file": "ventus_storyboard.blend",
+  "objects": 145036,
+  "meshes": 574,
+  "original_triangles": 309209,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Meadow | gently undulating foreground.001"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 537640,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 58836704,
+  "preview_refined": 2,
+  "removed_preview_nodes": 4,
+  "preview_note": "Background grass, distant terrain, haze and tracks omitted to keep the turbine preview interactive."
+}

@@ -1,0 +1,30 @@
+{
+  "exporter_version": 3,
+  "source_file": "wind_turbine.blend",
+  "objects": 389,
+  "meshes": 130,
+  "original_triangles": 5940,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 41760,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 26.10299832812721,
+    "phi": 105.01978939248424
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2721376,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "26.10299832812721deg 80deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

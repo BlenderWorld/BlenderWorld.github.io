@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "wind_turbine_storyboard.blend",
+  "objects": 2631,
+  "meshes": 32,
+  "original_triangles": 5432,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "HazeVolume"
+  ],
+  "original_camera": {
+    "theta": 56.394439847693405,
+    "phi": 100.88160595752657
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 152636,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "56.394439847693405deg 80deg auto"
+  },
+  "preview_note": "Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,185 @@
+{
+  "task_id": "bw_0174",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 73.5795,
+  "rubric": 90.9090909090909,
+  "dimension": 56.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "Group B 的 wind_turbine_storyboard_render 和 Group A 的广角视图清楚呈现了黄昏开阔地面上的三叶水平轴风机、阴云天空与飞散颗粒，整体题材和故事板氛围正确。",
+      "issues": [
+        "风机机舱在 Group A 的 wide_side、wide_back 中只是短小的矩形外壳，未可见或可辨识齿轮箱、主轴、高速轴、发电机和制动器等要求的完整机舱机构。",
+        "没有提交动画帧，静态图不能证明转子被 Wind/Turbulence 驱动旋转或叶片有可信的旋转运动模糊。",
+        "地面大部分呈单调的深灰平面，草地只在最终构图前景出现，开放草地场景的覆盖和自然性有限。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "塔筒、轮毂、三片叶片和机舱在 wide_front、wide_back 中的连接关系基本连续；塔筒通过圆形底部法兰立在地面中心，没有明显悬空的主体结构。",
+      "issues": [
+        "wide_side、wide_front 和 detail_yaw 中可见极薄、边缘锐利的浅色方形基础板，视觉上像与深色地面相交或覆盖，而非有厚度的混凝土基础。",
+        "空气中的颗粒大多均匀悬浮在画面中，静态渲染无法显示其受重力下落、受风偏移或与地面接触的物理结果。",
+        "机舱及偏航连接区的结构细节过少，难以确认完整的承载、偏航和内部传动装配。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "白色锥形塔筒、圆形轮毂和三片长而渐缩的叶片在 Group A wide_front/wide_back 中可独立识别为现代风力发电机；灰紫天空与暖色地平线的色调也适合黄昏场景。",
+      "issues": [
+        "机舱基本是无细节的浅色长方盒，wide_back 仅有两条黑色短槽，不能表现常规机舱的机械身份。",
+        "塔、叶片、机舱和基础板的材质和颜色过于接近，未达到题目要求的各部件材质可区分的效果。",
+        "detail_nacelle 与 detail_rotor 并未清楚展示机舱或轮毂细节，主要只是光滑塔面和被裁切的叶片。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "指定作者最终图 Group B 的 wind_turbine_storyboard_render 有连贯的暮色云层、暖冷对比、前景草和少量岩石，形成了可用的氛围化故事板画面。",
+      "issues": [
+        "转子和远处叶片在多张主视图中软化严重，机舱和轮毂细节难以读取。",
+        "飞散物的分布像散布在镜头前的统一小点，缺少清楚的叶片形状、尘土体积感和随风轨迹。",
+        "Group B 的 test_02 有明显噪点，test_01 至 test_04 底部均出现不自然的浅色平面带及直线分界。",
+        "大面积地面较平滑、暗且缺乏土壤或草地细节，削弱了真实户外尺度感。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "Group A wide_front、wide_back 和 wide_iso 均表明三叶轮毂位于塔顶、机舱位于轮毂后方、塔立于开阔地面，外部风机的基本空间层级正确；低角度主构图也把风机作为明确主体。",
+      "issues": [
+        "各观察角度下机舱相对塔顶和轮毂的偏航结构仍不清楚，难以读出可偏航装配。",
+        "草丛主要局限在 Group B 最终构图的近景底部，而非形成连贯的开阔草地环境。",
+        "岩石与薄方形基础板的布置显得零散且工程环境信息不足。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "在 wide_back 和 wide_front 中，塔高显著大于轮毂和机舱，单片叶长约为轮毂高度的一半，外观上接近约 80 m 轮毂高度与 40 m 叶片的目标比例；低机位视角也提供了合理的高耸感。",
+      "issues": [
+        "机舱显得过短、过于盒状，相对于大直径转子和塔顶的工程尺度不够可信。",
+        "地面、基础板与岩石缺少可判断的尺度线索，浅色基础板看起来异常薄且偏小。",
+        "塔筒锥度存在但较轻微，难以直观验证从约 4 m 基部到约 2.5 m 顶部的明确变化。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "Group B 的 wind_turbine_storyboard_render 使用了阴云背景下的低位暖光，塔筒边缘有柔和高光，整体确实读作黄昏环境；白色风机涂层在画面中保持可辨识度。",
+      "issues": [
+        "机舱、塔、叶片和基础板均接近同一平滑浅色材质，金属传动/制动部件或不同表面工艺没有可见区分。",
+        "主体在 cloudy sky 前的对比度偏低，尤其叶尖和轮毂区域易融入背景。",
+        "尽管最终图氛围良好，部分评估视图显示环境光照与地面材质过于均匀，真实地表反射和阴影细节不足。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "可见的外部基础元素包括一座塔筒、一个轮毂、恰好三片叶片、机舱外壳、开阔地面、若干岩石、暮色背景和一定数量的空中碎屑。",
+      "issues": [
+        "题目明确要求的齿轮箱、主轴、高速轴、发电机和制动器没有在任何提交图中可辨识地呈现。",
+        "偏航系统只有机舱位于塔顶这一结果，没有可见的偏航环、驱动或结构细节。",
+        "没有 Group C 动画序列，因此没有可见证据证明风场、湍流、旋转转子、重力下落叶片或尘土模拟实际工作。",
+        "叶片与尘土虽然可能由少量飞散颗粒暗示，但多数无法清楚辨认为叶片或具有尘云效果。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The coherent horizontal-axis turbine uses the specified tapered tubular tower and principal dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The nacelle is genuinely configured as yaw-capable on the tower.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The nacelle contains every named internal machine arranged as one plausible drivetrain.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The hub carries the complete dimensioned three-blade rotor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The completed authored scene has believable relative scale and consistently estimated unspecified dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final render uses readable and believable material distinctions without prescribing unique materials for fixed object or effect classes.",
+      "evidence": "In the designated final render, the smooth off-white turbine contrasts clearly with the dark matte terrain, green-brown foreground grass, scattered darker rocks, warm brown airborne debris, and the diffuse gray-pink cloudy sky.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "Enabled Wind and Turbulence fields participate in a functioning rotor-driving setup.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The atmospheric system produces distinct leaves and dust with the complete requested gravity, Wind, and Turbulence behavior.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The complete final lighting system combines a genuine dusk HDRI with exactly one contributing Sun lamp and visibly produces dusk illumination.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The selected storyboard render coherently presents the open-field turbine from the requested camera with effective depth of field and motion blur.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The requested final render and retained editable .blend form one valid Cycles-configured project outcome.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "外部三叶风力机及黄昏故事板构图清楚，塔高与转子比例总体可信，最终作者图的天空氛围也较好。但机舱被简化为普通盒体，要求的传动和制动系统没有可见呈现；基础/地面处理薄而生硬，草地与风驱颗粒的真实感有限，且没有动画帧证明旋转和重力风场模拟。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "0a38409a2fdae26045424be2a9d4287bd0c24cdddfe56831ebf149251552b167"
+}

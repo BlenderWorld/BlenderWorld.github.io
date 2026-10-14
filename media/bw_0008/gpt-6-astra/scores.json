@@ -1,0 +1,174 @@
+{
+  "task_id": "bw_0008",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 90.625,
+  "rubric": 100.0,
+  "dimension": 81.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "The author final render greenmax_recycling_line_4k clearly reconstructs the intended recycling line: a tall branded elevated hopper on steel legs, central shredder/compressor with teal feed hopper and exposed motor, left freestanding control cabinet, and right white-framed green conveyor. The requested clean studio presentation and yellow-lime/teal equipment identity are also retained.",
+      "issues": [
+        "The reference's large, clearly curved white duct crossing the upper branding area is reduced to a mostly straight vertical metal pipe on the hopper side.",
+        "The upper hopper/sign assembly is simplified into a more enclosed single-bay silo form rather than the reference's broad two-panel framed face and more open-looking top structure."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 9,
+      "reasons": "Group A detail_infeed and the author final show credible structural support throughout: the tall hopper has braced legs and foot plates, the main machine rests on a substantial wheeled steel base, the conveyor has a triangular truss with multiple caster-supported legs, and the cabinet stands on four feet. The motor, pulley, guard cage, hopper, and conveyor all visibly join to surrounding equipment rather than float.",
+      "issues": [
+        "The conveyor's very thin translucent side sheets read less like robust industrial guards than solid fabricated metal panels."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The equipment is independently readable as purpose-built industrial machinery rather than generic boxes. In greenmax_recycling_line_4k, the lime painted structures, deep teal hopper interior/belt, white conveyor frame, black ribbed motor, safety decals, viewing window, casters, and GREENMAX branding give the assembly a coherent and target-appropriate visual language. The chevron cleats directly match the requested safety-oriented conveyor treatment.",
+      "issues": [
+        "The lime finish is noticeably paler and less saturated than the stronger yellow-lime reference color.",
+        "Some reference-specific mechanical forms, particularly the paired turquoise bearing/flange blocks on the front machinery, are not as clearly represented."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 8,
+      "reasons": "The author final is a polished product-style render with clean geometry, controlled soft shadows, readable control-panel hardware, bolts, seams, motor fins, inspection glazing, and conveyor rollers. It is coherent as an industrial sales/training visualization rather than a collection of unrelated assets.",
+      "issues": [
+        "The overall exposure remains slightly pastel/low-contrast, which softens some mechanical distinction on the pale lime and white surfaces.",
+        "The branding texture is slightly soft at close range, especially compared with the otherwise crisp modeled panel details."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The main spatial logic is correct in the author final and Group A wide/front views: the independent control panel is to the left, elevated storage hopper is behind the main processing unit, the feed hopper is central and visibly open, and the conveyor extends from the lower-right toward that hopper. The conveyor is intentionally less steep than the reference while its upper end visibly meets the hopper/feed area.",
+      "issues": [
+        "The tall hopper and central processing machine read more as separate compact modules than the more tightly integrated large structure of the reference.",
+        "The transition at the conveyor discharge is functional-looking, but less explicitly modeled as a distinct enclosed transition chute/funnel than requested."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "reasons": "The relative scale is convincing: the elevated hopper is the tallest element, the central machine is substantial but lower, the conveyor spans the widest footprint, and the cabinet is human-usable in scale. The conveyor's long shallow pitch and multi-wheel support make its dimensions feel plausible.",
+      "issues": [
+        "The central machine and elevated hopper are somewhat more compact and vertically separated than in the reference, whose structure reads as a heavier unified plant.",
+        "The control cabinet appears slightly small relative to the tall hopper in the overview composition."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 8,
+      "reasons": "The submitted final uses a suitable three-point studio-like setup with a pale gray gradient floor/background and soft grounding shadows. Group A detail_controls clearly shows the requested brushed-metal cabinet through directional fine striping, metallic edge highlights, realistic dark display panels, colored indicators, and an emergency-stop button. Painted frame metal, ribbed motor casing, belt rubber, and white conveyor structure are visually distinguishable.",
+      "issues": [
+        "The pale lime painted steel is slightly over-bright and does not strongly communicate the requested matte coating.",
+        "The conveyor side guards look unusually transparent/translucent for industrial white metal guarding."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "All principal requested equipment is visibly present in the submitted views: a separate detailed stainless control cabinet, high hopper on steel legs with branding, central compressor/shredder and open feed hopper, external cylindrical motor, lower drive wheel, caster-equipped white conveyor with green chevron belt, and a mesh motor safety cage. The author final presents these components unobscured enough for instructional use.",
+      "issues": [
+        "The distinctive curved upper guide duct from the reference is not visibly preserved in its full curved form.",
+        "Several secondary reference details are simplified or unclear, including the prominent twin turquoise front bearing blocks, the small perforated lower grille, and the broad two-panel upper branded facade."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The reconstruction forms a complete equipment line with the specified regional organization and reference-like relative scale hierarchy.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The left operating station combines the required cabinet identity, visible controls, and modified brushed-stainless finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The rear hopper retains its elevated support, salient reference construction, upper branding, and attached curved guide pipe.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The central processing assembly combines a recognizable shredding-and-compaction body, readable processing-region cues, and a plausibly mounted cylindrical drive motor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The right conveyor combines the specified frame, patterned belt, attached casters, and gentler modified incline.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The added transition hopper physically and legibly connects the conveyor discharge to the main-machine inlet.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete equipment line uses the required palette and a distinguishable matte painted-frame material system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The native scene and final render implement deliberate three-point soft product lighting.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The designated final render combines the specified studio background and camera composition with unobstructed educational readability and a clean product-grade finish.",
+      "evidence": "The designated author final render, greenmax_recycling_line_4k.png, presents the complete line in a clean elevated three-quarter studio view: the freestanding control cabinet is fully visible at left, the teal cleated conveyor visibly leads into the open central hopper, and the protruding ribbed motor plus the white mesh-guarded component are legible. The tall branded hopper, central processor, conveyor frame, and caster-supported bases are all within frame against a pale gray gradient floor/backdrop. Surfaces, logos, soft shadows, highlights, and panel details are coherently rendered without clutter or conspicuous unfinished geometry.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "A genuine high-resolution completed author render is delivered as an openable image.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable, editable, and suitable for later annotation and alternate camera views.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a strong, recognizable product-grade reconstruction with clear functional separation between control cabinet, hopper, processor, and conveyor. Its main limitations are simplification of the reference's integrated upper steelwork and signature curved duct, plus slightly pale low-contrast material presentation and translucent-looking conveyor guards.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "50ecddadc948fe69681aaa702a4dec395d575c29abcd562b20b316abc24efefe"
+}

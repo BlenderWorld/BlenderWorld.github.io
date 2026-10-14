@@ -1,0 +1,156 @@
+{
+  "task_id": "bw_0120",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 57.3214,
+  "rubric": 57.142857142857146,
+  "dimension": 57.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "The author final image (.eval_workspace/exports/temple_courtyard_dusk.png) clearly depicts a traditional temple courtyard: a red-columned, two-storey main hall terminates a paved central court beneath golden upturned roofs. The pavilion, perimeter structures, trees, lantern frame, central bronze object, stairs, and entry-side statues establish a recognizable temple setting.",
+      "issues": [
+        "The requested bronze bell reads as a squat bowl-shaped incense burner/cauldron on legs rather than a bell.",
+        "The gateway guardians do not convincingly read as stone lions.",
+        "The final camera is essentially centered and frontal rather than distinctly angled inward from the gateway.",
+        "The image is much darker and less open at its side and rear spaces than the bright, open courtyard requested."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "The hall columns, pavilion posts, lantern rack, stairs, plinths, paving, and roof structures generally have visible bases and credible connections in Group A wide views. The central vessel and its pedestal are also visibly grounded.",
+      "issues": [
+        "The two guardian figures in the author final are made of visibly intersecting, stacked rounded pieces rather than coherent sculptural forms.",
+        "Group A detail_hall.png shows a narrow slanted gray strip and gold sphere near the porch with no clear purpose or convincing attachment.",
+        "Some beam-bracket and roof-edge components appear mechanically blocky or lightly intersecting."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The main hall has an effective Chinese-inspired silhouette, with saturated red cylindrical columns, red-and-gold lattice panels, gray bracket bands, and broad gold-brown swept roofs. The upturned eaves are particularly clear in Group A wide_gateway.png and the author final.",
+      "issues": [
+        "The guardian lions have indistinct, lumpy silhouettes and cannot confidently be identified as lions.",
+        "The bronze centerpiece does not have the silhouette of the requested bell.",
+        "The hanging lanterns render pink/salmon rather than the requested red.",
+        "Several decorative elements, including the unexplained gray roof/porch pieces, look like simple placeholder geometry."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The scene is cleanly rendered and coherent as a stylized low-poly temple environment, with readable architectural layers, paving, shrubs, and strong silhouettes. The author final has a usable wide promotional framing of the hall and courtyard.",
+      "issues": [
+        "Materials are largely glossy or flat synthetic surfaces, reducing the feel of stone, aged wood, tiled roofing, and carved guardians.",
+        "The guardians and shrub/tree forms are visibly primitive and repetitive.",
+        "Large portions beneath roofs and around the side buildings collapse into near-black shadow.",
+        "The courtyard sits against a sparse black-to-olive void, so it does not feel like a fully situated old-town environment."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "The requested spatial hierarchy is clear: the straight gray-blue stone-paved path leads from the foreground entrance toward the central hall stairs; two guardian figures flank the entry in the author final; the bronze object is centered before the hall; and the lantern rack is placed on the right side of the court. Group A elevated views confirm a sensible courtyard arrangement with a pavilion at left and trees/side structures at right.",
+      "issues": [
+        "The frontal author-final composition weakens the requested angled-in gateway viewpoint.",
+        "The left pavilion occupies a large portion of the foreground and competes with the main hall from some viewpoints.",
+        "The bell/cauldron is placed centrally rather than reading as a prominent landmark or corner feature."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The main hall, raised porch, columns, stairs, pavilion, paving, lantern rack, and surrounding walls have mostly sensible relative sizes in the Group A elevated views. The central axial route is comfortably scaled for a courtyard.",
+      "issues": [
+        "The foreground guardian figures appear oversized and bulky relative to the path and pavilion columns.",
+        "The supposedly big bronze bell is comparatively small and visually slight against the hall.",
+        "The spherical tree crowns and cone evergreens feel simplified and somewhat toy-like relative to the architecture."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "The author final uses warm directional dusk-like illumination, producing readable highlights on the gold-brown roofs, red columns, stone paving, and bronze-colored central object. Stone steps and paving have more material variation than the simpler painted architectural surfaces.",
+      "issues": [
+        "The lighting is harshly contrasty, with very dark eaves, side corridors, and foreground recesses obscuring detail.",
+        "Lanterns do not appear to cast or contribute visible warm light.",
+        "Roof, wall, and wood surfaces read mostly as uniformly glossy/plastic rather than distinct traditional materials.",
+        "The empty black-to-olive surrounding background reduces the warm, quaint dusk atmosphere."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 5,
+      "reasons": "The main hall, red columns, golden swept roof, straight paved path, pair of entry-side guardian forms, side pavilion, trees, planters, central bronze object, and multiple hanging lanterns are all visibly included. The right-side lantern rack clearly supplies the requested corner lantern grouping.",
+      "issues": [
+        "The central bronze object is not visibly a bell; it reads as an incense burner or bowl on a stand.",
+        "The two requested stone lions are present as symmetric forms but are too amorphous to be reliably recognized as lions.",
+        "Lanterns are pink rather than red.",
+        "The surrounding old-town/courtyard enclosure remains sparse and underdeveloped beyond the immediate architectural props."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The delivered final image is a finished, characterful, quaint, and elegant promotional depiction of a traditional Chinese temple courtyard.",
+      "evidence": "The designated authored final image, temple_courtyard_dusk.png, is a complete composed render showing a roofed traditional East Asian hall, paved courtyard, side pavilion, lantern frame, landscaping, and entry statues. The organized axial composition and recurring red-and-gold architectural treatment read clearly as a stylized traditional temple court.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The principal main hall combines visual dominance, red columns, and a golden traditional upturned-eave roof.",
+      "evidence": "The large central two-storey hall is the dominant subject in cam_submitted.png and temple_courtyard_dusk.png. It has a prominent row of glossy red columns and two substantial gold-brown tiled roofs with strongly curled, lifted corners.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "Two recognizable carved-stone guardian lions form a paired installation at the gateway.",
+      "evidence": "Although two symmetric gray-brown pedestal figures appear at the front of temple_courtyard_dusk.png, their forms are assembled from indistinct intersecting rounded lumps and blocks. Neither statue has a clearly recognizable guardian-lion silhouette or carved-lion detail.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The open courtyard, straight bluestone route to the hall, and relative orientation of all major elements form a clearly readable layout.",
+      "evidence": "temple_courtyard_dusk.png clearly presents an open paved court with a straight central cool gray brick/bluestone-like route bordered by pale raised strips, running from the entry-statue foreground to the hall stairs. The right lantern frame and axial hall remain spatially legible, and wide_elevated.png confirms the open courtyard arrangement.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "A defined courtyard corner contains the complete large bronze-bell and plausibly suspended red-lantern vignette.",
+      "evidence": "The right-side wooden frame visibly suspends several pink lanterns, but the only bronze-colored object is centered on the main path before the hall. In detail_lions.png and wide_gateway.png it reads as a bowl-like burner/vessel on legs rather than a recognizable large temple bell, and it is not part of the lantern corner vignette.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final image combines a recognizable warm dusk atmosphere with bright, readable courtyard detail.",
+      "evidence": "The authored final image uses warm amber illumination across the gold roofs, red columns, stone paving, and lanterns against a muted gray-green dusk sky. Despite strong directional shadows, the hall, central route, statues, lantern frame, and courtyard paving remain visibly readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The usable native project contains the complete authored scene and implements the requested inward-angled gateway camera view.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission successfully communicates a stylized Chinese temple courtyard centered on a recognizable red-and-gold main hall, with a clear axial path and supporting pavilion/lantern layout. Its largest failures are the unreadable guardian lions, the cauldron-like object substituted for a bronze bell, overly dark peripheral spaces, and a centered rather than angled gateway composition.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "ab407c0fa6199cc2f9311989337d67241d4436488fc75b099efdcbd5ebbf84c4"
+}

@@ -1,0 +1,187 @@
+{
+  "task_id": "bw_0070",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 78.125,
+  "rubric": 100.0,
+  "dimension": 56.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "The submitted vehicle is clearly the intended kind of yellow tracked engineering utility vehicle: it has a yellow chassis, open protective cage, glazed cab, articulated red boom, central power-unit area, undercarriage, and multiple work lights. The author export BL074_hero_rear34 shows the gray labeled power cabinet in the appropriate central rear-facing position, closely echoing the reference layout.",
+      "issues": [
+        "The reconstruction is much more blocky and toy-like than the dense industrial reference.",
+        "The boom is raised prominently above the roof rather than folded tightly inside the protective frame as in the reference.",
+        "Important reference-specific details such as the COPPARD/DT41 body markings, cab wipers, dense hose/manifold clusters, black seat/control area, and convincingly treaded crawler belts are absent or greatly simplified.",
+        "Group A shows a vivid magenta central box while Group B shows a gray diesel power cabinet, making the main equipment appearance inconsistent across submitted evidence."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "Most major assemblies are visibly constructed as connected hard-surface parts: the frame posts meet the deck, the boom sits on a rotary base, the cab is integrated into the body, and the undercarriage rests on the studio floor in wide_front_right and wide_side_station.",
+      "issues": [
+        "The dark lower running gear reads more like two smooth rails/runners with exposed small wheels than attached rubber crawler tracks.",
+        "The stacked dark central bumper/coupler bars at the low front appear partly separated from their support in wide_front_right and BL074_front34.",
+        "Several small lower rods and yellow paired protrusions have unclear functional attachment, rather than reading as routed hoses or robust fittings."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The dominant yellow painted body and red/pink hydraulic boom correctly establish the key target colors, while BL074_rear visibly provides a gray diesel/power cabinet. The cab windows, lights, cage, boom pivots, grille, and steps are independently recognizable rather than featureless primitives.",
+      "issues": [
+        "The evaluator renders show the central generator as saturated magenta rather than reference gray, a highly conspicuous color mismatch.",
+        "The yellow surfaces are extremely uniform and clean, with bright magenta rectangular patches that do not resemble the reference decals or hazard graphics.",
+        "The dark undercarriage lacks the broad ribbed black rubber-track silhouette of the target.",
+        "Mirrors are squared gray blocks rather than the tall rounded black exterior mirrors in the reference."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The author exports are cleanly rendered and have coherent studio shadows, transparent cab glazing, and recognizable mechanical assembly. Details such as boom hydraulic rods, caps, vents, lamps, and the partial POWER P/DIESEL label in BL074_rear add some industrial credibility.",
+      "issues": [
+        "The result remains visibly stylized, with oversized simple bevels, broad flat panels, and sparse mechanical detailing compared with the real machine.",
+        "Many Group A views, especially detail_crane_cab and wide_high_iso, are overexposed enough to wash out yellow body edges and cabin detail.",
+        "Glossy plastic-like yellow, bright white lamps, and smooth gray runners do not convincingly convey painted metal, functional work lamps, and rubber tracks."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "The broad arrangement is appropriate: a cab sits to one side, the generator is centrally placed behind the protective frame in BL074_rear, the crane is mounted high behind/above it, and paired lamps occupy the rear-side brackets. The open cage intentionally keeps the crane and power equipment generally visible.",
+      "issues": [
+        "The red boom occupies an overly elevated roof-top position instead of being compactly folded behind the foreground rails as in the reference.",
+        "The cab, rear housings, and roof rail make the submitted vehicle read as a near-cubic utility cart rather than the reference's tightly packed front-facing machine.",
+        "The reference's lower hose runs and central ladder/step arrangement are not reproduced in their characteristic locations."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The cab, deck, protective structure, power unit, and boom are all sized plausibly enough to form one usable vehicle, and the lamps and steps are not wildly oversized.",
+      "issues": [
+        "The undercarriage tracks are too narrow, smooth, and rail-like relative to the high body; the reference has very wide, heavy crawler belts.",
+        "The protective frame and raised boom make the model feel top-heavy.",
+        "The oversized squared body volumes reduce the compact, densely engineered proportions of the reference vehicle."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "The submitted images use a sensible three-quarter studio setup with floor contact shadows, glazed cab panels, bright lamp faces, metallic-looking pivot caps, and an apparently labeled gray power station in BL074_rear. The power-unit text is legible enough to demonstrate some UV/detail work.",
+      "issues": [
+        "Strong white highlights bleach much of the yellow paint and crane in Group A, obscuring form.",
+        "The yellow finish reads as uniformly glossy plastic rather than durable industrial metal paint.",
+        "The track surfaces are smooth dark gray with little rubber roughness or tread definition.",
+        "The power-unit appearance is not material-consistent between the magenta Group A renders and gray Group B exports."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "The key requested asset components are present across the views: yellow chassis, paired lower runners, transparent cab, red articulated hydraulic boom, open rollover/protection frame, central power unit, beacon, grille, steps, and at least four square work lights. BL074_rear also visibly includes a diesel/power-unit decal.",
+      "issues": [
+        "No convincing pair of ribbed rubber crawler tracks is modeled.",
+        "Cab windshield wipers, rounded black mirrors, body branding, the reference's dense hose/cable network, and detailed yellow valve hardware are missing or heavily reduced.",
+        "The orange beacon is rendered more as a pale yellow/white cylinder.",
+        "The visible work-light arrangement is supplemented by non-reference circular headlights and does not closely match the reference brackets."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The asset must read as one compact yellow tracked engineering vehicle whose required systems have reference-compatible zoning and credible support relationships.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Both continuous tracks must support the chassis, contain readable repeated tread construction, and use the specified dark rubber-like surface treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The outer-side cab must combine enclosed framed construction, glass-readable glazing, and the reference-compatible relationship to the central station.",
+      "evidence": "BL074_hero_rear34.png clearly shows an outer-side yellow cab with a broad framed reflective/tinted windshield, additional side glazing, thick yellow window surrounds, and a roof panel. The cab sits immediately beside the central equipment-station area.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The mounted red crane must have credible articulated folding geometry, hydraulic actuation cues, and the reference-facing folded appearance.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The centered gray power station must be substantial and visibly detailed as a serviceable equipment cabinet.",
+      "evidence": "BL074_rear.png visibly shows a large gray centrally mounted cabinet between the yellow light brackets. It has segmented/ribbed side panels, a door seam, circular access fittings, protruding handle/latch hardware, contrasting lower trim, and readable POWER P / DIESEL labeling.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "A robust open yellow multi-member protective frame must be attached around the upper machinery and cab area.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The vehicle must reproduce the salient paired square work-light groups and their distribution across opposite vehicle zones.",
+      "evidence": "BL074_rear.png clearly shows two separated paired work-light installations on the yellow body, one on each side of the central cabinet. Each group consists of two square dark-framed housings with distinct bright white emitter faces.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The principal body surfaces must use the specified coherent yellow metallic-painted finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The engine or power-unit section must use real UV-mapped texture data and render clearly without severe distortion or unintended blur.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The actual authored final render must use the requested camera and lighting systems while clearly presenting the crane and power station.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The native Blender delivery must be loadable, editable, scene-complete, genuinely three-dimensional, and originally configured for Cycles.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A recognizable and reasonably complete stylized reconstruction of the yellow engineering vehicle, with the cab, cage, crane, power station, lights, and lower running gear all visible. Its main weaknesses are simplified rail-like tracks, missing dense industrial detail and decals, overly raised crane placement, washed-out lighting, and the unexplained magenta-versus-gray power-unit inconsistency between Group A and Group B.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "12e19211f9857a8aa50beb5c2f1af79d730b07685af952789142bd024ab48c3b"
+}

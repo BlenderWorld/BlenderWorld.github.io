@@ -1,0 +1,33 @@
+{
+  "exporter_version": 3,
+  "source_file": "bl008_recycling_line.blend",
+  "objects": 6,
+  "meshes": 6,
+  "original_triangles": 45603,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -33.00000845346856,
+    "phi": 63.00001792270656
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 172336,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_StudioGrad"
+  ],
+  "preview_omitted_objects": [
+    "Studio_Cyc.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "35deg 68deg auto"
+  },
+  "preview_note": "The studio backdrop is omitted in the 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

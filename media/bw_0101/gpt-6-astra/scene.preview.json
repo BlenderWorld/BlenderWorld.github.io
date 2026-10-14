@@ -1,0 +1,26 @@
+{
+  "exporter_version": 2,
+  "source_file": "Maplewater_Mill_Previs.blend",
+  "objects": 3592,
+  "meshes": 3337,
+  "original_triangles": 9022260,
+  "decimation_ratio": 0.060960335880367006,
+  "skipped_studio_objects": [
+    "Backdrop ridge 01 \u2022 atmospheric terrain",
+    "Backdrop ridge 02 \u2022 atmospheric terrain",
+    "Backdrop ridge 03 \u2022 atmospheric terrain",
+    "Ground floor \u2022 50 mm oak decking.001",
+    "Upper floor \u2022 removable hatch above drive.001"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 9186660,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 550689452,
+  "subject_framed": 2,
+  "extra_background_removed": [],
+  "procedural_color_fallbacks": [
+    "MAPLE \u2022 carmine | translucent"
+  ],
+  "color_policy": "Representative colors from original Blender material ramps/mixes; applied to unsupported shaders, preserving existing textures. The Opus chest AO texture is multiplied by its original procedural material color."
+}

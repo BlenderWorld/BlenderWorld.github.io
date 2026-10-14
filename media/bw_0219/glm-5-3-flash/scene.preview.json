@@ -1,0 +1,50 @@
+{
+  "exporter_version": 3,
+  "source_file": "rhino_previz.blend",
+  "objects": 411,
+  "meshes": 411,
+  "original_triangles": 61275,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 2.299999934309225,
+    "phi": 88.37999455124934
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 637788,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "log",
+    "bark",
+    "leaf",
+    "grassdry",
+    "grass",
+    "rhino_skin",
+    "rhino_horn",
+    "rhino_nail",
+    "stone_a",
+    "stone_b",
+    "stone_c",
+    "leaf2",
+    "wall",
+    "wall_pale",
+    "rockgray",
+    "trunkbg",
+    "sand"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-1.118m 1.020m 0.006m",
+    "camera-orbit": "2.299999934309225deg 80deg 7.217m",
+    "min-camera-orbit": "auto 5deg 0.344m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

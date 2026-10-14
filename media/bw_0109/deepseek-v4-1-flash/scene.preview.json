@@ -1,0 +1,50 @@
+{
+  "exporter_version": 3,
+  "source_file": "rainy_street_previz.blend",
+  "objects": 521,
+  "meshes": 496,
+  "original_triangles": 38466,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "FarGround.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "MurkVolume"
+  ],
+  "original_camera": {
+    "theta": 178.18580851172652,
+    "phi": 93.62294938829908
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 647900,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_Asphalt_Wet",
+    "M_Sidewalk",
+    "M_Curb",
+    "M_Paint_White",
+    "M_Manhole",
+    "M_Concrete_B",
+    "M_Concrete_A",
+    "M_Concrete_C",
+    "M_Metal_Pole",
+    "M_Metal_Rust",
+    "M_Brick_A",
+    "M_Brick_Pale",
+    "M_Shutter",
+    "M_Brick_B"
+  ],
+  "preview_omitted_objects": [
+    "CloudDome.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "20deg 65deg auto"
+  },
+  "preview_note": "Cloud and sky geometry are hidden to reveal the street scene.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

@@ -1,0 +1,47 @@
+{
+  "exporter_version": 3,
+  "source_file": "backrooms_ecommerce.blend",
+  "objects": 740,
+  "meshes": 740,
+  "original_triangles": 24968,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Fog_Main",
+    "Fog_Standee"
+  ],
+  "original_camera": {
+    "theta": 146.3373172676127,
+    "phi": 87.76385744886305
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 689260,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "M_Ceiling",
+    "M_Wallpaper",
+    "M_DoorWood",
+    "M_WallpaperWorn",
+    "M_Rug",
+    "M_WoodDark",
+    "M_FabricRed",
+    "M_WoodLight",
+    "M_FabricOlive",
+    "M_FabricBrown",
+    "M_Cardboard",
+    "M_PictureArt",
+    "M_Paper"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "146.3373172676127deg 40deg auto"
+  },
+  "preview_note": "Ceilings and roof panels are hidden for a cutaway view of the interior. Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

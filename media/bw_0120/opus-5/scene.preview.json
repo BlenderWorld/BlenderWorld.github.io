@@ -1,0 +1,48 @@
+{
+  "exporter_version": 2,
+  "source_file": "temple_courtyard.blend",
+  "objects": 149,
+  "meshes": 149,
+  "original_triangles": 853300,
+  "decimation_ratio": 0.6445564279854682,
+  "skipped_studio_objects": [
+    "AltarBackdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1550808,
+  "optimized": true,
+  "showcase_refinement": 2,
+  "procedural_color_fallbacks": [
+    "BluestoneDk",
+    "PaveStone",
+    "Bluestone",
+    "GreyTile",
+    "Granite",
+    "Marble",
+    "RedLacquer",
+    "BeamGreen",
+    "GoldTrim",
+    "BeamBlue",
+    "RedWall",
+    "RedDoor",
+    "GoldTile",
+    "Bronze",
+    "Bark",
+    "Leaf",
+    "LeafWarm"
+  ],
+  "preview_omitted_objects": [
+    "Terrain.001",
+    "TownRoofs.001",
+    "TownWalls.001",
+    "Birds.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "15deg 65deg auto"
+  },
+  "preview_note": "Distant terrain, town buildings and birds are omitted to focus on the temple courtyard.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

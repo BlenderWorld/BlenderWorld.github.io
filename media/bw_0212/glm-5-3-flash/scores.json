@@ -1,0 +1,271 @@
+{
+  "task_id": "bw_0212",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 58.75,
+  "rubric": 70.0,
+  "dimension": 47.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 4,
+      "reasons": "Group C frame_0001 clearly presents a dark, long-wheelbase vintage race car with gold 23 markings, an open cockpit, two occupants, exposed engine forms, side pipe, barriers, umbrellas, buildings, and trees. This establishes the basic event-and-car concept, but only as a sparse low-poly approximation of the reference.",
+      "issues": [
+        "The essential dense spectator crowd is entirely absent; fences, tents, and umbrellas stand in a mostly empty setting.",
+        "The car lacks much of the reference vehicle's defining radiator mesh, riveted panels, black valve gear, chain drive, spoke detail, weathering, and compact historic proportions.",
+        "The submitted animation ends on extremely close crops of generic bodywork rather than retaining the reference's useful car-and-crowd framing."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "In Group C frame_0001 and the Group A elevated and front views, the visible wheels, axle/suspension bars, body, engine assembly, and side pipe read as connected parts, and the car appears to rest on the ground with coherent cast shadows. The barrier rails and canopy poles also generally reach the ground.",
+      "issues": [
+        "Several canopy roofs are implausibly thin, paper-like planes.",
+        "The long side pipe/rail has minimal visible mounting detail compared with the heavily bracketed exhaust in the reference.",
+        "The simplified wheel and suspension construction does not convincingly reproduce the reference's mechanical chain and steering assemblies."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The charcoal-black car, gold 23 numerals, brown-goggled driver, blue-shirted passenger, silver barriers, and yellow/green parasols are all visibly aligned with the reference color identity. The car remains independently recognizable as an early open-wheel racer in Group C frame_0001.",
+      "issues": [
+        "The overall execution is toy-like and low-poly rather than the aged, complex vintage-race-car appearance in the reference.",
+        "The clean, thick raised gold numerals do not match the worn painted gold graphics.",
+        "The silver cylindrical engine pieces and smooth black wheel discs replace distinctive black valve gear, spoked wheels, and exposed chain hardware."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 3,
+      "reasons": "The actual exported Group C sequence is heavily overexposed and increasingly motion-blurred: background barriers and white canopies lose most detail, and frames_0011 through _0015 are largely blurred close-ups of an otherwise featureless body side. The simplified environment has little visual density or photographic credibility relative to the reference.",
+      "issues": [
+        "White ground, barriers, tents, and sky are severely clipped/blown out.",
+        "Motion blur and focus make much of the car, cockpit, engine, and final frames unreadable.",
+        "The empty stylized backdrop and faceted trees are not believable as a crowded real-world auto-show street."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "The Group C sequence broadly follows the target arrangement: a three-quarter view starts on the radiator/front, the camera tracks along the car's side, and barriers, parasols, canopies, buildings, and trees sit behind the vehicle. This is a recognizable rough staging of the reference pass-by.",
+      "issues": [
+        "There is no crowd between the barriers and the background structures, so the central car-versus-spectator spatial relationship is missing.",
+        "The camera progresses into excessively tight body crops, losing the relationship of car, road, barriers, and audience that defines the reference framing.",
+        "Background structures are placed as simple sparse facades rather than the packed event frontage and truss/canopy setting."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The vehicle is plausibly much larger than the seated figures and close to the barriers, while the four exposed wheels establish an early-racing-car scale. The initial Group C frame communicates a sensible overall vehicle footprint.",
+      "issues": [
+        "The long smooth rounded rear body dominates much more than in the reference and makes the silhouette read less like the target car.",
+        "Wheels are smooth disc-like forms with inconsistent apparent prominence instead of the reference's very large, detailed, mechanically integrated wheels.",
+        "The occupants are greatly simplified and do not have convincing adult body proportions or the reference's cockpit relationship."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 4,
+      "reasons": "The scene does have strong outdoor directional lighting and clear cast shadows, and the dark body plus gold graphics remain distinguishable in the better early Group C frames. However, material richness and exposure are far from the target.",
+      "issues": [
+        "Overexposure washes out the road, white barriers, tents, and much of the background.",
+        "The target's aged black painted metal, rivets, worn graphics, textured exhaust wrap, tire rubber, and dark mechanical hardware are mostly replaced by smooth generic materials.",
+        "The ground is bright white rather than a sunlit gray paved street."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The main vehicle, four-wheel concept, two cockpit occupants, gold race numbers, side exhaust-like tube, basic engine representation, rail barriers, colored parasols, canopies, buildings, and trees are present in the submitted scene.",
+      "issues": [
+        "The requested and reference-defining crowd of spectators, phones/cameras, children, and high-visibility staff is missing.",
+        "White slatted road barriers with event markings, the truss structure, detailed crowd-control staging, and the distant event equipment/vehicle are absent.",
+        "Important car details including a convincing grille, valve/rocker gear, chain drive, worn emblems/lettering, textured pipe wrap, and readable steering setup are incomplete or only represented by generic primitives."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The video presents a recognizable black vintage race car as the primary subject in an outdoor automotive-event environment.",
+      "evidence": "The animation opens on a clearly recognizable dark open-wheel vintage-style car, with barriers, parasols, canopy structures, buildings, and trees establishing an outdoor organized-event setting.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The car uses the reference's exposed vintage wheel configuration.",
+      "evidence": "The opening three-quarter render visibly shows four exposed wheel positions, including large tall dark tires and a near wheel with sparse radial vintage-style spoke forms.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The car reproduces the reference's distinctive radiator shell and exposed front running gear.",
+      "evidence": "At the left/front of frame_0001, the car has a tall black rectangular radiator-like shell, with exposed dark lower rods, axle/suspension members, and wheel hardware beneath it.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The car reproduces the reference's prominent exposed upper-side engine forms and long external side exhaust.",
+      "evidence": "Frames 0001-0006 clearly show a row of raised silver engine-cylinder forms ahead of the cockpit and a long metallic side pipe running almost the full visible body length.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "The car visibly includes the reference's external rear-side chain-and-sprocket drive.",
+      "evidence": "No close side view clearly reveals a toothed rear sprocket and linked chain assembly; the lower rear-side area is either simplified, cropped, or motion blurred.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The vintage race car has an exposed open cockpit rather than an enclosed cabin.",
+      "evidence": "The vehicle has an uncovered central seating well with occupants exposed above the cockpit rim and no enclosing roof or cabin.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The open cockpit includes the second seated occupant visible in the reference.",
+      "evidence": "A second distinct seated figure with a pale gray head and bright blue torso is visibly positioned directly behind/beside the brown-clad aviator-capped occupant in the cockpit.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "Recognizable parasols or large event umbrellas appear in the spectator background.",
+      "evidence": "Large yellow and green parasol forms on thin poles are clearly visible behind the vehicle throughout the opening and mid-shot frames.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The car matches the reference's long, low vintage racing silhouette and major proportions.",
+      "evidence": "The broad overview shows a long, narrow low body, a long front engine section, low open cockpit, wide wheelbase, and a distinctly rounded extended tail.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 0,
+      "criterion": "The functional driver is correctly scaled, seated at the controls, and continuously integrated with the moving car.",
+      "evidence": "The brown-clad figure remains placed in the cockpit, but the steering control is not clearly recognizable and the figure's arms read primarily as resting over the cockpit edge rather than visibly operating controls.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 0,
+      "criterion": "A substantial crowd occupies a clearly separated spectator zone behind the car's route.",
+      "evidence": "The scene has fencing and tape but no substantial readable crowd of spectators behind it; the dark background half-discs are too featureless to identify as people.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 0,
+      "criterion": "The car carries the reference's large weathered gold-toned number 23 graphic.",
+      "evidence": "Large gold 23 numerals are prominent on the side and tail, but they are clean, bright, extruded graphics with no clearly visible worn or weathered treatment.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 0,
+      "criterion": "The car body uses the reference's predominantly black, aged semi-gloss finish.",
+      "evidence": "The body is dark charcoal and semi-gloss, but its surface reads as smooth and uniform; no clear age wear, patina, scuffing, or uneven aged sheen is visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 0,
+      "criterion": "Rubber, exposed metal, exhaust, and heat-wrapped sections have visibly distinct surface responses.",
+      "evidence": "Dark tires and silver pipes are differentiated by color, but the pale exhaust sleeve appears smooth rather than a coarse tan heat wrap, and the mechanisms do not visibly show worn metal texture.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "Lighting matches the reference's bright directional daylight.",
+      "evidence": "The car has strong sunlit highlights and crisp directional vehicle, wheel, fence, and canopy shadows on the ground, visibly grounding the scene outdoors despite overexposed whites.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "The car performs a slow, continuous, physically grounded pass.",
+      "evidence": "Across the ordered animation frames, the car progresses smoothly from a full front three-quarter pass to cockpit and tail coverage while its wheels remain visually at the ground plane with stable body posture and contact shadows.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 0,
+      "criterion": "All clearly visible tires rotate coherently with vehicle travel.",
+      "evidence": "The visible wheels are often blurred or leave frame early, and the submitted sequence provides no unambiguous rotating spoke or hub cue across all visible tires to establish coherent wheel rotation.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The action follows the reference's frame-left front-three-quarter-to-side progression.",
+      "evidence": "The sequence begins with the rectangular front section leading at frame-left in a readable front three-quarter view, then moves into a much closer side-on pass along the body.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R19",
+      "score": 1,
+      "criterion": "Camera movement reproduces the reference's escalating close tracking composition.",
+      "evidence": "The animation escalates from an almost full-car opening frame to close cockpit/mid-body frames, then finishes on the rounded rear and tail-side number near the frame edge.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R20",
+      "score": 1,
+      "criterion": "The vehicle's progress through the pass follows the reference's temporal pacing.",
+      "evidence": "The ordered frames show a continuous paced progression: broad vehicle view at the start, cockpit-centered middle coverage, and the tail taking over only in the final frames, without an apparent jump or frozen hold.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R21",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable, editable, and links usable pass animation to the recreated scene elements.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R22",
+      "score": 1,
+      "criterion": "The rendered deliverable meets the required container, codec, frame size, frame rate, and approximate duration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The submission successfully establishes a recognizable black number-23 vintage race car with two cockpit occupants in a simplified event setting. It falls well short of the reference as a whole because the crowd and dense event atmosphere are absent, the car is mechanically and proportionally simplified, and the final exported frames suffer from severe overexposure, blur, and unhelpful close framing.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "c9c1daaf3ca64d30c1b184b6c9d94260722a44dd40adc8a184c69100107c1c5b"
+}

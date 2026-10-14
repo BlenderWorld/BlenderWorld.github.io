@@ -1,0 +1,46 @@
+{
+  "exporter_version": 3,
+  "source_file": "rhino_enclosure_previz.blend",
+  "objects": 982,
+  "meshes": 941,
+  "original_triangles": 106460,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 16.668677412875354,
+    "phi": 81.13611074677158
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1166188,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "Rhino_Skin",
+    "Rhino_Skin_Shadow",
+    "Horn_Ivory",
+    "Red_Compacted_Earth",
+    "Sunlit_Earth",
+    "Orange_Rock_Wall",
+    "Orange_Boulders",
+    "Fallen_Log_Bark",
+    "Cut_Wood",
+    "Limestone_3",
+    "Limestone_4",
+    "Limestone_2",
+    "Limestone_1",
+    "Pine_Bark_Dark",
+    "Pine_Canopy"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.405m 3.663m 0.300m",
+    "camera-orbit": "16.668677412875354deg 80deg 27.893m",
+    "min-camera-orbit": "auto 5deg 1.328m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

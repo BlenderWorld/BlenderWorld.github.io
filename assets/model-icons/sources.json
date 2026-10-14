@@ -1,0 +1,52 @@
+{
+  "openai": {
+    "source": "tabular/icons/openai.pdf",
+    "source_sha256": "7c206e7fca968a5c92778c1ca6240eec6dd490ead896b20c2856f8e77a6e3d92",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "claude": {
+    "source": "tabular/icons/claude.pdf",
+    "source_sha256": "b63083c770fac3dfe8e83ac8097403d46b0897907ff10413e2cc588a69ee9163",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "deepseek": {
+    "source": "tabular/icons/deepseek.pdf",
+    "source_sha256": "27ec92d2532056ef81f2d1ccb659d01b4a401a8d502b7e2823caaa851d511f34",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "qwen": {
+    "source": "tabular/icons/qwen.pdf",
+    "source_sha256": "b128cc6529debf992e4fce571dca3ddd3a98ec0047c2fb2c01d57d3a46559fe0",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "gemini": {
+    "source": "tabular/icons/gemini.pdf",
+    "source_sha256": "63d5e1e45f9c62cea4f5c69623a21ad780bb1eebbb2b5b949a1496a062056dc8",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "grok": {
+    "source": "tabular/icons/grok.pdf",
+    "source_sha256": "e0018a2c518b8e573c8ef4de9449fac62579d69f284e2495a9691440dfa471ea",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "zai": {
+    "source": "tabular/icons/zai.pdf",
+    "source_sha256": "47ce8325b50e8d8d655cb57e56f0a469ddc851d5727df01adbde5af59fc8ac1c",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "doubao": {
+    "source": "tabular/icons/doubao.pdf",
+    "source_sha256": "7621511f31371fc23d6deb81e6bba559f7a592aaf7eaca2859be459d84d226cc",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "kimi": {
+    "source": "tabular/icons/kimi.pdf",
+    "source_sha256": "397e2a67a960fbfbd1489e0d72d9b5e6a606d41eec18db328f2c5ca5e96c4a8b",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  },
+  "minimax": {
+    "source": "tabular/icons/minimax.pdf",
+    "source_sha256": "9f5638ade58051d612b4e8cf06834aa9e7268e71c9c7ed222419ffcd082f2711",
+    "conversion": "Vector SVG exported directly from the paper PDF icon, with original colors and paths."
+  }
+}

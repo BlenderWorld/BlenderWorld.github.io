@@ -1,0 +1,30 @@
+{
+  "exporter_version": 3,
+  "source_file": "snowboard_carve_previz.blend",
+  "objects": 120,
+  "meshes": 100,
+  "original_triangles": 26164,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -5.6845307176398965,
+    "phi": 74.98660517522255
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 138684,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-3.846m 0.991m 0.289m",
+    "camera-orbit": "-5.6845307176398965deg 74.98660517522255deg 3.671m",
+    "min-camera-orbit": "auto 5deg 0.175m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

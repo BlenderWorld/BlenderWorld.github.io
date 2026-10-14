@@ -1,0 +1,31 @@
+{
+  "exporter_version": 2,
+  "source_file": "active_volcano_dusk.blend",
+  "objects": 68,
+  "meshes": 68,
+  "original_triangles": 36093,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground_Ash_Field.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 108848,
+  "optimized": true,
+  "showcase_refinement": 2,
+  "procedural_color_fallbacks": [
+    "M_Basalt_Ash",
+    "M_Lava_Lake",
+    "M_Lava_Flow"
+  ],
+  "preview_omitted_objects": [
+    "Volcanic_Plume_Soft_Envelope.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "37deg 74deg auto"
+  },
+  "preview_note": "The outer smoke volume is omitted in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

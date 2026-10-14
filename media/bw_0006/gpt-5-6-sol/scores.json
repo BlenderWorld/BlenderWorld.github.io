@@ -1,0 +1,179 @@
+{
+  "task_id": "bw_0006",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 79.0625,
+  "rubric": 90.625,
+  "dimension": 67.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "The submitted booth is clearly the intended Canadian Space Agency capsule-themed installation: the red Canada pylon is on the left, the bilingual CSA logo screen occupies the central wall, and a large engineered hatch fills the right side. Group B's final image, csa_capsule_booth_final.png, and Group A wide_front_center.png show the requested floor, ceiling canopy, panel wall, screen, and hatch in the correct overall concept.",
+      "issues": [
+        "The hatch content substantially differs from the target: it presents a simplified three-dimensional display rover against a blue star-dotted backing rather than a convincing porthole view of a lunar surface with a photographic/gritty rover.",
+        "The result reads as an isolated open-front display diorama against a black void, rather than as a booth installed within the larger exhibition interior visible in the reference.",
+        "Several wall forms are simplified and cleaner than the denser molded sci-fi wall construction in the reference."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "The main booth construction is coherent in Group A wide_left_threequarter.png and wide_right_threequarter.png: the floor is a thick platform, the pylon and wall panels meet it, and the canopy is visibly connected to the wall/end structures. The screen, hatch frame, bolts, and panel trims are all visibly attached rather than floating.",
+      "issues": [
+        "In Group A detail_hatch_rover.png, the rover's wheels appear to hover above or ambiguously intersect the inner tray, with detached dark oval marks below them that do not clearly read as contact shadows.",
+        "The large shallow canopy has a somewhat stage-set-like cantilever and limited visible structural support beyond the back wall and narrow end slab."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "The most important visual identities are strong: detail_pylon_screen.png clearly shows a saturated red pylon with raised white maple/star emblems and readable Canada branding, while the central dark-blue screen is unmistakably a CSA sign. detail_hull_hatch.png shows a recognizable sci-fi hatch with layered framing, bolts, grooves, and small red indicators.",
+      "issues": [
+        "The rover in detail_hatch_rover.png is overly toy-like and blocky compared with the more realistic lunar rover image in the target.",
+        "The blue star-field alcove and bright white interior tray do not visually communicate lunar terrain.",
+        "The right-side hull is predominantly pale silver/white, rather than the more restrained metallic gray of the reference wall."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "The author final image, csa_capsule_booth_final.png, is cleanly rendered with good geometric definition, readable graphics, and a coherent presentation-render aesthetic. Close Group A views retain visible panel relief, bolts, screen framing, and a believable booth shell.",
+      "issues": [
+        "The overall result reads more as a miniature architectural visualization or stylized diorama than a physically installed exhibition booth.",
+        "Strong cool-white illumination noticeably washes out the pale wall and hatch faces in csa_capsule_booth_final.png, reducing depth and contrast.",
+        "The rover and lunar bay lack the material complexity and ground detail needed for the photographic realism of the reference."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The principal left-to-right arrangement is very faithful in wide_front_center.png and csa_capsule_booth_final.png: red pillar at the left edge, horizontal screen on the central wall, and the large hatch/hull section to the right. The broad open white floor, rear wall, and overhead black ceiling with lights create a clear front-facing visitor zone.",
+      "issues": [
+        "The central open floor is much more expansive and empty than the tightly framed reference installation.",
+        "The final presentation is centered and diorama-like rather than matching the reference's closer, more immersive slightly off-front interior viewpoint."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The pylon, screen, hatch, wall, and overhead canopy have internally sensible scale relationships, especially in wide_left_threequarter.png. The pylon reaches the ceiling, the screen is a plausible wall-mounted size, and the hatch is large enough to act as a main booth feature.",
+      "issues": [
+        "Without human-scale elements, the very wide empty platform and shallow booth depth make the construction feel somewhat like a scaled presentation model.",
+        "The hatch is more compact and square than the tall vertically segmented porthole feature in the reference."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The lighting scheme is visibly intentional: Group A wide views show the dark ceiling canopy, bright front edge strip, and multiple surface-mounted rectangular floodlights, while detail_pylon_screen.png shows the screen as a self-lit dark display. detail_hull_hatch.png also provides visible brushed linear grain and layered metallic trim on the hatch.",
+      "issues": [
+        "The cool white lighting is overly intense on the white/silver wall areas, causing highlight clipping and making distinct hull finishes harder to read in the author final image.",
+        "The pylon appears glossier than the requested satin-lacquer finish.",
+        "The floor is legible as matte white, but its extreme brightness provides little material variation or subtle reflected grounding."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "All major requested booth components are present and visible: white paneled floor, suspended dark ceiling, edge strips, several floodlights, red branded pillar, central CSA screen, metallic hatch frame, wall seams, stiffener-like panels, rivets, and a rover model. These are clearest across csa_capsule_booth_final.png and the Group A detail images.",
+      "issues": [
+        "The requested lunar-surface reveal is missing; the rover sits in a clean display tray with a stylized starry backing rather than on recognizable lunar ground.",
+        "The target's more varied raised wall symbols, vent details, and dense panel treatment are only partly represented."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The booth is a coherent human-scale CSA capsule environment with the required three-zone organization, proportions, depth, and circulation logic.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The red pillar is complete in form, branding, side placement, and satin-lacquer finish.",
+      "evidence": "The left side in detail_pylon_screen and csa_capsule_booth_final clearly shows a tall red freestanding pillar with large white maple-leaf graphic, multiple white four-point star emblems, and readable 'Canada' branding. Its smooth red surface has restrained edge highlights distinct from the brushed gray hatch metal and white floor.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The central display is correctly mounted, branded, self-lit, and visibly produces localized screen glow.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The opposing wall is a complete brushed-matte metallic spacecraft hull system with all specified visible structural-detail classes and reference construction language.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "The prominent hatch is an integrated hull opening that reveals a recognizable lunar surface and rover at spatial depth.",
+      "evidence": "detail_hull_hatch clearly shows a deeply layered, bolted octagonal hatch integrated into the wall and a recognizable wheeled rover inside it, but the view behind/beneath the rover is a smooth dark star-dotted panel and clean stepped tray with oval pads rather than recognizable dusty, rocky, cratered, or otherwise lunar terrain.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The overhead system is a dark suspended ceiling fitted with surface-mounted floodlights and visible edge light strips.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The booth floor is visibly white, spatially continuous beneath the stand, and matte rather than glossy.",
+      "evidence": "wide_left_threequarter and csa_capsule_booth_final show a broad white floor platform extending continuously across the booth and foreground. Its panel seams and soft illumination are visible without mirror-like reflections, reading as matte.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "Native area lighting, screen glow, differentiated materials, and staging combine into a cool high-tech image that preserves hull and hatch clarity.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The active author camera is slightly off-front and its final composition clearly communicates every principal booth zone.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The actual author final image is delivered as an openable high-resolution PNG.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The native Blender project is openable, complete, editable, configured for Cycles, and corresponds to the delivered final PNG.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A clearly recognizable CSA capsule-booth recreation with strong object placement, branding, hatch detailing, and overhead lighting. The main fidelity loss is the hatch interior: it becomes a stylized rover display rather than a convincing lunar porthole scene, while bright lighting and a black-void presentation keep the render from matching the realism and installed-exhibition feel of the reference.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "82460a17e3875d3e48e1762acbe40c717f77b2f8341aab9dfabe04522086f4f2"
+}

@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "flamingos_previz.blend",
+  "objects": 176,
+  "meshes": 176,
+  "original_triangles": 249302,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -7.7000013399927925,
+    "phi": 85.50001094904584
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 612940,
+  "optimized": true,
+  "showcase_refinement": 6,
+  "procedural_color_fallbacks": [
+    "Bank_Grass",
+    "Foliage_Dark",
+    "Tree_Bark",
+    "Tufa_Rock",
+    "Rock_Dark"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.028m 0.182m -1.516m",
+    "camera-orbit": "30deg 70deg 5.043m",
+    "min-camera-orbit": "auto 5deg 0.240m"
+  },
+  "preview_note": "The initial view focuses on the flamingos.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 2
+}

@@ -1,0 +1,39 @@
+{
+  "exporter_version": 3,
+  "source_file": "backrooms_shop.blend",
+  "objects": 1245,
+  "meshes": 1244,
+  "original_triangles": 20600,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Floor_Carpet_Mid.001",
+    "Floor_Carpet_North.001",
+    "Floor_Carpet_South.001",
+    "Floor_Concrete_Service.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -99.4100898484941,
+    "phi": 84.4466288833498
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 14121520,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "M_CeilingTile",
+    "M_Cardboard",
+    "M_Cardboard_Aged"
+  ],
+  "preview_omitted_objects": [
+    "Ceiling.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "-99.4100898484941deg 40deg auto"
+  },
+  "preview_note": "Ceilings and roof panels are hidden for a cutaway view of the interior.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

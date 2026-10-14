@@ -1,0 +1,167 @@
+{
+  "task_id": "bw_0037",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 94.375,
+  "rubric": 100.0,
+  "dimension": 88.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 9,
+      "reasons": "Group B final image CONNECT_shared_lounge clearly shows the requested single indoor shared-activity lounge: a central modular seating cluster and ottomans on a patterned rug, low central table, striped coffee counter at rear left, freestanding CONNECT screen at right, and a small drone overhead. It deliberately avoids the reference collage's people, hands, devices, and unrelated activity zones.",
+      "issues": [
+        "The rendering is more softly modeled 3D than the reference's crisp outlined vector-isometric language."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 9,
+      "reasons": "In CONNECT_shared_lounge and Group A detail_lounge, the seating modules, ottomans, rug, counter, screen, and table are consistently floor-supported. The screen has a post and broad base, the counter and awning are visibly connected to a backing panel/supports, and the room shell reads as a coherent enclosed interior. The drone is intentionally hovering as requested.",
+      "issues": [
+        "The hovering drone has no visible flight cue beyond its suspended position, although its unsupported placement is appropriate for the requested floating drone."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The major objects are independently recognizable rather than generic blocks: upholstered modular seating, cushioned ottomans, a low table, striped canopy stall, framed display, and multirotor drone all have clear silhouettes. Coral pink, orange, cream, bright blue, and small yellow accents closely follow the requested palette, while the surfaces remain predominantly matte.",
+      "issues": [
+        "Soft rounded bevels and gradient-like lighting make the result less flat and graphic than the reference's sharply outlined illustration style.",
+        "There are no visible outline treatments comparable to the thin blue-gray contours in the reference."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 9,
+      "reasons": "The designated author final CONNECT_shared_lounge is clean, high-resolution, well framed, and free of visible noise or rendering artifacts. The shared lounge reads as a coherent stylized architectural visualization, with legible forms and no contradictory extra scene content.",
+      "issues": [
+        "The expansive plain cream room shell leaves the image slightly visually sparse compared with the energy and graphic density of the reference style."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 9,
+      "reasons": "CONNECT_shared_lounge uses a readable elevated three-quarter composition: the lounge is centered on the rug, the low table sits inside the seating zone, ottomans occupy the front/left portions of the rug, the cafe corner is set back to the left, and the signboard is offset right with a clear circulation gap. All requested elements remain visible simultaneously.",
+      "issues": [
+        "The screen is positioned close to the rug edge and visually dominates the right side slightly more than the other secondary elements."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "reasons": "The sofa seat height, ottoman sizes, low-table height, counter proportions, and rug footprint are mutually plausible in the final image. The drone is small enough to read as a compact hovering device, and there is usable open floor around the installation.",
+      "issues": [
+        "The display screen is somewhat tall and prominent relative to the low seating cluster.",
+        "The room envelope feels considerably oversized and empty relative to the compact activity zone."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 9,
+      "reasons": "CONNECT_shared_lounge has bright, even warm illumination, restrained soft shadows, and clean matte-looking color surfaces. The lighting keeps the cafe, seating, rug graphics, drone, and screen readable without window-dependent light, hard contrast, strong reflections, or photorealistic glare.",
+      "issues": [
+        "The materials and light transitions are slightly softer and more volumetric than a strictly flat illustration treatment."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 10,
+      "reasons": "The final image visibly includes every required item: multicolored modular seats and square stools, one low coffee table, a peach rug with wave lines and dot motifs, one red-and-white striped awning cafe corner, one vertical floor-standing screen displaying only CONNECT, one small hovering drone, and a neutral floor/wall/ceiling shell. No people, windows, outside view, extra furniture, or prohibited technology are visible.",
+      "issues": []
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The work must be a newly authored, continuous residential shared-activity interior and the complete Blender scene must obey the prompt's exclusive environment-content boundary.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The complete scene must use the requested reference-derived illustrative treatment, matte material system, palette hierarchy, modular form language, and restrained neutral interior shell.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The central lounge must combine block-built seating and stools with exactly one functionally central low coffee table.",
+      "evidence": "The author-final image clearly shows a multi-part coral, orange, and cream sectional sofa, plus three separate low square ottomans in blue, orange, and coral. One cream-top, coral-supported low coffee table is the sole table and sits centrally between the sofa and front ottomans.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The colorful rug must visibly carry both required pattern families.",
+      "evidence": "A large peach/salmon rug lies flat beneath the lounge furniture. It visibly includes paired blue wavy line motifs at right and multiple small yellow, white, and pink circular dots, along with additional curved white line decoration.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The side coffee corner must be recognizable and include its complete red-and-white striped awning identity.",
+      "evidence": "At the left rear wall, a recognizable coral counter installation has a white countertop, backing panel, and projecting scalloped canopy with clearly alternating red and white stripes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The display must combine the required floor-standing form with exact, exclusive screen content.",
+      "evidence": "One freestanding vertical display stands on a short blue post and broad cream floor base at the right of the lounge. Its otherwise blank cream screen face visibly reads only “CONNECT.”",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Exactly one small drone must be recognizable and visibly unsupported overhead.",
+      "evidence": "A single small multirotor drone with blue arms and colored rotor details is visibly hovering above the sofa area, separated by open air from the ceiling, walls, furniture, and floor.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The complete element arrangement must provide coherent human scale, clear functional relationships, and usable circulation without visible stacking or substantial occlusion.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The single author-final camera must provide the specified elevated three-quarter view with clear, unobstructed, and undistorted visibility of every required physical scene element.",
+      "evidence": "The designated author-final render is a wide, slightly elevated three-quarter room view with natural perspective. It clearly shows the enclosing floor, two walls, ceiling, modular lounge and ottomans, central low table, patterned rug, left coffee counter and awning, right display, and overhead drone without principal-element cropping or obstruction.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The original scene lighting and final result must provide bright, even, soft internal illumination without exterior-light dependence or dramatic darkness.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivery must contain both a clear high-resolution author-final image and its openable, editable, corresponding Blender project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A strong and complete reconstruction of the requested simplified shared-lounge scene. The author final image is particularly successful in object coverage, palette, clean circulation, and readable presentation. The main limitation is stylistic: it is a polished soft 3D render rather than a fully flat, outlined vector-like interpretation of the reference aesthetic.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "d4957568531bf770012787f7f95b9390c1101d9f6125cd89325df07816fb6414"
+}

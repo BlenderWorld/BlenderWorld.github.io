@@ -1,0 +1,34 @@
+{
+  "exporter_version": 3,
+  "source_file": "future_city_twilight_concept.blend",
+  "objects": 177,
+  "meshes": 157,
+  "original_triangles": 157900,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Atmosphere_Volume_320m"
+  ],
+  "original_camera": {
+    "theta": 24.693986650883794,
+    "phi": 107.23842126607951
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 552352,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Concrete_MicroRough"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0.000m 90.006m -25.000m",
+    "camera-orbit": "24.693986650883794deg 80deg 378.027m",
+    "min-camera-orbit": "auto 5deg 18.001m"
+  },
+  "preview_note": "Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

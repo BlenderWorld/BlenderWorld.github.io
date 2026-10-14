@@ -1,0 +1,144 @@
+{
+  "task_id": "bw_0152",
+  "model": "Qwen3.8-Max",
+  "judge_model": "GPT-5.6-terra",
+  "score": 65.0,
+  "rubric": 55.0,
+  "dimension": 75.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "Group B 的 planetary_reducer_exploded_4k.png 清楚呈现了方形步进电机、前法兰、分体壳体、两组内齿圈/太阳轮/行星轮/行星架以及输出端盖和轴，整体明确是一台两级行星减速器的轴向爆炸图。Group A 的 detail_flange、detail_gears 和 detail_output 也支持各主要子系统确实被建模而非仅为抽象占位物。",
+      "issues": [
+        "图中无法可靠核实模数、0.2 mm 齿侧间隙、12/24/60 的精确齿数及 36:1 传动比。",
+        "两级中每级三颗行星轮没有在同一主视图里同时非常明确地读出，部分行星轮被视角或相邻零件遮挡。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "作为爆炸示意，零件沿共同轴线依序分离是符合任务目的的；在 Group A 多视图中没有明显的实体穿插，内齿圈、太阳轮、行星轮和行星架的相对同轴关系也基本合理。输出轴、联接套和壳体端盖均处在合理的装配顺序中。",
+      "issues": [
+        "所有零件在最终状态中均悬空且未表现实际装配约束；虽然这是爆炸图所需，但无法从图中确认完整的承载和定位关系。",
+        "行星架与各行星轮之间的销轴、轴承或双侧支撑关系表现较弱，装配后的结构细节不够明确。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "齿圈的深青色、行星轮的蓝色、太阳轮的橙色、行星架的绿色、壳体的灰色和电机的黑色形成了清楚的功能分层。detail_gears.png 中内齿、外齿和中央小太阳轮都有可辨识的齿形，机械零件并非简单方块或圆柱占位。",
+      "issues": [
+        "步进电机和壳体的外观偏简化 CAD 风格，缺少能进一步确认 NEMA 17 标准件身份的细节。",
+        "浅蓝法兰上的孔位与定位止口虽可见，但 31 mm 方形 M3 孔距关系在渲染中不够易读。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "最终作者图 planetary_reducer_exploded_4k.png 画面干净、无明显噪点，零件边缘、齿面和圆角均有稳定的高光与阴影，作为论文中的工程示意图整体连贯且可信。爆炸状态下的强制分离也符合技术插图而非实拍产品图的表现方式。",
+      "issues": [
+        "整体仍偏基础 CAD 渲染，缺少更丰富的微表面、装配紧固件和环境遮蔽细节。",
+        "没有地面或接触阴影，白底中的浅灰壳体和浅蓝法兰部分边界对比略弱。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 9,
+      "reasons": "Group B 最终图和 Group A 的 wide_front/wide_back/wide_iso 都显示出非常清晰的轴向爆炸序列：电机—法兰/前壳—一级齿圈和齿轮组—一级行星架—二级齿轮组—二级行星架—输出联接和后壳。零件分层明显，没有堆成一团，且白色留白为后续引线标注提供了空间，直接满足该任务的重点。",
+      "issues": [
+        "超宽的横向构图使得在论文单栏或较小尺寸排版时，中央齿轮接口可能显得偏小。",
+        "最终图未附现成的编号或引出线，仍需在论文排版阶段补充标注。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "输出轴相对行星架与内齿圈明显较细，电机、法兰、减速器壳体和两级传动组之间的尺度关系整体合理；多视图均显示各级齿轮的直径层级符合行星传动的直观关系。",
+      "issues": [
+        "齿圈/外壳相对于 NEMA 17 电机的直径优势不够显著，未能清楚传达模数 1、60 齿内齿圈对应的具体尺寸关系。",
+        "爆炸间距被有意放大，因而无法通过最终图直接判断完整装配后的轴向长度和壳体 3 mm 壁厚。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "planetary_reducer_exploded_4k.png 的工作室式照明使齿面、圆柱面及壳体圆角都有平滑高光，深色齿圈和蓝/绿/橙传动件在白底上区分明显。材质的平滑塑料感与 PLA 工程样件的简化视觉表达基本相符。",
+      "issues": [
+        "大多数塑料件采用近似相同的光滑半亮材质，缺少 PLA 打印层纹、粗糙度差异或更明确的材质层次。",
+        "浅色壳体在纯白背景下有些发灰发淡，环境反射和接触阴影不足以进一步强化轮廓。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "可见的主要对象齐全：一台方形电机、前法兰、两个内齿圈、两颗中央太阳轮、两组行星架、成组的行星齿轮、分体灰色壳体、输出联接套和输出轴都出现在 Group B 最终图及 Group A 细节图中。壳体外缘的凸起/加强结构和法兰孔也被建出。",
+      "issues": [
+        "两级各三颗行星轮的准确数量没有在最终视图中完全无遮挡地展示，实际可清晰数到的蓝色行星轮较少。",
+        "M3 孔距、Ø22 定位止口、3 mm 壁厚和齿侧间隙等规定性细节不能从所给渲染中明确验证。",
+        "没有展示螺钉、轴承或其他可能用于最终装配的紧固/支撑件。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The recognizable NEMA 17 motor is installed at the reducer input through the complete specified front-flange interface.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "Both planetary stages form complete module-1 gear-and-carrier systems with the specified counts, backlash, support, and compatible meshes.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The two planetary stages constitute a connected 6:1-by-6:1 drivetrain terminating in the specified output shaft.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The reducer has a separable, reinforced, correctly thick housing capable of enclosing the complete drivetrain.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The fabricated reducer uses a coherent PLA or PLA-like surface system whose component distinctions remain clear in print.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The designated final file is a thesis-ready 4K exploded axonometric image with clear, annotation-friendly layering.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The editable Blender project retains the complete reducer scene and its functional Cycles, three-point-light, and HDRI configuration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "这是清楚且可用的两级行星减速器爆炸轴测示意，尤其在部件分层、轴向顺序和颜色编码上完成度较高。主要不足在于若干精确机械规格无法从画面确认、行星轮数量的可读性受遮挡影响，以及材质和装配支撑细节仍较简化。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "2f77c4a4cfe121dbfea0d503b2a29c73501046c2d74a144c13fde57dfe093efc"
+}

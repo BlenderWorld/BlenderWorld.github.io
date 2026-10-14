@@ -1,0 +1,184 @@
+{
+  "task_id": "bw_0109",
+  "model": "Grok-4.6",
+  "judge_model": "GPT-5.6-terra",
+  "score": 35.3448,
+  "rubric": 20.689655172413794,
+  "dimension": 50.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "Group B 的 shot_front 与 shot_angle 清楚呈现了夜雨街道、两侧老旧立面、三辆车、路灯、电线、斑马线及湿地反射，整体题材可辨认为雨夜旧街分镜场景。",
+      "issues": [
+        "小面馆、酒吧和关闭的杂货铺均没有可辨识的店面造型、卷帘门或文字招牌，发光矩形更像无内容面板。",
+        "远端青色发光条没有清楚的安装位置或语义。",
+        "雷电版本 shot_front_lightning 主要是整体提亮，缺少可见的闪电形态或强烈瞬时照明效果。",
+        "建筑细节和店铺身份不足，使场景更像通用低模巷道而非具体老城区商业街。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "多数街灯、木电线杆、棚亭立柱、车辆和两侧建筑在 Group A 的 wide_reverse、detail_busstop 中有合理的落地或墙面连接，街道作为连续空间也成立。",
+      "issues": [
+        "多处水洼像贴在地面的薄片，边缘锐利并与道路标线相交，而非自然积水。",
+        "斑马线在 shot_front 中显得是浮起的独立厚板，不像贴合路面的涂料。",
+        "道路上的金属环更像露出的空心圆环，未能作为平整井盖嵌入路面。",
+        "远景青色光条在 wide_midstreet 中看起来悬空且缺乏支撑。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 4,
+      "reasons": "车辆、路灯、电线杆、砖墙和雨线在各视图中可被基本识别；红砖、竖向旧板墙和粉/青色发光元素也带来一定色彩分层。",
+      "issues": [
+        "车辆均为非常简化的方盒和环形轮胎，缺少可读的车身、轮胎、车窗和灯具结构。",
+        "店铺招牌与窗户多为无内容的平板或过曝矩形，无法读成面馆、酒吧、杂货铺或亮灭不一的楼上窗。",
+        "暖白灯和粉色发光面占比很高，缺少明确的冷蓝夜景主色调及可辨识的霓虹招牌颜色。",
+        "垃圾桶、站牌和墙面附属物仍显得像功能不明的几何块。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "Group B 的正面及斜角成图有连续的雨幕、地面反射、雨夜雾感和车辆灯光，画面并非未渲染状态，能形成一定夜雨氛围。",
+      "issues": [
+        "路面反射过于镜面化，更像完整反光板而不是湿柏油。",
+        "积水形状呈明显硬边多边形薄片，破坏自然性。",
+        "路灯、车灯与招牌严重泛白和泛光，遮蔽了灯具及立面细节。",
+        "雨主要是稀疏的发光线段，未见落地水花、涟漪或可信的大雨体积感。",
+        "背景尽头低对比且为简单平面，降低了街道纵深和真实老城区感。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "shot_front 和 wide_reverse 都清楚建立了从街头低机位向内看的狭长街道；建筑沿两侧排布，车辆位于道路不同深度，路灯和电线沿街延伸，左侧还设置了带顶棚的候车结构。",
+      "issues": [
+        "车辆多为正对或横向占据车道，没有明显的斜停关系。",
+        "商业店面之间的分区不明确，无法确认所要求的三种不同店铺如何排列。",
+        "交通灯仅在 wide_reverse 中以小型红色发光点隐约出现，位置和与路口的关系不清晰。",
+        "街道尽端被大面积平整暗墙封住，空间延伸感有限。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "宽视图中车辆、路灯、候车棚和立面高度之间大致维持了可用的街道尺度；车辆能被理解为小型汽车，未明显大到超过道路宽度。",
+      "issues": [
+        "斑马线板块和积水薄片尺寸偏大、厚度可见，削弱了真实尺度感。",
+        "部分轮胎是厚重的大型开口环，和简化车身比例不协调。",
+        "建筑上大量无功能凸出的白色方块和大平板，让二三层旧楼的实际层高与窗户尺度难以判断。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "砖墙、竖向旧墙板、湿道路面、车辆灯光和多个发光源在 Group B 的 shot_angle 中可区分；雨后反射也确实将红、粉、青和白光带入地面。",
+      "issues": [
+        "湿柏油与积水之间的粗糙度层次不足，整体过度镜面反射。",
+        "大多数灯具都渲染为纯白过曝矩形，未能区分路灯、店内暖光和霓虹材质。",
+        "冷蓝夜色与店铺暖黄灯的对比不够明确，整体偏灰褐和粉白。",
+        "没有看见可信的雨滴落地溅水、路面积水波纹或闪电的定向照明变化。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 5,
+      "reasons": "可见要素包含两侧建筑、三辆车及车灯、路灯、木电线杆和下垂电线、候车棚/长凳、疑似垃圾桶、雨线、湿地反射、道路中心线、斑马线与疑似井盖环；Group B 也提供了正面与斜角两张构图。",
+      "issues": [
+        "没有可独立识别的小面馆、酒吧霓虹招牌和卷帘门关闭的杂货铺。",
+        "楼上窗户亮灭状态不明确，多数只是空白或深色墙面板。",
+        "井盖未完成为实心嵌入式井盖，呈环状物。",
+        "缺少可见的大雨落地水花，闪电效果仅有轻微整体提亮而无明确表现。",
+        "低云压顶的天空细节不足，远景更像暗色背景面。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The street and surrounding buildings must form one credibly scaled, visibly aged architectural system with the requested dimensions, massing, windows, and facade treatments.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "All three requested businesses must be distinct and carry their complete identifying lighting, signage, and closure treatments.",
+      "evidence": "Across shot_front.png and detail_shops.png, the ground-floor façades contain blank projecting panels and heavily blown-out rectangular lights, but no three separately recognizable businesses. There is no readable noodle-shop frontage, identifiable neon bar sign, or visibly ribbed lowered roll-up grocery shutter.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The complete parked-car group must have the requested count, orientation, placement, and functioning visible headlight beam.",
+      "evidence": "Three boxy vehicles are visible in shot_angle.png, including a foreground vehicle with bright headlights and a faint light patch on the wet road. However, the vehicles face generally along the roadway and include a red vehicle positioned near the center lane; they do not clearly read as a group diagonally parked along street edges.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The streetscape must contain the complete requested system of utility, traffic, curbside, and road-surface installations in readable and plausible configurations.",
+      "evidence": "Street lamps, utility poles, sagging overhead cables, and zebra stripes are clearly visible in wide_reverse.png. But the bus-shelter close-up shows a generic canopy, blank panel, bench slab, and one clear cylindrical bin rather than an unambiguous bus stop with multiple recognizable trash bins; the roadway circles visible in wide_midstreet.png are open metallic rings rather than seated manhole covers.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "The rain system must combine intense readable precipitation with convincing visible impacts on the ground and puddles.",
+      "evidence": "shot_front.png and cam_submitted.png show numerous bright falling rain streaks, including several thick foreground streaks. The road surface and flat puddle sheets show no clear splash crowns, upward droplets, or other readable impact-splash geometry where drops meet the ground.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "criterion": "The road-water system must read as soaked glossy asphalt with grounded puddles and all three requested classes of elongated source-correlated reflection.",
+      "evidence": "The roadway in shot_angle.png is strongly reflective, but it reads largely as a mirrorlike glossy sheet. Its irregular puddles have sharp polygonal edges and visibly overlap the road markings, while the visible bright sources are generic lamps and vehicle lights rather than a recognizable neon business sign producing a corresponding elongated reflection.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The complete surface system must keep all explicitly named material classes visibly distinguishable in the final renders.",
+      "evidence": "Brick texture and vertically planked façade cladding are visible in detail_shops.png, and the wet road is visually distinct. However, aged cement/concrete is not independently recognizable as a surface class, and the bright façade fixtures remain featureless blown-out rectangles rather than clearly resolved emissive signage.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The finished presentation must coherently establish the requested old-district rainy-night identity, oppressive cloud cover, and cool-versus-warm lighting mood.",
+      "evidence": "The final author images establish a rainy nighttime street with wet reflections, rain, utility wires, and older-looking brick/clad façades. However, the sky in shot_front.png is a largely uniform dark open backdrop without a discernible low, heavy storm-cloud mass, and the requested cool exterior versus identifiable warm shop-light contrast is not clearly established by the generic bright façade panels.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The authored cameras and corresponding images must form a reusable short-film previs setup in which every required final view uses the requested low inward-looking cinematic composition and mild shallow depth of field.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The delivered package must contain the complete requested multi-view high-resolution render set and a corresponding openable editable native project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "提交物已能识别为包含车辆、街灯、电线和雨水反射的雨夜街道，并提供了正面及斜角成图。主要不足是场景仍停留在低模通用街景：店铺身份、交通设施细节、真实降雨与自然湿路面均未完成，且过曝灯光、镜面路面和硬边积水显著削弱了写实与电影感。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "7ab5b82bb4052ac81d0906999d3267d1fb95be35bba886d0830217989b2529d3"
+}

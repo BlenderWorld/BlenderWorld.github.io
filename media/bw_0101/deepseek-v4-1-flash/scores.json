@@ -1,0 +1,193 @@
+{
+  "task_id": "bw_0101",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 49.5833,
+  "rubric": 41.666666666666664,
+  "dimension": 57.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "整体清楚呈现了秋日山谷水磨坊：木结构双坡屋顶磨坊、侧置大水车、溪流/渠道、石拱桥、石灯笼、秋枫、落叶和冬季雪景均可从 Group B 主图与 Group A 多视图中辨认。Group B 的秋季主图也确实采用了偏三分法的四分之三视角，并提供了水车特写和冬季变体。",
+      "issues": [
+        "上射式供水关系不清楚：水槽、白色块状物和水车之间没有读得通的连续水流。",
+        "桥在秋季主构图中仅局部露出，溪流更像平坦水渠，山谷尺度与空间纵深表现有限。",
+        "关键的室内冠状齿轮、立轴和石磨盘传动未在任何提交视图中展示。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "磨坊主体、石基、桥和石灯笼总体落在地面或基础上，Group A 的近景可见水车位于立柱、石基和墙面旁，主体结构并非悬空。",
+      "issues": [
+        "水槽/高架木平台处的横梁、短板和立柱连接关系不明确，尤其在 Group A 的冬季建立镜头中有若干构件像是突然终止或未形成完整支撑。",
+        "水车轴承、轴伸入墙体的连接以及与供水槽的机械关系不可见。",
+        "水车上方及水边的白色低多边形团块难以识别为可信的水花或泡沫，显得像漂浮装饰物。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "Group B 的水车特写中，木质轮缘、辐条、轮毂和墙体板材都具有清晰可读的轮廓和褐色风化木色；秋景红、橙、黄枫叶明确传达季节，冬景则改为冷灰蓝白色调。桥、灯笼、岩石和枫树也都能独立识别。",
+      "issues": [
+        "树叶为明显的厚片/低多边形碎片，未表现出所要求的叶片透光感。",
+        "水车轮缘上的部件更接近均匀短板和辐条，20个具有容积的木水斗并不清晰。",
+        "苔痕和污渍只在少数石基、岩石边缘略见，桥石与灯笼整体仍偏干净、统一。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "秋景作者主图（.eval_workspace/exports/01_watermill_autumn_main_4k.png）有稳定的阴影、可用的景深层次和较整洁的渲染质量；木材与石材的基础纹理也使场景达到可用的风格化预演效果。",
+      "issues": [
+        "大量落叶悬在天空和镜头前，静帧中显得缺少自然的运动或支撑逻辑。",
+        "溪流水面呈颗粒化、近乎平坦的灰白表面，透明折射、流动感和水车邻近水花均不可信。",
+        "冬季作者主图（.eval_workspace/exports/03_watermill_winter_main_4k.png）整体过度灰雾、反差不足，灌木、河面和远山的层次被压低。",
+        "雪层像边缘锐利的平滑薄片，缺少积雪厚薄变化和自然堆积。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "Group A 建立镜头中磨坊与水车相邻，水道沿磨坊侧面向前景延伸；石灯笼位于磨坊前侧，桥横跨近景水道，树木围绕建筑形成前中后景，基本符合目标场景的主要相邻关系。",
+      "issues": [
+        "桥与约5米宽溪流的跨越关系在秋景中不够清晰，桥大部分被前景和画幅裁切。",
+        "高架水槽的来水方向、出水口和水车受水点没有形成清楚的空间连续性。",
+        "前景两侧浓密树叶遮挡了建筑、桥和水道，削弱了作为预演主机位应有的空间可读性。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "磨坊、水车、门窗、石灯笼和枫树之间的相对尺寸总体可信；水车在 Group B 特写和 Group A 建立镜头中都读作约一层楼高的大型构件，而非玩具比例。",
+      "issues": [
+        "桥的可见跨度和宽度显得偏小，难以读作跨越约5米溪流、净跨6米的桥。",
+        "水车与附近水面/渠道的高度关系偏弱，轮体看起来更多贴近石基而非处在清晰的受水水道中。",
+        "画面不能验证磨坊7m×5m、两层檐高4.5m等具体尺度，部分侧向附属架的尺寸相对主体显得杂乱。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "秋季作者主图使用了明显的低角度暖光，屋檐、水车和石基投下方向一致的长阴影；Group B 水车特写可见木板纹理、粗糙石基和局部绿色苔色。冬季图也切换为冷色阴天照明，符合季节变体的基本意图。",
+      "issues": [
+        "未见明确的林间体积光束或丁达尔效果，远景雾更像整体灰化而非有方向性的体积光。",
+        "水材质缺乏透明、折射和连续高光，不能很好传达溪流。",
+        "冬季雪材质过于均匀平滑，石材苔藓覆盖和木材风化层次不足。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 5,
+      "reasons": "外部核心物件基本齐备：磨坊、水车、供水架、石拱桥、石灯笼、河石、草丛、落叶、秋枫及冬季积雪版本均在 Group A/B 图中可见，且提交包含秋季主图、水车近景和冬景主图。",
+      "issues": [
+        "没有任何视图展示或证明木轴、冠状齿轮、立轴及上下石磨盘的存在与正确传动方向。",
+        "水车的20个木水斗未能清楚确认，水花仅以难辨认的白色多边形团块出现。",
+        "独立的岸边木栅栏不明确；可见木栏多附属于水槽/平台。",
+        "冬景虽有屋顶、地面和水车积雪及疑似结冰水面，但冰层与流水边界不够明确。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The principal exterior assembly must fully satisfy the specified mill architecture, dimensions, and side-mounted overshot wheel construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The native project must contain a continuous, dimensionally correct, mechanically coherent drivetrain from waterwheel to millstones.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The bridge crossing, streambed dressing, bank fixtures, and moss-bearing masonry must form the specified coherent riparian ensemble.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The terrain, maple population, foliage appearance, and ground dressing must jointly form the specified autumn landscape system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "All specified wooden exterior components must share the complete weathered-wood treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "criterion": "The authored water presentation must combine transparent refractive stream optics with readable wheel-area splashing and flow.",
+      "evidence": "In the authored autumn main image, the channel beside the wheel reads as a mostly flat reflective/gray-blue surface; submerged content or refractive distortion is not visibly readable. The white angular clusters at the wheel and bank do not clearly read as directional splashing or flowing water.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The autumn setup must combine the specified native low-angle lighting with its visible warm dusk and Tyndall result.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The actual main-output camera and authored image must satisfy the specified camera setup, composition, depth, and credible-scale goals.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The separate close-up must be a finished authored image that clearly prioritizes the waterwheel.",
+      "evidence": "The separate exported close-up tightly frames the wheel, which fills most of the image and clearly exposes its paired rims, radial spokes, hub, rim paddles, and weathered wood surface against the mill wall.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The third finished image must be a recognizable and fully transformed winter version of the same scene.",
+      "evidence": "The exported winter image preserves the mill, exterior wheel, channel, stone bridge, lantern, terrain, and overall camera arrangement. Snow is clearly accumulated across the roof, bridge and banks, with pale snow/ice accumulation visible on the wheel rim and patches across the cold blue-gray channel; the lighting is distinctly cool, diffuse, and overcast.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The complete finished-image package must contain all requested openable outputs at the required actual pixel dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The Blender project must be loadable, editable, organized, correspond to the outputs, and retain the required native render configuration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "提交成功建立了可识别且有季节切换的水磨坊预演场景，秋季暖光和水车近景是主要优点。但水力供给、机械传动、真实水材质及桥溪尺度关系没有被清楚建模或展示；冬季画面也明显偏灰、偏平。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "0022455908a0c6daf830e37eb204e2afb8d68daa535aa911f46d44bf619b0be0"
+}

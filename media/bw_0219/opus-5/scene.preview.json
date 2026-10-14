@@ -1,0 +1,48 @@
+{
+  "exporter_version": 3,
+  "source_file": "rhino_walk_previz.blend",
+  "objects": 1753,
+  "meshes": 1753,
+  "original_triangles": 720830,
+  "decimation_ratio": 0.7630093087135663,
+  "skipped_studio_objects": [
+    "ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 0,
+    "phi": 90
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 3301824,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "canopyA",
+    "canopyB",
+    "bank",
+    "rhino_hide",
+    "rhino_horn",
+    "orange_wall",
+    "sandstone",
+    "darkrock",
+    "logbark",
+    "limestone_dark",
+    "limestone_pale",
+    "limestone_grey",
+    "bark",
+    "foliage_lit",
+    "foliage"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.400m 0.774m -0.005m",
+    "camera-orbit": "0deg 80deg 7.476m",
+    "min-camera-orbit": "auto 5deg 0.356m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,24 @@
+{
+  "exporter_version": 2,
+  "source_file": "rain_lily_macro.blend",
+  "objects": 211,
+  "meshes": 211,
+  "original_triangles": 914486,
+  "decimation_ratio": 0.6014307490765304,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2794728,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 50315024,
+  "procedural_color_fallbacks": [
+    "01_TEPAL | living chartreuse throat to translucent ivory",
+    "02_FILAMENT | pale green insertion to warm ivory",
+    "03_STYLE | single ivory-white pistil",
+    "05_ANTHER | saturated pollen yellow \u2022 rough",
+    "07_LEAF | glossy deep-green strap blade",
+    "09_SUBSTRATE | matte mottled brown earth",
+    "10_WOOD MULCH | varied dry splinters, fibrous matte"
+  ],
+  "color_policy": "Representative colors from original Blender material ramps/mixes; applied to unsupported shaders, preserving existing textures. The Opus chest AO texture is multiplied by its original procedural material color."
+}

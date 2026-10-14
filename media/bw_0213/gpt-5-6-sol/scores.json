@@ -1,0 +1,241 @@
+{
+  "task_id": "bw_0213",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 61.79347826086956,
+  "rubric": 76.08695652173913,
+  "dimension": 47.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 5,
+      "reasons": "The submitted final animation frames (Group C, especially frame_0001 through frame_0010) clearly show a pale flamingo wading in dark reflective water, lowering its head to feed, with a second flamingo behind it. Group A wide_front and wide_threequarter also establish the essential pond, rocks, tree trunks, greenery, ripples, and reflections.",
+      "issues": [
+        "The result is a simplified cartoon diorama rather than the naturalistic flamingo pond in the reference.",
+        "The reference's layered flock, muddy rooted islet, fallen branch/log, and richer organic water surface are not reconstructed.",
+        "The final framing centers the stylized foreground bird and tree-bank set differently from the reference's more natural, deeper pond composition."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "In the final animation sequence, the foreground bird's legs remain attached to its body and its feet meet the water plane; its head reaches the water with added ripple rings. Group A detail_gait likewise shows the visible feet contacting the water.",
+      "issues": [
+        "The legs are extremely thin angular rods with sharp bends rather than believable flamingo anatomy.",
+        "The feet are sparse straight toe rods with no convincing webbing or volume.",
+        "The feather layers are visibly thin, separate flat plates with exposed edges in Group A detail_feeding and detail_pair.",
+        "The rear bird has a visibly rectangular, sharply bent leg pose rather than a natural supported stance."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 5,
+      "reasons": "Both birds are independently recognizable as flamingos: Group C frame_0001 clearly shows the rounded pale body, curved neck, eye, pale pink bill with black tip, pink tail accents, and red-pink long legs. The dark teal water and green vegetation also align broadly with the reference palette.",
+      "issues": [
+        "The birds are predominantly white-gray rather than the softly pale pink-white plumage of the target.",
+        "The wing construction reads as overlapping paper or armor plates instead of folded feathers.",
+        "The foliage and trees are generic low-poly blobs and cylinders rather than the natural greenery reflected in the reference."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "The final Group C renders are clean, readable, and visually coherent as a deliberately stylized scene, with stable water reflections and visible feeding ripples.",
+      "issues": [
+        "The toy-like rod legs, flat feather panels, faceted foliage, and hard-edged graphic ripple rings prevent a believable natural pond image.",
+        "The water is overly smooth and mirror-like compared with the reference's dark, irregular water and distorted reflections.",
+        "Group A wide_side and wide_threequarter expose a staged environment with dark backdrop planes and visible corner seams."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 5,
+      "reasons": "The broad spatial arrangement is present: the feeding flamingo occupies the foreground water, the second bird is behind it, and the left-side bank contains a rock grouping and trunks, as visible in Group A cam_submitted and Group C frame_0001.",
+      "issues": [
+        "The reference has multiple partially overlapping flamingos on and behind the left bank, whereas the submitted scene has only the pair.",
+        "The target's irregular muddy islet and fallen log/branch are replaced by a simple narrow shoreline strip and a detached rock cluster.",
+        "The background foliage is arranged as a close wall of rounded blobs rather than an integrated natural pond setting with the reference's depth."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The primary bird has a sensible flamingo-like hierarchy of large body, long neck, small head, and long legs, while the second bird is scaled as a similar bird farther back. The rock/tree/bank relationship is legible in Group A wide_front.",
+      "issues": [
+        "The foreground legs are disproportionately wire-thin and angular relative to the large rounded body.",
+        "The head and bill are overly bulbous and simplified for the body scale.",
+        "The large tree trunk and dense foliage wall make the scene read as a miniature stage rather than a pond with natural environmental scale."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "Group C provides usable soft directional illumination, readable pale bird surfaces, a dark reflective water material, and visible light-green vegetation reflections. Group A detail_gait shows deliberate ripples at the feet and reflective behavior on the water.",
+      "issues": [
+        "The water reflection is too clean and uniform, without the organic breakup, debris, and water distortion visible in the reference.",
+        "Rock, tree, and foliage materials are generic and repetitive rather than muddy, bark-like, or leafy.",
+        "The bright pale plate-feathers lack the subtle layered material variation of real plumage."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 4,
+      "reasons": "The requested core pair is present, and Group C demonstrates the foreground flamingo lowering its bill into the water while its legs move through a wading pose. The scene also includes water, reflections, rocks, trees, and background greenery.",
+      "issues": [
+        "The reference includes several additional background flamingos that are absent.",
+        "The key muddy rocky islet with exposed roots, dark rounded foreground stone, and fallen branch/log are missing or greatly simplified.",
+        "Numerous white rectangular strips substitute for the reference's feather-like floating debris and twigs, but do not read as those natural details.",
+        "The rear flamingo's head and feeding behavior are mostly hidden in the final Group C camera framing."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "Two principal pink birds are visibly recognizable as flamingos through their characteristic anatomy.",
+      "evidence": "The foreground bird has a visible curved neck, small head, and black-tipped bill in frame_0001, but the rear bird is consistently seen only as an overlapping feathered body and legs; its separate head, neck, and beak are not visibly readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The pool setting includes recognizable rocks together with background greenery and trees.",
+      "evidence": "A cluster of pale rounded rocks sits on the left bank, with multiple brown tree trunks and dense green shrub and tree forms surrounding the pool.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Both principal flamingos visibly wade in shallow water.",
+      "evidence": "Both pale bird bodies remain above the teal pool while their thin red legs terminate at the water surface; the foreground feet have visible contact rings and the rear bird's feet rest at the same surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The two flamingos preserve the reference foreground/background hierarchy.",
+      "evidence": "The active bird occupies most of the lower and central frame, whereas the second bird is smaller, behind it, and positioned higher in the image.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "The flamingos use the reference's pale feather treatment and contrasting pink-red leg, face, and beak accents.",
+      "evidence": "The foreground bird visibly has pale layered feathers, red legs, and a pink-and-black bill, but the rear bird's face and dark-tipped curved bill remain obscured or outside the framing, so those required accents are not visibly established for both birds.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The water has a dark blue-green, glossy, reflective material response comparable to the reference.",
+      "evidence": "The pool is a dark teal-blue glossy surface with bright soft highlights and visible mirrored green bank, leg, neck, and bird-body imagery.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Rocks, tree trunks, and vegetation use the reference's natural earthy palette.",
+      "evidence": "The scene visibly combines off-white/tan rocks and shoreline, warm brown trunks, and layered green foliage across the back of the pool.",
+      "importance": "detail",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The shot uses bright natural daylight with the reference's light-dark contrast.",
+      "evidence": "The pale birds and left rock cluster receive strong bright highlights, while the teal water and deep green foliage are substantially darker.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The foreground flamingo performs the reference's slow, articulated long-legged wading gait.",
+      "evidence": "Across the ordered video frames, the foreground bird's long red legs repeatedly change from planted to spread and crossed bent poses, with its feet returning to water-contact positions marked by rings.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The foreground flamingo lowers its articulated neck and dips its beak into the water as part of its continuing wading action.",
+      "evidence": "The foreground head progresses from elevated in frame_0001 through a lowered forward pose in frame_0003 to the water surface by frame_0004, then remains at the surface while the legs continue changing pose.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The rear flamingo remains comparatively restrained and subordinate to the active foreground bird.",
+      "evidence": "The rear bird stays as a largely unchanged background body-and-leg silhouette throughout the sampled sequence, while the foreground bird alone changes neck, head, and leg poses.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "Foot and feeding-beak contacts with the water are spatially credible and produce local surface disturbance.",
+      "evidence": "Concentric rings are visibly placed around planted foreground feet and around the lowered head/beak area, with the feet and feeding head meeting the water plane rather than remaining visibly separated from it.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R13",
+      "score": 1,
+      "criterion": "The pool continuously reflects the flamingos and surrounding environment with coherent temporal alignment and a water-affected appearance.",
+      "evidence": "The water carries blurred, water-affected echoes of the pale feeding neck/head, red legs, and green foliage; these reflections remain beneath the corresponding moving bird through the sampled sequence.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R14",
+      "score": 0,
+      "criterion": "The feeding action follows the reference's low opening posture and approximate progression into sustained feeding.",
+      "evidence": "At the opening the foreground bird's head is held well above the water in an upright S-curve; it makes a substantial later descent before reaching the pool rather than opening already near the feeding surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R15",
+      "score": 1,
+      "criterion": "The video maintains the reference's medium-wide landscape framing and action readability.",
+      "evidence": "The exported landscape frames keep the foreground body, both long legs and their water echoes readable while retaining the rear bird, left rocks, shoreline, trunks, foliage, and a broad area of pool.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R16",
+      "score": 1,
+      "criterion": "The camera performs the reference's gentle lateral follow or reframing.",
+      "evidence": "From frame_0001 to frame_0016 the background trees, rocks, and foliage shift laterally while the active foreground body remains prominently centered, indicating a gentle following reframe.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R17",
+      "score": 0,
+      "criterion": "An openable .blend is delivered containing editable flamingo rigs and animation that drive the reconstructed shot shown in the video.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R18",
+      "score": 1,
+      "criterion": "The delivered video satisfies the required format, encoding, dimensions, frame rate, and approximate duration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The core flamingo pond concept is recognizable and the sampled final animation visibly performs a feeding descent with water ripples and reflections. However, the reconstruction is a coarse stylized stage rather than a close match to the natural reference: anatomy is rod-like, feather construction is flat, the environmental set lacks the flock and muddy/rooted bank details, and materials/reflections remain artificial.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "13e21ccd15c0d9bd806871c63a7aa9ff9f10ec813b0d19e59948f517278889ff"
+}

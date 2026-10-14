@@ -1,0 +1,34 @@
+{
+  "exporter_version": 3,
+  "source_file": "nearfuture_city_dusk.blend",
+  "objects": 136,
+  "meshes": 135,
+  "original_triangles": 26684,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "FarGround.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 21.439639737656833,
+    "phi": 102.27687136654481
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 151644,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_PlazaConcrete"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0.000m 96.000m 0.000m",
+    "camera-orbit": "21.439639737656833deg 80deg 403.200m",
+    "min-camera-orbit": "auto 5deg 19.200m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BlenderWorld evaluates 13 visual agents on 223 real-world 3D creation tasks. Explore the paper results, rendered artifacts, and interactive 3D projects.">
+  <meta name="theme-color" content="#faf7f2">
+  <meta property="og:title" content="BlenderWorld — From real-world references to editable 3D worlds">
+  <meta property="og:description" content="223 tasks. 13 frontier models. 9 creative domains. Explore the benchmark and its actual 3D artifacts.">
+  <meta property="og:image" content="assets/social.jpg">
+  <title>BlenderWorld · A benchmark for 3D creation agents</title>
+  <link rel="icon" type="image/webp" href="assets/capybara.webp">
+  <link rel="stylesheet" href="vendor/fonts.css">
+  <link rel="stylesheet" href="style.css?v=20261014-intro-video">
+  <script defer src="data/site-data.js?v=20261014-intro-video"></script>
+  <script defer src="app.js?v=20261014-intro-video"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="BlenderWorld home"><img src="assets/capybara.webp" alt="" width="46" height="46"><span>Blender<span class="brand-world">World</span></span></a>
+    <nav aria-label="Main navigation"><a href="#benchmark">Benchmark</a><a href="#leaderboard">Leaderboard</a><a href="#showcase">Showcase</a><a href="#evaluation">Evaluation</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="small-line"></span> A benchmark for visual creation agents</p>
+      <h1 id="hero-title">Blender<span>World</span><span class="title-period">.</span></h1>
+      <p class="hero-subtitle">Benchmarking Visual Agents for 3D Creation<br class="desktop-break"> from Real-World References</p>
+      <div class="authors">Xinyu Fang<sup>1,2</sup>, Yuchi Wang<sup>2,3</sup>, Weihao Yu<sup>2,3</sup>, Rongyao Fang<sup>2</sup>, Zhaohai Li<sup>2</sup>, Zhixun Li<sup>2,3</sup>, Tiancheng Gu<sup>2</sup>,<br class="desktop-break"> Xilin Wei<sup>2,4</sup>, Yuhang Zang<sup>5</sup>, Hongsheng Li<sup>3</sup>, Dahua Lin<sup>3,†</sup>, Guofeng Zhang<sup>1,†</sup>, Shuai Bai<sup>2</sup>, Zhibo Yang<sup>2,†</sup>, Dayiheng Liu<sup>2</sup></div>
+      <p class="affiliations"><span><sup>1</sup>Zhejiang University</span><span><sup>2</sup>Alibaba Token Hub, Alibaba Group</span><span><sup>3</sup>The Chinese University of Hong Kong</span><span><sup>4</sup>Fudan University</span><span><sup>5</sup>National University of Singapore</span></p>
+      <div class="hero-actions">
+        <a class="button primary" href="#intro-video"><span aria-hidden="true">▶</span> Watch the introduction</a>
+        <a class="button" href="#leaderboard">View scores <span aria-hidden="true">↗</span></a>
+        <a class="button" href="#showcase"><span aria-hidden="true">◇</span> Explore 3D projects</a>
+      </div>
+      <div class="hero-gallery" id="hero-gallery" aria-label="Selected benchmark artifacts"></div>
+      <div class="hero-caption"><span>Real tasks. Editable scenes. Observable results.</span><a href="#showcase">Step inside the artifacts <span aria-hidden="true">↗</span></a></div>
+      <div class="stat-row" aria-label="Benchmark at a glance"><div><strong>223</strong><span>real-world tasks</span></div><div><strong>13</strong><span>frontier models</span></div><div><strong>9</strong><span>creative domains</span></div><div><strong>2,651</strong><span>binary rubric criteria</span></div></div>
+    </section>
+
+    <section class="intro-film wrap" id="intro-video" aria-labelledby="intro-video-title">
+      <div class="intro-film-heading"><h2 id="intro-video-title">Meet BlenderWorld.</h2><p>English · 1 min 11 sec</p></div>
+      <video id="intro-player" controls controlslist="nodownload" playsinline preload="none" poster="media/intro/poster.webp" width="1920" height="1080" aria-label="BlenderWorld introduction, in English">
+        <source src="media/intro/BlenderWorld_intro_en.mp4" type="video/mp4">
+        <track kind="captions" src="media/intro/captions.en.vtt" srclang="en" label="English">
+        Your browser does not support embedded video.
+      </video>
+    </section>
+
+    <section class="intro wrap section" id="benchmark">
+      <div class="section-label"><span>01</span> The benchmark</div>
+      <div class="intro-layout"><h2>Seeing is only<br>the beginning.</h2><div><p class="lead">Can a visual agent turn a real-world brief into a complete, editable 3D scene?</p><p>BlenderWorld asks agents to interpret text, images and videos, work inside Blender, and deliver native projects alongside rendered media. Tasks span architecture, characters, products, animation and more, with requirements on both appearance and the structure behind it.</p><div class="input-distribution"><div style="--portion:34.98%;--segment:#b66445"><b>78</b> Text</div><div style="--portion:58.30%;--segment:#879481"><b>130</b> Image</div><div style="--portion:6.72%;--segment:#c5ad89"><b>15</b> Video</div></div><p class="micro">59 tasks also include specification attachments. All agents are evaluated on the same 223 tasks.</p></div></div>
+    </section>
+
+    <section class="results-section" id="leaderboard">
+      <div class="wrap section">
+        <div class="section-label"><span>02</span> The results</div>
+        <div class="section-heading"><div><h2>How well do agents create?</h2><p>The complete main table, with scores on a 0–100 scale.</p></div></div>
+        <div class="finding-row"><div><span class="finding-label">Highest overall score</span><strong>79.9<span>/100</span></strong><p>GPT-6-Astra leads the benchmark.</p></div><div><span class="finding-label">Fully satisfied rubrics</span><strong>42.2<span>%</span></strong><p>Even the leading model passes every criterion on fewer than half of all tasks.</p></div><div><span class="finding-label">Multimodal advantage</span><strong>+8.6<span>pts</span></strong><p>GPT-6-Astra over Opus-5 on image and video inputs.</p></div></div>
+        <div class="table-toolbar"><div class="segmented" role="group" aria-label="Table view"><button class="active" data-table-view="completion" aria-pressed="true">Completion</button><button data-table-view="resources" aria-pressed="false">Rollout resources</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="model-search" type="search" aria-label="Search models" placeholder="Find a model…"></label></div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Sortable benchmark leaderboard"><table class="leaderboard" id="score-table"><caption class="sr-only">Performance of 13 models on all 223 BlenderWorld tasks</caption><thead id="score-head"></thead><tbody id="score-body"></tbody></table></div>
+        <p class="table-note" id="table-note"></p>
+        <details class="metric-guide"><summary>How to read this table <span aria-hidden="true">+</span></summary><div class="metric-grid"><p><b>Overall</b> Mean task score across all 223 tasks; each task combines 50% Rubric and 50% Dimension.</p><p><b>Text / MM</b> Mean scores on 78 text tasks and 145 multimodal tasks (130 image + 15 video).</p><p><b>Rubric / Dimension</b> Weighted binary requirement satisfaction / mean quality across eight visual dimensions, each normalized to 0–100.</p><p><b>Full pass</b> Percentage of tasks that pass every rubric criterion. It does not mean an overall score of 100.</p><p><b>Turns / Tools</b> Mean agent turns and tool calls per task, as reported in the manuscript.</p><p><b>Output tokens</b> Mean generated tokens per task, in thousands (K). Failed evaluations receive zero and remain in score denominators.</p></div></details>
+
+        <div class="category-explorer"><div class="category-explorer-heading"><div><p class="eyebrow">Look beyond the average</p><h3>Different worlds,<br>different strengths.</h3><p>Select a category to compare all 13 models.</p></div><label class="sr-only" for="category-select">Category</label><select id="category-select"></select><div id="category-list" class="category-list" aria-label="Select benchmark category"></div></div><div class="category-chart"><div class="chart-heading"><div><h4 id="chart-title"></h4><span id="chart-count" class="micro"></span></div><span class="micro">Mean overall score / 100</span></div><div id="category-bars"></div><p class="micro chart-note">Category scores use all tasks in the selected category, including failed evaluations.</p></div></div>
+      </div>
+    </section>
+
+    <section class="wrap section showcase-section" id="showcase">
+      <div class="section-label"><span>03</span> The artifacts</div>
+      <div class="section-heading"><div><h2>A closer look at the work.</h2><p>Open a scene. Inspect the brief. Turn it around.</p></div><span class="gallery-kicker" id="showcase-summary"></span></div>
+      <p class="gallery-description">Explore 181 submissions from seven models across 26 tasks, spanning expansive environments, animations and focused objects. Choose a model to explore its works, or open a task to compare up to seven submissions, with interactive 3D previews and paper-matched scores.</p>
+      <label class="gallery-model-filter" for="gallery-model"><span>Explore by model</span><select id="gallery-model" aria-label="Filter showcase by model"></select></label>
+      <div class="gallery-kinds" id="gallery-kinds" role="group" aria-label="Filter by type of work"></div>
+      <div class="gallery-filters" id="gallery-filters" role="group" aria-label="Filter showcase by category"></div>
+      <div class="gallery-status"><span id="gallery-count" role="status" aria-live="polite"></span><label class="search-box"><span aria-hidden="true">⌕</span><input id="gallery-search" type="search" placeholder="Find a scene…" aria-label="Search showcase tasks"></label></div>
+      <div class="showcase-grid" id="showcase-grid"></div>
+      <div class="show-more-wrap"><button class="button" id="show-more">View all tasks <span aria-hidden="true">↓</span></button></div>
+      <p class="micro gallery-footnote">These are curated examples, not a random sample or a measure of average quality. Scores are from the frozen paper runs; 3D previews are derived from those same projects.</p>
+    </section>
+
+    <section class="evaluation-section" id="evaluation"><div class="wrap section">
+      <div class="section-label"><span>04</span> The evaluation</div>
+      <div class="section-heading"><div><h2>More than a good-looking render.</h2><p>Check what a scene does, as well as how it looks.</p></div></div>
+      <div class="evaluation-cards"><article><span class="step-number">01 / Create</span><h3>A native project</h3><p>The agent receives the brief, references and attachments, then creates an editable Blender project. Evaluation rubrics stay hidden during generation.</p></article><article><span class="step-number">02 / Inspect</span><h3>Complementary evidence</h3><p>An independent rendering agent selects eight task-relevant views. Structure is checked through Blender tools; appearance is judged using renders and video frames.</p></article><article><span class="step-number">03 / Score</span><h3>Requirements + quality</h3><p>Task-specific binary criteria measure requirement satisfaction. Eight visual dimensions measure quality. GPT-5.6-terra serves as the main automatic judge.</p></article></div>
+      <div class="score-formula"><span>The task score</span><p><b>Overall</b> = <em>0.5</em> × Rubric + <em>0.5</em> × Dimension</p><span>Both components on a 0–100 scale</span></div>
+      <div class="dimension-tags"><span>Scene fidelity</span><span>Physical plausibility</span><span>Style & color</span><span>Realism</span><span>Spatial layout</span><span>Proportion & scale</span><span>Lighting & materials</span><span>Completeness</span></div>
+      <details class="pipeline-details"><summary>See the evaluation pipeline <span aria-hidden="true">↗</span></summary><a href="assets/evaluation.webp" target="_blank" rel="noopener"><img src="assets/evaluation.webp" alt="BlenderWorld evaluation pipeline: native project inspection and original plus evaluator-rendered media feed structural, visual rubric and dimension judgments." loading="lazy"></a></details>
+      <div class="human-alignment"><div><p class="eyebrow">A check against human preferences</p><h3>82.99% agreement.</h3><p>The main judge’s overall scores agree with the majority human preference on 122 of 147 eligible pairs.</p><p class="micro">150 same-input pairs were rated by three reviewers. Skips count as ties; three pairs without a majority are excluded. A judge agrees only when its A-win, B-win or tie prediction matches the majority exactly.</p></div><div class="human-table-wrap"><table class="human-table"><caption>Overall-score alignment with majority human preferences</caption><thead><tr><th scope="col">Judge model</th><th scope="col">Agreement ↑</th><th scope="col">Spearman ρ ↑</th></tr></thead><tbody id="human-body"></tbody></table><p class="micro">Spearman correlation compares score differences s<sub>A</sub> − s<sub>B</sub> with majority labels A = +1, tie = 0, B = −1, over the same 147 pairs. Full Pearson and Kendall results are in the paper.</p></div></div>
+    </div></section>
+
+
+  </main>
+  <footer class="wrap"><a class="brand" href="#"><img src="assets/capybara.webp" alt="" width="35" height="35"><span>BlenderWorld</span></a><p>From real-world references to editable 3D worlds.</p><a href="#main">Back to top ↑</a></footer>
+
+  <dialog id="task-dialog" aria-labelledby="detail-title">
+    <div class="dialog-top"><span id="detail-category"></span><div><button id="previous-task" aria-label="Previous task">←</button><button id="next-task" aria-label="Next task">→</button><button id="close-dialog" aria-label="Close task details">✕</button></div></div>
+    <div class="dialog-heading"><div><p class="eyebrow" id="detail-id"></p><h2 id="detail-title"></h2><p id="detail-description"></p></div><label class="model-label">Generated by<select id="detail-model"></select></label></div>
+    <p id="submission-note" class="submission-note" hidden></p>
+    <div class="detail-layout"><div class="detail-visual"><div class="detail-tabs" role="tablist" aria-label="Artifact view"><button role="tab" id="render-tab" data-view="render" aria-selected="true">Rendered images</button><button role="tab" id="model-tab" data-view="model" aria-selected="false">Interactive 3D <span aria-hidden="true">◇</span></button><button role="tab" id="video-tab" data-view="video" aria-selected="false">Animation <span aria-hidden="true">▷</span></button></div><div class="media-stage" id="media-stage" role="tabpanel"></div><div id="render-thumbs" class="render-thumbs"></div><p class="media-caption" id="media-caption"></p></div><aside class="score-panel"><p class="eyebrow">Paper-matched evaluation</p><div class="detail-scores" id="detail-scores"></div><p class="micro">50% Rubric + 50% Dimension<br>Automatic judge: GPT-5.6-terra</p><h3>Eight dimensions</h3><div id="dimension-bars"></div><details class="judge-notes"><summary>Judge’s assessment</summary><p id="judge-notes"></p></details></aside></div>
+    <div class="task-context"><div><h3>The original brief</h3><p id="detail-query"></p><div id="detail-attachments"></div></div><div><h3>Input references</h3><div id="detail-references"></div></div></div>
+    <details class="rubric-details"><summary><span id="rubric-summary">Task-specific rubric decisions</span><span aria-hidden="true">+</span></summary><div id="rubric-decisions"></div></details>
+  </dialog>
+  <noscript><p class="noscript">Enable JavaScript to explore the scores, rendered images, videos and interactive 3D scenes.</p></noscript>
+</body>
+</html>

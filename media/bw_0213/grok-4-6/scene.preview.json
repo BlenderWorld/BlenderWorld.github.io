@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "flamingo_previz.blend",
+  "objects": 275,
+  "meshes": 266,
+  "original_triangles": 20734,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "GreenBackdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -5.37099447634083,
+    "phi": 77.89685972919743
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 5467020,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-1.024m 0.920m -1.205m",
+    "camera-orbit": "-5.37099447634083deg 77.89685972919743deg 8.925m",
+    "min-camera-orbit": "auto 5deg 0.425m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,68 @@
+{
+  "exporter_version": 3,
+  "source_file": "backrooms_showcase.blend",
+  "objects": 667,
+  "meshes": 667,
+  "original_triangles": 327024,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Floor_corridor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -15.814803685533313,
+    "phi": 88.65647279814257
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 10049620,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_MetalPainted",
+    "M_LightPanel",
+    "M_LightPanel_corr_2",
+    "M_LightPanelDead",
+    "M_LightPanel_std_10",
+    "M_LightPanel_spn_1",
+    "M_LightPanel_alc_1",
+    "M_PlasticBlue",
+    "M_MetalChrome",
+    "M_PlasticGrey",
+    "M_WoodDark",
+    "M_WoodLaminate",
+    "M_GrimePatch",
+    "M_MonitorGlow",
+    "M_Paper",
+    "M_PlasticBeige",
+    "M_FabricRust",
+    "M_FabricNavy",
+    "M_CeilingTile",
+    "M_PlasticRed",
+    "M_GlassDirty",
+    "M_MetalRusty",
+    "M_WoodPale",
+    "M_FabricBrown",
+    "M_FabricMustard",
+    "M_Cardboard",
+    "M_Wallpaper",
+    "M_Concrete",
+    "M_Skirting",
+    "M_Carpet",
+    "M_CeilingGrid"
+  ],
+  "preview_omitted_objects": [
+    "CeilingTiles.001",
+    "CeilingGrid.001",
+    "CeilingSoffit.001",
+    "PlenumLiner.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "35deg 40deg auto"
+  },
+  "preview_note": "Ceiling and plenum panels are hidden for a cutaway view of the interior.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

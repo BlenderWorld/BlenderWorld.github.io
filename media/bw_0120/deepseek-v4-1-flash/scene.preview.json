@@ -1,0 +1,41 @@
+{
+  "exporter_version": 3,
+  "source_file": "temple_courtyard.blend",
+  "objects": 42,
+  "meshes": 42,
+  "original_triangles": 227832,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Haze"
+  ],
+  "original_camera": {
+    "theta": 1.3945657711947075,
+    "phi": 94.70897716723945
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 928248,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "Pave_Court",
+    "Pave_Bluestone",
+    "Stone_Grey",
+    "Stone_Light",
+    "Roof_Gold",
+    "Wood_Dark",
+    "Brick_Grey",
+    "Leaf_Broad",
+    "Bark",
+    "Leaf_Pine"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "1.3945657711947075deg 80deg auto"
+  },
+  "preview_note": "Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

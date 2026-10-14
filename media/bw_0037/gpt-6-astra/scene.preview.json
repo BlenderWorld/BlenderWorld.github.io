@@ -1,0 +1,19 @@
+{
+  "exporter_version": 2,
+  "source_file": "CONNECT_shared_lounge.blend",
+  "objects": 122,
+  "meshes": 121,
+  "original_triangles": 54460,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Continuous neutral floor.001"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 205468,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 2465064,
+  "preview_refined": 2,
+  "removed_preview_nodes": 2,
+  "preview_note": "Architectural cutaway: room enclosure surfaces hidden to reveal the interior."
+}

@@ -1,0 +1,36 @@
+{
+  "exporter_version": 3,
+  "source_file": "a.blend",
+  "objects": 894,
+  "meshes": 735,
+  "original_triangles": 450788,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Workshop floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 9.145289717056022,
+    "phi": 77.35325036658706
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 4794900,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Walnut.001",
+    "Brass.001"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0.000m 1.426m 0.015m",
+    "camera-orbit": "20deg 65deg 8.400m",
+    "min-camera-orbit": "auto 5deg 0.400m"
+  },
+  "preview_note": "The initial view focuses on the mechanical typography; overhead enclosure panels are hidden.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 94
+}

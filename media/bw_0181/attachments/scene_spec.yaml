@@ -1,0 +1,66 @@
+version: 1
+project:
+    title: '后室电商展示素材 / Backrooms E-commerce Showcase'
+    source_type: '纯文本需求，无参考媒介 / Text-only brief, no reference media'
+    online_resources:
+        zh: '网上能找到且适合项目的资源都可以调用，用来支撑完整场景制作。'
+        en: 'Use any suitable resources available online to support the complete scene build.'
+scene:
+    completeness:
+        zh: '按复杂、完整、可持续漫游的后室规模制作，补齐连接区域、常规陈设和镜头穿行所需的一切，不要只做两间孤立样板房。'
+        en: 'Build a complex, complete Backrooms environment rather than two isolated showcase rooms; include connecting areas, expected dressing, and everything needed for continuous camera travel.'
+    traversal:
+        zh: '空间关系需支持自由控制摄像机穿梭，路线连续，主要通道避免被陈设完全堵死。'
+        en: 'The layout must support freely controlled camera movement, with a continuous route and primary passages that are not completely blocked by dressing.'
+    required_spaces:
+        furniture_room:
+            zh: '房间内堆满家具，保持拥挤压迫感，同时给漫游镜头留出可通过的路线。'
+            en: 'Pack the room with furniture for a cramped, oppressive feel while preserving a usable walkthrough path.'
+        standee_room:
+            zh: '房间内摆放诡异的纸板人形立牌，让造型和排布在第一视角中清楚可辨。'
+            en: 'Populate the room with eerie cardboard human standees whose shapes and placement remain readable from the first-person view.'
+    additional_dressing:
+        zh: '其余区域和陈设按后室题材补全，可自行加入任何有助于增强惊悚、诡异和不安感的内容，避免明显重复。'
+        en: 'Complete the remaining spaces with appropriate Backrooms dressing, adding any details that strengthen the eerie, unsettling horror atmosphere without obvious repetition.'
+visual_direction:
+    ecommerce_composition:
+        zh: '主图构图保持干净，突出场景产品，并在画面中预留可放文案的区域；详情页画面可展示更多空间层次。'
+        en: 'Keep the hero composition clean, product-focused, and open enough for copy; detail-page views may reveal more of the environment and its layered layout.'
+    readability:
+        zh: '主体不得被杂物遮盖，产品轮廓需与背景分开，同时保留后室应有的压迫和诡异氛围。'
+        en: 'Do not let clutter obscure the subject. Keep the product silhouette separated from the background without losing the oppressive Backrooms mood.'
+    finish:
+        zh: '整体需要有高级感，不要停留在灰模或简单预览品质。'
+        en: 'Aim for a premium finish rather than a blockout or basic preview look.'
+    unspecified_dimensions:
+        zh: '没有提供尺寸的部分按同类室内空间和家具的常规比例估算。'
+        en: 'Estimate any unspecified dimensions from conventional interior and furniture proportions.'
+pipeline:
+    materials:
+        zh: '墙面、地面、家具、纸板立牌及其他陈设都需有完整且可区分的材质表现，并保留适合近距离漫游查看的细节。'
+        en: 'Give the walls, flooring, furniture, cardboard standees, and remaining dressing complete, distinct materials with enough detail for close walkthrough shots.'
+    lighting:
+        zh: '完成整套氛围灯光，让各区域保持可读，同时通过明暗、色调和局部异常感强化惊悚气氛。'
+        en: 'Provide a complete atmospheric lighting pass that keeps each area readable while using contrast, color, and localized irregularity to reinforce the horror tone.'
+    rendering:
+        zh: '完成材质、灯光和最终渲染管线；原需求未限定渲染器、采样、色彩管理、输出分辨率或静帧张数，按稳定的电商静帧与动画成片标准设置。'
+        en: 'Complete the material, lighting, and final-render pipeline. Renderer, sampling, color management, output resolution, and still count are not fixed, so use reliable settings suitable for finished e-commerce stills and animation.'
+camera:
+    animation:
+        duration_seconds: 10
+        perspective: '第一视角 / First-person'
+        requirement:
+            zh: '镜头需要连续穿梭漫游，清楚带到主要空间，并避免穿模或被大型陈设意外遮挡。'
+            en: 'Use a continuous walkthrough that clearly presents the main spaces without clipping through geometry or being unintentionally blocked by large props.'
+deliverables:
+    still_renders:
+        zh: '输出可用于电商主图和详情页的渲染成图。'
+        en: 'Deliver rendered stills suitable for the storefront hero image and detail page.'
+    animation_render:
+        zh: '输出10秒第一视角后室漫游动画。'
+        en: 'Deliver the rendered 10-second first-person Backrooms walkthrough.'
+    project_file:
+        format: '.blend'
+        editable: true
+        zh: '保存完整工程并保持结构可继续编辑，方便后续加入更多诡异内容。'
+        en: 'Save the complete, editable project so more bizarre content can be added later.'

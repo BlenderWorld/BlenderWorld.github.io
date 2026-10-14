@@ -1,0 +1,174 @@
+{
+  "task_id": "bw_0037",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 80.2840909090909,
+  "rubric": 81.81818181818181,
+  "dimension": 78.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "Author final image community_lounge_promo clearly presents the requested continuous indoor shared lounge: a central coral patterned rug with a low table and a surrounding modular seating zone, a CONNECT floor screen on the left, striped-awning coffee counter on the right, and a small drone above. It follows the requested non-collage composition and excludes people, windows, and unrelated tech.",
+      "issues": [
+        "The seating reads more strongly as oversized toy/Lego bricks than as a refined residential modular lounge system.",
+        "The final rendering is more softly shaded 3D product-render style than the clean outlined flat-illustration language suggested by the reference."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "Across Group A wide and detail views, the room shell has a coherent floor, walls, and ceiling; the coffee stall is supported by posts and base, the display has a stand and foot, the low table has visible legs, and the block modules are grounded or deliberately stacked. The drone is allowed to hover by the brief.",
+      "issues": [
+        "In wide_high and wide_back, the hovering drone is extremely close to and visually overlaps the awning edge, making the clearance ambiguous.",
+        "Some thin white cushion-like slabs atop the modules have an unclear functional connection to the block seating."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "The palette is highly consistent with the target: coral-pink rug and red accents, orange modules, cream-white furniture and room surfaces, plus bright blue and yellow accents. Rounded edges, simple forms, and matte-looking surfaces give the scene a coherent playful modular character.",
+      "issues": [
+        "Many modules are featureless rounded cuboids or studded bricks, so several read as toy blocks rather than independently legible seats or stools.",
+        "There are no strong clean graphic outlines, and the soft tonal gradients reduce the intended flat illustrative appearance."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 8,
+      "reasons": "The designated author final is clean, sharp, and compositionally coherent, with no visible rendering noise, broken geometry, or distracting artifacts. The elements share a single deliberate toy-like stylized scale and finish, appropriate to a promotional visualization.",
+      "issues": [
+        "The pale room shell and white table/screens are somewhat low contrast against the warm background.",
+        "The deliberately toy-like LEGO studs make the environment less believable as a human-scale residential common space."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "community_lounge_promo uses the requested slightly elevated wide three-quarter view and keeps all required components visible: seating encircles the rug and central table, the screen is placed to one side, the café occupies the rear-right side, and the drone is above the activity zone. Group A wide views confirm these are real spatial relationships rather than a flat compositing trick.",
+      "issues": [
+        "The dense, stepped ring of seating modules leaves limited clearly articulated access routes around portions of the rug.",
+        "The drone’s position becomes visually entangled with the coffee awning from rear/high viewpoints."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The low table, freestanding screen, coffee stall, rug, and room enclosure have broadly plausible relative sizes. The table remains visibly low relative to the surrounding blocks and the screen is tall enough to read as a floor-standing display.",
+      "issues": [
+        "Several studded modules are unusually tall relative to the table and are stacked in ways that read more like display bricks than practical seating backs.",
+        "The strongly oversized studs make the intended human-scale seating less convincing."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 8,
+      "reasons": "The final render uses bright, even, warm lighting with soft shadows and predominantly matte materials, matching the requested clean non-reflective presentation. The rug pattern, colored modules, white table, screen, and striped canopy remain readable without dramatic light sources or glossy reflections.",
+      "issues": [
+        "Soft warm shading creates mild washed-out contrast on cream and white surfaces rather than a crisper flat-illustration look.",
+        "The scene relies on smooth ambient gradients more than the clean, graphic light-and-shadow separation of the visual reference."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 9,
+      "reasons": "All explicitly required items are visibly present in community_lounge_promo and supported by Group A: colored block seating/stools, central low tea table, patterned rug with waves and dots, red-and-white awning coffee corner, vertical freestanding screen reading only CONNECT, hovering drone, and a neutral enclosed interior. No people, windows, exterior view, unrelated furniture, or extra devices are visible.",
+      "issues": [
+        "Although present, the intended seating function of some individual colored blocks is visually ambiguous because they are modeled as generic studded toy bricks."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The work must be a newly authored, continuous residential shared-activity interior and the complete Blender scene must obey the prompt's exclusive environment-content boundary.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The complete scene must use the requested reference-derived illustrative treatment, matte material system, palette hierarchy, modular form language, and restrained neutral interior shell.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The central lounge must combine block-built seating and stools with exactly one functionally central low coffee table.",
+      "evidence": "In community_lounge_promo, there is one clearly central low white table, but the surrounding colored forms read primarily as studded toy bricks and featureless rounded cuboids. Although some have thin white pads, they do not unambiguously communicate usable seating and distinct stools/ottomans rather than stacked block pieces.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The colorful rug must visibly carry both required pattern families.",
+      "evidence": "The large coral floor rug in community_lounge_promo is visibly laid beneath the lounge and contains multiple winding white and blue line motifs together with distinct blue, white, and yellow circular dots.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The side coffee corner must be recognizable and include its complete red-and-white striped awning identity.",
+      "evidence": "At the rear-right side of community_lounge_promo, a grounded counter/stall has a recessed serving area and a projecting canopy with clearly alternating red and white stripes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The display must combine the required floor-standing form with exact, exclusive screen content.",
+      "evidence": "community_lounge_promo clearly shows one freestanding vertical, red-framed display on a pale floor base at left. Its otherwise blank white screen face legibly contains only the word “CONNECT.”",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Exactly one small drone must be recognizable and visibly unsupported overhead.",
+      "evidence": "Exactly one small quadcopter with four rotor arms is visible above the central arrangement in community_lounge_promo. It is substantially smaller than the counter and table and has clear open-air separation from the floor, furniture, walls, and striped canopy.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The complete element arrangement must provide coherent human scale, clear functional relationships, and usable circulation without visible stacking or substantial occlusion.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "The single author-final camera must provide the specified elevated three-quarter view with clear, unobstructed, and undistorted visibility of every required physical scene element.",
+      "evidence": "The author-final community_lounge_promo is a wide, slightly elevated three-quarter interior view and clearly includes the table, rug, display, drone, counter, walls, floor, and ceiling. However, the supposed seating and stools remain visually ambiguous as stacks of toy bricks and rounded blocks rather than independently recognizable, plausibly usable seating/stool furniture, so every required physical scene element is not identifiable in that one composition.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The original scene lighting and final result must provide bright, even, soft internal illumination without exterior-light dependence or dramatic darkness.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivery must contain both a clear high-resolution author-final image and its openable, editable, corresponding Blender project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A strong, complete reconstruction of the requested indoor lounge arrangement with especially good object coverage, palette, and final-camera visibility. The main limitations are that the modular seating reads as toy construction blocks rather than clearly ergonomic furniture, and the rendering is softly shaded 3D rather than fully flat, outlined illustrative 3D. The drone also sits uncomfortably close to the awning in several evaluator views.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "3cf440abdc693189e054dacdc0584b0a6acf3c03bfef684c9e60c0832e627258"
+}

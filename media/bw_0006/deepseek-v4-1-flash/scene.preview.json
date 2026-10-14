@@ -1,0 +1,25 @@
+{
+  "exporter_version": 2,
+  "source_file": "booth_canada_csa.blend",
+  "objects": 223,
+  "meshes": 223,
+  "original_triangles": 55724,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Hall_Floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 241908,
+  "optimized": true,
+  "showcase_refinement": 2,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "7deg 85deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

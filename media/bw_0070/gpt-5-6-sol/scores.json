@@ -1,0 +1,181 @@
+{
+  "task_id": "bw_0070",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 86.25,
+  "rubric": 100.0,
+  "dimension": 72.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "The designated Cycles export, yellow_tracked_engineering_vehicle_cycles.png, clearly reconstructs the target as a yellow tracked industrial vehicle with a tall yellow protective cage, right-side blue-glazed cab, centered gray power-station enclosure, red folded hydraulic arm, bumper beam, and paired work lights. The main left/center/right arrangement closely follows the reference.",
+      "issues": [
+        "The model is substantially more compact and toy-like than the broad, heavy rear-facing reference machine.",
+        "The exposed lower-rear hydraulic plumbing, valve/pump cluster, dense hose routing, large rear step, and detailed boom stowage are much reduced or absent.",
+        "The submitted gray cabinet and markings are generic POWER STATION/DT41 details rather than closely matching the reference unit's Power Pack hardware and COPPARD/ISO markings."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "In wide_front_left.png and the final Cycles export, the two tracks sit convincingly on the studio floor, the chassis is supported between them, and the cage posts, cab, cabinet, lamps, and boom appear securely joined to the vehicle. The articulated boom has visible pivot joints and hydraulic rods rather than floating pieces.",
+      "issues": [
+        "Only sparse cables are modeled around the lower chassis, so the complex hose-supported mechanical assembly of the reference is not fully represented.",
+        "The evaluator's right-side views are occluded by a dark wall/slab, which prevents complete inspection of the opposite-side structure, though it does not undermine the visible final render."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The vehicle reads immediately as the intended engineering vehicle rather than a collection of boxes: the black continuous tracks have tread blocks and road wheels, the cab has tinted glazing and wiper strips, the cabinet has vents and labels, and the boom has distinct red links, round pivots, and silver hydraulic rods. Yellow painted structure, red crane, gray station, black rubber, and blue-gray glass all match the target palette.",
+      "issues": [
+        "The yellow finish is overly smooth, glossy, and stylized compared with the more utilitarian painted-metal reference.",
+        "The red boom is simplified and lacks the reference's substantial folded geometry and PALFINGER-style lettering.",
+        "Several fixtures, particularly the roof lamps and front tow-ring arrangement, look like generic game-asset additions rather than closely observed reference hardware."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "yellow_tracked_engineering_vehicle_cycles.png presents a coherent, clean studio asset render with readable mechanical subdivisions, believable reflections, contact shadows, and a composed three-quarter view. The objects maintain their identity and do not visibly float or intersect.",
+      "issues": [
+        "The result has a polished miniature/game-prop character rather than the scale, wear, and dense mechanical realism of the photographed vehicle.",
+        "preview_eevee.png and preview_eevee_v2.png show conspicuous grain/noise in the cab glazing, making the interior less convincing.",
+        "Fine hydraulic complexity and industrial wear variation are limited."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "The visible three-quarter views preserve the key reference relationships: yellow enclosure and red boom on the left, gray power unit centrally, glass cab on the right, lamps flanking the central equipment, and twin tracks beneath the body. The boom and power unit remain visibly unobstructed in the author final render.",
+      "issues": [
+        "The boom is positioned more openly to the left rather than appearing densely folded behind the central frame and equipment as in the reference.",
+        "The reference's lower-side hoses and right-side valve assembly do not occupy their expected prominent positions.",
+        "The front/rear beam treatment is altered: the submission emphasizes a tow ring and bumper while the reference rear has a more pronounced central ribbed step."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "Track width, cab, central cabinet, lamps, and cage have generally plausible relative scale in yellow_tracked_engineering_vehicle_cycles.png. The vehicle is grounded and its components are neither grossly oversized nor miniature relative to one another.",
+      "issues": [
+        "The oversized open roof cage and visibly exposed road wheels make the vehicle read taller, lighter, and more compact than the wide, dense industrial vehicle in the reference.",
+        "The central power unit and folded crane are less dominant than their reference counterparts."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "The Cycles final uses effective three-quarter studio lighting with clear separation between yellow paint, gray metal cabinet, black rubber tracks, red painted arm, and blue cab glass. The power-station UV label, caution label, vents, bolts, tread relief, and lamp faces are readable in the final export.",
+      "issues": [
+        "The yellow material looks more like highly polished varnished plastic than moderately worn industrial metallic paint.",
+        "Cab transparency and interior readability are weakened by noise in the Eevee preview exports.",
+        "The track material is detailed but somewhat too clean and uniformly dark for heavy rubber crawler use."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "All principal requested assemblies are visibly present in the final render: yellow tracked chassis, glass cab, red articulated hydraulic arm, centered gray power station, protective frame, work lights, and metal/rubber material separation. The engine cabinet also has a clear UV-style POWER STATION graphic rather than an untextured placeholder.",
+      "issues": [
+        "The reference's extensive hydraulic hoses, exposed valves/pump assembly, larger central step, detailed rear equipment hardware, and boom branding are missing or heavily simplified.",
+        "Reference-specific markings such as COPPARD and the ISO/certification panel are not reproduced.",
+        "Two side mirrors are not as clearly and faithfully represented as in the reference."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The asset must read as one compact yellow tracked engineering vehicle whose required systems have reference-compatible zoning and credible support relationships.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Both continuous tracks must support the chassis, contain readable repeated tread construction, and use the specified dark rubber-like surface treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The outer-side cab must combine enclosed framed construction, glass-readable glazing, and the reference-compatible relationship to the central station.",
+      "evidence": "The right upper body contains a distinct yellow-framed cab beside the central gray station, with a projecting yellow roof, broad teal-blue reflective glazing, visible yellow window surround, and black wiper-like strips across the pane.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The mounted red crane must have credible articulated folding geometry, hydraulic actuation cues, and the reference-facing folded appearance.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The centered gray power station must be substantial and visibly detailed as a serviceable equipment cabinet.",
+      "evidence": "A substantial gray cabinet is centered between the yellow left housing and right cab; its face visibly includes a raised lid/panel boundary, two dark vent grilles, circular access fitting, lower trim, caution decal, and a readable POWER STATION label.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "A robust open yellow multi-member protective frame must be attached around the upper machinery and cab area.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The vehicle must reproduce the salient paired square work-light groups and their distribution across opposite vehicle zones.",
+      "evidence": "Clear separate lamp pairs appear on the left yellow housing and low on the right cab body, with an additional pair above the cab. Each lamp is a modeled black square housing with a bright segmented white emitter face.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The principal body surfaces must use the specified coherent yellow metallic-painted finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The engine or power-unit section must use real UV-mapped texture data and render clearly without severe distortion or unintended blur.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The actual authored final render must use the requested camera and lighting systems while clearly presenting the crane and power station.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The native Blender delivery must be loadable, editable, scene-complete, genuinely three-dimensional, and originally configured for Cycles.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A clearly recognizable and well-presented stylized reconstruction with the required major vehicle systems, coherent materials, and strong three-quarter final composition. It falls short of close reference fidelity through a compact toy-like scale, simplified crane and power-pack details, and the near absence of the dense hoses, valves, step, and reference-specific markings.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "c3784a6ef6932d67d779cfd5a37941a56ac1db62a998b2a35575c909f9d7029f"
+}

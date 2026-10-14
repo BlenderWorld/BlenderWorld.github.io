@@ -1,0 +1,58 @@
+{
+  "exporter_version": 3,
+  "source_file": "mill_valley.blend",
+  "objects": 1076,
+  "meshes": 62,
+  "original_triangles": 823111,
+  "decimation_ratio": 0.6681966344757876,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 137962,
+  "skipped_volume_objects": [
+    "MIST_Domain",
+    "SPRAY_Fall",
+    "SPRAY_Wheel"
+  ],
+  "original_camera": {
+    "theta": -36.085078147480445,
+    "phi": 87.25530607106025
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2422712,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_Ground",
+    "MAT_MapleLeafLitter",
+    "MAT_Grass",
+    "MAT_RiverRock",
+    "MAT_Water",
+    "MAT_WaterUpper",
+    "MAT_StoneMasonry",
+    "MAT_WoodBeam",
+    "MAT_WoodWeathered_X",
+    "MAT_Shingle",
+    "MAT_WoodWeathered_Z",
+    "MAT_Iron",
+    "MAT_WheelTimber",
+    "MAT_Millstone",
+    "MAT_StoneBridge",
+    "MAT_WoodWeathered_Y",
+    "MAT_StoneLantern",
+    "MAT_RiverRockUpper",
+    "MAT_RiverRockFall",
+    "MAT_MapleBark",
+    "MAT_MapleLeaf",
+    "MAT_Backdrop"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "4.573m 2.372m 1.000m",
+    "camera-orbit": "35deg 65deg 26.880m",
+    "min-camera-orbit": "auto 5deg 1.280m"
+  },
+  "preview_note": "The initial view focuses on the watermill within the landscape.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 9
+}

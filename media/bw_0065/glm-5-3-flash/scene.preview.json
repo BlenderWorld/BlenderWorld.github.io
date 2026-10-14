@@ -1,0 +1,40 @@
+{
+  "exporter_version": 3,
+  "source_file": "raccoon_backalley_scene.blend",
+  "objects": 50,
+  "meshes": 46,
+  "original_triangles": 36012,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Asphalt_Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 15.708636698917465,
+    "phi": 89.82762452165491
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1632548,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_Raccoon_Fur_Body",
+    "M_Raccoon_Fur_Head",
+    "M_Raccoon_Fur_Ears",
+    "M_Raccoon_Fur_Legs",
+    "M_Raccoon_Fur_Tail",
+    "M_Metal_Can"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-0.059m 0.153m 0.002m",
+    "camera-orbit": "35deg 65deg 2.070m",
+    "min-camera-orbit": "auto 5deg 0.099m"
+  },
+  "preview_note": "The initial view focuses on the animal in the alley.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 12
+}

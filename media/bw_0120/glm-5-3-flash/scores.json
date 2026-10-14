@@ -1,0 +1,151 @@
+{
+  "task_id": "bw_0120",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 57.9464,
+  "rubric": 57.142857142857146,
+  "dimension": 58.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "The Group B final image clearly reads as a stylized traditional Chinese temple courtyard: a red-columned hall, a large gold upturned tiled roof, foreground gateway, guardian pair, central paved path, side corridors, bell pavilion, and dusk setting are all visible. The requested overall scene is recognizable, but the main roof appears visually detached from the hall and the result is more toy-like than quaint/elegant.",
+      "issues": [
+        "The enormous gold roof appears to float in front of and above the red-columned hall rather than forming its roof.",
+        "The stepping-stone path is pale gray rather than visibly bluestone.",
+        "The architecture and garden dressing are highly simplified and do not strongly convey an old-town cultural-tourism setting."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 3,
+      "reasons": "Group A elevated and side views, especially wide_elevated, wide_left, and wide_right, show the large tiled roof and its red eave frame separated from the hall with little to no visible supporting structure below most of it. Other major pieces such as the bell pavilion, gateways, platforms, walls, and paths generally rest coherently on the courtyard floor.",
+      "issues": [
+        "The main gold roof is visibly unsupported and appears to hover over the courtyard.",
+        "The roof does not connect convincingly to the hall beneath it.",
+        "The overlapping smooth canopy lobes of the right-side tree visibly intersect rather than forming plausible foliage."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The central architectural palette is effective: saturated red columns and panels contrast clearly with the cream-gold tiled roof, while the bronze bell and censer read as metal. Repeating roof tiles and upturned eaves make the temple style legible. However, several requested objects are rendered with overly generic silhouettes.",
+      "issues": [
+        "The guardian statues read partly as cute bear-like characters rather than convincing stone lions.",
+        "The red lanterns are mostly overlapping smooth orange-red spheres with small hanging pieces, making them only loosely recognizable as lanterns.",
+        "Shrubs and topiary are featureless green blobs or stacked frustums rather than convincing courtyard vegetation."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The submitted final image is cleanly rendered with coherent shadows and an intentional stylized low-poly aesthetic. It is usable as a graphic illustration, but the physically floating main roof, toy-like lions, generic foliage, and nearly black voids under the eaves prevent the courtyard from feeling believable or refined.",
+      "issues": [
+        "The detached roof is a conspicuous realism-breaking structural error.",
+        "The central doorway and some under-roof areas are so dark that architectural detail is lost.",
+        "The animal statues, lantern cluster, and vegetation have a plastic/toy-like appearance rather than a quaint historic character."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "The Group B final establishes a clear axial composition from the gateway: the two guardian statues flank the entry, a straight central path leads to the stairs and hall, the bell pavilion occupies the left side, and side corridors enclose the courtyard. This satisfies the requested readable orientation well.",
+      "issues": [
+        "The camera is mostly frontal rather than distinctly angled in from the gateway.",
+        "The oversized detached roof interrupts the spatial reading between the foreground courtyard and the actual hall.",
+        "The lantern decoration is clustered near the left entrance rather than clearly reading as a deliberately composed corner feature."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "The hall, gateway, courtyard paving, side walkways, and bell pavilion have broadly compatible dimensions. However, Group A side and elevated renders show the gold roof spanning far beyond the hall footprint and occupying a disproportionately large portion of the courtyard volume.",
+      "issues": [
+        "The main roof is substantially oversized relative to the hall it is meant to cover.",
+        "The roof's height and overhang make it dominate and obscure the hall rather than crown it.",
+        "The guardian statues are unusually bulky and character-like for stone gateway lions."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "Warm late-day illumination is successfully visible in the Group B final through long soft-edged shadows, orange sunlight on the roof and red woodwork, and a calm dusk sky. The tiled roof has readable repeated patterning and the bell/censer have a convincing bronze-like highlight response.",
+      "issues": [
+        "Deep black shadow beneath the roof and in the hall doorway obscures important structure.",
+        "Many courtyard, wall, and vegetation materials are very flat and uniform.",
+        "The pale roof reads closer to cream ceramic in several views than strongly golden."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "All principal requested categories are visibly included in the submitted renders: a red-columned main hall, gold upturned-eave roof, two gateway guardian statues, a direct central path, a large hanging bronze bell in a pavilion, hanging red ornament/lantern forms, and additional side buildings and landscaping.",
+      "issues": [
+        "The intended stone lions are not unambiguously lion-like.",
+        "The hanging red lanterns are simplified enough to be somewhat ambiguous.",
+        "The central path does not visibly use a distinct blue-stone material."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The delivered final image is a finished, characterful, quaint, and elegant promotional depiction of a traditional Chinese temple courtyard.",
+      "evidence": "The authored promo render is a complete, coherent gateway-facing courtyard image: red architectural framing, tiled side corridors, a central hall, formal paving, guardian figures, and temple ornament create a recognizable stylized traditional courtyard scene with a restrained warm palette.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The principal main hall combines visual dominance, red columns, and a golden traditional upturned-eave roof.",
+      "evidence": "The red-columned hall is visible, and a large gold upturned tiled roof is prominent, but the elevated and side views show the roof as a separately hovering canopy with no visible supporting connection to the hall; the hall itself has a dark flat deck behind it rather than the required integrated golden roof.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "Two recognizable carved-stone guardian lions form a paired installation at the gateway.",
+      "evidence": "Two paired gray statues on entrance pedestals are clearly present, but their smooth, round-eyed, snouted cartoon forms read as teddy-bear- or generic animal-like figures rather than recognizable carved Chinese guardian lions.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The open courtyard, straight bluestone route to the hall, and relative orientation of all major elements form a clearly readable layout.",
+      "evidence": "The gateway view clearly shows a spacious paved court and a straight central run of pale cool-gray stone slabs leading directly to the hall steps, with paired entrance statues at the foreground and the bell/ornament area readable on the left side.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "A defined courtyard corner contains the complete large bronze-bell and plausibly suspended red-lantern vignette.",
+      "evidence": "A large bronze bell is clearly suspended in its small left-side pavilion, but the accompanying hanging objects are ambiguous strings of red-orange spheres, cups, and tassels rather than clearly identifiable red lantern bodies.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final image combines a recognizable warm dusk atmosphere with bright, readable courtyard detail.",
+      "evidence": "The final authored image has low-angle amber illumination, a muted sky, and long warm shadows, while the hall facade, paving route, bell area, gateway, and foreground statues remain plainly readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The usable native project contains the complete authored scene and implements the requested inward-angled gateway camera view.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "The scene clearly communicates a stylized Chinese temple courtyard with the requested major objects and a strong gateway-to-hall axis. The principal weakness is structural: the visually dominant gold roof is detached and unsupported in multiple Group A views, making the main hall physically implausible and weakening the otherwise successful dusk promo composition.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "525c003252583e7246d6d6490a9f7ac53c3eb8a0e5bbc5044808a2834a578f3e"
+}

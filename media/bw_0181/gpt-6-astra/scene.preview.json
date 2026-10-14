@@ -1,0 +1,54 @@
+{
+  "exporter_version": 3,
+  "source_file": "08_UNCLAIMED_Backrooms.blend",
+  "objects": 4092,
+  "meshes": 3716,
+  "original_triangles": 328088,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Dark studio cyclorama",
+    "03 / service floor.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -35.84974089796495,
+    "phi": 53.662133170775896
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 4873692,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "Carpet / corridor",
+    "Carpet / tobacco",
+    "Carpet / oxidised sage",
+    "Trim / olive enamel",
+    "Metal / aged brass",
+    "Metal / oxidised steel",
+    "Wood / bleached teak",
+    "Wood / dark end grain",
+    "Paper / aged",
+    "Ink / charcoal",
+    "Wood / walnut",
+    "Paint / filing beige",
+    "Paint / oxblood",
+    "Vinyl / midnight",
+    "Plastic / warm grey",
+    "Textile / mineral green",
+    "Textile / camel boucle",
+    "Textile / dusty burgundy",
+    "Kraft / raw edge",
+    "Paper / face print",
+    "Ink / faded umber",
+    "Plaster / yellowed"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "-35.84974089796495deg 40deg auto"
+  },
+  "preview_note": "Ceilings and roof panels are hidden for a cutaway view of the interior.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

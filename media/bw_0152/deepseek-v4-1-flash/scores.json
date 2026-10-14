@@ -1,0 +1,148 @@
+{
+  "task_id": "bw_0152",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 59.375,
+  "rubric": 55.0,
+  "dimension": 63.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B final image planetary_gearbox_exploded_4k clearly shows a NEMA-style motor block, two internally toothed ring gears, two three-planet layers, two carriers, a central sun/interstage gear sequence, split housing halves, and an output rod in a coherent exploded gearbox presentation.",
+      "issues": [
+        "The motor is a generic dark cuboid rather than a convincingly detailed NEMA 17 stepper motor.",
+        "The required 31 mm square front flange is represented by a circular gray annulus; the square outline and four M3 mounting holes are not visible.",
+        "The Ø22 locating feature is not clearly identifiable as a defined flange boss/recess."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "The large gaps in Group B planetary_gearbox_exploded_4k are appropriate for an exploded technical view rather than accidental unsupported geometry. The two ring/planet/carrier stages are axially ordered, housing sections have visible wall thickness, and there is no obvious destructive mesh interpenetration.",
+      "issues": [
+        "The assembled functional connections between the motor shaft, suns, carriers, and the thin upper output rod are not visually demonstrated because all are widely separated.",
+        "The detached central cylinder within the front annulus does not clearly communicate its intended mechanical connection."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "The color coding in Group B planetary_gearbox_exploded_4k is effective for print-oriented part identification: orange planet gears, teal internal rings, purple carriers, blue input sun, pale-gray shell, and dark motor are readily distinguishable. Gear teeth and internal ring teeth remain recognizable in the high-resolution export.",
+      "issues": [
+        "The motor silhouette is overly plain and lacks recognizable NEMA mounting-face details.",
+        "The purple carrier parts are simplified and their functional geometry is less immediately legible than the gear components.",
+        "The gray flange does not visually read as the specified square mounting flange."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The designated author final, Group B planetary_gearbox_exploded_4k, is clean and coherent as a simplified engineering illustration with crisp enough teeth and no visible render noise.",
+      "issues": [
+        "The image has very flat, pale lighting with limited shadowing, depth separation, or material response.",
+        "The smooth uniformly colored parts look closer to a basic viewport/CAD-style render than a finished Cycles HDRI technical visualization.",
+        "The low-contrast pale background and shell make some white/gray forms visually weak."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "Group B planetary_gearbox_exploded_4k uses a clear vertical exploded axis: motor and flange are below, followed by input sun, lower ring/planet layer, interstage carrier/sun, upper ring/planet layer, output carrier, and output shaft. The two shell halves are moved laterally so the internal stages are unobscured and leave generous annotation space.",
+      "issues": [
+        "The near-front-on composition is less strongly axonometric than requested.",
+        "The housing halves are positioned broadly beside the stack rather than being staged close to the corresponding ring/housing levels, weakening their association with the mechanism."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "Visible gear ratios are broadly sensible: the small blue sun is much smaller than the orange planet gears, while the teal internal rings are substantially larger; the two three-planet clusters are consistent. The output rod is also appropriately much thinner than the gear train.",
+      "issues": [
+        "Precise NEMA 17, 31 mm flange, 22 mm locating feature, 5 mm output-shaft, and 3 mm wall dimensions cannot be verified from the renders.",
+        "The generic motor body and oversized-looking circular flange make the intended standardized motor/flange proportions less convincing."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "The matte colored surfaces in Group B planetary_gearbox_exploded_4k are clean and consistently shaded, and the color separation makes gear teeth readable.",
+      "issues": [
+        "There is little evidence of the requested three-point/HDRI lighting: cast shadows, reflected environment cues, and directional highlights are minimal.",
+        "The shell, flange, and motor use nearly featureless matte shading, limiting the intended PLA/plastic material character.",
+        "Pale-gray parts partially blend into the similarly pale-gray background."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "The renders visibly include the principal required mechanism inventory: one motor-like drive, two internal rings, six planet gears in two groups of three, two carrier layers, a small input sun, an interstage geared hub, an upper output rod, and two split shell sections with visible external ribs on the right half.",
+      "issues": [
+        "A 31 mm square front flange with four M3 holes is absent; the visible front part is circular and has no discernible mounting holes.",
+        "The NEMA 17-specific mounting face/details are missing from the motor representation.",
+        "The specified locating spigot/recess and exact backlash/wall-thickness details are not clearly visible."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The recognizable NEMA 17 motor is installed at the reducer input through the complete specified front-flange interface.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "Both planetary stages form complete module-1 gear-and-carrier systems with the specified counts, backlash, support, and compatible meshes.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The two planetary stages constitute a connected 6:1-by-6:1 drivetrain terminating in the specified output shaft.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The reducer has a separable, reinforced, correctly thick housing capable of enclosing the complete drivetrain.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The fabricated reducer uses a coherent PLA or PLA-like surface system whose component distinctions remain clear in print.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "secondary",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The designated final file is a thesis-ready 4K exploded axonometric image with clear, annotation-friendly layering.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The editable Blender project retains the complete reducer scene and its functional Cycles, three-point-light, and HDRI configuration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a recognizable, clearly layered two-stage planetary reducer exploded view with strong part-count coverage and good color separation. Its main shortcomings are the generic NEMA motor, the visibly incorrect circular rather than square M3 front flange, and flat low-contrast lighting/material treatment that falls short of a polished Cycles/HDRI thesis figure.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "e8a424b93bb7cda35c911e9bf9a5301fea50daa4d754d59bf126e2aef226079f"
+}

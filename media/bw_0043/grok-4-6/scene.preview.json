@@ -1,0 +1,54 @@
+{
+  "exporter_version": 3,
+  "source_file": "zephyranthes_white_flower.blend",
+  "objects": 41,
+  "meshes": 41,
+  "original_triangles": 135512,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Ground_Backdrop",
+    "Ground_Mulch.001"
+  ],
+  "reduced_subdivision_objects": [
+    "Petal_01",
+    "Petal_02",
+    "Petal_03",
+    "Petal_04",
+    "Petal_05",
+    "Petal_06",
+    "Throat",
+    "Leaf_01",
+    "Leaf_02",
+    "Leaf_03",
+    "Leaf_04",
+    "Leaf_05",
+    "Leaf_06",
+    "Ground_Mulch"
+  ],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": 6.340190426860055,
+    "phi": 17.68496955545708
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 528868,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_Petal",
+    "MAT_Throat",
+    "MAT_Leaf",
+    "MAT_DryLeaf"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0.001m 0.008m 0.001m",
+    "camera-orbit": "15deg 35deg 0.147m",
+    "min-camera-orbit": "auto 5deg 0.007m"
+  },
+  "preview_note": "The initial macro view focuses on the flower.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 17
+}

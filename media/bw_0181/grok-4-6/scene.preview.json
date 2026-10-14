@@ -1,0 +1,51 @@
+{
+  "exporter_version": 3,
+  "source_file": "backrooms_showcase.blend",
+  "objects": 722,
+  "meshes": 722,
+  "original_triangles": 23400,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -71.71465248715833,
+    "phi": 83.4063407828237
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 141392,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "MAT_Carpet",
+    "MAT_Wallpaper",
+    "MAT_Ceiling",
+    "MAT_Wood",
+    "MAT_Walnut",
+    "MAT_Cardboard",
+    "MAT_FabricA",
+    "MAT_FabricB"
+  ],
+  "preview_omitted_objects": [
+    "CL_HERO.001",
+    "CL_SCOR.001",
+    "CL_FURN.001",
+    "CL_NCOR.001",
+    "CL_STAN.001",
+    "CL_ECOR.001",
+    "CL_OFFI.001",
+    "CL_LOOP.001",
+    "CL_LCOR.001",
+    "CL_DARK.001",
+    "CL_HUM.001",
+    "CL_ALC.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "35deg 40deg auto"
+  },
+  "preview_note": "Ceiling panels are hidden for a cutaway view of the interior.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

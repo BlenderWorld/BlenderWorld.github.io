@@ -1,0 +1,35 @@
+{
+  "exporter_version": 3,
+  "source_file": "future_city_dusk.blend",
+  "objects": 46,
+  "meshes": 46,
+  "original_triangles": 166768,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Plaza_Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Atmosphere_Fog"
+  ],
+  "original_camera": {
+    "theta": 11.888656691380573,
+    "phi": 108.94996047912842
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 385144,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Concrete",
+    "MAT_Greenery"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "11.888656691380573deg 80deg auto"
+  },
+  "preview_note": "Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

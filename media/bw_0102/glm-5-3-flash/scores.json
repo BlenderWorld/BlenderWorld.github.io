@@ -1,0 +1,175 @@
+{
+  "task_id": "bw_0102",
+  "model": "GLM-5.3-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 72.7802,
+  "rubric": 79.3103448275862,
+  "dimension": 66.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "Group B 的 animal_cell_cutaway.png 清楚呈现了动物细胞剖切体、细胞核、多个线粒体、带颗粒的紫色膜堆、青绿色高尔基体堆和散布小颗粒，整体作为科普细胞图可识别。Group A 的多角度也证实这些结构确实位于细胞内部。",
+      "issues": [
+        "粗面内质网呈为分离的厚紫色圆盘堆，形态和与核周区域的关系不够明确。",
+        "核仁更像贴在核表面的平坦紫色圆片，核膜与核仁的内部层次表达较弱。",
+        "细胞膜和细胞质的目标材质表现未充分达到要求，削弱了整体还原度。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "细胞内部结构悬浮于细胞质中本身符合细胞示意图的空间逻辑，且多数细胞器保持在壳体范围内。Group A 的 wide_elevated.png 仍显示剖切结构具有厚度，而非单纯二维贴片。",
+      "issues": [
+        "Group A 的 wide_elevated.png 中有三颗浅青色球体明显落在细胞壳体下方、悬于外部背景中。",
+        "剖切边缘存在重叠、接缝和底部不规则翻边；wide_left.png 顶部还有突出的接缝/薄片。",
+        "局部线粒体、膜堆与其他结构距离过近或视觉重叠，空间分层不够干净。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "Group B 成图通过蓝色细胞核、青绿色孔环、橙色带嵴线粒体、紫色带粉色颗粒的膜堆、青绿色高尔基体和金色游离颗粒实现了较强的结构区分；线粒体和高尔基体轮廓尤其容易辨认。",
+      "issues": [
+        "紫色粗面内质网的厚重椭圆盘轮廓较像普通层叠圆片，特异性不足。",
+        "青绿色核孔是凸起的环形装饰，更像贴附的甜甜圈而不像穿过核膜的孔复合体。",
+        "细胞外壳呈厚而光滑的浅紫色塑胶壳，偏离纤薄细胞膜的视觉印象。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "Group B 的 animal_cell_cutaway.png 是干净、无明显噪点的完成图，软光、阴影和剖切可读性总体协调，作为风格化教学三维图具备可用性。",
+      "issues": [
+        "整体材质高度光滑、蜡质/塑胶化，细胞器和细胞质缺乏生物组织应有的微浊与细腻层次。",
+        "剖切边缘的层壳接缝和部分器官相互遮挡降低了成图的自然性。",
+        "画面没有明显以细胞核为核心的浅景深效果，前后多个结构都接近同等清晰。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "在 Group B 成图及 Group A 的 wide_front.png、wide_right.png 中，细胞核位于左后侧，紫色膜堆居右，高尔基体位于下方，多个线粒体分布在周围，游离小颗粒散布于细胞质中；剖切视角能有效展示主要结构。",
+      "issues": [
+        "粗面内质网没有明显围绕或连接核膜，核周膜系统的关系不够有说服力。",
+        "右前方大线粒体遮挡高尔基体与紫色膜堆的一部分，使核心教学结构显得拥挤。",
+        "部分青绿色球体在 elevated 视角中脱离细胞范围，破坏空间闭合感。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "细胞核占据细胞内部较大比例，线粒体尺寸明显小于细胞核，多个小核糖体也具有合理的层级；Group B 的总体尺度关系足以支持科普图阅读。",
+      "issues": [
+        "外层细胞膜/壳体明显过厚，像大型双层容器壁而非薄膜。",
+        "紫色粗面内质网盘堆的单层厚度和整体体积偏大，接近主要细胞器实体块。",
+        "浅青色囊泡样球体相对核糖体和高尔基体的尺度关系不够统一。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "Group B 最终图具有柔和的主光与边缘高光，深灰背景下各类细胞器的颜色可区分；橙色线粒体内部嵴状条带、青绿色高尔基体条带和不同膜层都能从材质/颜色上分开。",
+      "issues": [
+        "所要求的半透明磷脂双分子层没有被清楚表现：外膜主要读作厚实、近乎不透明的亮紫色壳。",
+        "蓝色细胞质基本均匀平滑，未显出微浊的次表面散射或体积感。",
+        "虽有柔光和轮廓高光，但没有明显的核焦点浅景深，且多数表面反射过于统一、偏塑料质感。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "Group B 最终图和 Group A 多视图均可见一个带紫色核仁区域与多个青绿色环状孔特征的细胞核、至少四枚带内部嵴线的线粒体、带粉色颗粒的紫色粗面内质网式结构、青绿色高尔基体以及大量金色散布颗粒，主要要求均有视觉对应物。",
+      "issues": [
+        "核膜孔和核仁的表达偏符号化，核膜本身未形成清楚的独立双层包膜细节。",
+        "粗面内质网的身份主要依赖粉色附着颗粒，膜网络本体不够明确。",
+        "没有标注层或可直接用于讲解的文字引线，虽然任务只要求工程便于后续加标注，并非成图硬性缺件。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final composition is a clearly identifiable and readable educational cutaway of a eukaryotic animal cell.",
+      "evidence": "The designated final image animal_cell_cutaway and the cutaway-facing Group A views clearly show a rounded cell with a substantial section removed, exposing a nucleus-like body, multiple organelles, and cytoplasmic particles. The absence of a rigid wall or chloroplast-like structures supports an animal-cell reading.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The nucleus is complete and visibly includes its nucleolus and nuclear-pore-bearing envelope.",
+      "evidence": "A large blue spherical nucleus-like structure carries repeated turquoise ring details, but the lavender nucleolus-like feature reads as a flat patch on its exposed face rather than an unambiguously internal nucleolus. The detailed nucleus view does not clearly establish a readable enclosing nuclear envelope with the nucleolus visibly inside it.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Several separate organelles are visibly recognizable as mitochondria.",
+      "evidence": "Several separate orange bean-shaped bodies are visible throughout the exposed cytoplasm, each with a contrasting wavy internal folded band. At least four are visible across animal_cell_cutaway, wide_front, and wide_right.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The rough ER and its attached and free ribosome populations are correctly distinguishable.",
+      "evidence": "The lavender organelle at right is a grouped stack of flattened cisternae with small pale-pink particles visibly attached to its faces. Numerous separate mustard-gold particles are also dispersed across the blue cytoplasm, including around the nucleus and lower Golgi region.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A coherent Golgi apparatus is visibly recognizable from its stacked membrane morphology.",
+      "evidence": "The lower teal structure is clearly formed from several aligned, curved flattened membrane ribbons, reading as a coherent stacked Golgi apparatus rather than a generic solid object.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The named intracellular structures occupy biologically coherent compartments.",
+      "evidence": "The visible mitochondria, lavender rough-ER stack, teal Golgi stack, and dispersed gold ribosome-like particles are all located within the blue cytoplasmic volume bounded by the pale aqua inner membrane and outside the large blue nucleus-like body. The pale-aqua spheres outside the cut edge in wide_elevated are not the named mitochondria, ER, Golgi, or free-ribosome population.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete material system distinguishes the major structures and implements the specified membrane and cytoplasm responses.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The saved scene and final image demonstrate three distinct soft-light contributors for three-point lighting plus an additional effective rim-light contributor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "The author camera uses visibly shallow depth of field focused specifically on the nucleus.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The retained editable Blender project and exact-size final image form a consistent Cycles-rendered delivery suitable for later annotation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "这是可识别且构图完整的风格化动物细胞剖切图，核心细胞器数量和颜色区分基本到位。主要短板是细胞膜/细胞质未达到指定的半透明与微浊材质目标，粗面内质网和核膜孔表达偏玩具化，以及多视图暴露出的剖切接缝和细胞外游离球体。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "28d024c52316451be372668083620aadaf6eb7b8faacd813141b85c6ae707422"
+}

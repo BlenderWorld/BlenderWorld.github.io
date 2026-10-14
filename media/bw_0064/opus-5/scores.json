@@ -1,0 +1,183 @@
+{
+  "task_id": "bw_0064",
+  "model": "Opus-5",
+  "judge_model": "GPT-5.6-terra",
+  "score": 80.625,
+  "rubric": 100.0,
+  "dimension": 61.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "The author final render (alpine_gondola_goldenhour_4k) clearly depicts the required alpine valley: snowy mountain ridge, central frozen lake, conifer-covered slopes, diagonal lift cables, support pylons, and red cabins. Its overall valley-and-gondola concept is recognizably based on the reference.",
+      "issues": [
+        "The terrain, trees, cabins, and tower are substantially more stylized and simplified than the photographic target.",
+        "The reference's distinctive rugged foreground cliffs, denser natural forest variation, and lattice lift tower are not faithfully reproduced.",
+        "Only about three cabins are readily visible in the final compared with roughly five in the reference."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "In the final image, the major foreground pylon appears planted in the snow and the cabin hangers visibly connect to the cables; the tower crossarms also provide plausible cable support. However, the evaluator wide views expose the actual terrain as a bounded, thin landform with abrupt vertical sides and a dark underside.",
+      "issues": [
+        "wide_lake_ridge, wide_lift_valley, wide_receding_lift, and wide_valley_front expose large cut edges and black/brown terrain undersides.",
+        "The landscape is not physically coherent as continuous mountain ground when seen beyond the final camera framing.",
+        "The pylons are very simplified solid poles rather than the more structurally credible lattice support visible in the reference."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "The rendered objects retain clear identities: red-and-dark-window gondola cabins, gray pylons, thin dark cables, snowy conifers, icy lake, and snow-and-rock mountains are all visually legible in alpine_gondola_goldenhour_4k. The warm pale-gold sky and saturated red cabins provide a clean illustrative color treatment.",
+      "issues": [
+        "The repeated stacked-disc conifers read as low-poly decorative trees rather than snow-laden natural firs.",
+        "Cabins are generic rounded capsules with very limited gondola-frame, window, and hanger detail.",
+        "Mountain rock, snow, and tree colors are comparatively uniform and lack the richer natural variation in the reference."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "The designated author final is clean, well-resolved, and coherent as a polished stylized geography illustration, with no visible noise or severe rendering artifacts. The distant lake, layered mountains, and clustered forest establish useful depth.",
+      "issues": [
+        "The scene does not achieve the reference photo's naturalistic terrain, irregular tree forms, or detailed lift engineering.",
+        "Repeated low-poly tree silhouettes and broad smoothed snow forms make the landscape look synthetic.",
+        "The actual scene's slab-like extent visible in Group A undermines realism outside the chosen final framing."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "The author final places the lake in the distant center, flanks it with wooded snowy slopes, and runs multiple cables diagonally from upper right toward the left-middle distance, closely following the reference's broad spatial logic. A large foreground-right pylon and receding supports establish the lift route.",
+      "issues": [
+        "The foreground pylon is much more centrally dominant than the reference's visually lighter tower arrangement.",
+        "The closest gondola sits lower and closer to the main tower rather than occupying the high upper-right position of the reference.",
+        "The scene lacks the reference's strong rocky, snow-covered foreground framing at both lower corners."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The cabins, trees, cables, and pylons generally form a readable depth progression in alpine_gondola_goldenhour_4k, with smaller cabins and towers receding toward the lake. The large foreground pylon can plausibly be closer to the camera.",
+      "issues": [
+        "The nearest cylindrical pylon is oversized and visually dominates the valley more than the support tower in the reference.",
+        "The simplified forest has a somewhat miniature, repeated-instancing appearance relative to the broad mountain terrain.",
+        "Cabin and tower engineering proportions are less convincing than the more complex real lift structure in the target."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The final provides coherent cool-blue snow and ice against a softly warm golden-hour sky, with gentle illumination on the mountains and a clearly icy, faintly patterned lake. Metal pylons and red cabin panels have distinct enough surface treatments to read cleanly.",
+      "issues": [
+        "Golden-hour effects are subdued: the long, directional shadows requested are limited, and much of the scene remains evenly cool-lit.",
+        "The lake surface has a repetitive rippled pattern rather than convincing subtle translucent/reflection behavior.",
+        "Snow, exposed rock, and foliage lack fine material breakup, so the layered natural surface treatment is less convincing."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "All main required categories are present in the author final and supporting Group A views: snow-capped mountains, a frozen lake, dense snow-covered conifers, exposed mountain rock, lift pylons, several cable lines, and red enclosed cabins. detail_lake_slope and detail_mid_lift also confirm that the lake and forest extend beyond the main camera composition.",
+      "issues": [
+        "The visible cabin count is lower than the approximately five cabins in the reference.",
+        "A lattice-like lift tower matching the reference is absent; the scene uses simple pole-and-crossarm supports.",
+        "The characteristic rocky, snow-covered foreground cliffs of the source image are much less developed."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable, genuinely spatial, complete, and editable without prescribing non-planar geometry for every asset.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The background contains a varied ridge of multiple readable snow-capped peaks.",
+      "evidence": "The author final image shows a broad layered horizon of individually readable, irregular snow-covered peaks, including prominent high summits at both far left and far right and many smaller intervening ridges with exposed rock.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "A distinct frozen lake occupies the low valley basin and reads as a substantially level geographic feature.",
+      "evidence": "A pale blue-gray, lightly patterned ice surface is clearly visible in the center-low distance of the final image, lying level within the basin between the rising forested and snowy mountain slopes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The foreground and midground balance substantial snow-laden conifer swaths with exposed snowy slopes.",
+      "evidence": "The final composition has substantial grouped conifer stands at both foreground sides and across the valley, with clearly layered white snow caps on their branch tiers; open rolling snow foreground and broad exposed mid-valley slopes remain visible around them.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "Snow, ice, exposed rock, and vegetation form a correctly assigned and visually differentiated material system with the specified snow and ice responses.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The pylons, pylon heads, and parallel steel-like cables form one coherent reference-informed lift route crossing and receding through the frame.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Several red cabins form a genuinely instanced, reference-spaced, mechanically suspended sequence along the lift.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The landscape and lift preserve the reference's broad organization with believable cross-system proportions rather than becoming an unrelated invented scene.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The final scene replaces midday illumination with warm low-sun lighting and long cast shadows.",
+      "evidence": "The final render uses a pale golden-yellow horizon and warm side illumination on the right-side trees and mountain faces, while elongated cool-blue tree shadows extend across the foreground snow, giving a low-sun golden-hour reading.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The actual final camera uses a medium-telephoto field of view and visibly produces the requested depth compression.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "Exactly one intended final image is openable, genuinely high resolution, complete, and visually clean enough for instructional labels.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a clean and recognizable stylized reconstruction with the principal alpine landscape and gondola-lift elements present. Its main shortcomings are reduced photographic fidelity and lift detail, an overdominant simple foreground pylon, fewer cabins, repetitive low-poly vegetation, and terrain slab boundaries exposed by the evaluator's wide views.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "026ccf40954a5edf17c599e4ad631ed09bee0a8519f729bfe7a6faf70394090b"
+}

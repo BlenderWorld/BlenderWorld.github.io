@@ -1,0 +1,178 @@
+{
+  "task_id": "bw_0174",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 83.5795,
+  "rubric": 90.9090909090909,
+  "dimension": 76.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "The submitted scene clearly shows the requested horizontal-axis wind turbine on open grass: a tall tapered white tower, closed nacelle, rounded hub, and exactly three long blades. Group B preview_06 also presents the intended dusk-like outdoor storyboard shot with airborne leaf/debris particles, while drivetrain_raw visibly supports the requested internal machinery.",
+      "issues": [
+        "No time-ordered animation frames demonstrate that the rotor actually spins or that the debris is falling under gravity rather than being statically placed.",
+        "The two parallel gray strips leading from the base are visually prominent but do not have a clear requested role in the scene."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "Across the Group A wide and detail views, the tower is firmly seated on a circular/faceted foundation, the nacelle is mounted coherently on the tower top, and the hub and all blades visibly join into the rotor assembly. Group B drivetrain_raw shows machinery placed on a substantial internal tray with mounts, housings, and routed cable-like lines rather than disconnected floating pieces.",
+      "issues": [
+        "The gray ground strips appear slightly raised or embedded inconsistently in different wide views, making their physical purpose and contact with the terrain unclear.",
+        "Static images do not provide evidence that the particle system's gravity, wind, and turbulence behavior is physically convincing over time."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The turbine is independently recognizable from every major angle: the tapered tower, aerodynamic tapered blades, round hub, and elongated nacelle have clear turbine silhouettes. The white exterior with red-orange blade tips reads well, and Group B drivetrain_raw uses distinct teal, orange, dark metallic, and white components to make the gearbox/generator assembly legible.",
+      "issues": [
+        "The nacelle remains somewhat boxy and faceted compared with a more refined production turbine enclosure.",
+        "The saturated teal and orange interior machinery is illustrative rather than especially industrially naturalistic."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "Group B preview_04 and preview_06 produce a coherent dusk landscape with a convincing large isolated turbine silhouette, grass foreground, clouded sky, and windblown flecks. The detailed nacelle has panel seams and roof equipment, and the drivetrain close-up has modeled cooling ribs, couplings, mounts, and cables rather than generic blocks.",
+      "issues": [
+        "The grassy terrain has visibly patchy, roughly bounded instance-density regions and relatively uniform underlying green ground.",
+        "Several Group A overview renders are noticeably soft, hazy, and low contrast, which weakens distant terrain and fine hardware definition.",
+        "The turbine exterior is very clean and uniform, with limited weathering, dirt, or surface variation for an exposed utility-scale structure."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The primary spatial relationships are correct in Group A wide_front, wide_back, and wide_iso: the nacelle is centered atop the tower, the rotor projects from its front, and the three blades are arranged at approximately 120 degrees. The turbine is isolated in a broad open grass landscape, and the Group B storyboard previews use a sensible distant, slightly low ground-level composition to establish scale.",
+      "issues": [
+        "The parallel strips/lines create an unexplained foreground-leading element that competes with the otherwise simple open-field composition.",
+        "Actual yaw movement is not demonstrated by a sequence of rendered frames."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "reasons": "The wide views convey a credible utility-scale relationship: the tower is approximately twice a blade radius in visible height, consistent with an approximately 80 m hub and 40 m blades. The nacelle is compact relative to the tower and rotor, the tower narrows upward, and the foundation/access hatch read at a plausible small scale at ground level.",
+      "issues": [
+        "Exact specified base and top tower diameters cannot be verified from the submitted image views.",
+        "The rotor can appear somewhat slender and visually light in the hazier overview shots."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "The author preview images, especially Group B preview_04 through preview_06, show dusk-appropriate lavender, orange, and dark-storm sky variants with coherent illumination on the white turbine. Exterior panel seams, subtle blade-root rings, red tips, grass, and the colored metallic/plastic-like drivetrain materials provide useful material separation.",
+      "issues": [
+        "Lighting is often diffuse and washed out in the Group A renders, reducing form contrast on the white nacelle and blades.",
+        "The external white tower, nacelle, and blades have very similar clean matte/gloss responses, so their material distinctions are modest.",
+        "Shadows on the open ground are weak and do not strongly anchor the turbine in the more softly lit views."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "The required visible structural inventory is substantially present: one tapered tower and base, one nacelle with yaw-ring-like support, one three-bladed rotor, grass terrain, red blade tips, roof instrumentation, and base access detail. Group B drivetrain_raw additionally shows a deliberate interior assembly including a large finned generator-like cylinder, gearbox-like unit, shafts/collars, coupling/brake-like part, mounting tray, and cables. Group B preview_05 and preview_06 visibly include airborne leaf-like debris and dust-like foreground blur.",
+      "issues": [
+        "There is no Group C motion sequence or other unambiguous evidence proving rotor rotation, wind/turbulence-driven motion, or gravity-driven falling behavior.",
+        "The individual main shaft, high-speed shaft, and brake cannot each be identified with certainty from the exposed drivetrain view.",
+        "Dust is less clearly defined than the leaf-like debris in the previews."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The coherent horizontal-axis turbine uses the specified tapered tubular tower and principal dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The nacelle is genuinely configured as yaw-capable on the tower.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The nacelle contains every named internal machine arranged as one plausible drivetrain.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The hub carries the complete dimensioned three-blade rotor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The completed authored scene has believable relative scale and consistently estimated unspecified dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final render uses readable and believable material distinctions without prescribing unique materials for fixed object or effect classes.",
+      "evidence": "In the author render preview_06, the turbine reads as smooth pale painted/composite material against dense matte green grass and a strongly differentiated dusk sky; orange-red blade tips and dark/orange airborne debris provide additional distinct surface/color treatment. The close drivetrain export also visibly differentiates painted white housing panels, dark base/cables, teal machinery, and a ribbed orange metal-like generator.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Enabled Wind and Turbulence fields participate in a functioning rotor-driving setup.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The atmospheric system produces distinct leaves and dust with the complete requested gravity, Wind, and Turbulence behavior.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The complete final lighting system combines a genuine dusk HDRI with exactly one contributing Sun lamp and visibly produces dusk illumination.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The selected storyboard render coherently presents the open-field turbine from the requested camera with effective depth of field and motion blur.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The requested final render and retained editable .blend form one valid Cycles-configured project outcome.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a strong, recognizable wind-turbine storyboard scene with credible large-scale proportions, a complete three-blade silhouette, open grass setting, dusk preview variants, and unusually useful modeled drivetrain detail. The principal limitations are soft/washed-out overview presentation, somewhat stylized terrain and materials, and the lack of time-ordered evidence for the requested rotor and particle simulation behavior.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "75f4e18c6c4872413e575515e17b4ebe7403226106f0ef7c91d67f52e1baa7bf"
+}

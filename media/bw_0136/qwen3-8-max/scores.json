@@ -1,0 +1,171 @@
+{
+  "task_id": "bw_0136",
+  "model": "Qwen3.8-Max",
+  "judge_model": "GPT-5.6-terra",
+  "score": 79.375,
+  "rubric": 100.0,
+  "dimension": 58.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "Group B 的 chest_showcase_45deg 清楚呈现了一只置于地面的中世纪木质拱盖宝箱：箱体、弧形盖、正面锁扣、金属包边及铆钉均可辨识，且最终图为合适的前右 45 度展示构图。Group A 多视图也确认其为完整单一宝箱资产而非仅正面贴片。",
+      "issues": [
+        "右端盖缘下方存在明显黑色月牙形开缝，使箱盖与端部结构看起来没有闭合。",
+        "多处木板接缝呈现断裂、锯齿状的黑色条带，削弱了整体完成度。",
+        "铰链的可用结构不够清楚，更像散布在盖面上的金属片。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 4,
+      "reasons": "宝箱主体在 Group B 最终展示图及 Group A cam_submitted 中稳定落在地面上，箱体、端板和拱盖具有基本厚度和支撑关系。前部竖向金属包边和铆钉大体贴附于木板表面。",
+      "issues": [
+        "Group A cam_submitted 和 Group B 最终图右端可见箱盖边缘与端部之间的大型暗缝，像结构分离或意外开口。",
+        "wide_front_left、wide_front_right 与 wide_top_iso 中多个盖面金属片明显翘起、悬出或未顺着弧面贴合。",
+        "detail_hinge_side 中金属带与木板连接处有明显黑色断层；整体未形成可信的铰链轴或连续连接。",
+        "部分深黑木板缝像相交面、贴图裂缝或几何间隙，而非干净的板材拼缝。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "拱形盖、厚实的长方体箱身、横向木板、端部竖板、褐灰色锈蚀金属和圆铆钉共同形成了清晰的中世纪宝箱剪影。木材与金属在 chest_showcase_45deg 和各 Group A 近景中可被明确区分，不是无细节的盒状物。",
+      "issues": [
+        "木材表面纹理过于强烈且遍布均匀，近看更接近粗糙的噪声/浮雕，而非尺度自然的木板纹理。",
+        "锁扣的压褶装饰形状不规则，读作变形金属片的程度高于清晰的锁扣机构。",
+        "金属色调普遍偏暗黄褐，材质层次与木材的色值分离仍然有限。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "最终展示图具有明确主光、地面阴影和可读的粗糙木材/旧金属外观；从中远距离看，物体整体仍有可信的游戏道具观感。",
+      "issues": [
+        "Group A detail_lock_front、wide_front 和 wide_back 中的板缝有破碎的黑色伪影，显著暴露出建模或贴图问题。",
+        "盖面高光在 cam_submitted、wide_front_right 和最终图中过强，压掉了木纹细节并显得偏塑料/湿亮。",
+        "金属铰片和包边的翘起、薄片感及不连续连接削弱了真实的装配感。",
+        "锁扣和钥匙孔附近的阴影与形状较脏乱，缺少清晰可制造的机械结构。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "单一宝箱的构件位置基本正确：锁扣位于正面中央的盖身交界，竖向金属加强带分布在正面两侧，端部有沿弧线走向的金属边条，盖面上也布置了疑似铰链件。Group A wide_front、wide_top_iso 及 Group B 最终图均支持这些前后和上下关系。",
+      "issues": [
+        "盖面金属件的朝向和贴合不一致，难以读作一对位于合理轴线上的侧铰链。",
+        "右端的开缝破坏了盖与箱体应有的连续空间关系。",
+        "锁扣下方独立突出的钥匙孔件与上方锁片之间的机构关系不够明确。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "箱体长度、深度和弧盖高度的比例自然，整体呈现厚实可容纳物品的木箱尺度；前部包边宽度和铆钉尺寸从 Group B 最终图的中远景看也大体合理。",
+      "issues": [
+        "中央锁片的纵向尺寸和大幅褶皱装饰显得偏夸张，且比其下方小钥匙孔突出很多。",
+        "若干盖面铰片很薄却高高翘出，与厚重木箱和包边的尺度语言不一致。",
+        "端部开缝在视觉上使弧盖边缘显得过薄。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "Group B 的 chest_showcase_45deg 提供了可用的棚拍式展示照明：主体从暗背景中分离，地面有投影，木材的深褐色和金属的锈蚀褐灰色具有基础 PBR 粗糙度差异。Group A 近景也显示木纹和铆钉并非完全缺失。",
+      "issues": [
+        "顶部木盖出现大面积刺眼高光，木材粗糙度响应不够均衡。",
+        "木板缝过黑且不连续，像贴图/遮罩错误而非自然环境遮蔽。",
+        "金属件的锈蚀、反射和边缘磨损较平淡，部分铰片看起来像薄的哑光板而非坚实金属。",
+        "虽有木材和金属两大分区，但没有提交图像能清楚证明法线烘焙结果、独立高低模或针对引擎的贴图分区。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 5,
+      "reasons": "可见的核心视觉部件大多存在：木制箱体、拱形盖、中央前锁扣、金属包边和多枚铆钉都在 Group B 最终图及 Group A 多视图中可见。宝箱作为静态展示对象是完整可识别的。",
+      "issues": [
+        "要求中的两侧铰链没有以清晰、成对且可工作的铰链结构呈现；可见的多片盖面金属件存在翘起和连接不清的问题。",
+        "提交图像未展示可与高模区分的三千面以内低模，也没有可验证的面数证据。",
+        "没有单独展示木纹和铆钉从高模烘焙到法线贴图的结果，无法据渲染确认该管线要求已完成。",
+        "若干板缝和端盖开口使资产不像完全清理完成、可直接交付引擎的状态。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final chest has the requested medieval wooden identity, principal body-and-lid construction, and a distinctive readable silhouette.",
+      "evidence": "The author showcase clearly depicts a dark wooden treasure chest with a rectangular plank-built lower box and a large rounded barrel-arched lid. Metal straps, edge bands, rivets, and weathered wood reinforce a medieval chest identity.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Recognizable hinge assemblies are coherently installed on both lateral sides at the lid-body connection.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "A recognizable securing assembly is visibly and coherently installed at the front closure.",
+      "evidence": "A distinct central aged-metal closure plate is mounted vertically over the front lid/body junction, with a separate dark keyhole fitting immediately below it. The plate visibly bridges the front closure area rather than appearing elsewhere on the asset.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "Metal edging and associated rivets form a coherent edge-reinforcement system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The saved Blender project substantiates the complete high-detail-to-retopologized-low-poly workflow and contains a reusable final game asset within the 3,000-face limit.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final low-poly asset operatively uses image-based baked normal data for both wood-grain and rivet relief.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The final low-poly chest has operative PBR materials and clearly partitioned editable material regions suitable for later texturing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The native presentation scene and delivered image establish a functioning key-fill-rim lighting arrangement.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The actual final showcase image presents the chest from the requested oblique direction with its key form readable.",
+      "evidence": "The delivered file chest_showcase_45deg.png opens successfully and presents an oblique front-right view: the full front face, right end, and rounded lid silhouette are all visible and readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    }
+  ],
+  "notes": "该提交清晰完成了一个可辨识的中世纪木质拱盖宝箱及其正面展示，45 度最终构图也可用。主要短板是装配质量：右端盖存在显著开缝，铰链/金属片多处翘起，木板接缝有严重黑色伪影；同时渲染无法证明低模面数、高低模流程或法线烘焙等游戏资产交付要求。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "b50d64f569035d97cec0067919c50343f3b7bd3b1b8a28657414ff9e9093f943"
+}

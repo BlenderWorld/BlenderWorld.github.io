@@ -1,0 +1,179 @@
+{
+  "task_id": "bw_0102",
+  "model": "Grok-4.6",
+  "judge_model": "GPT-5.6-terra",
+  "score": 55.2371,
+  "rubric": 51.724137931034484,
+  "dimension": 58.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B eukaryotic_cell_cutaway and Group A wide_front clearly show a stylized animal-cell cutaway with a central nucleus/nucleolus, surrounding colored organelles, a translucent enclosing membrane, and distributed particles. The nucleus and one detailed orange mitochondrion are readily readable as the requested biology subject.",
+      "issues": [
+        "The rough ER is not clearly distinguishable as ribosome-studded membrane sheets; the green ovals read more as generic smooth blobs.",
+        "The teal stacked sheets may suggest Golgi but are not strongly identifiable without prior context.",
+        "The white nuclear-envelope attachments read as protruding crystalline clusters rather than convincing nuclear membrane pores.",
+        "The membrane does not clearly communicate a phospholipid bilayer beyond a thick translucent pink shell and peripheral yellow beads."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "A coherent thick outer shell contains the organelles, and suspended components are appropriate for a cellular cytoplasmic volume rather than needing floor support. The nucleus, shell, and detailed mitochondrion all have modeled thickness.",
+      "issues": [
+        "The large foreground orange mitochondrion visibly penetrates the purple nuclear envelope in Group A detail_nucleus, detail_organelles, and Group B.",
+        "Several white pore-like clusters appear partly embedded in or intersecting the nuclear shell rather than being cleanly integrated into it.",
+        "Some surrounding green and orange organelles crowd or overlap one another in ways that make their separate structures unclear."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The use of purple for the nucleus, magenta for the nucleolus, orange for mitochondria, cyan for stacked membranes, and blue for dispersed particles provides useful categorical separation. The nucleus is a clear layered sphere and the foreground orange body has a recognizable mitochondrial cristae motif.",
+      "issues": [
+        "Multiple orange and green organelles are smooth featureless capsules, so they do not independently read as specific cellular structures.",
+        "The white nuclear-pore geometry is overly angular and bead-like rather than pore-like.",
+        "The soft, translucent treatment makes some color-coded organelles blend into the brown cytoplasm."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "The designated author image, Group B eukaryotic_cell_cutaway, is a reasonably composed educational render with a clearly dominant nucleus and differentiated layers. It is substantially cleaner than the noisy Group A evaluator renders.",
+      "issues": [
+        "The image remains hazy and low-contrast because of the brown translucent cytoplasm and overlapping transparent shells.",
+        "Most materials read as waxy soft plastic rather than as membrane, aqueous cytoplasm, or distinct membrane-bound organelles.",
+        "The requested shallow depth-of-field emphasis on the nucleus is weak; other foreground and rear objects remain similarly legible.",
+        "The Group A renders are heavily grainy, although this noise is not evident to the same degree in the author final."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "Group A wide_front and wide_topiso show an appropriate cellular arrangement: the large nucleus is central, the nucleolus sits within it, organelles surround it inside the cell boundary, and small blue particles are distributed through the cytoplasm. The teal membrane stack is positioned near the nucleus and the detailed mitochondrion is visibly foregrounded.",
+      "issues": [
+        "The foreground mitochondrion overlaps the nucleus instead of reading as separately placed beside it.",
+        "Several organelles are concentrated behind the nucleus, making the organization feel crowded while much of the cell volume remains empty.",
+        "Back and right multi-view renders obscure nearly all internal layout through the opaque portion of the shell."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "The nucleus is plausibly the dominant internal component, the nucleolus has a sensible subordinate size, and the small particles are appropriately much smaller than the organelles. The enclosing cell is clearly larger than the nucleus and organelle cluster.",
+      "issues": [
+        "The foreground cristae-bearing mitochondrion is extremely large relative to the nucleus and other organelles.",
+        "The smooth orange and green bodies vary substantially in apparent scale without clear structural differentiation.",
+        "The large empty cytoplasmic volume makes the organelles look gathered into a compact central pile rather than distributed through a full cell."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "Group B shows soft illumination and a bright rim reflection on the membrane, while the pink enclosing shell, purple nuclear layers, and orange mitochondrial casing have visibly different translucent/glossy responses. The membrane is at least partially transparent enough in the primary view to reveal the cutaway contents.",
+      "issues": [
+        "The cytoplasm is overly brown and foggy, obscuring details rather than reading as subtly turbid subsurface-scattering material.",
+        "The enclosing membrane is inconsistently transparent across views: Group A wide_back and wide_right conceal the interior almost completely.",
+        "The bright specular highlights and generalized gloss make the materials feel synthetic and do not convincingly convey a phospholipid bilayer.",
+        "The requested focused nucleus/soft three-point presentation is not strongly demonstrated by the final image."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "Visible requested elements include the outer cell enclosure, central nucleus, magenta nucleolus, several orange mitochondria-like bodies, a cyan stack that plausibly represents Golgi, white nuclear-envelope details, and many dispersed blue ribosome-like particles.",
+      "issues": [
+        "Only one mitochondrion clearly displays internal cristae; the other orange capsules are not clearly mitochondria.",
+        "A recognizable rough ER network with membrane sheets and associated ribosomes is not clearly present.",
+        "Nuclear pores are represented by conspicuous external white clusters rather than visibly perforating the nuclear envelope.",
+        "The phospholipid-bilayer construction of the membrane is only weakly communicated."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 0,
+      "criterion": "The final composition is a clearly identifiable and readable educational cutaway of a eukaryotic animal cell.",
+      "evidence": "Although cam_submitted.png shows an opened translucent enclosure with colorful internal forms, the anatomy is not independently legible enough as an educational animal-cell cutaway; the blind viewer identified shells, spheres, beads, and capsules rather than a cell.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The nucleus is complete and visibly includes its nucleolus and nuclear-pore-bearing envelope.",
+      "evidence": "detail_nucleus.png and eukaryotic_cell_cutaway.png show a purple layered sphere containing a magenta sphere, but the white exterior clusters read as attached angular protrusions rather than clearly identifiable pore openings or pore rings; the nucleus and pore detail are therefore not unambiguous.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "Several separate organelles are visibly recognizable as mitochondria.",
+      "evidence": "detail_organelles.png clearly shows one orange oval with repeated internal ridges, but the other orange bodies are smooth generic bean/capsule forms without visible cristae, so a plural set of recognizable mitochondria is not established.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 0,
+      "criterion": "The rough ER and its attached and free ribosome populations are correctly distinguishable.",
+      "evidence": "Blue free particles are scattered through the enclosure in cam_submitted.png, but the teal sheet stack at upper left is not visibly studded with attached particles in a way that unambiguously identifies it as rough ER.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A coherent Golgi apparatus is visibly recognizable from its stacked membrane morphology.",
+      "evidence": "At the left-rear of the central purple body, detail_organelles.png and wide_left.png clearly show a coherent turquoise cluster of multiple thin, curved, flattened sheets stacked together.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 0,
+      "criterion": "The named intracellular structures occupy biologically coherent compartments.",
+      "evidence": "The prominent ridged orange organelle visibly intersects the purple nuclear envelope in detail_nucleus.png and eukaryotic_cell_cutaway.png instead of remaining clearly separated in the surrounding cytoplasm.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete material system distinguishes the major structures and implements the specified membrane and cytoplasm responses.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The saved scene and final image demonstrate three distinct soft-light contributors for three-point lighting plus an additional effective rim-light contributor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The author camera uses visibly shallow depth of field focused specifically on the nucleus.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The retained editable Blender project and exact-size final image form a consistent Cycles-rendered delivery suitable for later annotation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is recognizably a stylized eukaryotic-cell cutaway, with a strong central nucleus/nucleolus and one clearly modeled mitochondrion. However, the rough ER, Golgi, and nuclear pores are too ambiguous for a strong educational diagram, and haze, interpenetration, and generic blob-like secondary organelles substantially limit scientific clarity.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "aff330ad731acc929354075cb8ead4bb5bde53e28a7015477f9a1bd0bfbaf74b"
+}

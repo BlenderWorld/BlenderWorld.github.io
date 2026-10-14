@@ -1,0 +1,34 @@
+{
+  "exporter_version": 3,
+  "source_file": "alpine_gondola_goldenhour.blend",
+  "objects": 1071,
+  "meshes": 19,
+  "original_triangles": 1890102,
+  "decimation_ratio": 0.2909895868053682,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 37992,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -179.9999949910436,
+    "phi": 88.94000164351765
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1238784,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Terrain",
+    "LakeIce"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "374.998m 174.635m 2869.985m",
+    "camera-orbit": "0deg 85deg 13986.105m",
+    "min-camera-orbit": "auto 5deg 666.005m"
+  },
+  "preview_note": "The initial view focuses on the gondola route within the full mountain terrain.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 8
+}

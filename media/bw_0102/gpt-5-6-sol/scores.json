@@ -1,0 +1,168 @@
+{
+  "task_id": "bw_0102",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 88.125,
+  "rubric": 100.0,
+  "dimension": 76.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "Group B final image clearly reads as a stylized eukaryotic animal-cell cutaway: a large nucleus with nucleolus and pore-like rings, five mitochondria, bead-studded rough ER, a pink Golgi stack, cytoplasm, membrane, and many dispersed small particles are all visible. The same overall organization is confirmed in Group A cam_submitted.png and wide_front.png.",
+      "issues": [
+        "The requested shallow depth-of-field emphasis on the nucleus is not evident in the final image; mitochondria, membrane, ER, and Golgi remain comparably sharp.",
+        "The cell is more like a front-facing educational diorama than a fully volumetric cutaway, as indicated by the blank Group A wide_back.png."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "The final/front views show a coherent thick membrane rim enclosing cytoplasm, and organelles are plausibly suspended within cytoplasm rather than needing floor support. The ER visually meets the nuclear region and the membrane has visible layered thickness.",
+      "issues": [
+        "Group A wide_back.png shows no cell geometry at all, only the lighting, indicating a strongly one-sided/backface-dependent construction rather than a coherent all-around cell shell.",
+        "Several organelles and the RER are presented as shallow front-layer elements, so their depth relationships and physical continuity are less convincing from oblique views such as wide_left.png."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The object silhouettes are unusually clear for an educational cell illustration: orange bean-shaped mitochondria have visible pale cristae, the purple nucleus contains a magenta nucleolus, cyan RER is covered in dark ribosome beads, and the pink Golgi stack is immediately distinguishable. Group A detail_nucleus.png and detail_organelles.png make these identities especially clear.",
+      "issues": [
+        "Materials and colors are heavily candy-like and glossy rather than biologically naturalistic.",
+        "The large purple transparent nucleus overlaps the ER visually, reducing separation around their shared boundary."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "The designated Group B final is clean, high-resolution, and visually coherent as a polished science-education render, with no obvious noise and strong legibility. The translucent layered forms, soft highlights, and internal details create a convincing illustrative microscopic scene.",
+      "issues": [
+        "The cytoplasm reads mostly as a smooth teal translucent fill rather than clearly micro-turbid subsurface-scattering cytoplasm.",
+        "Nearly everything is equally crisp, so the requested shallow-focus nucleus presentation is not achieved.",
+        "The visible rectangular overhead light source and black void background make the image feel like a studio render rather than an immersive cell environment."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "The spatial arrangement is biologically legible and well composed in Group B: the oversized nucleus is central-left, rough ER extends beside it to the right, Golgi lies below the ER, mitochondria are distributed around the cytoplasm, and small ribosome-like particles are dispersed throughout.",
+      "issues": [
+        "The nucleus transparency makes the junction/depth ordering between the nucleus and rough ER ambiguous in Group A detail_organelles.png.",
+        "The organization is primarily planar/front-facing; the left and top-isometric evaluation views reveal limited deep volumetric distribution of interior structures."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "reasons": "The nucleus is appropriately the dominant organelle, mitochondria are substantially smaller and distributed around it, and the ER/Golgi occupy sensible intermediate sizes. The membrane-ring thickness and outer-cell proportions are consistent across Group B and the useful Group A front views.",
+      "issues": [
+        "The nuclear pore rings and phospholipid head/tail motifs are massively enlarged relative to the cell, although this is understandable as instructional schematic exaggeration.",
+        "The nucleus is very large and flattened compared with the overall cell volume in oblique Group A views."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "Group B visibly provides soft blue-toned illumination and a bright rim-like highlight. The cell membrane is translucent and explicitly depicts repeating phospholipid-like paired head-and-tail units around the rim; the nucleus, cytoplasm, and organelles use clearly differentiated translucent or glossy materials.",
+      "issues": [
+        "The overhead rectangular blue light/plane is visibly present in Group A wide_front.png and wide_top_iso.png, which is distracting rather than an invisible studio-light contribution.",
+        "The cytoplasm lacks much visible cloudy/turbid subsurface character, and many structures have a uniform polished-plastic gloss.",
+        "No clear shallow-depth-of-field falloff toward or away from the nucleus is apparent in the author final."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 9,
+      "reasons": "All specifically requested biological components are present in the Group B final: membrane and cytoplasm, a nucleus with an internal nucleolus, multiple pore-like nuclear-envelope rings, five mitochondria with cristae, rough ER with attached beads, a Golgi stack, and widely scattered ribosome-like particles. Group A close-ups confirm the small nucleus and organelle details.",
+      "issues": [
+        "The back-facing evaluation render is blank, so the all-around volumetric completeness of the model is not established even though the final intended view contains every requested component."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final composition is a clearly identifiable and readable educational cutaway of a eukaryotic animal cell.",
+      "evidence": "The exported final image clearly presents an opened oval cell body with a translucent teal membrane/cytoplasm boundary and a fully exposed internal organelle layout, reading as an educational animal-cell cutaway rather than a plant cell.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The nucleus is complete and visibly includes its nucleolus and nuclear-pore-bearing envelope.",
+      "evidence": "A large translucent purple enclosed nucleus is clearly visible, containing a distinct magenta spherical nucleolus. Repeated purple torus/ring structures are visibly distributed on the nuclear envelope, especially clearly in the nucleus detail render.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Several separate organelles are visibly recognizable as mitochondria.",
+      "evidence": "Multiple separate orange bean-shaped organelles are visible throughout the cytoplasm; their contrasting raised pale-yellow zigzag internal markings make them clearly recognizable as mitochondria.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The rough ER and its attached and free ribosome populations are correctly distinguishable.",
+      "evidence": "The cyan rough-ER cluster to the right of the nucleus consists of several folded parallel cisternae visibly covered in attached dark-purple bead-like particles. Similar dark-purple particles are also visibly dispersed across multiple separate areas of the teal cytoplasm.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A coherent Golgi apparatus is visibly recognizable from its stacked membrane morphology.",
+      "evidence": "Below and right of the nucleus, a coherent pink stack of multiple parallel curved flattened membrane-like tubes is clearly visible, with small associated pink vesicle-like spheres.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The named intracellular structures occupy biologically coherent compartments.",
+      "evidence": "Across the front and detail views, the orange mitochondria, cyan rough ER, pink Golgi stack, and scattered dark-purple particles all lie within the teal cell boundary and outside the purple nuclear envelope.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete material system distinguishes the major structures and implements the specified membrane and cytoplasm responses.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The saved scene and final image demonstrate three distinct soft-light contributors for three-point lighting plus an additional effective rim-light contributor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The author camera uses visibly shallow depth of field focused specifically on the nucleus.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The retained editable Blender project and exact-size final image form a consistent Cycles-rendered delivery suitable for later annotation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A strong, polished and highly recognizable educational animal-cell cutaway with all requested organelles and particularly clear membrane, mitochondrial, ER, Golgi, and nuclear details. The principal shortcomings are the toy-like glossy material treatment, missing obvious nucleus-focused depth of field/turbid cytoplasm effect, and evidence from the evaluator back view that the cell functions largely as a one-sided front-view construction.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "80fbe65d410c73d0fafa020ade4752b07e07f944930fff400929f092762dd385"
+}

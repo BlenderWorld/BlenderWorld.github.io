@@ -1,0 +1,57 @@
+{
+  "exporter_version": 3,
+  "source_file": "rainy_night_street.blend",
+  "objects": 32,
+  "meshes": 32,
+  "original_triangles": 492378,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Atm_haze_volume"
+  ],
+  "original_camera": {
+    "theta": 0.8643102868569641,
+    "phi": 90.74077172826911
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1384932,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "GND_asphalt_wet",
+    "GND_concrete_walk",
+    "GND_curb",
+    "GND_manhole_iron",
+    "ARCH_concrete_dark",
+    "ARCH_brick_red",
+    "ARCH_tile_wall",
+    "MET_galv",
+    "MET_steel_dark",
+    "ARCH_concrete_old",
+    "ARCH_brick_buff",
+    "MAT_wood_old",
+    "ARCH_brick_grey",
+    "ARCH_concrete_pale",
+    "MET_alu",
+    "FAB_awning_red",
+    "MET_shutter",
+    "FAB_awning_green",
+    "PL_bin_grey",
+    "MET_steel_green",
+    "PL_bin_green",
+    "PL_bin_blue"
+  ],
+  "preview_omitted_objects": [
+    "Rain_sky.001",
+    "Cloud_ceiling.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "20deg 65deg auto"
+  },
+  "preview_note": "Cloud and sky geometry are hidden to reveal the street scene.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

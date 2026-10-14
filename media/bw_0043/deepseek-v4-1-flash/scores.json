@@ -1,0 +1,177 @@
+{
+  "task_id": "bw_0043",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 68.75,
+  "rubric": 80.0,
+  "dimension": 57.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B 的 rain_lily_macro 清楚呈现了一朵六瓣白色葱莲/风雨兰形花、黄绿色花喉、黄色花药、白色花柱，以及周围的带状绿叶，主场景类型与参考图一致。花朵作为主体清晰可辨，且采用俯视微距式构图。",
+      "issues": [
+        "场地与参考图的自然枯叶、纤维性植物残屑差异很大：Group A 各视图中背景主要是大量棱角分明的块状、板状棕色碎片。",
+        "参考图中花朵居中且周围叶片较自然地穿插于虚化背景；提交结果中花朵较低、叶片显得粗厚规则，整体更像布置的三维示意场景而非自然微距花境。",
+        "背景地面可见规则的木纹/波纹图案，不像参考照片中的松散有机土壤和落叶层。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "六片花被片在中心汇合，雄蕊、花药与花柱均从花心区域长出；散落碎片和叶片总体位于地面附近，基本没有明显的整体悬空。",
+      "issues": [
+        "Group A 的 wide_front、wide_back 和 wide_side 中看不出花朵与植株的明确茎部或基部连接，花像直接搁在叶片和地面上。",
+        "花心处的花瓣之间存在明显深黑缝隙，削弱了花被片连续汇合成真实花筒的结构感。",
+        "许多棕色碎片彼此高密度重叠，部分极薄板状物和块状物的接触关系显得人为且不自然。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "提交花朵的轮廓清晰：六枚白色尖端花被片呈星形展开，花瓣有明显纵向脉线；Group B 中黄绿花喉、饱和黄花药、白色花柱和绿色叶片的颜色关系均与目标相符。",
+      "issues": [
+        "花瓣过于均匀、对称且边缘非常规则，缺少参考花朵中自然的轻微弯曲、厚薄变化与不规则性。",
+        "绿色叶片偏宽、厚且表面粗糙发亮，更接近建模带状条片，未充分呈现参考图中较窄的草叶质感。",
+        "棕色地表物虽然颜色接近枯叶和木屑，但大量矩形块、楔块和厚板无法可靠读作真实落叶或碎木屑。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "Group B 成图干净、主体清晰、没有明显噪点，白花和花心的配色可读性较好；主花相对背景也有一定视觉强调。",
+      "issues": [
+        "场景整体明显偏程序化/示意模型风格：背景中大批硬边几何块和规则木纹与自然照片感不协调。",
+        "花瓣的脉纹呈现为过度均匀的平行细线，缺少半透明蜡质花瓣在自然光下的细微透光和厚度变化。",
+        "花瓣中心的黑色分割缝、叶片的规则截面和重复性表面纹理降低了微距照片般的可信度。",
+        "背景并未达到参考图那种柔和、有机且不抢主体的虚化植被/落叶观感。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "Group B 中花朵位于画面中央偏下并由数片斜向绿叶环绕，棕色地面碎屑铺在下方；这保留了参考图中白花置于绿叶和褐色地表残屑之间的基本空间关系。",
+      "issues": [
+        "参考图的绿叶主要以少量自然的对角线和后方叶片构成背景，提交作品中多条宽叶以近似放射或弧环方式围住花，空间组织较人工。",
+        "Group A 多视图显示花朵贴近地面且缺少可见花梗，植株从地面生长并托起花朵的关系不明确。",
+        "碎屑过密且体积化，抢占了比参考背景更多的空间和视觉注意力。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 6,
+      "reasons": "花瓣、花喉、花药及花柱的相对尺度大体合理，Group B 中花药明显小于花瓣并集中在花心，教学示意所需的结构层级清楚。",
+      "issues": [
+        "周围带状叶片相对花朵显得过宽、过厚，部分叶片像大型条带而非葱莲类的细长叶。",
+        "地表碎片中存在许多与花瓣或叶片宽度接近的大块厚板，使枯叶、木屑与主花之间的尺度关系不自然。",
+        "花瓣六片几乎同形同尺寸，缺少真实花朵常见的个体尺度和姿态差异。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "rain_lily_macro 中白花保持了干净明亮的白色，花喉具由黄绿向白瓣过渡的效果，黄色花药清晰醒目；总体柔和照明足以阅读花心细节。",
+      "issues": [
+        "花瓣虽有纵脉，但材质更像带均匀凹凸线的白色表面，半透次表面散射和蜡质高光不够自然。",
+        "绿叶高光与表面细节较塑料化/重复化，未形成自然叶片的细腻光泽。",
+        "棕色碎屑大多共用平淡的哑光块状材质，缺少枯叶色斑、纤维、卷曲和木屑粗糙度变化。",
+        "花瓣交界的黑色缝隙在柔和自然光语境中显得过强。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "目标的关键解剖部件均可在 Group B 成图和 Group A 的 wide_back 中辨认：一朵六瓣白花、纵向瓣脉、黄绿色花喉、成束的白色花丝与黄色花药、居中的浅色花柱，以及数片绿色带状叶。花心没有被叶片遮住，适合作为基础教学示意。",
+      "issues": [
+        "自然形态的干枯褐色落叶和细小木屑没有被令人信服地完成，现有背景主要读作不明的几何碎块。",
+        "没有清楚可见的花梗/植株连接，削弱了完整植物结构。",
+        "背景缺少参考图中模糊的有机植被和纤维性残屑层，环境完成度不足。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal flower must form a complete six-tepal body with the required shape, venation, and material response.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The flower throat must use an authored spatial gradient that produces a clearly readable yellow-green-to-white instructional color transition.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The complete stamen, anther, and pistil system must have the specified identities, arrangement, material response, and unobstructed instructional visibility.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The surrounding living leaves must combine the requested form, distribution, direction, color, and surface response.",
+      "evidence": "Multiple green, flattened strap leaves extend beneath and behind the bloom, including strong diagonal arcs across the lower frame and diagonals rising behind it. Their surfaces show subdued soft highlights rather than metallic shine.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "Dry fallen leaves and wood chips must jointly form a substantial, materially varied organic ground bed.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The authored key and environmental fill must work together to produce soft natural daylight and photographic shadows.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The final image must combine the requested elevated-oblique macro view, shallow focus, subject hierarchy, and broad reference character.",
+      "evidence": "The designated final image has a close elevated flower view with a sharp flower, but the surrounding brown material reads primarily as large angular blocks and slabs rather than clearly recognizable out-of-focus dry leaves, stems, and fibrous natural litter. This does not preserve the reference photograph's clear natural foliage-and-organic-litter macro context.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 0,
+      "criterion": "The completed vignette must maintain plausible biological scale, avoid invented modeled structures and unrelated objects, and integrate into a coherent instructional scene.",
+      "evidence": "Although the six-tepal flower, yellow anthers, pale pistil, and green leaves are recognizable, the surrounding ground is dominated by numerous blocky rectangular prisms, slabs, and wedges. These pieces are not independently recognizable as natural fallen leaves or wood chips, and the bloom's base/attachment is obscured, making the scene read as a visually disconnected modeled assembly rather than a coherent natural instructional vignette.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The editable Blender project must correspond to the final scene, preserve the required authored render configuration, produce a clean result, and use organized naming.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The designated final image must be a valid authored PNG at the required effective resolution.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "主花及其花心结构建模完整且易于辨识，六瓣、黄绿花喉、黄色花药和白色花柱均可见。主要不足在于环境被大量硬边棕色块和规则纹理替代，叶片与花朵也偏规则化，因而与参考的自然微距照片质感和有机落叶背景存在明显差距。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "865f3d6148b4701bed9ffe50fe91679aea0d6e3eda90b30a2f5a9ab7f1d756f2"
+}

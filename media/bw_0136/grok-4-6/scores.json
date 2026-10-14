@@ -1,0 +1,164 @@
+{
+  "task_id": "bw_0136",
+  "model": "Grok-4.6",
+  "judge_model": "GPT-5.6-terra",
+  "score": 81.875,
+  "rubric": 100.0,
+  "dimension": 63.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "Group A 的 wide_front、wide_back 和 cam_submitted 清楚展示了可辨识的中世纪拱盖木宝箱：木质箱体、圆拱盖、前方锁扣、后方铰链板、金属包边与多处铆钉均存在，整体也是适合资产展示的单物体棚拍场景。",
+      "issues": [
+        "金属包边呈现得过于浅白且斑驳，和灰白木材的组合较像严重漂白/锈蚀的道具，不够自然地传达传统中世纪木箱。",
+        "Group B 的 medieval_chest_hero.png 中，箱盖与箱体连接处及右上角框架有明显黑色缺口，削弱了成品完整感。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 4,
+      "reasons": "箱体在 Group A 宽景中稳定落在地面并投下阴影，主体外壳、底框和侧板有可见厚度；但结构连接问题在多个视图中清楚可见。",
+      "issues": [
+        "detail_corner、wide_high 和 cam_submitted 中，多条拱盖金属箍与木盖之间存在明显暗缝，部分箍端像是悬空或未固定。",
+        "medieval_chest_hero.png 的盖体周圈形成异常连续的黑色开缝，右侧上框和角部还有大块黑色空洞，读起来像漏面或错位而不是合理的箱盖接缝。",
+        "后侧的铰链更接近贴在接缝上的矩形板，缺少足够清晰的铰轴/桶状连接来令人信服地说明盖体如何转动。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "宝箱的矩形木箱体、桶形拱盖、纵横金属加固条和居中锁具形成了很强且清晰的宝箱剪影；Group A 的近景还显示出木板分缝、木纹、锈斑和圆形铆钉，材质区域可区分。",
+      "issues": [
+        "木材整体过度偏灰白，金属近乎奶白色，缺少更常见的深色木材与铁质包边的视觉层次。",
+        "金属锈斑分布比较均匀和贴图化，部分区域更像黄色污渍而非可信的氧化铁锈。",
+        "锁扣造型层级较多但轮廓偏方正、笨重，读作挂锁式组件的精致度有限。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 5,
+      "reasons": "Group A 的多视图具有一致的材质、地面阴影和较干净的渲染输出；板缝、木纹与锈蚀细节令物体不只是简单方块。",
+      "issues": [
+        "金属区域亮度偏高、反射与粗糙度层次不足，导致近景中的铆钉、锁扣和铰链细节显得发白、低对比。",
+        "可见的悬浮盖箍、异常开缝和 Group B hero 图中的黑色漏面会立刻破坏实体结构的真实感。",
+        "detail_hinges 和 detail_lock 的小五金细节较软，难以呈现游戏英雄资产应有的清晰机械构造。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "单一宝箱的部件空间关系正确：锁扣位于一侧长面中央，铰链件位于相对长面盖体接缝，弧形金属箍跨越箱盖，包边与铆钉沿边框组织。Group B 的 medieval_chest_hero.png 也确实提供了接近 45 度的展示构图。",
+      "issues": [
+        "盖体包边和若干顶部凸片的位置没有完全贴合盖面，造成部件虽然位置大致正确但装配关系不严谨。",
+        "锁扣周边的黑色暗槽在 hero 图中很突出，使前面硬件的贴合关系看起来不自然。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "Group A 的 wide_front、wide_back 和 wide_left 中，箱体宽高比、拱盖高度、底框以及锁具相对箱体的尺寸均合理，整体读作可容纳物品的大型宝箱而非微缩模型。",
+      "issues": [
+        "拱盖金属箍和边框相对木板显得偏宽、偏厚，削弱木材作为主结构的比例感。",
+        "前方锁扣和下方挂锁块的体量稍显笨重，局部比例比传统箱扣更夸张。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "Group B 的 medieval_chest_hero.png 使用深色中性背景、顶部主光和地面软阴影，能够显示木材、锈蚀金属与轮廓；Group A 近景中木纹、木板边界和不同金属/木材区域可读，说明基础材质分区有效。",
+      "issues": [
+        "金属材质明显偏白且高亮发灰，锈蚀与基底金属之间的 PBR 层次和反射特征不够可信。",
+        "整体照明使浅色金属和灰色木材的明度接近，细小铆钉、铰链和锁具在 detail_hinges、detail_lock 中不够突出。",
+        "所见图像只明确显示了一个灰度 UV/纹理图集；法线烘焙效果本身和完整 PBR 贴图组无法由提交图像直接确认。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "要求的可见构件基本齐全：Group A 显示完整箱体和拱形箱盖，wide_front/detail_lock 显示正面锁扣，wide_back/detail_hinges 显示接缝上的多个铰链件，金属包边和大量铆钉遍布四周与盖体。Chest_Rough.png 还可见为该资产排布的 UV/纹理图集。",
+      "issues": [
+        "铰链仅表现为小型矩形安装板，铰轴结构不明显，因此“两侧铰链”的功能性辨识度偏弱。",
+        "图片无法验证三千面以内的低模、独立高模，以及从高模烘焙出的法线贴图是否实际完成；Chest_Rough.png 的具体贴图类型也无法仅凭灰度图确认。",
+        "最终 hero 图仍保留明显漏缝和角部空洞，意味着展示用成品尚未达到完全清理状态。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final chest has the requested medieval wooden identity, principal body-and-lid construction, and a distinctive readable silhouette.",
+      "evidence": "The author showcase image medieval_chest_hero.png clearly shows a plank-built rectangular trunk with a strongly barrel-arched wooden lid, curved metal bands, perimeter hardware, and an unmistakable treasure-chest silhouette.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Recognizable hinge assemblies are coherently installed on both lateral sides at the lid-body connection.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "A recognizable securing assembly is visibly and coherently installed at the front closure.",
+      "evidence": "In medieval_chest_hero.png, a large layered vertical hasp runs down the center of the lock-facing front and terminates in a distinct padlock-like latch assembly across the lid/body closure area. detail_lock.png makes the mounted securing hardware especially clear.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "Metal edging and associated rivets form a coherent edge-reinforcement system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The saved Blender project substantiates the complete high-detail-to-retopologized-low-poly workflow and contains a reusable final game asset within the 3,000-face limit.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final low-poly asset operatively uses image-based baked normal data for both wood-grain and rivet relief.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The final low-poly chest has operative PBR materials and clearly partitioned editable material regions suitable for later texturing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The native presentation scene and delivered image establish a functioning key-fill-rim lighting arrangement.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The actual final showcase image presents the chest from the requested oblique direction with its key form readable.",
+      "evidence": "The delivered medieval_chest_hero.png opens successfully and presents an elevated front-right oblique view: the lock-facing front, right end panel, rectangular lower volume, and full arched lid are all visible and readable.",
+      "importance": "major",
+      "evidence_type": "render"
+    }
+  ],
+  "notes": "提交物清晰地呈现了一个带拱盖、锁扣、铰链、金属包边和铆钉的木质宝箱，核心资产辨识度良好且有 45 度展示图与 UV 图集证据。主要短板是盖箍悬浮、盖体/框架漏缝和黑色缺口，以及过白低对比的金属材质；这些问题使其距离可直接交付的精修游戏资产仍有明显差距。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "bb0eb548dcf0a23423d1e52891862de25e102368714d84207dda38a5fc2fb4f0"
+}

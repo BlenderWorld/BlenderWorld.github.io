@@ -1,0 +1,16 @@
+{
+  "exporter_version": 2,
+  "source_file": "miniature_railway_previs.blend",
+  "objects": 2649,
+  "meshes": 2628,
+  "original_triangles": 2547878,
+  "decimation_ratio": 0.2158659088072506,
+  "skipped_studio_objects": [
+    "Exhibition hall floor.001"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 7570152,
+  "optimized": true,
+  "optimization": "Only Web preview scene, prune, deduplicate, Draco compression",
+  "original_export_bytes": 133271720
+}

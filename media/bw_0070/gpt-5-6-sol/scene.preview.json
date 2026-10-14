@@ -1,0 +1,38 @@
+{
+  "exporter_version": 3,
+  "source_file": "yellow_tracked_engineering_vehicle.blend",
+  "objects": 247,
+  "meshes": 239,
+  "original_triangles": 52402,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Studio_Backdrop",
+    "Studio_Ground.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -37.10476986187494,
+    "phi": 73.4725004217199
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1040568,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "Rubber",
+    "Rubber_Raised",
+    "Paint_Yellow_Dark",
+    "Paint_Yellow",
+    "Cabinet_Gray",
+    "Paint_Red"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "-37.10476986187494deg 73.4725004217199deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,37 @@
+{
+  "exporter_version": 3,
+  "source_file": "vintage_racer_previz.blend",
+  "objects": 1010,
+  "meshes": 45,
+  "original_triangles": 110212,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "ExhaustHaze"
+  ],
+  "original_camera": {
+    "theta": 135.81330371717354,
+    "phi": 85.95916101522403
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 433940,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "CarBlack",
+    "GoldNumber",
+    "Apron",
+    "CrowdCloth"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "-6.015m 0.476m 0.001m",
+    "camera-orbit": "135.81330371717354deg 80deg 9.871m",
+    "min-camera-orbit": "auto 5deg 0.470m"
+  },
+  "preview_note": "Atmospheric volume meshes are hidden in the static 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

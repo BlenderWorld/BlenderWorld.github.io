@@ -1,0 +1,168 @@
+{
+  "task_id": "bw_0102",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 87.5,
+  "rubric": 100.0,
+  "dimension": 75.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "Group B `eukaryotic_cell_cutaway.png` clearly shows the requested educational animal-cell cutaway: a central purple nucleus with a magenta nucleolus, peach nuclear-pore rings, internal chromatin-like strands, about five green mitochondria with visible inner folds, a blue ribosome-studded rough-ER stack, a pink Golgi stack, and numerous scattered small ribosome-like beads. Group A `wide_front.png` and `wide_right.png` confirm these structures are enclosed within one cell volume.",
+      "issues": [
+        "The intended shallow focus on the nucleus is subtle rather than pronounced; several peripheral organelles remain similarly sharp.",
+        "The cell interior reads more as a hazy display cavity than as a clearly resolved cytoplasmic medium."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 7,
+      "reasons": "The cutaway has a coherent enclosing shell, the nuclear-pore rings are visibly seated on the nuclear surface in Group A `detail_nucleus.png`, and the rough-ER sheets are organized as a connected local stack rather than isolated boxes. Suspension of organelles is appropriate in a cytoplasmic context.",
+      "issues": [
+        "The strong floor-like shadows below several mitochondria and the nucleus make the organelles feel like they hover over a solid diorama surface rather than being immersed in cytoplasm.",
+        "The rough ER is not visibly continuous with, or closely attached to, the nuclear envelope."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "Distinct color and silhouette coding works well in Group B `eukaryotic_cell_cutaway.png`: mint bean-shaped mitochondria have orange cristae, the nucleus is purple with a contrasting magenta nucleolus, rough ER is blue with dark bound beads, and Golgi is a separate pink layered form. These are independently readable as the requested organelles.",
+      "issues": [
+        "The glossy violet nuclear shell and its bright white highlight partially obscure the internal chromatin and nucleolus.",
+        "The large pale membrane beads can read as a decorative pearl border rather than a fine-scale phospholipid bilayer."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "The author final, Group B `eukaryotic_cell_cutaway.png`, is a clean, coherent 1920×1080 stylized scientific illustration with consistent soft shadows and no obvious broken geometry. The cellular components remain recognizable despite the intentionally simplified presentation.",
+      "issues": [
+        "Materials are predominantly glossy/plastic-like, producing a toy-diorama impression rather than a convincing biological cutaway.",
+        "The gray-beige cytoplasmic haze lowers contrast, while the nucleus has a distracting blown specular highlight.",
+        "The focus hierarchy is mostly established by color and central placement rather than a convincing shallow-depth-of-field effect."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "Group A `wide_front.png`, `wide_top_iso.png`, and the Group B final place the nucleus centrally as the dominant structure, distribute mitochondria around it, put the rough ER to its lower right, the Golgi to lower left, and small ribosome-like particles throughout the cytoplasmic space. This is a clear and useful instructional organization.",
+      "issues": [
+        "Most organelles are staged close to the same exposed cut plane, making the cell feel somewhat flattened despite the spherical enclosure.",
+        "The rough ER is visually separated from the nucleus instead of reinforcing the expected perinuclear relationship."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The nucleus is appropriately the largest internal organelle, mitochondria are clearly subordinate but still readable, and the free ribosomes are much smaller in Group B `eukaryotic_cell_cutaway.png`. The overall cell-to-organelle scale is suitable for a didactic illustration.",
+      "issues": [
+        "The nuclear-pore toruses are extremely large relative to the nuclear envelope and nucleolus.",
+        "The phospholipid head beads are oversized relative to the cell and organelles, reducing fine-scale biological plausibility."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "Group B `eukaryotic_cell_cutaway.png` visibly uses soft directional illumination, soft cast shadows, a dark background for separation, and a bright edge treatment. Material categories are differentiated: translucent glossy nuclear envelope, green mitochondria, matte-to-semi-gloss ER/Golgi, bead-like membrane rim, and a slightly cloudy cytoplasmic volume.",
+      "issues": [
+        "The rear and side of the cell appear as an almost opaque off-white shell in Group A `wide_back.png` and `wide_left.png`, which weakens the requested semi-transparent membrane impression.",
+        "The cytoplasmic scattering is read mainly as uniform fog rather than subtle turbid subsurface depth.",
+        "The strong nucleus hotspot interferes with viewing the important internal nuclear features."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 9,
+      "reasons": "All specifically requested visible components are present in the author final: nucleus, nucleolus, multiple nuclear pores, several mitochondria, rough ER with attached dark ribosome-like beads, Golgi, and plentiful scattered ribosomes. The exposed membrane rim also communicates a double-layer bead construction.",
+      "issues": [
+        "The phospholipid bilayer is most legible only at the exposed rim; the opaque rear shell does not consistently display the requested semi-transparent bilayer treatment."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final composition is a clearly identifiable and readable educational cutaway of a eukaryotic animal cell.",
+      "evidence": "The exported final shows a circular cell opened across its front face, with a membrane rim enclosing a nucleus, bean-shaped organelles, membrane stacks, and scattered particles. The absence of a rigid wall, chloroplasts, or a central vacuole supports an animal-cell reading.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The nucleus is complete and visibly includes its nucleolus and nuclear-pore-bearing envelope.",
+      "evidence": "A large translucent violet spherical nucleus is clearly visible at center; it encloses a distinct magenta rounded nucleolus and internal violet strands. Repeated peach ring-like structures are visibly distributed across the nuclear surface as pore details.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "Several separate organelles are visibly recognizable as mitochondria.",
+      "evidence": "Multiple separate green oval/bean-shaped bodies are visible around the nucleus, each with repeated pale curved internal ridges, including examples at upper left, upper right, lower center, and behind the nucleus.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The rough ER and its attached and free ribosome populations are correctly distinguishable.",
+      "evidence": "At lower right, a coherent set of parallel folded light-blue membrane sheets is visibly covered and interleaved with dark bead-like particles. A separate population of many small lavender-blue beads is scattered across the surrounding cytoplasm well away from this sheet stack.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "A coherent Golgi apparatus is visibly recognizable from its stacked membrane morphology.",
+      "evidence": "The lower-left pink structure reads clearly as a compact stack of several curved, flattened membrane layers, visually distinct from the rough ER sheet network.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The named intracellular structures occupy biologically coherent compartments.",
+      "evidence": "The green mitochondria, pink Golgi stack, blue rough-ER sheets, and scattered small ribosome-like beads are all shown within the cutaway cell boundary and outside the central violet nuclear envelope.",
+      "importance": "secondary",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete material system distinguishes the major structures and implements the specified membrane and cytoplasm responses.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The saved scene and final image demonstrate three distinct soft-light contributors for three-point lighting plus an additional effective rim-light contributor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The author camera uses visibly shallow depth of field focused specifically on the nucleus.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The retained editable Blender project and exact-size final image form a consistent Cycles-rendered delivery suitable for later annotation.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "A strong, readily recognizable stylized eukaryotic-cell cutaway with all requested organelles present and well color-separated. The main limitations are the hazy, plastic-like material treatment, oversized membrane/pore elements, weak depth-of-field emphasis, and an opaque-looking outer shell in non-cutaway views.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "dc5ec949c4600ced677bd422d6a8cc6b48a7bca5900704937539880c03edfc25"
+}

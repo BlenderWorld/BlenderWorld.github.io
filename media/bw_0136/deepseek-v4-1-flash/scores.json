@@ -1,0 +1,167 @@
+{
+  "task_id": "bw_0136",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 79.375,
+  "rubric": 100.0,
+  "dimension": 58.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B chest_beauty_45deg clearly shows a medieval-style wooden chest with a rectangular body, barrel/arched lid, wraparound metal bands, and a centered front clasp. The requested overall asset type and silhouette are achieved.",
+      "issues": [
+        "The side hinge assemblies and supposed rivet treatment do not read cleanly as functional hardware.",
+        "Large jagged dark patches, apparent holes, and broken seams across the lid, front-left metal upright, and end panels undermine the intended finished game-asset result.",
+        "There is no visual evidence of a clean high/low bake presentation or a deliberately optimized low-poly asset."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 5,
+      "reasons": "The chest and its wide wooden base sit convincingly on the studio floor in Group A cam_submitted and Group B chest_beauty_45deg, and the principal lid/body/frame construction is generally connected.",
+      "issues": [
+        "Group B view_left and view_right show black rectangular gaps around the end hinge/bracket intersections.",
+        "The end hardware contains overlapping-looking plates and bolts rather than cleanly joined hinge mechanisms.",
+        "Several metal strips and damaged-looking cutouts appear thin, discontinuous, or poorly seated against the wood."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "The chest is independently recognizable: its curved-lid silhouette, warm wood planks, weathered gray metal bands, and contrasting gold clasp are clear in Group A wide_high_iso and Group B chest_beauty_45deg. Material zones are visually separated.",
+      "issues": [
+        "The faceted, uneven trim edges and damaged voids make the model look corrupted rather than deliberately medieval.",
+        "The wood grain is overly uniform and striped across large panels.",
+        "The gray metal is mottled but lacks clean, readable rivet forms; the circular marks often read as holes or artifacts instead."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 4,
+      "reasons": "The studio rendering has usable shadows and a coherent chest form, but the finished object is not consistently believable at close range. Group A detail_lock visibly shows severe broken geometry or texture-like voids on the front upright, lid, and panel edges.",
+      "issues": [
+        "Jagged circular cutouts and chipped-looking missing areas are repeated across wood and metal.",
+        "End-panel forms are excessively dark and ambiguous in Group A detail_hinge and Group B view_right.",
+        "Metal bands have visibly faceted profiles and inconsistent contact with the underlying lid.",
+        "The materials read more as simple procedural color bands than a polished PBR asset."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "The required spatial arrangement is broadly correct: the lock is centered on the long front face, metal bands wrap over the arched lid, and a bracket assembly is present on each short end in Group A wide_left/wide_right and Group B view_left/view_right.",
+      "issues": [
+        "The end brackets do not clearly communicate their hinge function because of their gaps, overlaps, and dark presentation.",
+        "The broad plinth/base is visually heavy and distracts from the chest itself."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The box-to-lid proportion is sensible and the chest has a readable, substantial game-prop scale in the overview views. The arched lid height and long rectangular body create an appropriate treasure-chest silhouette.",
+      "issues": [
+        "The metal wrap bands and corner uprights are somewhat oversized relative to the wooden panels.",
+        "The projecting base/plinth is unusually broad and chunky compared with the chest body.",
+        "Some hinge and bolt components look too large and block-like for their placement."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 6,
+      "reasons": "The designated author final, Group B chest_beauty_45deg, provides a usable 45-degree studio beauty view with readable wood, metal, and gold material separation. Soft floor shadows and the dark-to-gray backdrop support the model presentation.",
+      "issues": [
+        "The lighting does not rescue the very dark end-panel hardware, whose form remains unclear.",
+        "Wood grain is repetitive and appears stretched or abruptly interrupted at panel seams.",
+        "Rust/mottling on the metal is diffuse and inconsistent, while the frequent damaged patches look like mesh or texture errors rather than controlled weathering."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "The visible submission includes the chest body, an arched lid, metal edging, a front clasp, and one hinge/bracket-like assembly on each end. Wood grain is also visibly represented across the planks.",
+      "issues": [
+        "The required metal rivets are not clearly and consistently modeled; most candidate circular features look like jagged holes or damaged cutouts.",
+        "The two side hinge assemblies are visually ambiguous rather than clearly functional hinges.",
+        "No submitted render demonstrates the requested clean normal-map bake result or distinct high-model versus sub-3000-face low-model output."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final chest has the requested medieval wooden identity, principal body-and-lid construction, and a distinctive readable silhouette.",
+      "evidence": "The author showcase image clearly shows a wood-planked rectangular chest body topped by a pronounced barrel-arched lid, with heavy weathered metal hoops and frame bands creating a recognizable medieval treasure-chest silhouette.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Recognizable hinge assemblies are coherently installed on both lateral sides at the lid-body connection.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "A recognizable securing assembly is visibly and coherently installed at the front closure.",
+      "evidence": "A distinct gold-colored shield/U-shaped lock plate is visibly mounted at the center of the long front face directly beneath the vertical lid band and across the lid-to-body closure seam.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "Metal edging and associated rivets form a coherent edge-reinforcement system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The saved Blender project substantiates the complete high-detail-to-retopologized-low-poly workflow and contains a reusable final game asset within the 3,000-face limit.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final low-poly asset operatively uses image-based baked normal data for both wood-grain and rivet relief.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The final low-poly chest has operative PBR materials and clearly partitioned editable material regions suitable for later texturing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The native presentation scene and delivered image establish a functioning key-fill-rim lighting arrangement.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The actual final showcase image presents the chest from the requested oblique direction with its key form readable.",
+      "evidence": "The delivered chest_beauty_45deg image opens successfully and presents the broad front, the left end, and the full curved lid together from an oblique elevated front-side angle.",
+      "importance": "major",
+      "evidence_type": "render"
+    }
+  ],
+  "notes": "The submission is clearly recognizable as a medieval wooden chest and provides a competent 45-degree studio presentation with distinct wood, metal, and clasp zones. However, major visible geometry/material artifacts, unclear hinges, and unreadable rivet detail keep it from looking like a clean, engine-ready game asset.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "698fcf119a0e679d9e28c3554245928ec9ad04f8af841fed3dccbcbeae609cab"
+}

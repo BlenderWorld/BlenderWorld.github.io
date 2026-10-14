@@ -1,0 +1,32 @@
+{
+  "exporter_version": 3,
+  "source_file": "coppard_dt41_tracked_crane.blend",
+  "objects": 284,
+  "meshes": 284,
+  "original_triangles": 7464,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "GroundPlane.001"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -133.2342336734431,
+    "phi": 77.48482571948018
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2220232,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "CabGlass"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-orbit": "-133.2342336734431deg 77.48482571948018deg auto"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

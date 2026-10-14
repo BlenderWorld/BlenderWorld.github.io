@@ -1,0 +1,184 @@
+{
+  "task_id": "bw_0037",
+  "model": "GPT-5.6-Sol",
+  "judge_model": "GPT-5.6-terra",
+  "score": 77.1590909090909,
+  "rubric": 81.81818181818181,
+  "dimension": 72.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "Group B 的 shared_activity_zone_final 清楚呈现了一个连续的共享活动区：中央模块化座椅围绕矮茶几布置在粉色地毯上，左后方有红白条纹遮阳篷咖啡角，右侧有只写着“CONNECT”的落地屏，上方有小型无人机。整体避免了人物、手机、VR设备和参考图中的拼贴式构图，且色彩主题基本符合要求。",
+      "issues": [
+        "空间更像放在白色平台上的开放式样板盒，而非完整的室内空间。",
+        "缺少可见的完整顶面/天花，削弱了“室内活动空间”的还原度。",
+        "地毯的波浪和圆点更像放置在地毯上的独立软条与圆片，图案整合感不足。",
+        "与参考图的强图形化、深色轮廓语言相比，成品更偏柔和玩具式三维渲染。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "主要家具、地毯、屏幕底座和咖啡角柜台在 Group B final 中均有清楚的落地支撑；座椅、茶几和屏幕的基本连接关系合理。无人机作为任务指定的悬浮物可接受。",
+      "issues": [
+        "Group A 的 wide_back、wide_left 和 wide_high_iso 暴露出开放房间外壳、薄边框及前角处的三角形/斜向构件，局部看起来断开、穿插或缺乏合理连接。",
+        "场景没有完整天花板，外部视角可直接看到不完整的盒体结构。",
+        "无人机虽为指定元素，但没有可见的悬停动态或其他支撑/环境线索，视觉上略显悬空。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 7,
+      "reasons": "Group B final 中座椅有明确靠背和坐垫，茶几、条纹遮阳篷、竖屏和四旋翼无人机均能独立辨认；珊瑚粉、奶油白、橘黄以及少量蓝黄点缀均已使用。材质总体为干净的简化哑光风格。",
+      "issues": [
+        "色彩整体偏淡、偏奶油色，珊瑚粉和橘黄的视觉力度弱于目标的鲜明平面插画配色。",
+        "圆角软包和光滑边缘使物体带有明显玩具/黏土感，而不是参考图那种干净、平涂、图形化的模块语言。",
+        "缺少参考视觉语境中明显的深蓝轮廓和图案化平面细节。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "指定作者终稿 shared_activity_zone_final 清晰、构图完整，物件边缘干净，无遮挡，家具关系易读；作为风格化宣传图，整体渲染稳定且具有统一性。",
+      "issues": [
+        "白墙、白地面和奶油白物件接近，整体对比度较弱，部分轮廓层次不够鲜明。",
+        "开放式样板盒外壳使场景更像展示模型而非可信的建成室内。",
+        "过于均匀的圆角和轻微塑料感削弱了室内设施的材质区分。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "在 shared_activity_zone_final 以及 Group A 的 cam_submitted 中，茶几位于模块座椅中央，座椅环绕地毯形成活动核心；咖啡角被布置在后侧左方，落地屏位于右后方，无人机悬于后墙前，主要元素之间具有可读的通行空隙且没有严重遮挡。",
+      "issues": [
+        "右前角的蓝色和黄色坐凳与地毯上的线条/圆点距离较近，视觉上略显零散。",
+        "咖啡角、屏幕和无人机都贴近后墙布置，后部视觉重心较集中。",
+        "部分多视角中墙体和前缘结构遮住场景，说明场景从非主摄像机角度的空间可读性较弱。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "作者终稿中座椅坐高、茶几高度、遮阳篷柜台与地毯的比例基本一致，屏幕以落地导视牌的尺度出现，核心休闲区的整体尺度可理解。",
+      "issues": [
+        "无人机相对座椅和屏幕显得偏大，不完全像“小型”悬浮无人机。",
+        "屏幕和咖啡角的体量相对低矮模块座椅较突出，空间略有展示模型般的尺度感。",
+        "开放白色平台本身显得过大且边缘厚重，弱化了真实室内尺度。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 8,
+      "reasons": "shared_activity_zone_final 使用了明亮均匀的柔和照明和轻微软阴影，符合任务所要求的非戏剧性室内宣传渲染；主要物件保持低纹理、干净的哑光/半哑光外观，未出现不适合目标的复杂反射或写实纹理。",
+      "issues": [
+        "整体曝光偏高，白色墙面、地面和座椅在 Group A 多视图中容易融合。",
+        "部分圆角边缘和屏幕框仍有轻微高光与塑料感，平涂插画效果不够彻底。",
+        "缺少稍强的局部色彩和阴影分离，导致场景深度与图形层次偏弱。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "指定作者终稿可确认存在彩色模块座椅/坐凳、中央低茶几、带波浪线和圆点元素的粉色地毯、红白条纹遮阳篷咖啡角、仅显示“CONNECT”的竖直屏幕以及悬浮无人机。未见人物、额外科技设备、窗景或不相关功能区。",
+      "issues": [
+        "任务要求的中性顶面/天花没有实际完成，室内包围关系不完整。",
+        "地毯图案以凸起线条和小圆片表达，容易被读作额外散落物而非统一地毯图案。",
+        "咖啡角虽然有清晰柜台和遮阳篷，但内部细节较少，功能表达偏简化。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The work must be a newly authored, continuous residential shared-activity interior and the complete Blender scene must obey the prompt's exclusive environment-content boundary.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The complete scene must use the requested reference-derived illustrative treatment, matte material system, palette hierarchy, modular form language, and restrained neutral interior shell.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The central lounge must combine block-built seating and stools with exactly one functionally central low coffee table.",
+      "evidence": "The final render clearly shows several low colored chair modules around one central white coffee table, but the separate blue and yellow padded cuboids at the rug front-right are visually ambiguous rather than independently recognizable as usable stools or ottomans.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The colorful rug must visibly carry both required pattern families.",
+      "evidence": "The large pink rounded rectangular rug visibly carries multiple blue and off-white wavy strips along its front and side edges, plus grouped small circular blue, yellow, and white dot elements near both sides.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The side coffee corner must be recognizable and include its complete red-and-white striped awning identity.",
+      "evidence": "At the rear-left side, a counter/kiosk installation is clearly visible beneath a projecting scalloped awning with repeated alternating coral-red and white stripes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The display must combine the required floor-standing form with exact, exclusive screen content.",
+      "evidence": "One tall upright framed display stands on an orange floor base at the rear-right; its otherwise blank white screen visibly reads only “CONNECT.”",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "Exactly one small drone must be recognizable and visibly unsupported overhead.",
+      "evidence": "A single small peach quadcopter with four white arms and blue circular rotor guards is visibly suspended in open space above and behind the lounge furniture, with clear separation from walls, floor, and furnishings.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The complete element arrangement must provide coherent human scale, clear functional relationships, and usable circulation without visible stacking or substantial occlusion.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "The single author-final camera must provide the specified elevated three-quarter view with clear, unobstructed, and undistorted visibility of every required physical scene element.",
+      "evidence": "Although shared_activity_zone_final is a wide elevated three-quarter interior-like view and shows the principal activity elements, the enclosure is open overhead: no actual ceiling surface is visible or identifiable. The evaluator wide views also expose the open-top wall/rail construction.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The original scene lighting and final result must provide bright, even, soft internal illumination without exterior-light dependence or dramatic darkness.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivery must contain both a clear high-resolution author-final image and its openable, editable, corresponding Blender project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "成品已清楚完成任务要求的核心对象、主视角布局和无人物的共享活动场景，作者终稿也具备干净可用的宣传图构图。主要问题是室内外壳不完整、外部多视图暴露出薄板和异常角部结构，以及整体颜色和材质偏淡的玩具式三维风格，未完全达到参考图强调的鲜明平面插画语言。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "a11db7b6ac195934b27a9c84c9c891d7deb40ff7352a5417ac21648cb8ab3a1f"
+}

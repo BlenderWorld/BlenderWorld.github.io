@@ -1,0 +1,141 @@
+{
+  "task_id": "bw_0136",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 98.125,
+  "rubric": 100.0,
+  "dimension": 96.25,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 10,
+      "reasons": "提交画面完整呈现为中世纪木质宝箱资产：Group B 的 Coffer_45deg_Beauty 是清晰的45度工作室展示图，Group A 多视角确认了矩形箱体、拱形箱盖、金属框架、锁具、铆钉及侧面提环。Coffer_HighPoly_Sculpt、Coffer_LowPoly_Wire 和 Coffer_Texture_Atlas 还可见高低模、线框及贴图技术交付物。",
+      "issues": []
+    },
+    {
+      "id": "physics",
+      "score": 10,
+      "reasons": "Group A 的前、后、左右和高角度视图均显示箱体由四个短脚稳定支撑在地面上；金属包边、锁扣、铆钉和侧提环均贴合在箱体结构上。Group B 的 Coffer_Open_Pivot_Test 清楚显示箱盖以两处后铰链连接并可开启，内外表面具有可信厚度。",
+      "issues": []
+    },
+    {
+      "id": "style_color",
+      "score": 9,
+      "reasons": "宝箱剪影非常明确：长方体下箱配半圆桶形拱盖，深色锻铁框架与金色黄铜锁件/铆钉形成清晰的中世纪道具语言。Group B 美术图和 Group A close-up 都能辨认出有木纹与板缝的暖棕橡木、深灰铁件和黄铜配件三种材质区域。",
+      "issues": [
+        "木材整体偏浅、干净且均匀，作为“中世纪”宝箱略少深层污渍、旧化色差或历史使用痕迹。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 9,
+      "reasons": "最终展示图 Coffer_45deg_Beauty 具有干净的接触阴影、平滑抗锯齿和一致的材质响应；木板、金属条、锁板、铆钉和提环均有可辨识的真实几何层级。Group B 的开启测试也显示内部并非空壳平面，而是有木质内衬和盖内结构。",
+      "issues": [
+        "木纹和金属磨损的变化较克制且有些规整，整体更像精修游戏道具而非高度风化的历史实物。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 10,
+      "reasons": "所有部件的位置关系正确且在多视角中一致：锁扣居于正面中央并跨越盖与箱体，两个铰链位于后上沿，拱形铁箍跨越箱盖，侧提环装在两个短端面，铆钉沿边框和铁箍规则分布。Group A 的 wide_back 与 detail_hinges 尤其清楚验证后部铰链布局。",
+      "issues": []
+    },
+    {
+      "id": "proportion_scale",
+      "score": 10,
+      "reasons": "箱体、拱盖、铁箍、前锁、铰链和侧提环之间的比例协调。Group A wide_front 和 wide_back 显示金属框架足以承担木板结构但未压过主体，锁具和铆钉尺寸也能读作功能性五金件而非失衡装饰。",
+      "issues": []
+    },
+    {
+      "id": "lighting_material",
+      "score": 9,
+      "reasons": "Group B 的指定最终图 Coffer_45deg_Beauty 呈现了有效的工作室三点式观感：主体正面和顶面有充足主光，侧/后区域保留轮廓与细节，并有自然地面投影。橡木的粗糙木纹、锻铁的暗哑反射、黄铜锁件和铆钉的暖金属高光均被明确区分；Coffer_Texture_Atlas 还直接展示了 base color、tangent normal、material ID 和 ORM 贴图。",
+      "issues": [
+        "顶面木材在局部高光下略显偏亮、偏平，木材粗糙度与色彩变化还可以更丰富。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 10,
+      "reasons": "任务要求的五类关键部件均可见：完整箱体、拱形箱盖、两处后铰链、正面锁扣/钥匙孔，以及金属包边与大量铆钉。技术交付也有可见证据：Coffer_HighPoly_Sculpt 展示高模细节，Coffer_LowPoly_Wire 展示低模线框，Coffer_45deg_Presentation 标注“2,756 TRIANGLES / LOD 0”，而 Coffer_Texture_Atlas 展示2K UV贴图与法线图。",
+      "issues": []
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The final chest has the requested medieval wooden identity, principal body-and-lid construction, and a distinctive readable silhouette.",
+      "evidence": "The author showcase clearly depicts a wooden coffer with a rectangular plank-sided lower body, dark metal framing, and a high rounded barrel lid; the curved lid silhouette is readable independently of the wood grain.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "Recognizable hinge assemblies are coherently installed on both lateral sides at the lid-body connection.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "A recognizable securing assembly is visibly and coherently installed at the front closure.",
+      "evidence": "A prominent shield-shaped brass lock plate is installed on the center of the long front face, with a dark vertical hasp rising across the body-to-lid seam to a horizontal lid catch.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "Metal edging and associated rivets form a coherent edge-reinforcement system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The saved Blender project substantiates the complete high-detail-to-retopologized-low-poly workflow and contains a reusable final game asset within the 3,000-face limit.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The final low-poly asset operatively uses image-based baked normal data for both wood-grain and rivet relief.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The final low-poly chest has operative PBR materials and clearly partitioned editable material regions suitable for later texturing.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The native presentation scene and delivered image establish a functioning key-fill-rim lighting arrangement.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The actual final showcase image presents the chest from the requested oblique direction with its key form readable.",
+      "evidence": "The author-delivered Beauty and Presentation images successfully open and show a front-side oblique view: the lock-bearing long front, the right end with ring handle, and the full arched lid are all clearly visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    }
+  ],
+  "notes": "这是完成度很高且可明确识别的中世纪木箱游戏资产。关键结构、五金件、低模线框、法线/PBR贴图图集和45度展示图均有直接画面证据；主要可改进点仅是进一步增加木材与金属的非均匀旧化，使其更具历史感。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "7060177f4cd955144f53bd23982d137ce9b45c4a883904c0b6dcd3ec1734ee57"
+}

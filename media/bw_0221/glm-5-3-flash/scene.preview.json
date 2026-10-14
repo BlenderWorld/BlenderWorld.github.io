@@ -1,0 +1,34 @@
+{
+  "exporter_version": 3,
+  "source_file": "snowboarder_previz.blend",
+  "objects": 78,
+  "meshes": 78,
+  "original_triangles": 53900,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -14.93142515506633,
+    "phi": 96.88043726060802
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 180020,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "Rock",
+    "Board_Top",
+    "Snow_Terrain"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "9.885m 1.579m -3.326m",
+    "camera-orbit": "-14.93142515506633deg 80deg 3.664m",
+    "min-camera-orbit": "auto 5deg 0.174m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

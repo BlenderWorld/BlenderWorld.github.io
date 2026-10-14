@@ -1,0 +1,27 @@
+{
+  "exporter_version": 2,
+  "source_file": "volcano_dusk.blend",
+  "objects": 756,
+  "meshes": 756,
+  "original_triangles": 595535,
+  "decimation_ratio": 0.9235393385779174,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 2026060,
+  "optimized": true,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [
+    "MAGMA | orange-red lake beneath black rafts",
+    "COOLED CRUST | charcoal-black clinker",
+    "MAGMA | hot flow core with cooled edges"
+  ],
+  "preview_omitted_objects": [
+    "ASH PLAIN • continuous volcanic apron.001",
+    "DISTANT RIDGE 01 • subdued atmospheric layer.001",
+    "DISTANT RIDGE 02 • subdued atmospheric layer.001"
+  ],
+  "preview_camera": null,
+  "preview_note": "The 3D preview focuses on the volcanic cone and lava channels.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

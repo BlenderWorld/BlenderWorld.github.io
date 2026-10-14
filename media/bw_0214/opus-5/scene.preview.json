@@ -1,0 +1,45 @@
+{
+  "exporter_version": 3,
+  "source_file": "aquarium_goldfish_previz.blend",
+  "objects": 93,
+  "meshes": 89,
+  "original_triangles": 171446,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "WaterVolume"
+  ],
+  "original_camera": {
+    "theta": 0.062110675818639834,
+    "phi": 90.06904810658011
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 535752,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "Rock_Back",
+    "Rock_Mid",
+    "Rock_Pale",
+    "Sand",
+    "Stone",
+    "Driftwood",
+    "Driftwood_Lit",
+    "Plant",
+    "Plant_Back",
+    "Bubble",
+    "Goldfish_Body"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0.121m -0.022m -1.545m",
+    "camera-orbit": "0deg 88deg 2.664m",
+    "min-camera-orbit": "auto 5deg 0.127m"
+  },
+  "preview_note": "The initial view focuses on the fish.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 7
+}

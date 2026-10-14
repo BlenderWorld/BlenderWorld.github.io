@@ -1,0 +1,40 @@
+{
+  "exporter_version": 3,
+  "source_file": "csa_capsule_booth.blend",
+  "objects": 213,
+  "meshes": 166,
+  "original_triangles": 1516402,
+  "decimation_ratio": 0.362700655894677,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -8.185036607312318,
+    "phi": 89.76694308424425
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 1949408,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "M_PortGlass",
+    "M_Regolith"
+  ],
+  "preview_omitted_objects": [
+    "HallVoid.001",
+    "SpBack.001",
+    "SpLeft.001",
+    "SpRight.001",
+    "SpTop.001",
+    "SpBot.001",
+    "SpFront.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "10deg 85deg auto"
+  },
+  "preview_note": "Distant studio enclosure panels are hidden to reveal the exhibition booth.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": null
+}

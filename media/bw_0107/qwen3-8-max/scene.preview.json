@@ -1,0 +1,30 @@
+{
+  "exporter_version": 2,
+  "source_file": "near_future_city_dusk.blend",
+  "objects": 120,
+  "meshes": 120,
+  "original_triangles": 38666,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 169640,
+  "optimized": true,
+  "showcase_refinement": 3,
+  "procedural_color_fallbacks": [
+    "Concrete"
+  ],
+  "preview_omitted_objects": [
+    "Plaza.001",
+    "FogVolume.001"
+  ],
+  "preview_camera": {
+    "camera-target": "0.000m 98.500m 0.000m",
+    "camera-orbit": "-22deg 75deg 413.700m",
+    "min-camera-orbit": "auto 5deg 19.700m"
+  },
+  "preview_note": "The initial view focuses on the main towers. The atmospheric volume and distant plaza plane are omitted.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

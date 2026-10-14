@@ -1,0 +1,30 @@
+{
+  "exporter_version": 3,
+  "source_file": "shared_activity_lounge.blend",
+  "objects": 74,
+  "meshes": 70,
+  "original_triangles": 12356,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -15.603947883147244,
+    "phi": 74.48199915593173
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 101236,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [
+    "Ceiling.001"
+  ],
+  "preview_camera": {
+    "camera-orbit": "-15.603947883147244deg 40deg auto"
+  },
+  "preview_note": "Ceilings and roof panels are hidden for a cutaway view of the interior.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,182 @@
+{
+  "task_id": "bw_0037",
+  "model": "Qwen3.8-Max",
+  "judge_model": "GPT-5.6-terra",
+  "score": 68.8636,
+  "rubric": 72.72727272727273,
+  "dimension": 65.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "Group B 的 shared_activity_area_render 清楚呈现了一个连续的中性室内空间，中央有彩色模块化休闲区、低茶几、带波浪线和圆点的粉色地毯、后方红白遮阳篷咖啡角、右侧 CONNECT 落地屏和上方蓝色无人机。整体避免了参考图中的人物、手机、VR 和拼贴构图，且采用了所要求的室内三分之四视角。",
+      "issues": [
+        "模块组合更像带凸点的积木装置，而不是一眼可辨的休闲座椅和坐凳。",
+        "最终画面左侧保留了大面积空白墙面，中央活动区的宣传画面聚焦和完整性较弱。",
+        "屏幕和前景散落方块使活动区显得更像陈列模型，空间的共享休闲功能表达不足。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 6,
+      "reasons": "咖啡角由立柱支撑，茶几有四条腿，模块座椅、独立方块和屏幕底座总体均落在地面或地毯上；室内的地面和墙体也基本连续。任务本身要求无人机悬浮，因此其空中位置本身合理。",
+      "issues": [
+        "Group A 的 wide_right 和 cam_submitted 中，无人机起落架与遮阳篷边缘距离极近并产生视觉重叠。",
+        "地毯由极薄、边缘明显的叠合平板构成，白色和蓝色波浪纹也像悬在表面的细绳，缺少作为地毯图案的自然贴合感。",
+        "落地屏在 Group B 最终图中明显向右倾斜，虽有底座但看起来不够稳定。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "最终导出图使用珊瑚粉、橙黄、奶油白和亮蓝，配色与参考图的平面插画语言一致；物件普遍为干净的哑光色块，咖啡角的红白条纹和屏幕蓝框均清晰可辨。",
+      "issues": [
+        "座椅主体几乎完全由无细节立方体和圆形凸点组成，形体识别仍偏向玩具积木而非家具。",
+        "波浪元素被建成粗厚的独立绳条，视觉上不像清晰、整合的地毯图案。",
+        "蓝色屏框、无人机以及若干大蓝方块的面积和饱和度较强，弱化了“少量亮蓝点缀”的配色层级。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "Group B 的 shared_activity_area_render 是较干净的完整成图，材质、软阴影和空间关系足以形成统一的非写实三维效果；其平涂简化与任务要求相符，不需要照片级真实感。",
+      "issues": [
+        "最终画面的顶部和左部有明显灰暗渐变/环境压暗，而活动区本身又相对明亮，整体光照均匀性不足。",
+        "Group A 多个视图明显过曝，白色、浅色模块和墙面边界被洗掉，说明当前灯光与曝光容错较差。",
+        "大量简单方块、圆片和线条的组合显得较为原型化，未达到住宅项目宣传效果图应有的完成度。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "Group B 最终视图和 Group A 的 wide_high 显示出明确的布局：低茶几位于地毯中心，两组模块化座椅围绕其布置；咖啡角置于后侧，屏幕在右侧，悬浮无人机位于上方。主要元素之间有可见的空隙和基本通行区域。",
+      "issues": [
+        "右侧屏幕尺度和位置过于抢眼，视觉上与中央共享活动区竞争主体地位。",
+        "前景的独立蓝色、黄色方块及带凸点模块脱离主座椅群，功能归属不清，并略微打散了通行区域。",
+        "两组座椅均主要位于茶几后侧，围合感和面对面交流关系较弱。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "茶几相对模块座椅保持了低矮尺度，咖啡柜台、座椅和地毯之间也大体形成可用的活动区域。",
+      "issues": [
+        "无人机的旋翼跨度接近咖啡遮阳篷宽度，和“微型悬浮无人机”的要求相比显得过大。",
+        "CONNECT 屏幕明显高大且宽于周边模块，接近场景主角尺度。",
+        "座椅中部分堆叠方块和前景独立方块过高、过方正，缺乏符合人体坐姿的座高、靠背和坐凳尺度区分。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "以 Group B 最终导出图为准，场景具有柔和阴影、基本合理的环境遮蔽和低反射平涂材质；珊瑚、奶油白、橙黄和蓝色模块的颜色区分明确，适合目标的插画式哑光表现。",
+      "issues": [
+        "最终成图的墙顶区域偏灰且有渐变压暗，不是完全明亮均匀的柔和室内光。",
+        "Group A 的强过曝使浅色模块的体块边缘和表面差异不稳定。",
+        "地毯图案采用较厚的凸起几何而非平整图案，材质语言与其余扁平化表面不完全一致。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 8,
+      "reasons": "所有指定类别在 Group B 最终图中均可找到：彩色模块座椅/坐凳、中央低茶几、波浪和圆点地毯、红白遮阳篷咖啡角、仅写有“CONNECT”的竖直屏幕，以及悬浮无人机。场景没有加入人物、窗景、VR 设备或其他明显禁止的功能区。",
+      "issues": [
+        "模块家具虽数量充足，但独立方块、圆片和凸点是否属于坐凳或无功能装饰并不明确。",
+        "地毯图案存在，但以零散立体条带和圆片表达，完整的彩色图案化地毯效果较弱。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The work must be a newly authored, continuous residential shared-activity interior and the complete Blender scene must obey the prompt's exclusive environment-content boundary.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The complete scene must use the requested reference-derived illustrative treatment, matte material system, palette hierarchy, modular form language, and restrained neutral interior shell.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 0,
+      "criterion": "The central lounge must combine block-built seating and stools with exactly one functionally central low coffee table.",
+      "evidence": "In the author-final shared_activity_area_render.png, the two central multicolor constructions read primarily as featureless stepped cube assemblies; their usable seating and the separate loose cubes' identity as stools/ottomans are not unambiguous. The one low yellow table is central, but the required recognizable seating-and-stool lounge is not clearly established.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The colorful rug must visibly carry both required pattern families.",
+      "evidence": "The large coral-pink floor mat/rug in shared_activity_area_render.png visibly carries several white and blue winding wave lines plus repeated white and yellow circular dot motifs across its surface.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "The side coffee corner must be recognizable and include its complete red-and-white striped awning identity.",
+      "evidence": "At the rear-side wall, shared_activity_area_render.png clearly shows a counter installation under a projecting canopy with repeated alternating red and white stripes.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The display must combine the required floor-standing form with exact, exclusive screen content.",
+      "evidence": "detail_cafe_screen.png clearly shows one upright blue-framed, floor-based display on a black plinth. Its otherwise blank white screen contains only the legible word “CONNECT.”",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "Exactly one small drone must be recognizable and visibly unsupported overhead.",
+      "evidence": "A single recognizable blue quadcopter is present overhead, but its rotor span is visually comparable to the coffee counter and seating assemblies rather than clearly small relative to the principal furniture. In wide_right.png its lower struts also visually meet/overlap the striped awning, so open-air separation from every furnishing is not unambiguous.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The complete element arrangement must provide coherent human scale, clear functional relationships, and usable circulation without visible stacking or substantial occlusion.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 0,
+      "criterion": "The single author-final camera must provide the specified elevated three-quarter view with clear, unobstructed, and undistorted visibility of every required physical scene element.",
+      "evidence": "The author-final shared_activity_area_render.png is a wide elevated three-quarter room view and shows the counter, screen, drone, shell, table, and decorated floor mat. However, the purported modular seating and stools remain visually ambiguous as plain stepped blocks and loose cubes rather than independently identifiable usable seating/stools, so not every required physical scene element is clear in that one final composition.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The original scene lighting and final result must provide bright, even, soft internal illumination without exterior-light dependence or dramatic darkness.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivery must contain both a clear high-resolution author-final image and its openable, editable, corresponding Blender project.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "提交成功构成了所需的单一室内共享活动空间，并完整展示咖啡角、CONNECT 屏幕和无人机等关键对象。主要不足是模块座椅过于积木化、尺度层级不够可信、地毯图案像散落的立体绳条，以及画面照明与宣传构图仍显粗糙。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "3972209e3f75a3e26779bc551f3203092b4d0514251e0be921eda39529260035"
+}

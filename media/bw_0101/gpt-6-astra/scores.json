@@ -1,0 +1,186 @@
+{
+  "task_id": "bw_0101",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 84.5833,
+  "rubric": 91.66666666666667,
+  "dimension": 77.5,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 8,
+      "reasons": "The authored autumn master (Group B `01_autumn_master_4K`) clearly delivers the requested autumn valley mill scene: a two-story timber mill, large side waterwheel and elevated flume, stone arch bridge over a rocky stream, fence, stone lantern, maple trees, fallen leaves, grasses, and misty mountain/forest backdrop. The dedicated wheel image (Group B `02_waterwheel_closeup_4K`) and the snowy variant (Group B `03_winter_master_4K`) are also present and coherent with the requested scene.",
+      "issues": [
+        "The specified internal crown-gear/vertical-shaft transmission and paired stone mill disks are not visible in any supplied render.",
+        "The exact 20-bucket count and the requested mechanical rotation relationship cannot be verified from still images.",
+        "The requested warm low-angle sunset impression is weaker than the scene/object coverage."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "The mill has substantial framed walls, roof structure, posts, braces, and a supported flume; the waterwheel in Group B `02_waterwheel_closeup_4K` is visibly seated on a horizontal axle/bearing arrangement and supported near the watercourse. The masonry bridge has thick voussoir-like blocks and convincing abutments, while rocks, fence posts, lantern, vegetation, and trees generally meet the terrain convincingly.",
+      "issues": [
+        "The evaluator aerial views (`wide_aerial.png`, `wide_front.png`) expose the terrain as a sharply edged raised square slab with dark vertical sides rather than a naturally continuous valley.",
+        "The functional interior connection from the wheel axle to crown gears, vertical shaft, and millstones is not visible, so its physical assembly cannot be assessed."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "All central objects read immediately as their intended forms: the timber-framed mill and gable roof, paddle waterwheel, stone bridge, lantern, stream, and red-orange-yellow decididuous trees are distinctly modeled rather than generic boxes. Group B `01_autumn_master_4K` has a strong autumn palette, while Group B `03_winter_master_4K` successfully changes the scene to cold blue-grey snow conditions.",
+      "issues": [
+        "The foliage becomes visibly flat and sharply cut-out in the evaluator `detail_drivetrain.png`, rather than reading as naturally volumetric maple foliage.",
+        "Leaf translucency is not strongly evident despite the request for backlit/translucent maple leaves."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 7,
+      "reasons": "The final authored images are coherent, detailed environment renders with credible wood construction, dense scatter dressing, atmospheric depth, and a pleasing illustrated-realistic overall finish. Group B `01_autumn_master_4K` composes the bridge, stream, mill, and trees into a readable valley scene, and the winter conversion remains visually consistent.",
+      "issues": [
+        "The water often reads as a dark textured sheet with conspicuous white curved ripple marks instead of fully convincing transparent flowing water.",
+        "Foliage cards and some repeated thin grass assets reduce natural realism at close range.",
+        "Several evaluator overview views, particularly `wide_back.png` and `wide_side.png`, are excessively foggy and low-contrast, although this is less severe in the authored master image."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 8,
+      "reasons": "Group B `01_autumn_master_4K` establishes the intended relationships clearly: the wheel and flume sit on the mill side above the stream, the arched bridge crosses that stream immediately in front of the mill, and the fence and lantern form an approach at the bridge end. The Group A aerial view confirms a coherent scene-wide arrangement with the stream traversing the terrain between the bridge, mill, trees, and rocky banks.",
+      "issues": [
+        "The bridge visually dominates the master composition and partially masks the wheel from the main camera, making the supplied wheel close-up necessary to show that key feature.",
+        "Exact requested stream, bridge, and building dimensions cannot be established visually."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 8,
+      "reasons": "The waterwheel is appropriately large relative to the two-story mill, the bridge span plausibly covers the stream, and trees, lantern, fence, doors, and ladder generally provide believable human-scale cues. In Group B `01_autumn_master_4K`, the building-wheel-bridge relationship reads as a credible small rural mill complex rather than as mismatched miniatures.",
+      "issues": [
+        "The very high curved bridge appears somewhat oversized and monumental relative to the modest mill and narrow pedestrian fence.",
+        "The small lantern appears visually shorter than the requested 1.8 m scale when compared with the nearby fence."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 8,
+      "reasons": "Group B `02_waterwheel_closeup_4K` shows weathered plank grain, darkened beams, fasteners, aged wheel boards, wet waterwheel contact, and mossed rocks effectively. The bridge reads as block masonry, the grass and leaf litter dress the banks well, and Group B `03_winter_master_4K` convincingly adds snow to roof, wheel, bridge, rocks, trees, and banks under cooler overcast illumination.",
+      "issues": [
+        "The autumn lighting is fairly diffuse and subdued rather than clearly expressing the requested roughly 15-degree warm sun and pronounced Tyndall rays.",
+        "Water highlights/ripple strokes look stylized rather than physically refractive, and the foliage does not visibly demonstrate much transmitted light."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 7,
+      "reasons": "The visible environmental inventory is unusually complete: the mill, wheel, flume, stream, bridge, fence, lantern, rocks, moss, scattered leaves, grasses/reeds, multiple autumn maples, distant scenery, a waterwheel close-up, and a distinct winter/snow version are all supplied. The winter master visibly includes snow on the roof, wheel, bridge, ground, trees, and stream edges.",
+      "issues": [
+        "No supplied view actually shows the required crown gear meshing with a vertical shaft or the two 1.2 m millstones.",
+        "No time-ordered animation frames are supplied, so the required upper-stone-only motion and correct drive direction receive no visible evidence.",
+        "The exact wheel bucket count is not reliably demonstrable from the available views."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal exterior assembly must fully satisfy the specified mill architecture, dimensions, and side-mounted overshot wheel construction.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The native project must contain a continuous, dimensionally correct, mechanically coherent drivetrain from waterwheel to millstones.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The bridge crossing, streambed dressing, bank fixtures, and moss-bearing masonry must form the specified coherent riparian ensemble.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The terrain, maple population, foliage appearance, and ground dressing must jointly form the specified autumn landscape system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "All specified wooden exterior components must share the complete weathered-wood treatment.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The authored water presentation must combine transparent refractive stream optics with readable wheel-area splashing and flow.",
+      "evidence": "In 02_waterwheel_closeup_4K, shallow stream water visibly overlays and distorts the submerged stones, while a continuous sheet from the flume strikes the upper-right wheel paddles and breaks into droplets and falling runoff. The autumn master also shows rippled stream highlights continuing beneath the bridge.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R07",
+      "score": 0,
+      "criterion": "The autumn setup must combine the specified native low-angle lighting with its visible warm dusk and Tyndall result.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The actual main-output camera and authored image must satisfy the specified camera setup, composition, depth, and credible-scale goals.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The separate close-up must be a finished authored image that clearly prioritizes the waterwheel.",
+      "evidence": "02_waterwheel_closeup_4K is a distinct finished close-up whose frame is dominated by the large wooden wheel, clearly showing its paddles, spokes, axle supports, weathered boards, fasteners, flume, and falling water.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The third finished image must be a recognizable and fully transformed winter version of the same scene.",
+      "evidence": "03_winter_master_4K retains the autumn mill, wheel, bridge, stream, fence, and tree arrangement while clearly changing the scene to winter: snow covers the roof, banks, ground, bridge, rocks, and upper wheel elements; blue-white ice lines both stream edges; and the illumination is cool, pale, and diffuse.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The complete finished-image package must contain all requested openable outputs at the required actual pixel dimensions.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R12",
+      "score": 1,
+      "criterion": "The Blender project must be loadable, editable, organized, correspond to the outputs, and retain the required native render configuration.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a strong, recognizable and well-dressed autumn watermill scene with convincing final master, wheel close-up, and winter variant. Its main weaknesses are the unshown internal milling drivetrain/motion requirement, stylized water and leaf-card closeups, diffuse rather than distinctly warm low-angle autumn lighting, and the square terrain-tile edge exposed by evaluator overview cameras.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "d4d83ca04a263ef9d9407bfd61b8cd8c8103d51b55b68defbd87664bba4c42bb"
+}

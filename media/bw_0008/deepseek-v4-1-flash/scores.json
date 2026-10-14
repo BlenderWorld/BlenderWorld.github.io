@@ -1,0 +1,185 @@
+{
+  "task_id": "bw_0008",
+  "model": "DeepSeek-V4.1-Flash",
+  "judge_model": "GPT-5.6-terra",
+  "score": 70.9091,
+  "rubric": 81.81818181818181,
+  "dimension": 60.0,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 6,
+      "reasons": "Group B 的最终导出图和 Group A 的 cam_submitted 都清楚呈现了左侧控制柜、后方高位料仓与 GREENMAX 标识、白色弧形管道、中部破碎机、过渡料斗和右侧输送带，整体仍可识别为参考图中的回收破碎输送机组。",
+      "issues": [
+        "参考图中高位料仓、下方主机和底部机械部件构成的紧凑一体式机组，被重构成相互分离的高架料仓和小型独立破碎机。",
+        "主机下方的大型黑色圆形鼓轮/风机结构、左下白色网格防护罩等参考中的显著设备没有得到对应还原。",
+        "主机改成了非常显眼的开口滚刀槽，和参考图以封闭黄绿色主机箱体为主的外观差异较大。"
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "Group A 的 detail_conveyor_hopper、wide_front 和 Group B 均显示高位料仓四腿落在带底板的地面上，破碎机位于独立底座上，输送带的细支架、斜撑和脚轮/脚垫也都接地；未见明确悬浮、穿模或无支撑的大部件。",
+      "issues": [
+        "高位料仓通向主机方向的白色水平管末端被遮挡，接口法兰或明确的设备连接关系不可见。",
+        "主机、料仓和控制柜之间没有可见的电缆、管线或结构连接，因此作为完整生产线的工程连接感较弱。"
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 6,
+      "reasons": "提交图保留了目标的浅黄绿色主框架、深青绿色点缀、白色输送带支架和白色管道；Group B 中的滚刀、侧置黑色圆柱驱动件、控制面板、品牌面板和料斗边框也使主要设备具有可辨识的工业设备特征。",
+      "issues": [
+        "高位结构更像狭长的框架箱体，缺少参考图上部宽大的招牌框架、斜向标识支撑和一体式下部机壳轮廓。",
+        "输送带采用规则的凸起横向挡条，未清晰呈现参考图和任务所强调的白色人字形/箭形防滑纹。",
+        "控制柜整体读作普通白色金属柜，Group B 中没有明确可辨的拉丝不锈钢纹理。",
+        "主机外形和参考中的宽大封闭机箱差异明显，暴露滚刀使其更像独立切碎机而非原机组的主体。"
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "Group B 最终图具有干净的产品渲染构图、柔和阴影和整洁的浅灰背景，机械部件边缘、滚刀、脚轮和框架均有足够的三维可读性；整体没有明显破损渲染或几何错误。",
+      "issues": [
+        "最终导出图整体偏亮、低对比，白色管道、输送带框架、浅黄绿框架和小型标签的层次被冲淡。",
+        "多数漆面和机壳材质过于均匀平滑，缺少真实喷漆金属、拉丝钢和橡胶件之间的细微表面差异。",
+        "主机、料仓和柜体相隔较开，使整套设备更像陈列的独立模型而不是可信的紧凑加工线。"
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 6,
+      "reasons": "Group B 保持了与目标相近的左至右读取顺序：控制柜位于左前方，高位料仓在左后方，破碎机居中，输送带向右延展。Group A 的 detail_conveyor_hopper 也清楚显示输送带上端、过渡料斗和滚刀入口之间的连续关系；输送带角度确实比参考图更缓，符合改造要求。",
+      "issues": [
+        "参考图中主机嵌在高架钢架下方的空间关系没有保留，提交图将它放在料仓右侧作为独立单元。",
+        "参考图中输送带从右前景的大型低位喇叭口延伸到主机，而提交图的输送带低端收束较短、前景存在感和入料端形态明显不足。",
+        "控制柜在 Group B 最终构图中贴近左下边缘，教学产品图中作为独立操作台的展示不如参考清楚。"
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 5,
+      "reasons": "高位料仓仍明显高于中部破碎机，长输送带也大于柜体和主机，Group A 多视角中的基本尺度层级是合理的。",
+      "issues": [
+        "中部主机相对于高架料仓显得过小、过窄，缺少参考中占据整套装置中央下部的大型箱体体量。",
+        "输送带支撑、侧墙和下端料盘整体偏轻薄，难以匹配参考图中较厚重的白色移动输送机。",
+        "高位料仓的窄长比例与参考图宽大的上部标识和机身比例不一致。"
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 5,
+      "reasons": "Group B 最终图采用浅灰渐变棚拍背景和柔和落地阴影，满足干净产品展示的基础要求；深青色滚刀槽、黑色驱动件和白色输送框架与黄绿色喷涂部分存在基本色彩区分。",
+      "issues": [
+        "过度明亮的照明削弱了白色、浅黄绿色和银色部件的明暗分离，细标签和小控制件不够清晰。",
+        "控制柜没有可读的拉丝反射或方向性纹理，未成功表现要求的不锈钢拉丝质感。",
+        "主钢架虽为哑光浅黄绿色，但与料仓面板的材质几乎相同，缺少喷漆钢架应有的材质层级。",
+        "白管、框架和料斗边缘的高光较平，金属、塑料和橡胶的反射差异有限。"
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 6,
+      "reasons": "主要点名对象均可在 Group B 和 Group A detail_views 中找到：带按钮/指示灯的独立控制柜、带品牌板和弧形管道的高位料仓、带侧置圆柱驱动的破碎机、过渡料斗、带支撑及脚轮的倾斜输送带。滚刀的清晰暴露也有助于教学中辨认转动部位。",
+      "issues": [
+        "缺少参考中主机下部显著的黑色圆形鼓轮/风机状组件及其周围的完整下部机架结构。",
+        "缺少左下方白色网格安全罩及其中的被防护部件。",
+        "主机本体未还原参考中的大面积封闭黄绿色面板、完整观察窗周边结构和相关侧部传动细节。",
+        "控制柜虽有面板，但拉丝不锈钢改造效果和与设备相连的线缆/接口均未清楚呈现。"
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The reconstruction forms a complete equipment line with the specified regional organization and reference-like relative scale hierarchy.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 0,
+      "criterion": "The left operating station combines the required cabinet identity, visible controls, and modified brushed-stainless finish.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The rear hopper retains its elevated support, salient reference construction, upper branding, and attached curved guide pipe.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The central processing assembly combines a recognizable shredding-and-compaction body, readable processing-region cues, and a plausibly mounted cylindrical drive motor.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R05",
+      "score": 0,
+      "criterion": "The right conveyor combines the specified frame, patterned belt, attached casters, and gentler modified incline.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The added transition hopper physically and legibly connects the conveyor discharge to the main-machine inlet.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The complete equipment line uses the required palette and a distinguishable matte painted-frame material system.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The native scene and final render implement deliberate three-point soft product lighting.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The designated final render combines the specified studio background and camera composition with unobstructed educational readability and a clean product-grade finish.",
+      "evidence": "The designated author render, bl008_recycling_line_4k.png, shows the complete line in a clean elevated three-quarter studio view: the separate control cabinet, tall branded hopper frame and curved duct, exposed cutter/roller processing unit with side drive, transition hopper, and full inclined cleated conveyor are all visibly separated and readable. The conveyor terminates directly over the transition hopper above the open roller chamber, making the feed path understandable. The image uses a sparse light-gray gradient floor/backdrop with soft shadows, no clutter, and coherent finished materials and geometry.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "A genuine high-resolution completed author render is delivered as an openable image.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R11",
+      "score": 1,
+      "criterion": "The delivered Blender project is openable, editable, and suitable for later annotation and alternate camera views.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "提交场景完整保留了回收线的核心识别元素，并以干净的棚拍方式呈现了料斗—滚刀—输送带的教学流程。主要不足是将参考中的紧凑一体机组简化为几件分离设备，缺失防护罩、下部鼓轮和大型主机箱体，且最终图材质与明暗对比不足，未明确表现拉丝不锈钢和不同金属表面。",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "61c75126c527db81901ed1db828205555c7fee61bc8fd443038b07ea947f249a"
+}

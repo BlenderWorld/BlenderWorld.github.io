@@ -1,0 +1,22 @@
+{
+  "exporter_version": 2,
+  "source_file": "Cyan_Lotion_Turntable.blend",
+  "objects": 14,
+  "meshes": 13,
+  "original_triangles": 331154,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Backdrop • neutral pearl seamless"
+  ],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 535596,
+  "optimized": true,
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "original_export_bytes": 9080564,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [],
+  "preview_omitted_objects": [],
+  "preview_camera": null,
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved."
+}

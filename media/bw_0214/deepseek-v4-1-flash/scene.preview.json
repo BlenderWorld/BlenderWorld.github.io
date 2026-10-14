@@ -1,0 +1,40 @@
+{
+  "exporter_version": 3,
+  "source_file": "aquarium_previz.blend",
+  "objects": 52,
+  "meshes": 52,
+  "original_triangles": 64338,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Backdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [
+    "Wat_Vol"
+  ],
+  "original_camera": {
+    "theta": -0.5999999675789287,
+    "phi": 92.49999890231403
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 292328,
+  "optimized": true,
+  "showcase_refinement": 5,
+  "procedural_color_fallbacks": [
+    "PlantMat",
+    "GoldfishMat"
+  ],
+  "preview_omitted_objects": [
+    "Wat_Surface.001"
+  ],
+  "preview_camera": {
+    "camera-target": "0.047m 0.105m -2.919m",
+    "camera-orbit": "0deg 85deg 8.294m",
+    "min-camera-orbit": "auto 5deg 0.395m"
+  },
+  "preview_note": "The water surface is hidden to reveal the fish in 3D.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress.",
+  "preview_focus_count": 7
+}

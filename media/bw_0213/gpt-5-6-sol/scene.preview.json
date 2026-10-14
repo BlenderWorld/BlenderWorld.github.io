@@ -1,0 +1,43 @@
+{
+  "exporter_version": 3,
+  "source_file": "flamingo_previz_editable.blend",
+  "objects": 202,
+  "meshes": 171,
+  "original_triangles": 30694,
+  "decimation_ratio": 1,
+  "skipped_studio_objects": [
+    "Dense_Green_Backdrop"
+  ],
+  "reduced_subdivision_objects": [],
+  "skipped_dense_repeated_instances": 0,
+  "skipped_volume_objects": [],
+  "original_camera": {
+    "theta": -1.384902850783497,
+    "phi": 78.14962176857263
+  },
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 266664,
+  "optimized": true,
+  "showcase_refinement": 4,
+  "procedural_color_fallbacks": [
+    "MAT_Flamingo_PaleFeathers",
+    "MAT_Wing_IvoryPink",
+    "MAT_Legs_Pink",
+    "MAT_PoolBottom",
+    "MAT_Bank_DampSand",
+    "MAT_WeatheredStone",
+    "MAT_Bark",
+    "MAT_Leaves_Sunlit",
+    "MAT_Leaves_Dark",
+    "MAT_Leaves_Mid"
+  ],
+  "preview_omitted_objects": [],
+  "preview_camera": {
+    "camera-target": "0.635m 0.855m -0.863m",
+    "camera-orbit": "-1.384902850783497deg 78.14962176857263deg 6.239m",
+    "min-camera-orbit": "auto 5deg 0.297m"
+  },
+  "preview_note": null,
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

@@ -1,0 +1,29 @@
+{
+  "exporter_version": 2,
+  "source_file": "Nanxiang_Rain_Previz.blend",
+  "objects": 3956,
+  "meshes": 3714,
+  "original_triangles": 1010524,
+  "decimation_ratio": 0.5442720806235181,
+  "skipped_studio_objects": [],
+  "pose": "Static authored pose; animations and procedural Blender shading are represented by the original media.",
+  "bytes": 8321952,
+  "optimized": true,
+  "showcase_refinement": 1,
+  "procedural_color_fallbacks": [
+    "Trim • stained limestone",
+    "Road • worn crossing paint",
+    "Iron • oxidized",
+    "Timber • deep walnut",
+    "Interior • warm plaster"
+  ],
+  "preview_omitted_objects": [
+    "Atmosphere / wet aerosol volume.001",
+    "Storm cloud bank / low underside.001",
+    "Storm cloud bank / layered front.001"
+  ],
+  "preview_camera": null,
+  "preview_note": "Cloud and rain-atmosphere volumes are omitted in this 3D preview.",
+  "color_policy": "Representative colors are read from the original Blender shaders before material deduplication. Existing image textures are preserved.",
+  "optimization": "Prune unused data, deduplicate, instance repeated meshes, and Draco-compress."
+}

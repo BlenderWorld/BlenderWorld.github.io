@@ -1,0 +1,173 @@
+{
+  "task_id": "bw_0043",
+  "model": "GPT-6-Astra",
+  "judge_model": "GPT-5.6-terra",
+  "score": 86.875,
+  "rubric": 100.0,
+  "dimension": 73.75,
+  "dimensions": [
+    {
+      "id": "scene_fidelity",
+      "score": 7,
+      "reasons": "The designated author render, rain_lily_macro.png, clearly depicts the requested rain-lily-like macro scene: one open six-petaled white flower, a lime-green throat, yellow anthers, pale central pistil, diagonal green strap leaves, and brown leaf-litter ground cover. Its camera angle and shallow depth of field also broadly follow the reference photograph.",
+      "issues": [
+        "The flower is more mechanically symmetric, flatter, and more sharply pointed than the naturally varied reference bloom.",
+        "The surrounding litter is dominated by uniformly angular wood-chip-like pieces rather than the softer, fibrous, irregular natural debris in the reference.",
+        "Group A views reveal a tall, isolated stem and a broad staged ground patch, which gives the scene a less ground-level, natural growing context than the reference."
+      ]
+    },
+    {
+      "id": "physics",
+      "score": 8,
+      "reasons": "Across the Group A oblique and side views, the flower head joins a continuous green stem, the stem reaches the ground cover, and the leaves visibly emerge from or terminate into the ground. The dried leaves and chip fragments appear supported by the brown ground plane, with no clear floating petals or detached floral anatomy.",
+      "issues": [
+        "Some mulch pieces are densely piled and read as repeated rigid shards rather than naturally settled organic debris.",
+        "The long, nearly straight upright stem and simplified cup-like flower underside look somewhat constructed compared with a natural rain lily."
+      ]
+    },
+    {
+      "id": "style_color",
+      "score": 8,
+      "reasons": "The flower is independently recognizable in rain_lily_macro.png and detail_center.png: six white lanceolate petals carry fine longitudinal ribs, their bases transition into a clear yellow-green/lime throat, and the center has distinct white filaments, saturated yellow anthers, and a raised pale forked pistil. Green leaves and muted brown litter also use the intended color families.",
+      "issues": [
+        "The petals are extremely uniform in width, whiteness, and rib pattern, making them read more like clean CG flower components than subtly varied biological petals.",
+        "The throat green is more saturated and sharply graphic than the softer green transition in the reference.",
+        "The leaves have a uniformly vivid green, glossy-strip appearance rather than the more varied green foliage in the photo."
+      ]
+    },
+    {
+      "id": "realism",
+      "score": 6,
+      "reasons": "The author final has a coherent macro framing, clean rendering, readable focal flower, and credible background blur. The flower and its center remain visually clear rather than becoming featureless shapes.",
+      "issues": [
+        "The floral geometry is visibly procedural: petal spacing, vein grooves, and anther forms are highly regular.",
+        "The bright white petals have limited organic translucency, edge variation, and surface imperfection.",
+        "The ground litter and wood chips look stylized and repeated, reducing the photographic realism relative to the reference."
+      ]
+    },
+    {
+      "id": "layout_spatial",
+      "score": 7,
+      "reasons": "rain_lily_macro.png places the open flower prominently in a slightly overhead macro view, with green strap leaves running diagonally behind it and defocused brown litter beneath, closely matching the reference's principal spatial arrangement. The floral center is unobscured as requested.",
+      "issues": [
+        "The bloom is elevated visibly above the ground on a long straight stem in Group A, while the reference reads more as a flower nestled among ground-level foliage.",
+        "Several Group A wide views include large looping leaves that create a more staged radial arrangement than the reference.",
+        "The main flower is more centered and isolated than the reference's slightly more embedded, asymmetrical vegetation context."
+      ]
+    },
+    {
+      "id": "proportion_scale",
+      "score": 7,
+      "reasons": "The flower-to-leaf scale is botanically plausible, and the flower head, narrow leaf blades, stem, and central reproductive structures remain sensibly sized relative to each other. The stamens are large enough to be useful for the requested instructional emphasis.",
+      "issues": [
+        "The flower head appears unusually planar and broad compared with its thin, very straight exposed stem in the Group A side views.",
+        "The yellow anthers and some white filaments are somewhat thick and oversized relative to the shallow floral throat.",
+        "The wood chips appear comparatively large and blocky for the scale of the bloom."
+      ]
+    },
+    {
+      "id": "lighting_material",
+      "score": 7,
+      "reasons": "The author final uses soft, clean illumination and appropriate depth-of-field separation. Petals show fine longitudinal relief, the green throat has a visible white-to-green transition, anthers are distinctly yellow, leaves have a modest sheen, and the brown ground elements have varied matte tones.",
+      "issues": [
+        "The petals read more as opaque matte/finely grooved surfaces than as softly subsurface-scattering, slightly waxy translucent petals.",
+        "The green throat gradient is visibly abrupt and overly saturated.",
+        "The dry leaves and mulch lack the fine fibrous, wrinkled material complexity and roughness variation seen in the reference."
+      ]
+    },
+    {
+      "id": "completeness",
+      "score": 9,
+      "reasons": "All major requested components are visibly present: one six-petaled white flower, longitudinal petal veining, a yellow-green throat, a visible cluster of pale filaments with bright yellow anthers, a central pale pistil, strap-like green leaves, and a dry brown leaf-and-mulch ground layer. detail_center.png and rain_lily_macro.png make the instructional floral center especially clear.",
+      "issues": [
+        "The natural ground-cover treatment is present but is less convincingly organic than the target reference.",
+        "The desired nuanced petal translucency and natural material variation are not fully achieved."
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "R01",
+      "score": 1,
+      "criterion": "The principal flower must form a complete six-tepal body with the required shape, venation, and material response.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R02",
+      "score": 1,
+      "criterion": "The flower throat must use an authored spatial gradient that produces a clearly readable yellow-green-to-white instructional color transition.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R03",
+      "score": 1,
+      "criterion": "The complete stamen, anther, and pistil system must have the specified identities, arrangement, material response, and unobstructed instructional visibility.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R04",
+      "score": 1,
+      "criterion": "The surrounding living leaves must combine the requested form, distribution, direction, color, and surface response.",
+      "evidence": "Several green, narrow strap-like leaves arc and extend diagonally beneath and behind the bloom; they show a restrained longitudinal highlight rather than a dry or metallic finish.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R05",
+      "score": 1,
+      "criterion": "Dry fallen leaves and wood chips must jointly form a substantial, materially varied organic ground bed.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R06",
+      "score": 1,
+      "criterion": "The authored key and environmental fill must work together to produce soft natural daylight and photographic shadows.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R07",
+      "score": 1,
+      "criterion": "The final image must combine the requested elevated-oblique macro view, shallow focus, subject hierarchy, and broad reference character.",
+      "evidence": "The designated final image rain_lily_macro presents a close elevated, mildly oblique macro view: the six-tepal white bloom and its green throat, yellow anthers, and pale central pistil are sharply resolved, while surrounding brown litter and rear green blades are clearly defocused.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R08",
+      "score": 1,
+      "criterion": "The completed vignette must maintain plausible biological scale, avoid invented modeled structures and unrelated objects, and integrate into a coherent instructional scene.",
+      "evidence": "The views show one consistently recognizable rain-lily-like flower with proportionate tepals, a green throat, slender stamens with yellow anthers, pale pistil, strap foliage, and organic brown leaf-and-chip ground cover. No unrelated props, containers, or fantasy floral structures are visible.",
+      "importance": "major",
+      "evidence_type": "render"
+    },
+    {
+      "id": "R09",
+      "score": 1,
+      "criterion": "The editable Blender project must correspond to the final scene, preserve the required authored render configuration, produce a clean result, and use organized naming.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    },
+    {
+      "id": "R10",
+      "score": 1,
+      "criterion": "The designated final image must be a valid authored PNG at the required effective resolution.",
+      "evidence": "agent-as-judge verdict (evidence_type=scene_summary)",
+      "importance": "major",
+      "evidence_type": "scene_summary"
+    }
+  ],
+  "notes": "This is a clear and complete reconstruction of the intended white rain-lily-like flower and macro ground setting. The flower anatomy, six-petal silhouette, lime throat, and yellow anthers are especially readable. The principal shortfall is realism: overly uniform floral modeling and rigid, repetitive mulch make the result look like a clean CG botanical illustration rather than the organic reference photograph.",
+  "score_policy": "Frozen paper score: uncapped 0.5 rubric + 0.5 dimension.",
+  "judge_sha256": "ab495c698fcc932f979e1abbe08ba19e05a6179b53afc7d7e47ca138fcc1c42c"
+}
