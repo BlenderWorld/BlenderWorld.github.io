@@ -91,8 +91,8 @@
       "sha256": "5f9e24cb0c4f88596f4ebebe7c3e7c047025a8ffa5e39d1b5c416cfd126ab031"
     },
     "index.html": {
-      "bytes": 15905,
-      "sha256": "fadeec125ff0a8f2ec7712c4d3f347f920952ce696597cdb476125804376b3fd"
+      "bytes": 16996,
+      "sha256": "44b444c893327e71636ee063c147923ec2d028578f2f8080e4649b612c558d55"
     },
     "media/bw_0006/deepseek-v4-1-flash/render-0.webp": {
       "bytes": 49892,
@@ -5071,8 +5071,8 @@
       "sha256": "3dccce19c5996ce74fd6c7be1d4f7cf06380f5b64c6cc167c8969ed0dfee3b93"
     },
     "style.css": {
-      "bytes": 38195,
-      "sha256": "0ded90dfb845139830ac0f8d5bbb3ade125c4c1c42d158d4b94a8fd7ed03312d"
+      "bytes": 38730,
+      "sha256": "bc2e4b56e7f1249deeeea53c707d89f49b5a6011ddd3519fe94f2b2d79aa0efa"
     },
     "vendor/draco/draco_decoder.js": {
       "bytes": 720148,

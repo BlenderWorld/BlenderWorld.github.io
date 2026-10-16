@@ -17,7 +17,7 @@
 - Modify: `index.html`
 - Modify: `style.css`
 
-- [ ] **Step 1: Write the failing contract test**
+- [x] **Step 1: Write the failing contract test**
 
 Create `tests/project-resource-links.test.mjs` with Node's built-in test runner. Read `index.html`, isolate `<nav class="project-links" ...>`, and assert that the four exact links occur once, in order, with `target="_blank"`, `rel="noopener noreferrer"`, descriptive `aria-label` values, and a hidden external-link arrow.
 
@@ -37,7 +37,7 @@ const resources = [
 const escapeRegex = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 test('hero exposes the four official project resources safely and in order', () => {
-  const navMatch = html.match(/<nav class="project-links"\b[\s\S]*?<\/nav>/);
+  const navMatch = html.match(/<nav class="project-links"[^>]*>[\s\S]*?<\/nav>/);
   assert.ok(navMatch, 'missing nav.project-links');
   const nav = navMatch[0];
   const anchors = [...nav.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/g)].map((match) => match[0]);
@@ -51,21 +51,21 @@ test('hero exposes the four official project resources safely and in order', () 
     assert.match(anchor, /rel="noopener noreferrer"/);
     assert.match(anchor, /aria-label="[^"]+\(opens in a new tab\)"/);
     assert.match(anchor, new RegExp(`>${escapeRegex(label)} <span aria-hidden="true">↗<\\/span>`));
-    assert.equal((nav.match(new RegExp(escapeRegex(url), 'g')) ?? []).length, 1);
-    const position = nav.indexOf(url);
+    assert.equal((nav.match(new RegExp(`href="${escapeRegex(url)}"`, 'g')) ?? []).length, 1);
+    const position = nav.indexOf(`href="${url}"`);
     assert.ok(position > previousPosition, `${label} is out of order`);
     previousPosition = position;
   });
 });
 ```
 
-- [ ] **Step 2: Run the test and verify it fails**
+- [x] **Step 2: Run the test and verify it fails**
 
 Run: `node --test tests/project-resource-links.test.mjs`
 
 Expected: FAIL because `nav.project-links` does not exist.
 
-- [ ] **Step 3: Add the semantic link group**
+- [x] **Step 3: Add the semantic link group**
 
 Insert this block after `.affiliations` and before `.hero-actions` in `index.html`:
 
@@ -80,7 +80,7 @@ Insert this block after `.affiliations` and before `.hero-actions` in `index.htm
 
 Change the stylesheet query to `style.css?v=20261016-project-links`.
 
-- [ ] **Step 4: Add the focused component styles**
+- [x] **Step 4: Add the focused component styles**
 
 Add the following rules after `.affiliations` in `style.css`:
 
@@ -93,7 +93,7 @@ Add the following rules after `.affiliations` in `style.css`:
 
 Update `.hero-actions` margin from `26px 0 38px` to `18px 0 38px` so the two action groups read as a single hero control area.
 
-- [ ] **Step 5: Run the contract test and formatting check**
+- [x] **Step 5: Run the contract test and formatting check**
 
 Run: `node --test tests/project-resource-links.test.mjs && git diff --check`
 
@@ -105,17 +105,17 @@ Expected: all tests pass and `git diff --check` prints no errors.
 - Modify: `data/site-manifest.json`
 - Modify: `SHA256SUMS`
 
-- [ ] **Step 1: Calculate fresh metadata**
+- [x] **Step 1: Calculate fresh metadata**
 
 Calculate byte sizes and SHA-256 hashes for `index.html` and `style.css`, update those records in `data/site-manifest.json`, then calculate the new hash for `data/site-manifest.json`. Update the three corresponding entries in `SHA256SUMS`.
 
-- [ ] **Step 2: Verify all integrity records**
+- [x] **Step 2: Verify all integrity records**
 
 Run the full checksum list and compare the manifest's recorded sizes and hashes with the three modified site files.
 
 Expected: 0 checksum failures and exact manifest matches.
 
-- [ ] **Step 3: Inspect desktop and mobile layouts**
+- [x] **Step 3: Inspect desktop and mobile layouts**
 
 Serve the site locally, capture the hero at 1440×1100 and 390×844, and confirm that the four links are centered, legible, visually secondary to the primary action, keyboard focusable, and wrapped without overflow on mobile.
 

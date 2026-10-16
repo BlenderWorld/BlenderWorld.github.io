@@ -52,7 +52,11 @@ p{margin-bottom:16px}
 .authors{max-width:1120px;margin:0 auto 12px;font-size:0.9375rem;line-height:1.85;color:#615a51}
 sup{font-size:.68em;margin-left:1px;margin-right:2px}
 .affiliations{display:flex;justify-content:center;gap:4px 16px;flex-wrap:wrap;font-size:0.875rem;color:var(--muted);max-width:1060px;margin-inline:auto;line-height:1.6}
-.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:26px 0 38px}
+.project-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:20px auto 0}
+.project-links a{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#f7f3ec;color:#5f574e;font-size:.9375rem;font-weight:500;transition:color .15s,border-color .15s,background .15s,transform .15s}
+.project-links a:hover{color:var(--rust);border-color:#c6a78f;background:var(--white);transform:translateY(-1px)}
+.project-links a span{font-size:.875rem}
+.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0 38px}
 .hero-gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:12px;text-align:left}
 .hero-tile{position:relative;overflow:hidden;border-radius:8px;background:#d8d4cc;display:block;aspect-ratio:1.54;padding:0}
 .hero-tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
